@@ -1,2 +1,0 @@
-# acupuncture
-Acupuncture Website
