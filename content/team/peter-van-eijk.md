@@ -3,7 +3,7 @@ title: "Dr. Dan Wang"
 date: 2018-11-19T10:47:58+10:00
 draft: false
 slug: "dr-dan-wang"
-image: "images/team/michael-dam-258165-unsplash.jpg"
+image: "images/team/dan-wang.jpg"
 jobtitle: "Licensed Acupuncturist & Herbalist"
 promoted: true
 weight: 1

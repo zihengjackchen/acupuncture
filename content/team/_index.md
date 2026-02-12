@@ -1,6 +1,6 @@
 ---
 title: 'About'
-intro_image: "images/illustrations/meditate.svg"
+intro_image: "images/illustrations/AdobeStock_1866335997_Preview.jpeg"
 intro_image_absolute: true
 intro_image_absolute_offset: "auto auto -148px -102px"
 intro_image_hide_on_mobile: false

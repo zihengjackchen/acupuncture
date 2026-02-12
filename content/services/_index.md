@@ -1,7 +1,7 @@
 ---
 title: 'Services and Fees'
 description: 'Mobile acupuncture services, fees, and treatment process details for Chicagoland patients.'
-intro_image: "images/illustrations/reading.svg"
+intro_image: "images/illustrations/AdobeStock_1866336824_Preview.jpeg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 process_title: "How the treatment process works"

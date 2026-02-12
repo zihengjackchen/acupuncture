@@ -17,11 +17,13 @@
         text-decoration: none;
         color: $primary;
         &:hover {
+          color: $accent-dark;
           text-decoration: underline;
         }
       }
       &.active {
         > a {
+          color: $accent-dark;
           font-weight: bold;
           text-decoration: none;
           &:hover {

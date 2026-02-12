@@ -34,11 +34,14 @@ title = "harmonyhealthclinic"
     base = "Source Sans Pro"
 
   [params.colors]
-    primary = "#f24088"
+    primary = "#3B6255"
     black = "#2f2f41"
     white = "#ffffff"
-    white_offset = "#f6f7ff"
+    white_offset = "#E2DFDA"
     grey = "#5C5A5A"
+    secondary = "#8BA49A"
+    accent_dark = "#8BA49A"
+    accent_warm = "#D2C49E"
 
   [params.seo]
     meta_twitter_site = "@zerostaticio"

@@ -1,7 +1,7 @@
 ---
 title: 'Questions'
 description: 'Frequently asked questions about Traditional Chinese Medicine, acupuncture safety, cost, sessions, and treatment scope.'
-intro_image: "images/illustrations/reading.svg"
+intro_image: "images/illustrations/AdobeStock_1866335391_Preview.jpeg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---

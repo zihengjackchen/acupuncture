@@ -5,6 +5,9 @@ $black: {{ .Site.Params.colors.black | default "#2f2f41" }};
 $white: {{ .Site.Params.colors.white | default "#ffffff" }};
 $white-offset: {{ .Site.Params.colors.white_offset | default "#f6f7ff" }};
 $grey: {{ .Site.Params.colors.grey | default "#5C5A5A" }};
+$secondary: {{ .Site.Params.colors.secondary | default "#CBDED3" }};
+$accent-dark: {{ .Site.Params.colors.accent_dark | default "#3B6255" }};
+$accent-warm: {{ .Site.Params.colors.accent_warm | default "#D2C49E" }};
 
 // Fonts
 $font-family-base: {{ .Site.Params.fonts.base }}, Helvetica, Arial, sans-serif, -apple-system;
