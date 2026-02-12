@@ -4,7 +4,6 @@ meta_title: 'harmonyhealthclinic'
 description: "Best mobile acupuncture care in Chicagoland with support for fertility, pain recovery, sleep, stress, digestion, and menopause care."
 intro_image: "images/illustrations/AdobeStock_1866336725_Preview.jpeg"
 intro_image_absolute: true
-intro_image_absolute_offset: "auto auto -100px -80px"
 intro_image_hide_on_mobile: true
 ---
 

@@ -13207,16 +13207,19 @@ ol {
     color: #2f2f41;
     font-size: 42px;
     font-weight: bold;
-    line-height: 1.2; }
+    line-height: 1.2;
+    overflow-wrap: anywhere; }
     @media (min-width: 768px) {
       .intro h1 {
-        width: 80%;
+        width: 100%;
+        max-width: 640px;
         font-size: 48px; } }
     @media (min-width: 992px) {
       .intro h1 {
         font-size: 50px; } }
   .intro h2 {
-    width: 80%;
+    width: 100%;
+    max-width: 640px;
     font-size: 1.2rem;
     line-height: 1.4;
     margin-bottom: 30px;
@@ -13229,7 +13232,8 @@ ol {
     color: #5C5A5A; }
     @media (min-width: 768px) {
       .intro p {
-        width: 80%; } }
+        width: 100%;
+        max-width: 640px; } }
 .intro-small {
   padding-top: 100px;
   padding-bottom: 30px; }
@@ -13237,28 +13241,32 @@ ol {
 .intro-image {
   width: 100%;
   height: auto;
-  margin-top: -40px; }
+  margin-top: 0; }
 
 .intro-image-absolute {
-  max-width: none;
+  max-width: 100%;
   padding: 0;
-  margin-bottom: 30px; }
-  @media (min-width: 768px) {
-    .intro-image-absolute {
-      position: absolute;
-      bottom: -50px;
-      left: -50px;
-      width: 700px; } }
-  @media (min-width: 992px) {
-    .intro-image-absolute {
-      bottom: -60px;
-      left: -60px;
-      width: 800px; } }
-  @media (min-width: 1300px) {
-    .intro-image-absolute {
-      bottom: -100px;
-      left: -70px;
-      width: 850px; } }
+  margin-bottom: 20px; }
+
+.intro-image-column {
+  display: flex;
+  align-items: stretch; }
+
+@media (min-width: 768px) {
+  .intro-image-column {
+    height: auto; }
+  .intro-image,
+  .intro-image-absolute {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    object-position: center; } }
+
+@media (min-width: 768px) {
+  .intro .row {
+    align-items: stretch; } }
+
 .intro-image-hide-mobile {
   display: none; }
   @media (min-width: 768px) {
@@ -13338,6 +13346,14 @@ ol {
     display: inline-block; }
     .social a:hover {
       opacity: 0.8; }
+
+.page-home .call {
+  width: 100%;
+  max-width: 460px; }
+
+.page-home .call-box-top,
+.page-home .call-box-bottom {
+  padding: 14px 16px; }
 
 .page-default-list .intro p {
   font-family: Source Sans Pro, Helvetica, Arial, sans-serif, -apple-system;
