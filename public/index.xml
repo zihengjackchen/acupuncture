@@ -1,110 +1,124 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homepage on Harmony Acupuncture Clinic</title>
-    <link>/</link>
-    <description>Recent content in Homepage on Harmony Acupuncture Clinic</description>
+    <title>Homepage on harmonyhealthclinic</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content in Homepage on harmonyhealthclinic</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jan 2024 09:00:00 -0600</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Acupuncture Consultation and Personalized Care</title>
-      <link>/services/acupuncture-consultation/</link>
+      <link>//localhost:1313/services/acupuncture-consultation/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>/services/acupuncture-consultation/</guid>
-      <description>A full acupuncture assessment with 90-minute initial consults, 60-minute follow-ups, and a personalized treatment roadmap.</description>
+      <guid>//localhost:1313/services/acupuncture-consultation/</guid>
+      <description>Start with a brief virtual consultation, then mobile acupuncture visits with clear follow-up planning and fair pricing.</description>
     </item>
     <item>
       <title>What Is Acupuncture?</title>
-      <link>/blog/what-is-acupuncture/</link>
+      <link>//localhost:1313/blog/what-is-acupuncture/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>/blog/what-is-acupuncture/</guid>
-      <description>&lt;p&gt;Acupuncture is a treatment method from Traditional Chinese Medicine that uses very thin, sterile needles placed at specific points on the body. The goal is to support the body&amp;rsquo;s natural healing response and restore balance across different systems.&lt;/p&gt;&#xA;&lt;p&gt;Many people first try acupuncture for pain, but it is also commonly used for stress, sleep issues, digestive symptoms, and women&amp;rsquo;s health concerns.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-happens-in-a-standard-session&#34;&gt;What happens in a standard session?&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Brief check-in on current symptoms&lt;/li&gt;&#xA;&lt;li&gt;Focused assessment based on your treatment goals&lt;/li&gt;&#xA;&lt;li&gt;Needle placement at points selected for your condition&lt;/li&gt;&#xA;&lt;li&gt;Rest period, usually 20-30 minutes&lt;/li&gt;&#xA;&lt;li&gt;Follow-up recommendations before your next visit&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;what-does-treatment-feel-like&#34;&gt;What does treatment feel like?&lt;/h2&gt;&#xA;&lt;p&gt;Most patients feel minimal discomfort when needles are inserted. During treatment, people often report a deep sense of relaxation, warmth, or heaviness in the treated area.&lt;/p&gt;</description>
+      <guid>//localhost:1313/blog/what-is-acupuncture/</guid>
+      <description>&lt;p&gt;Acupuncture is one of the primary treatments under the Traditional Chinese Medicine umbrella, and it has a longer history than herbs. Its first written mention was around 100 BCE, and many scholars believe it was used several centuries earlier.&lt;/p&gt;&#xA;&lt;p&gt;In Chinese medicine, health depends on the balance of yin and yang, qi (chee) and blood, and the functional harmony of organs and meridians. Imbalance is considered the root of disease.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dr. Dan Wang</title>
-      <link>/team/dr-dan-wang/</link>
+      <link>//localhost:1313/team/dr-dan-wang/</link>
       <pubDate>Mon, 19 Nov 2018 10:47:58 +1000</pubDate>
-      <guid>/team/dr-dan-wang/</guid>
+      <guid>//localhost:1313/team/dr-dan-wang/</guid>
       <description>&lt;p&gt;Originally from Northeast China, Dan brings a rich cultural and clinical background rooted in Traditional Chinese Medicine. She earned her degree from the Liaoning University of Traditional Chinese Medicine in the 1990s and has been practicing in the western suburbs of Chicago for the past four years.&lt;/p&gt;&#xA;&lt;p&gt;Dan is deeply passionate about Chinese medical philosophy and integrates practices such as Taiji, Yijing, and Feng Shui into her holistic approach. She believes true healing comes from achieving balance, both mentally and physically, and she works closely with each patient to support that harmony.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Acute and Chronic Pain Management</title>
-      <link>/services/pain-and-injury-management/</link>
+      <link>//localhost:1313/services/pain-and-injury-management/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>/services/pain-and-injury-management/</guid>
+      <guid>//localhost:1313/services/pain-and-injury-management/</guid>
       <description>Acupuncture care for musculoskeletal pain, headaches, nerve-related symptoms, and injury recovery.</description>
     </item>
     <item>
-      <title>How Acupuncture Supports Pain Recovery</title>
-      <link>/blog/acupuncture-for-pain-recovery/</link>
+      <title>Does Acupuncture Hurt?</title>
+      <link>//localhost:1313/blog/does-acupuncture-hurt/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>/blog/acupuncture-for-pain-recovery/</guid>
-      <description>&lt;p&gt;Pain can come from overuse, injury, poor sleep, stress, or long-standing inflammation. Acupuncture supports recovery by improving local circulation, reducing muscle tension, and helping regulate pain signaling.&lt;/p&gt;&#xA;&lt;p&gt;It is commonly used for neck and back pain, sciatica, headaches, TMJ, tendon irritation, and pain after work, sports, or motor vehicle injuries.&lt;/p&gt;&#xA;&lt;h2 id=&#34;common-pain-conditions-treated&#34;&gt;Common pain conditions treated&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Neck and back pain&lt;/li&gt;&#xA;&lt;li&gt;Sciatica&lt;/li&gt;&#xA;&lt;li&gt;Headaches and migraines&lt;/li&gt;&#xA;&lt;li&gt;Joint pain in shoulders, knees, and feet&lt;/li&gt;&#xA;&lt;li&gt;Tendon irritation such as tennis elbow and plantar fasciitis&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;how-long-does-it-take-to-feel-improvement&#34;&gt;How long does it take to feel improvement?&lt;/h2&gt;&#xA;&lt;p&gt;Some patients feel relief quickly, especially with recent injuries. Chronic conditions often improve gradually over several weeks with consistent treatment.&lt;/p&gt;</description>
+      <guid>//localhost:1313/blog/does-acupuncture-hurt/</guid>
+      <description>&lt;p&gt;Acupuncture needles are hair-thin filiform needles. They are different from the hollow syringes used for injections or blood draws, and insertion is virtually painless for most people.&lt;/p&gt;&#xA;&lt;p&gt;Points on the hands, feet, and face can occasionally be more sensitive, but this is usually brief.&lt;/p&gt;&#xA;&lt;p&gt;During treatment, some people feel sensations such as soreness, numbness, bloating, heaviness, warmth, coolness, or even brief itching. These sensations are often temporary.&lt;/p&gt;&#xA;&lt;p&gt;After needling, most people feel a deep sense of calm and relaxation. This is often when people notice the treatment beginning to work, and when acupuncture starts to heal.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>What to Expect at Your First Acupuncture Visit</title>
-      <link>/blog/your-first-visit/</link>
+      <title>How Much Does Mobile Acupuncture Cost?</title>
+      <link>//localhost:1313/blog/how-much-does-mobile-acupuncture-cost/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>/blog/your-first-visit/</guid>
-      <description>&lt;p&gt;Your first visit is focused on understanding the full picture of your health, not just one symptom. Expect a detailed conversation about your current concerns, medical history, sleep, digestion, stress, and lifestyle.&lt;/p&gt;&#xA;&lt;h2 id=&#34;typical-first-visit-flow&#34;&gt;Typical first-visit flow&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Intake and health history review&lt;/li&gt;&#xA;&lt;li&gt;TCM assessment, including pulse and tongue evaluation&lt;/li&gt;&#xA;&lt;li&gt;Acupuncture treatment during the same visit&lt;/li&gt;&#xA;&lt;li&gt;Home-care recommendations for the days after treatment&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Most initial visits are about 90 minutes. Follow-up sessions are usually around 60 minutes.&lt;/p&gt;</description>
+      <guid>//localhost:1313/blog/how-much-does-mobile-acupuncture-cost/</guid>
+      <description>&lt;p&gt;Our mobile services currently have a base commute rate of $29.99 for each commute.&lt;/p&gt;&#xA;&lt;p&gt;Before booking further appointments, patients complete a brief virtual consultation for $20.&lt;/p&gt;&#xA;&lt;p&gt;We keep acupuncture rates fair and provide package options and senior discounts.&lt;/p&gt;&#xA;&lt;p&gt;For package and senior discount information, call 630-408-7875.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Women&#39;s Health and Fertility Support</title>
-      <link>/services/womens-health-and-fertility/</link>
+      <link>//localhost:1313/services/womens-health-and-fertility/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>/services/womens-health-and-fertility/</guid>
+      <guid>//localhost:1313/services/womens-health-and-fertility/</guid>
       <description>Holistic acupuncture care for cycle health, fertility, hormonal transitions, and pelvic wellness.</description>
     </item>
     <item>
       <title>Digestive and Metabolic Health</title>
-      <link>/services/digestive-and-metabolic-health/</link>
+      <link>//localhost:1313/services/digestive-and-metabolic-health/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>/services/digestive-and-metabolic-health/</guid>
+      <guid>//localhost:1313/services/digestive-and-metabolic-health/</guid>
       <description>Support for abdominal discomfort, IBS, and metabolic health concerns including cholesterol, weight, and blood sugar balance.</description>
     </item>
     <item>
-      <title>Fertility-Focused Supplement Guidance</title>
-      <link>/blog/fertility-focused-supplement-guidance/</link>
+      <title>How Many Sessions Will I Need?</title>
+      <link>//localhost:1313/blog/how-many-sessions-will-i-need/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>/blog/fertility-focused-supplement-guidance/</guid>
-      <description>&lt;p&gt;If you are trying to conceive, it is easy to feel overwhelmed by supplement advice online. Many plans are complicated, expensive, and not tailored to your needs.&lt;/p&gt;&#xA;&lt;p&gt;Our approach is simpler: prioritize real food, consistent routines, and targeted supplementation only when clinically appropriate.&lt;/p&gt;&#xA;&lt;h2 id=&#34;our-supplement-philosophy&#34;&gt;Our supplement philosophy&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Use evidence-informed recommendations, not social media trends&lt;/li&gt;&#xA;&lt;li&gt;Personalize based on cycle history, labs, and overall health profile&lt;/li&gt;&#xA;&lt;li&gt;Avoid &amp;ldquo;kitchen sink&amp;rdquo; stacks that add cost without clear benefit&lt;/li&gt;&#xA;&lt;li&gt;Reassess over time instead of locking into a fixed long list&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;important-safety-reminder&#34;&gt;Important safety reminder&lt;/h2&gt;&#xA;&lt;p&gt;Always consult your physician or a registered dietitian before adding new supplements, especially if you are using fertility medications, preparing for IVF, or currently pregnant.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Fertility Acupuncture FAQ</title>
-      <link>/blog/fertility-acupuncture-faq/</link>
-      <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>/blog/fertility-acupuncture-faq/</guid>
-      <description>&lt;h2 id=&#34;is-acupuncture-a-cure-for-infertility&#34;&gt;Is acupuncture a cure for infertility?&lt;/h2&gt;&#xA;&lt;p&gt;No. Acupuncture is not a cure for infertility, but it can be an effective part of a broader fertility care plan.&lt;/p&gt;&#xA;&lt;h2 id=&#34;how-can-acupuncture-support-fertility&#34;&gt;How can acupuncture support fertility?&lt;/h2&gt;&#xA;&lt;p&gt;Depending on your case, acupuncture may help regulate menstrual cycles, improve blood flow to reproductive organs, reduce stress, and support hormone balance.&lt;/p&gt;&#xA;&lt;h2 id=&#34;can-acupuncture-be-used-with-iui-or-ivf&#34;&gt;Can acupuncture be used with IUI or IVF?&lt;/h2&gt;&#xA;&lt;p&gt;Yes. Many patients use acupuncture alongside assisted reproductive care. Timing and frequency are personalized based on your treatment calendar.&lt;/p&gt;</description>
+      <guid>//localhost:1313/blog/how-many-sessions-will-i-need/</guid>
+      <description>&lt;p&gt;The number of sessions depends on your condition and how long you have had it.&lt;/p&gt;&#xA;&lt;p&gt;In general, the more chronic the issue, the longer the treatment course.&lt;/p&gt;&#xA;&lt;p&gt;Acupuncture works by restoring balance and supporting your body&amp;rsquo;s natural healing mechanisms, so it can take time to see clear results.&lt;/p&gt;&#xA;&lt;p&gt;Typical recommendation:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Severe pain: about twice per week&lt;/li&gt;&#xA;&lt;li&gt;Many other concerns: weekly treatment for four to six weeks before judging whether acupuncture is helping&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Your practitioner adjusts the plan over time based on your response.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Respiratory, Immune, and Skin Support</title>
-      <link>/services/respiratory-immune-and-skin/</link>
+      <link>//localhost:1313/services/respiratory-immune-and-skin/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>/services/respiratory-immune-and-skin/</guid>
+      <guid>//localhost:1313/services/respiratory-immune-and-skin/</guid>
       <description>Acupuncture for allergy, asthma, sinus, cough, skin, and facial nerve concerns.</description>
     </item>
     <item>
-      <title>Stress, Sleep, and Preventive Wellness</title>
-      <link>/services/stress-sleep-and-wellness/</link>
+      <title>What Can Acupuncture Treat?</title>
+      <link>//localhost:1313/blog/what-can-acupuncture-treat/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>/services/stress-sleep-and-wellness/</guid>
+      <guid>//localhost:1313/blog/what-can-acupuncture-treat/</guid>
+      <description>&lt;p&gt;The most common concerns patients visit us for include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pain&lt;/li&gt;&#xA;&lt;li&gt;Anxiety&lt;/li&gt;&#xA;&lt;li&gt;Sinus congestion&lt;/li&gt;&#xA;&lt;li&gt;Insomnia&lt;/li&gt;&#xA;&lt;li&gt;Energy improvement&lt;/li&gt;&#xA;&lt;li&gt;Ear problems&lt;/li&gt;&#xA;&lt;li&gt;Digestion issues&lt;/li&gt;&#xA;&lt;li&gt;Fertility&lt;/li&gt;&#xA;&lt;li&gt;IVF support&lt;/li&gt;&#xA;&lt;li&gt;Postpartum care&lt;/li&gt;&#xA;&lt;li&gt;Menopause support&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Acupuncture can help reduce pain after injury, but it is wise to see a medical doctor first to rule out fractures and structural damage before beginning acupuncture treatment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stress, Sleep, and Preventive Wellness</title>
+      <link>//localhost:1313/services/stress-sleep-and-wellness/</link>
+      <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
+      <guid>//localhost:1313/services/stress-sleep-and-wellness/</guid>
       <description>Whole-person acupuncture care for anxiety, fatigue, insomnia, addiction support, and healthy aging.</description>
     </item>
     <item>
+      <title>What Are the Risks of Acupuncture?</title>
+      <link>//localhost:1313/blog/what-are-the-risks-of-acupuncture/</link>
+      <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
+      <guid>//localhost:1313/blog/what-are-the-risks-of-acupuncture/</guid>
+      <description>&lt;p&gt;Licensed acupuncturists receive thorough training in needling techniques and safety, so the risk of serious side effects is very small.&lt;/p&gt;&#xA;&lt;p&gt;The most common side effects are minor bleeding, mild bruising at the needle site, or occasional dizziness after treatment.&lt;/p&gt;&#xA;&lt;p&gt;Special caution is needed for people taking blood thinner medication.&lt;/p&gt;&#xA;&lt;p&gt;Electro-acupuncture may not be suitable for people with pacemakers. Acupuncture without electric stimulation is good enough to help those patients.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What Is Traditional Chinese Medicine (TCM)?</title>
+      <link>//localhost:1313/blog/what-is-traditional-chinese-medicine/</link>
+      <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
+      <guid>//localhost:1313/blog/what-is-traditional-chinese-medicine/</guid>
+      <description>&lt;p&gt;Traditional Chinese Medicine (TCM) has a history of thousands of years. It is a summary of long-term experience in fighting disease and an integral part of traditional Chinese culture.&lt;/p&gt;&#xA;&lt;p&gt;TCM studies human physiology and pathology, along with diagnosis, prevention, and treatment.&lt;/p&gt;&#xA;&lt;p&gt;Its theoretical system is influenced by Yin-Yang and Five Elements theory, guided by a holistic concept, based on internal organs and meridians, and characterized by syndrome differentiation and treatment.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>//localhost:1313/about/</link>
       <pubDate>Thu, 22 Feb 2018 17:01:34 +0700</pubDate>
-      <guid>/about/</guid>
-      <description>&lt;h2 id=&#34;founded-in-2022&#34;&gt;Founded in 2022&lt;/h2&gt;&#xA;&lt;p&gt;Harmony Acupuncture Clinic was founded in 2022 to bring thoughtful, patient-centered Traditional Chinese Medicine care to the western suburbs of Chicago. From day one, the clinic has focused on listening deeply to each patient and building treatment plans that fit real life.&lt;/p&gt;&#xA;&lt;p&gt;We support patients with acute and chronic pain, women&amp;rsquo;s health concerns, fertility goals, stress and sleep disorders, and whole-body wellness care. Each visit is designed to restore balance physically and emotionally.&lt;/p&gt;</description>
+      <guid>//localhost:1313/about/</guid>
+      <description>&lt;p&gt;This page has moved.&lt;/p&gt;&#xA;&lt;p&gt;Please visit &lt;a href=&#34;//localhost:1313/team/&#34;&gt;About&lt;/a&gt; for clinic and practitioner information.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>/contact/</link>
+      <link>//localhost:1313/contact/</link>
       <pubDate>Thu, 22 Feb 2018 17:01:34 +0700</pubDate>
-      <guid>/contact/</guid>
-      <description>&lt;p&gt;We welcome new and returning patients. Call or email us to book your first appointment, ask about treatment plans, or discuss whether acupuncture is a good fit for your health goals.&lt;/p&gt;&#xA;&lt;h2 id=&#34;appointment-options&#34;&gt;Appointment options&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Initial consultation (90 minutes): $160&lt;/li&gt;&#xA;&lt;li&gt;Follow-up visit (60 minutes): $100&lt;/li&gt;&#xA;&lt;li&gt;Red light therapy add-on: $35&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Insurance coverage for acupuncture varies by plan. Contact us before your first visit and we can help review your benefits.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Day&lt;/th&gt;&#xA;          &lt;th&gt;Opening Hours&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Monday&lt;/td&gt;&#xA;          &lt;td&gt;9:00am - 6:00pm&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Tuesday&lt;/td&gt;&#xA;          &lt;td&gt;9:00am - 6:00pm&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Wednesday&lt;/td&gt;&#xA;          &lt;td&gt;9:00am - 6:00pm&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Thursday&lt;/td&gt;&#xA;          &lt;td&gt;9:00am - 6:00pm&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Friday&lt;/td&gt;&#xA;          &lt;td&gt;9:00am - 5:00pm&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Saturday&lt;/td&gt;&#xA;          &lt;td&gt;9:00am - 2:00pm&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Sunday&lt;/td&gt;&#xA;          &lt;td&gt;Closed&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
+      <guid>//localhost:1313/contact/</guid>
+      <description>&lt;p&gt;We welcome new and returning patients. Call or email us to book your first appointment, ask about treatment plans, or discuss whether acupuncture is a good fit for your health goals.&lt;/p&gt;&#xA;&lt;h2 id=&#34;appointment-options&#34;&gt;Appointment options&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mobile service base commute rate: $29.99 per commute&lt;/li&gt;&#xA;&lt;li&gt;Brief virtual consultation before further booking: $20&lt;/li&gt;&#xA;&lt;li&gt;We provide package options and senior discounts&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;For package and senior discount information, call 630-408-7875.&lt;/p&gt;&#xA;&lt;h2 id=&#34;service-area-zip-codes&#34;&gt;Service area ZIP codes&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;60001&lt;/li&gt;&#xA;&lt;li&gt;60002&lt;/li&gt;&#xA;&lt;li&gt;60003&lt;/li&gt;&#xA;&lt;li&gt;60004&lt;/li&gt;&#xA;&lt;li&gt;60005&lt;/li&gt;&#xA;&lt;li&gt;60006&lt;/li&gt;&#xA;&lt;li&gt;60007&lt;/li&gt;&#xA;&lt;li&gt;60008&lt;/li&gt;&#xA;&lt;li&gt;60009&lt;/li&gt;&#xA;&lt;li&gt;60010&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Day&lt;/th&gt;&#xA;          &lt;th&gt;Opening Hours&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Monday&lt;/td&gt;&#xA;          &lt;td&gt;9:00am - 6:00pm&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Tuesday&lt;/td&gt;&#xA;          &lt;td&gt;9:00am - 6:00pm&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Wednesday&lt;/td&gt;&#xA;          &lt;td&gt;9:00am - 6:00pm&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Thursday&lt;/td&gt;&#xA;          &lt;td&gt;9:00am - 6:00pm&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Friday&lt;/td&gt;&#xA;          &lt;td&gt;9:00am - 5:00pm&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Saturday&lt;/td&gt;&#xA;          &lt;td&gt;9:00am - 2:00pm&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Sunday&lt;/td&gt;&#xA;          &lt;td&gt;Closed&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
     </item>
   </channel>
 </rss>

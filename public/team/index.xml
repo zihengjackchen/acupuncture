@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Practitioner on Harmony Acupuncture Clinic</title>
-    <link>/team/</link>
-    <description>Recent content in Practitioner on Harmony Acupuncture Clinic</description>
+    <title>About on harmonyhealthclinic</title>
+    <link>//localhost:1313/team/</link>
+    <description>Recent content in About on harmonyhealthclinic</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Nov 2018 10:47:58 +1000</lastBuildDate>
-    <atom:link href="/team/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/team/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dr. Dan Wang</title>
-      <link>/team/dr-dan-wang/</link>
+      <link>//localhost:1313/team/dr-dan-wang/</link>
       <pubDate>Mon, 19 Nov 2018 10:47:58 +1000</pubDate>
-      <guid>/team/dr-dan-wang/</guid>
+      <guid>//localhost:1313/team/dr-dan-wang/</guid>
       <description>&lt;p&gt;Originally from Northeast China, Dan brings a rich cultural and clinical background rooted in Traditional Chinese Medicine. She earned her degree from the Liaoning University of Traditional Chinese Medicine in the 1990s and has been practicing in the western suburbs of Chicago for the past four years.&lt;/p&gt;&#xA;&lt;p&gt;Dan is deeply passionate about Chinese medical philosophy and integrates practices such as Taiji, Yijing, and Feng Shui into her holistic approach. She believes true healing comes from achieving balance, both mentally and physically, and she works closely with each patient to support that harmony.&lt;/p&gt;</description>
     </item>
   </channel>

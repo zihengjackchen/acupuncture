@@ -1,26 +1,15 @@
 ---
-title: "Fertility Acupuncture FAQ"
+title: "Does Acupuncture Hurt?"
 date: 2024-01-15T09:00:00-06:00
 draft: false
-weight: 5
+weight: 2
+slug: "does-acupuncture-hurt"
 ---
 
-## Is acupuncture a cure for infertility?
+Acupuncture needles are hair-thin filiform needles. They are different from the hollow syringes used for injections or blood draws, and insertion is virtually painless for most people.
 
-No. Acupuncture is not a cure for infertility, but it can be an effective part of a broader fertility care plan.
+Points on the hands, feet, and face can occasionally be more sensitive, but this is usually brief.
 
-## How can acupuncture support fertility?
+During treatment, some people feel sensations such as soreness, numbness, bloating, heaviness, warmth, coolness, or even brief itching. These sensations are often temporary.
 
-Depending on your case, acupuncture may help regulate menstrual cycles, improve blood flow to reproductive organs, reduce stress, and support hormone balance.
-
-## Can acupuncture be used with IUI or IVF?
-
-Yes. Many patients use acupuncture alongside assisted reproductive care. Timing and frequency are personalized based on your treatment calendar.
-
-## Is acupuncture safe while trying to conceive or during pregnancy?
-
-When performed by a licensed practitioner using sterile single-use needles, acupuncture is generally low risk. Treatment should always be individualized for your stage of care.
-
-## How often should I come?
-
-It depends on your goals and timeline. During active treatment, a common plan is 1-3 visits per week, then tapering as progress stabilizes.
+After needling, most people feel a deep sense of calm and relaxation. This is often when people notice the treatment beginning to work, and when acupuncture starts to heal.

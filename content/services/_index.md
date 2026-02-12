@@ -1,27 +1,38 @@
 ---
-title: 'Services'
-description: 'Explore evidence-informed acupuncture services for pain, fertility, digestive health, stress, and preventive wellness.'
+title: 'Services and Fees'
+description: 'Mobile acupuncture services, fees, and treatment process details for Chicagoland patients.'
 intro_image: "images/illustrations/reading.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
+process_title: "How the treatment process works"
+process_intro: "Our process is simple and structured so you know what to expect before your first treatment and as your care plan progresses."
+process_steps:
+  - title: "1. Brief virtual consultation before booking"
+    description: "Start with a brief virtual consultation to review your concern, discuss goals, and confirm treatment fit."
+    bullets:
+      - "$20 brief virtual consultation is required before booking further appointments."
+      - "We review symptoms, timeline, and safety considerations."
+  - title: "2. Mobile visit and first treatment"
+    description: "Your acupuncturist comes to you and completes a full TCM intake, pulse and tongue assessment, and first treatment."
+    bullets:
+      - "Mobile service base commute rate is $29.99 for each commute."
+      - "Needles are hair-thin and treatment is typically very gentle."
+  - title: "3. Follow-up plan and frequency"
+    description: "Follow-up frequency is based on your condition and how long you have had it."
+    bullets:
+      - "For severe pain, we typically recommend twice weekly visits."
+      - "For many concerns, weekly treatment for four to six weeks is recommended before judging progress."
+  - title: "4. Fees, discounts, and support"
+    description: "Acupuncture rates are fair and plans are personalized."
+    bullets:
+      - "We provide package options and senior discounts."
+      - "For package and discount information, call 630-408-7875."
+process_safety_title: "Safety and suitability"
+process_safety_text: "Licensed acupuncturists are trained in safe needling techniques. Minor bleeding, bruising, or dizziness may occur in some patients. Extra caution is used for people on blood thinner medication. Electro-acupuncture may not be suitable for people with pacemakers, and non-electric acupuncture is available."
 ---
 
-# Acupuncture services tailored to your needs
+# Services and fees
 
-Every treatment plan is personalized after a full consultation. Browse the categories below to see the conditions we commonly treat and how acupuncture can support your recovery and long-term health.
+Every treatment plan is personalized after a full consultation. Start with a brief virtual consultation, then book mobile treatment visits based on your goals and symptom pattern.
 
-Most patients begin with a comprehensive first visit and then continue with regular follow-ups based on their goals and symptom pattern. For many conditions, especially fertility and chronic pain, we typically recommend a consistent treatment phase before shifting to maintenance care.
-
-## What your care plan includes
-
-1. Initial consultation (about 90 minutes): full health history, pulse and tongue assessment, first acupuncture treatment, and a clear plan.
-2. Follow-up visits (about 60 minutes): symptom check-in, treatment updates, and optional add-on modalities when appropriate.
-3. Ongoing guidance: lifestyle, sleep, stress, and nutrition support aligned with your goals.
-
-## Common treatment goals
-
-- Reduce pain and inflammation
-- Improve menstrual regularity and fertility outcomes
-- Improve sleep quality and daytime energy
-- Reduce stress and anxiety symptoms
-- Support whole-body balance during major life stages
+We support fertility, pain, anxiety, sinus congestion, insomnia, digestion concerns, energy improvement, ear problems, IVF support, postpartum care, and menopause care with practical and structured follow-up planning.

@@ -1,0 +1,21 @@
+{{ $hasSocial := gt (len .Site.Data.social) 0 }}
+{{ $copyright := .Site.Params.footer.copyright_text | default "" }}
+{{ $hasCopyright := gt (len (strings.TrimSpace $copyright)) 0 }}
+{{ if or $hasSocial $hasCopyright }}
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="sub-footer-inner">
+            {{ if $hasSocial }}
+              {{ partial "social.html" . }}
+            {{ end }}
+            {{ if $hasCopyright }}
+              <div class="copyright">{{ $copyright | safeHTML }}</div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}

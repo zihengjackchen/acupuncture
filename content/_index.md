@@ -1,13 +1,13 @@
 ---
 title: 'Homepage'
-meta_title: 'Harmony Acupuncture Clinic'
-description: "Personalized acupuncture care for pain relief, women's health, stress support, and whole-body wellness."
+meta_title: 'harmonyhealthclinic'
+description: "Best mobile acupuncture care in Chicagoland with support for fertility, pain recovery, sleep, stress, digestion, and menopause care."
 intro_image: "images/illustrations/pointing.svg"
 intro_image_absolute: true
 intro_image_absolute_offset: "auto auto -100px -80px"
 intro_image_hide_on_mobile: true
 ---
 
-# Evidence-informed acupuncture care for Chicagoland patients
+# Best mobile acupuncture care in Chicagoland.
 
-Harmony Acupuncture Clinic combines Traditional Chinese Medicine with modern clinical assessment. We support fertility, pain recovery, digestive health, emotional health, and preventive wellness through personalized treatment plans.
+harmonyhealthclinic delivers mobile acupuncture services across the Chicagoland area with evidence-informed Traditional Chinese Medicine care. We support fertility, IVF support, postpartum care, pain recovery, anxiety, sinus congestion, insomnia, digestion issues, energy improvement, ear problems, and menopause care through personalized treatment plans.

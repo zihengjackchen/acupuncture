@@ -2,64 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/services/acupuncture-consultation/</loc>
+    <loc>//localhost:1313/services/acupuncture-consultation/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/blog/what-is-acupuncture/</loc>
+    <loc>//localhost:1313/blog/what-is-acupuncture/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/team/dr-dan-wang/</loc>
+    <loc>//localhost:1313/team/dr-dan-wang/</loc>
     <lastmod>2018-11-19T10:47:58+10:00</lastmod>
   </url><url>
-    <loc>/services/pain-and-injury-management/</loc>
+    <loc>//localhost:1313/services/pain-and-injury-management/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/blog/acupuncture-for-pain-recovery/</loc>
+    <loc>//localhost:1313/blog/does-acupuncture-hurt/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/blog/your-first-visit/</loc>
+    <loc>//localhost:1313/blog/how-much-does-mobile-acupuncture-cost/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/services/womens-health-and-fertility/</loc>
+    <loc>//localhost:1313/services/womens-health-and-fertility/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/services/digestive-and-metabolic-health/</loc>
+    <loc>//localhost:1313/services/digestive-and-metabolic-health/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/blog/fertility-focused-supplement-guidance/</loc>
+    <loc>//localhost:1313/blog/how-many-sessions-will-i-need/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/blog/fertility-acupuncture-faq/</loc>
+    <loc>//localhost:1313/services/respiratory-immune-and-skin/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/services/respiratory-immune-and-skin/</loc>
+    <loc>//localhost:1313/blog/what-can-acupuncture-treat/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/services/stress-sleep-and-wellness/</loc>
+    <loc>//localhost:1313/services/stress-sleep-and-wellness/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/blog/</loc>
+    <loc>//localhost:1313/blog/what-are-the-risks-of-acupuncture/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/services/</loc>
+    <loc>//localhost:1313/blog/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>/team/</loc>
+    <loc>//localhost:1313/services/</loc>
+    <lastmod>2024-01-15T09:00:00-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/what-is-traditional-chinese-medicine/</loc>
+    <lastmod>2024-01-15T09:00:00-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/team/</loc>
     <lastmod>2018-11-19T10:47:58+10:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>//localhost:1313/about/</loc>
     <lastmod>2018-02-22T17:01:34+07:00</lastmod>
   </url><url>
-    <loc>/contact/</loc>
+    <loc>//localhost:1313/contact/</loc>
     <lastmod>2018-02-22T17:01:34+07:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>/404/</loc>
+    <loc>//localhost:1313/404/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>

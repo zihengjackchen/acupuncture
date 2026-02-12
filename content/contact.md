@@ -8,11 +8,24 @@ We welcome new and returning patients. Call or email us to book your first appoi
 
 ## Appointment options
 
-- Initial consultation (90 minutes): $160
-- Follow-up visit (60 minutes): $100
-- Red light therapy add-on: $35
+- Mobile service base commute rate: $29.99 per commute
+- Brief virtual consultation before further booking: $20
+- We provide package options and senior discounts
 
-Insurance coverage for acupuncture varies by plan. Contact us before your first visit and we can help review your benefits.
+For package and senior discount information, call 630-408-7875.
+
+## Service area ZIP codes
+
+- 60001
+- 60002
+- 60003
+- 60004
+- 60005
+- 60006
+- 60007
+- 60008
+- 60009
+- 60010
 
 | Day       | Opening Hours   |
 | --------- | --------------- |

@@ -1,0 +1,60 @@
+{{ define "body_classes" }}page-services-list{{ end }}
+
+{{ define "main" }}
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        {{ .Content }}
+      </div>
+      {{ partial "intro-image.html" . }}
+    </div>
+  </div>
+</div>
+
+{{ if .Params.process_steps }}
+<div class="strip strip-grey services-process">
+  <div class="container pt-6 pb-6">
+    <div class="row">
+      <div class="col-12 col-lg-10">
+        {{ with .Params.process_title }}<h2>{{ . }}</h2>{{ end }}
+        {{ with .Params.process_intro }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </div>
+    <div class="row">
+      {{ range .Params.process_steps }}
+      <div class="col-12 col-md-6 col-lg-3 mb-2">
+        <div class="process-card">
+          <h3>{{ .title }}</h3>
+          <p>{{ .description }}</p>
+          {{ with .bullets }}
+          <ul>
+            {{ range . }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ with .Params.process_safety_title }}
+    <div class="row pt-2">
+      <div class="col-12">
+        <h3>{{ . }}</h3>
+        <p>{{ $.Params.process_safety_text }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+<div class="container pt-6 pb-6">
+  <div class="row">
+    {{ range .Pages.ByWeight }}
+    <div class="col-12 col-md-6 mb-3">{{ .Render "summary" }}</div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
