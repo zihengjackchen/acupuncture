@@ -62,13 +62,13 @@ title = "harmonyhealthclinic"
     weight = 1
 
   [[menu.main]]
-    name = "About"
-    url = "/team/"
+    name = "Questions"
+    url = "/blog/"
     weight = 2
 
   [[menu.main]]
-    name = "Questions"
-    url = "/blog/"
+    name = "About"
+    url = "/team/"
     weight = 3
 
   [[menu.main]]

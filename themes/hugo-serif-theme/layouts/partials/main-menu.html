@@ -1,7 +1,7 @@
 <div id="main-menu" class="main-menu">
   <ul>
     {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
+    {{ range sort .Site.Menus.main "Weight" }}
     {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
     {{ $active = or $active (eq (.URL | relLangURL) ($currentPage.RelPermalink | relLangURL)) }}
     <li class="menu-item-{{ .Name | lower | replaceRE "\\s+" "-" }} {{ if $active }}active{{ end }}">

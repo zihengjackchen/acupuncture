@@ -1,9 +1,10 @@
 .page-default-list {
   .intro {
     p {
-      font-size: 1rem;
-      line-height: 1.45;
-      color: $black;
+      font-family: $font-family-base;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: $grey;
     }
   }
 
