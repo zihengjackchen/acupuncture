@@ -7,11 +7,11 @@ intro_image_hide_on_mobile: false
 clinic_section:
   title: "Clinic description"
   description: "harmonyhealthclinic serves Chicagoland with mobile acupuncture rooted in Traditional Chinese Medicine and practical, patient-centered care."
-  points:
-    - "Founded in 2022 with a focus on individualized treatment planning."
-    - "Care emphasizes whole-body balance, syndrome differentiation, and step-by-step follow-up."
+  paragraphs:
+    - "Founded in 2022, the clinic focuses on individualized treatment planning and professional continuity of care."
+    - "Our approach emphasizes whole-body balance, syndrome differentiation, and step-by-step follow-up to track progress."
     - "Common support areas include pain, anxiety, sinus congestion, insomnia, digestion, fertility, IVF support, postpartum care, and menopause."
-    - "Patients are encouraged to seek medical evaluation first after acute injury to rule out fractures or structural damage."
+    - "After acute injury, patients are encouraged to seek medical evaluation first to rule out fractures or structural damage."
 ---
 
 # About harmonyhealthclinic

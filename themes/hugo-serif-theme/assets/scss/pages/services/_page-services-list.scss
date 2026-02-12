@@ -1,11 +1,22 @@
 .page-services-list {
   .services-process {
+    h2,
+    h3,
+    p {
+      font-family: $font-family-base;
+      color: $black;
+    }
+
     h2 {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+      font-weight: 700;
     }
 
     p {
-      margin-bottom: 16px;
+      margin-bottom: 14px;
+      font-size: 1rem;
+      line-height: 1.45;
     }
 
     .process-card {
@@ -16,23 +27,16 @@
       padding: 20px;
 
       h3 {
-        font-size: 1.25rem;
-        margin-bottom: 10px;
+        font-size: 1rem;
+        line-height: 1.35;
+        margin-bottom: 8px;
+        font-weight: 700;
       }
 
       p {
-        font-size: 0.95rem;
-        margin-bottom: 12px;
-      }
-
-      ul {
-        margin: 0;
-        padding-left: 18px;
-      }
-
-      li {
-        margin-bottom: 8px;
-        line-height: 1.35;
+        font-size: 0.98rem;
+        line-height: 1.45;
+        margin-bottom: 0;
       }
     }
   }

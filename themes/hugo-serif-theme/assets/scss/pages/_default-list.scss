@@ -1,0 +1,20 @@
+.page-default-list {
+  .intro {
+    p {
+      font-size: 1rem;
+      line-height: 1.45;
+      color: $black;
+    }
+  }
+
+  .summary {
+    p {
+      margin-bottom: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.35;
+      color: $grey;
+    }
+  }
+}

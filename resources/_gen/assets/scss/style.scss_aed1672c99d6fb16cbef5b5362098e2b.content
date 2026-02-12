@@ -13337,6 +13337,19 @@ ol {
     .social a:hover {
       opacity: 0.8; }
 
+.page-default-list .intro p {
+  font-size: 1rem;
+  line-height: 1.45;
+  color: #2f2f41; }
+
+.page-default-list .summary p {
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.35;
+  color: #5C5A5A; }
+
 .team-summary {
   display: flex;
   flex-wrap: wrap;
@@ -13380,24 +13393,39 @@ ol {
       width: 90px;
       height: auto; }
 
-.page-team-list .team-clinic p {
-  margin-bottom: 14px; }
-
-.page-team-list .team-clinic .clinic-points {
-  margin: 0;
-  padding-left: 20px; }
-  .page-team-list .team-clinic .clinic-points li {
-    margin-bottom: 8px;
-    line-height: 1.35; }
-
 .page-team-list .team-summary-large {
   text-align: left; }
 
+.page-team-list .team-clinic {
+  border-top: 1px solid #f6f7ff; }
+  .page-team-list .team-clinic h2,
+  .page-team-list .team-clinic p {
+    font-family: Source Sans Pro, Helvetica, Arial, sans-serif, -apple-system;
+    color: #2f2f41; }
+  .page-team-list .team-clinic h2 {
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+    font-weight: 700; }
+  .page-team-list .team-clinic p {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    line-height: 1.5; }
+
+.page-services-list .services-process h2,
+.page-services-list .services-process h3,
+.page-services-list .services-process p {
+  font-family: Source Sans Pro, Helvetica, Arial, sans-serif, -apple-system;
+  color: #2f2f41; }
+
 .page-services-list .services-process h2 {
-  margin-bottom: 12px; }
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: 700; }
 
 .page-services-list .services-process p {
-  margin-bottom: 16px; }
+  margin-bottom: 14px;
+  font-size: 1rem;
+  line-height: 1.45; }
 
 .page-services-list .services-process .process-card {
   height: 100%;
@@ -13406,17 +13434,14 @@ ol {
   border-radius: 3px;
   padding: 20px; }
   .page-services-list .services-process .process-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 10px; }
-  .page-services-list .services-process .process-card p {
-    font-size: 0.95rem;
-    margin-bottom: 12px; }
-  .page-services-list .services-process .process-card ul {
-    margin: 0;
-    padding-left: 18px; }
-  .page-services-list .services-process .process-card li {
+    font-size: 1rem;
+    line-height: 1.35;
     margin-bottom: 8px;
-    line-height: 1.35; }
+    font-weight: 700; }
+  .page-services-list .services-process .process-card p {
+    font-size: 0.98rem;
+    line-height: 1.45;
+    margin-bottom: 0; }
 
 .page-services-single .content > p:first-of-type {
   font-size: 1.6rem;

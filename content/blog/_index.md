@@ -10,9 +10,4 @@ intro_image_hide_on_mobile: false
 
 This section is our FAQ hub. Each post below answers one common patient question based on our clinic guidance.
 
-## Start here
-
-- Start with Traditional Chinese Medicine basics
-- Learn what acupuncture is and how it works
-- Review comfort, safety, cost, and session expectations
-- Check what conditions we commonly support
+Start with Traditional Chinese Medicine basics, then review how acupuncture works, what treatment feels like, risks, cost, expected session frequency, and what conditions we commonly support.

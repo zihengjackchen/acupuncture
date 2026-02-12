@@ -12,26 +12,6 @@
   </div>
 </div>
 
-{{ if .Params.clinic_section }}
-<div class="strip strip-grey team-clinic">
-  <div class="container pt-6 pb-6">
-    <div class="row">
-      <div class="col-12 col-lg-10">
-        <h2>{{ .Params.clinic_section.title }}</h2>
-        <p>{{ .Params.clinic_section.description }}</p>
-        {{ with .Params.clinic_section.points }}
-        <ul class="clinic-points">
-          {{ range . }}
-          <li>{{ . }}</li>
-          {{ end }}
-        </ul>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</div>
-{{ end }}
-
 <div class="container">
   <div class="row justify-content-center">
     {{ range where .Pages.ByWeight ".Params.promoted" true }}
@@ -47,4 +27,22 @@
   </div>
   {{ end }}
 </div>
+
+{{ if .Params.clinic_section }}
+<div class="team-clinic">
+  <div class="container pt-4 pb-6">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-9">
+        <h2>{{ .Params.clinic_section.title }}</h2>
+        <p>{{ .Params.clinic_section.description }}</p>
+        {{ with .Params.clinic_section.paragraphs }}
+          {{ range . }}
+          <p>{{ . }}</p>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
 {{ end }}

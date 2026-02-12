@@ -45,6 +45,7 @@ $font-family-heading: {{ .Site.Params.fonts.heading }}, serif, -apple-system;
 
 // Pages
 @import 'pages/home';
+@import 'pages/default-list';
 @import 'pages/team/team-summary';
 @import 'pages/team/team-list';
 @import 'pages/services/page-services-list';

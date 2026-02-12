@@ -12,9 +12,6 @@ In general, the more chronic the issue, the longer the treatment course.
 
 Acupuncture works by restoring balance and supporting your body's natural healing mechanisms, so it can take time to see clear results.
 
-Typical recommendation:
-
-- Severe pain: about twice per week
-- Many other concerns: weekly treatment for four to six weeks before judging whether acupuncture is helping
+Typical recommendation is about twice per week for severe pain, or weekly treatment for four to six weeks for many other concerns before judging whether acupuncture is helping.
 
 Your practitioner adjusts the plan over time based on your response.

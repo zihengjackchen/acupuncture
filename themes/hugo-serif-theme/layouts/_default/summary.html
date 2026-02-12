@@ -1,6 +1,6 @@
 <div class="summary">
-    <h2>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </h2>
-    {{ .Content | truncate 120 "…" }}
+  <h2>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </h2>
+  <p>{{ .Plain | replaceRE "\\s+" " " | strings.TrimSpace | truncate 165 "..." }}</p>
 </div>
