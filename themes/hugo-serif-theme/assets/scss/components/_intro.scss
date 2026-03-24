@@ -2,26 +2,24 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 48px;
+  padding-bottom: 52px;
   overflow: hidden;
   @include media-breakpoint-up(md) {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 110px;
+    padding-bottom: 84px;
   }
   h1 {
     color: $black;
-    font-size: 42px;
-    font-weight: bold;
-    line-height: 1.2;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.15;
     overflow-wrap: anywhere;
     @include media-breakpoint-up(md) {
-      width: 100%;
-      max-width: 640px;
-      font-size: 48px;
+      font-size: 52px;
     }
     @include media-breakpoint-up(lg) {
-      font-size: 50px;
+      font-size: 56px;
     }
   }
   h2 {
@@ -34,18 +32,29 @@
     font-family: $font-family-base;
   }
   p {
-    font-size: 1.2rem;
-    font-weight: light;
-    line-height: 1.5;
-    color: $grey;
-    @include media-breakpoint-up(md) {
-      width: 100%;
-      max-width: 640px;
-    }
+    font-size: 1.08rem;
+    line-height: 1.72;
+    color: darken($grey, 4%);
   }
 }
 
 .intro-small {
   padding-top: 100px;
   padding-bottom: 30px;
+}
+
+.intro-copy {
+  background: rgba($white, 0.9);
+  border: 1px solid rgba($primary, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba($black, 0.08);
+  padding: 26px;
+
+  @include media-breakpoint-up(md) {
+    padding: 34px;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
 }

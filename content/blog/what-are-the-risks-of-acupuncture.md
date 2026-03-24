@@ -5,10 +5,10 @@ draft: false
 weight: 6
 ---
 
-Licensed acupuncturists receive thorough training in needling techniques and safety, so the risk of serious side effects is very small.
+Licensed acupuncturists receive thorough training in needling technique and safety, so the risk of serious side effects is very low.
 
 The most common side effects are minor bleeding, mild bruising at the needle site, or occasional dizziness after treatment.
 
 Special caution is needed for people taking blood thinner medication.
 
-Electro-acupuncture may not be suitable for people with pacemakers. Acupuncture without electric stimulation is good enough to help those patients.
+Electro-acupuncture may not be suitable for people with pacemakers. Acupuncture without electrical stimulation is still available for those patients.

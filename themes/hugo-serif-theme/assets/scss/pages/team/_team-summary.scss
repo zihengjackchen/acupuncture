@@ -3,13 +3,13 @@
   flex-wrap: wrap;
   flex-direction: row;
   .team-image {
-    height: 60px;
-    width: 60px;
-    margin-right: 10px;
+    height: 72px;
+    width: 72px;
+    margin-right: 16px;
     border-radius: 50%;
     overflow: hidden;
     img {
-      width: 60px;
+      width: 72px;
       height: auto;
     }
   }
@@ -18,34 +18,38 @@
     h2 {
       margin: 0;
       font-size: 22px;
-      font-weight: normal;
+      font-weight: 600;
     }
     p {
-      color: $black;
+      color: $primary;
+      margin: 4px 0 0;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
-      margin: 0;
-      font-size: 12px;
-      font-weight: 500;
     }
   }
   .team-content {
-    margin-top: 20px;
+    margin-top: 18px;
     flex: 1 0 100%;
+    line-height: 1.68;
   }
 }
 
 .team-summary-large {
-  background-color: $white-offset;
+  background: rgba($white, 0.94);
+  border: 1px solid rgba($primary, 0.08);
+  box-shadow: 0 18px 40px rgba($black, 0.06);
   padding: 30px;
-  border-radius: 3px;
+  border-radius: 24px;
   .team-image {
-    height: 90px;
-    width: 90px;
+    height: 96px;
+    width: 96px;
     margin-right: 20px;
     border-radius: 50%;
     overflow: hidden;
     img {
-      width: 90px;
+      width: 96px;
       height: auto;
     }
   }

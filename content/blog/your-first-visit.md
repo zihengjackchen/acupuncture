@@ -8,10 +8,10 @@ slug: "how-many-sessions-will-i-need"
 
 The number of sessions depends on your condition and how long you have had it.
 
-In general, the more chronic the issue, the longer the treatment course.
+In general, long-standing issues take longer to treat than newer concerns.
 
-Acupuncture works by restoring balance and supporting your body's natural healing mechanisms, so it can take time to see clear results.
+Acupuncture supports the body's healing response, so it can take time to see clear and lasting results.
 
-Typical recommendation is about twice per week for severe pain, or weekly treatment for four to six weeks for many other concerns before judging whether acupuncture is helping.
+A typical recommendation is about twice per week for severe pain, or weekly treatment for four to six weeks for many other concerns before deciding how much it is helping.
 
 Your practitioner adjusts the plan over time based on your response.

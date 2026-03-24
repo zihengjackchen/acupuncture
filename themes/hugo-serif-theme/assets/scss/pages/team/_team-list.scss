@@ -4,24 +4,23 @@
   }
 
   .team-clinic {
-    border-top: 1px solid $white-offset;
+    border-top: 1px solid rgba($primary, 0.08);
 
     h2,
     p {
-      font-family: $font-family-base;
       color: $black;
     }
 
     h2 {
-      font-size: 1.35rem;
-      margin-bottom: 10px;
-      font-weight: 700;
+      font-size: 1.65rem;
+      margin-bottom: 12px;
+      font-weight: 600;
     }
 
     p {
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       font-size: 1rem;
-      line-height: 1.5;
+      line-height: 1.68;
     }
   }
 }

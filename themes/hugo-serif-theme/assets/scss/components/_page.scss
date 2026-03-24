@@ -2,7 +2,35 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background:
+    radial-gradient(circle at top left, rgba($secondary, 0.22), transparent 32%),
+    linear-gradient(180deg, rgba($white-offset, 0.65) 0%, $white 260px);
   .wrapper {
     flex: 1 0 0;
+  }
+}
+
+.page-surface {
+  background: rgba($white, 0.94);
+  border: 1px solid rgba($primary, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 24px 60px rgba($black, 0.08);
+  padding: 28px;
+
+  @include media-breakpoint-up(md) {
+    padding: 36px;
+  }
+}
+
+.section-heading {
+  margin-bottom: 24px;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: darken($grey, 4%);
   }
 }

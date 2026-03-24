@@ -5,10 +5,10 @@ draft: false
 weight: 1
 ---
 
-Acupuncture is one of the primary treatments under the Traditional Chinese Medicine umbrella, and it has a longer history than herbs. Its first written mention was around 100 BCE, and many scholars believe it was used several centuries earlier.
+Acupuncture is one of the main treatments in Traditional Chinese Medicine. It has been practiced for centuries, with early written records dating back to around 100 BCE.
 
-In Chinese medicine, health depends on the balance of yin and yang, qi (chee) and blood, and the functional harmony of organs and meridians. Imbalance is considered the root of disease.
+In Chinese medicine, health is connected to balance in yin and yang, qi (chee), blood, and the functional harmony of organs and meridians. When that balance is disrupted, symptoms can develop.
 
-Acupuncture uses hair-thin needles inserted at specific points on the body to help restore balance. When balance is restored, symptoms are relieved. The treatment is designed to help the body heal itself naturally and effectively.
+Acupuncture uses very thin needles placed at specific points on the body to help restore balance. The goal is to support the body's natural healing response and ease symptoms over time.
 
 Read our other questions for treatment comfort, risks, cost, and expected number of sessions.

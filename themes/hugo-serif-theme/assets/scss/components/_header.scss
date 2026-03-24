@@ -1,12 +1,13 @@
 .header {
   color: $primary;
-  background-color: #ffffff;
+  background-color: rgba($white, 0.92);
+  backdrop-filter: blur(12px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
-  border-bottom: 1px solid $white-offset;
-  padding: 10px 0px;
+  border-bottom: 1px solid rgba($primary, 0.08);
+  box-shadow: 0 12px 32px rgba($black, 0.05);
+  padding: 12px 0;
   .container {
     display: flex;
     justify-content: space-between;
@@ -29,5 +30,5 @@
   position: fixed;
   top: 0;
   z-index: 10;
-  width: 100%
+  width: 100%;
 }

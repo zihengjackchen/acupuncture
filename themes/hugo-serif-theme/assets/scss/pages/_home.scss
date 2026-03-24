@@ -1,11 +1,16 @@
 .page-home {
   .call {
     width: 100%;
-    max-width: 460px;
+    max-width: none;
+    margin-top: 28px;
   }
 
   .call-box-top,
   .call-box-bottom {
-    padding: 14px 16px;
+    padding: 22px 24px;
+  }
+
+  .strip {
+    position: relative;
   }
 }

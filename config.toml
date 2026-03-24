@@ -2,7 +2,7 @@ baseURL = "/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
-title = "harmonyhealthclinic"
+title = "Wang's Harmony Acupuncture LLC"
 
 [module]
   [module.hugoVersion]
@@ -25,7 +25,7 @@ title = "harmonyhealthclinic"
     mobile_height = "36px"
     desktop = "images/logo/logo.svg"
     desktop_height = "36px"
-    alt = "harmonyhealthclinic"
+    alt = "Wang's Harmony Acupuncture LLC"
 
   [params.fonts]
     # sets the google font link in layouts/partials/google-fonts.html
@@ -40,13 +40,13 @@ title = "harmonyhealthclinic"
     white_offset = "#E2DFDA"
     grey = "#5C5A5A"
     secondary = "#8BA49A"
-    accent_dark = "#8BA49A"
+    accent_dark = "#5C5A5A"
     accent_warm = "#D2C49E"
 
   [params.seo]
     meta_twitter_site = "@zerostaticio"
     meta_twitter_creator = "@zerostaticio"
-    meta_og_image = "https://www.zerostatic.io/theme/hugo-serif/hugo-serif-screenshot.png"
+    meta_og_image = "images/logo/logo.svg"
 
   [params.services]
     summary_truncate = 120 # How many characters to include in the summary of the services before truncating
@@ -55,7 +55,7 @@ title = "harmonyhealthclinic"
     summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
-    copyright_text = ''
+    copyright_text = "&copy; Wang's Harmony Acupuncture LLC"
 
 [menu]
   # Main Menu

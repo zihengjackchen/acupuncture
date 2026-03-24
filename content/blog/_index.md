@@ -8,4 +8,4 @@ intro_image_hide_on_mobile: false
 
 # Questions
 
-This section answers common patient questions based on our clinic guidance, including Traditional Chinese Medicine basics, how acupuncture works, what treatment feels like, risks, cost, expected session frequency, and the conditions we commonly support.
+This section answers common patient questions, including what acupuncture is, what treatment feels like, safety, cost, expected treatment frequency, and the concerns we commonly support.

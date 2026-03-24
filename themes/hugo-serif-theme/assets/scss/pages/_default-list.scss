@@ -2,20 +2,33 @@
   .intro {
     p {
       font-family: $font-family-base;
-      font-size: 1.2rem;
-      line-height: 1.5;
-      color: $grey;
+      font-size: 1.08rem;
+      line-height: 1.72;
+      color: darken($grey, 4%);
     }
   }
 
   .summary {
+    height: 100%;
+    background: rgba($white, 0.94);
+    border: 1px solid rgba($primary, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 18px 40px rgba($black, 0.06);
+    padding: 24px;
+
+    h2 {
+      margin-bottom: 12px;
+
+      a {
+        color: $black;
+        text-decoration: none;
+      }
+    }
+
     p {
       margin-bottom: 0;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      line-height: 1.35;
-      color: $grey;
+      line-height: 1.68;
+      color: darken($grey, 4%);
     }
   }
 }

@@ -4,12 +4,12 @@ date: 2018-02-22T17:01:34+07:00
 layout: contact
 ---
 
-We welcome new and returning patients. Call or email us to book your first appointment, ask about treatment plans, or discuss whether acupuncture is a good fit for your health goals.
+We welcome new and returning patients. Call or email to book your first appointment, ask about treatment plans, or find out whether acupuncture is a good fit for your goals.
 
 ## Appointment options
 
-- Mobile service base commute rate: $29.99 per commute
 - Brief virtual consultation before further booking: $20
+- Mobile service base commute rate: $29.99 per commute
 - We provide package options and senior discounts
 
 For package and senior discount information, call 630-408-7875.

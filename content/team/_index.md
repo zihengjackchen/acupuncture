@@ -4,19 +4,19 @@ intro_image: "images/illustrations/AdobeStock_1866335997_Preview.jpeg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 clinic_section:
-  title: "Clinic description"
-  description: "harmonyhealthclinic serves Chicagoland with mobile acupuncture rooted in Traditional Chinese Medicine and practical, patient-centered care."
+  title: "Clinic approach"
+  description: "Wang's Harmony Acupuncture LLC serves Chicagoland with mobile acupuncture rooted in Traditional Chinese Medicine and practical, patient-centered care."
   paragraphs:
-    - "Founded in 2022, the clinic focuses on individualized treatment planning and professional continuity of care."
-    - "Our approach emphasizes whole-body balance, syndrome differentiation, and step-by-step follow-up to track progress."
+    - "Founded in 2022, the clinic focuses on individualized treatment planning and clear continuity of care."
+    - "Treatment looks at the whole picture, including pain, sleep, digestion, stress, cycle health, and energy patterns."
     - "Common support areas include pain, anxiety, sinus congestion, insomnia, digestion, fertility, IVF support, postpartum care, and menopause."
     - "After acute injury, patients are encouraged to seek medical evaluation first to rule out fractures or structural damage."
 ---
 
-# About harmonyhealthclinic
+# About Wang's Harmony Acupuncture LLC
 
-harmonyhealthclinic is led by Dr. Dan Wang, a licensed acupuncturist and herbalist with deep training in Traditional Chinese Medicine.
+Wang's Harmony Acupuncture LLC is led by Dr. Dan Wang, a licensed acupuncturist and herbalist trained in Traditional Chinese Medicine.
 
-Traditional Chinese Medicine has a history of thousands of years. It summarizes long-term clinical experience in preventing and treating disease and remains an important part of traditional Chinese culture.
+Traditional Chinese Medicine has been practiced for thousands of years and is built on long clinical observation, pattern recognition, and individualized care.
 
-Its theory is influenced by Yin-Yang and Five Elements principles, guided by a holistic concept, grounded in internal organs and meridians, and characterized by syndrome differentiation and treatment.
+Its core ideas emphasize balance, whole-body function, and tailoring treatment to the person's overall pattern instead of focusing on one symptom alone.

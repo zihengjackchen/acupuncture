@@ -1,45 +1,50 @@
 .content {
   a {
     text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
   }
   img {
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border-radius: 20px;
   }
   strong {
-    font-width: bold;
+    font-weight: bold;
   }
   em {
     font-style: italic;
   }
   p {
     font-family: $font-family-base;
-    line-height: 1.56;
-    color: $grey;
+    line-height: 1.72;
+    color: darken($grey, 4%);
   }
   h1 {
-    font-family: $font-family-base;
+    font-family: $font-family-heading;
     font-size: 34px;
     line-height: 1.26;
-    font-weight: normal;
+    font-weight: 600;
     margin-top: 30px;
     margin-bottom: 20px;
   }
   h2 {
-    font-family: $font-family-base;
-    font-size: 26px;
-    font-weight: normal;
-    line-height: 1.4;
-    margin-top: 30px;
+    font-family: $font-family-heading;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 36px;
+    margin-bottom: 12px;
   }
   h3 {
-    font-family: $font-family-base;
+    font-family: $font-family-heading;
     font-size: 20px;
-    line-height: 1.4;
-    font-weight: normal;
+    line-height: 1.35;
+    font-weight: 600;
     margin-top: 30px;
+    margin-bottom: 10px;
   }
   ul,
   ol {
@@ -56,10 +61,10 @@
     list-style: decimal;
   }
   li {
-    margin-bottom: 5px;
-    line-height: 1.56;
+    margin-bottom: 8px;
+    line-height: 1.65;
     margin-left: 20px;
-    color: $grey;
+    color: darken($grey, 4%);
   }
   hr {
     border: none;
@@ -69,25 +74,31 @@
     width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid rgba($primary, 0.1);
+    border-radius: 18px;
+    overflow: hidden;
     th,
     td {
-      padding: 5px;
+      padding: 12px 14px;
       vertical-align: top;
-      border-top: 1px solid $white-offset;
+      border-top: 1px solid rgba($primary, 0.1);
     }
     thead th {
       vertical-align: bottom;
-      border-bottom: 1px solid $white-offset;
+      border-bottom: 1px solid rgba($primary, 0.12);
       text-align: left;
       font-weight: bold;
+      background: rgba($secondary, 0.16);
     }
     tbody + tbody {
-      border-top: 1px solid $white-offset;
+      border-top: 1px solid rgba($primary, 0.1);
     }
   }
   blockquote {
     padding: 0 1em;
-    color: $grey;
+    color: darken($grey, 4%);
     border-left: .25em solid $primary;
   }
 }

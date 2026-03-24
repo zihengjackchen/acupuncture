@@ -5,10 +5,8 @@ draft: false
 weight: 0
 ---
 
-Traditional Chinese Medicine (TCM) has a history of thousands of years. It is a summary of long-term experience in fighting disease and an integral part of traditional Chinese culture.
+Traditional Chinese Medicine (TCM) has a history of thousands of years and remains an important part of traditional Chinese culture.
 
-TCM studies human physiology and pathology, along with diagnosis, prevention, and treatment.
+It looks at how the body functions, how patterns of imbalance develop, and how those patterns can be addressed through diagnosis, prevention, and treatment.
 
-Its theoretical system is influenced by Yin-Yang and Five Elements theory, guided by a holistic concept, based on internal organs and meridians, and characterized by syndrome differentiation and treatment.
-
-It has a unique theoretical system and rich clinical experience developed over centuries of practice.
+Its framework is shaped by ideas such as Yin-Yang, the Five Elements, organ systems, meridians, and syndrome differentiation. In practice, that means treatment is based on the whole picture rather than one symptom by itself.
