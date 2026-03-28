@@ -1,4 +1,4 @@
-<div id="main-menu" class="main-menu">
+<nav id="main-menu" class="main-menu" aria-label="Primary navigation">
   <ul>
     {{ $currentPage := . }}
     {{ range sort .Site.Menus.main "Weight" }}
@@ -12,4 +12,4 @@
     </li>
     {{end}}
   </ul>
-</div>
+</nav>

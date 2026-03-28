@@ -1,82 +1,180 @@
-{{ define "body_classes" }}page-home{{ end }}
+{{ define "body_classes" }}page-home page-refresh{{ end }}
 
 {{ define "main" }}
-<div class="intro">
+{{ $services := sort (where (where .Site.RegularPages "Type" "services") ".Params.featured" true) ".Params.weight" }}
+
+<section class="hero-section">
   <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        <div class="intro-copy">
-          {{ .Content }}
-          {{ if .Site.Params.homepage.show_contact_box }}
-          {{ partial "call.html" (dict "site" .Site "context" . "show_button" "true") }}
+    <div class="hero-grid">
+      <div class="hero-copy" data-reveal>
+        {{ with .Params.hero_kicker }}<span class="section-kicker">{{ . }}</span>{{ end }}
+        <h1>{{ .Params.hero_title }}</h1>
+        <p class="hero-summary">{{ .Params.hero_summary }}</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="{{ .Params.hero_primary_link | relURL }}">{{ .Params.hero_primary_label }}</a>
+          <a class="button button-secondary" href="{{ .Params.hero_secondary_link | relURL }}">{{ .Params.hero_secondary_label }}</a>
+        </div>
+        {{ with .Params.hero_badges }}
+        <ul class="hero-highlights">
+          {{ range . }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        {{ with .Params.hero_stats }}
+        <div class="hero-stats">
+          {{ range . }}
+          <div class="hero-stat">
+            <strong>{{ .value }}</strong>
+            <span>{{ .label }}</span>
+          </div>
           {{ end }}
         </div>
+        {{ end }}
       </div>
-      {{ partial "intro-image.html" . }}
+      <div class="hero-visual" data-reveal>
+        <div class="hero-visual-grid">
+          <div class="hero-frame hero-frame-main">
+          {{ with index .Params.hero_images 0 }}
+          <img src="{{ .image | relURL }}" alt="{{ .alt }}" />
+          {{ end }}
+          </div>
+          <div class="hero-frame hero-frame-secondary">
+          {{ with index .Params.hero_images 1 }}
+          <img src="{{ .image | relURL }}" alt="{{ .alt }}" />
+          {{ end }}
+          </div>
+          <div class="hero-frame hero-frame-tertiary">
+          {{ with index .Params.hero_images 2 }}
+          <img src="{{ .image | relURL }}" alt="{{ .alt }}" />
+          {{ end }}
+          </div>
+        </div>
+        <div class="hero-floating-card">
+          <span class="section-kicker">Welcoming mobile care</span>
+          <p>Start with a brief consultation, then receive care at home with a plan designed around real life.</p>
+        </div>
+        <div class="hero-orb hero-orb-one"></div>
+        <div class="hero-orb hero-orb-two"></div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
-{{if gt (len $services) 0}}
-<div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-center pb-3">
-      <div class="col-12 col-lg-8">
-        <div class="section-heading text-center">
-          <h2>Care We Commonly Provide</h2>
-          <p>Mobile treatments are tailored to your symptoms, health history, and long-term goals.</p>
-        </div>
+<section class="section section-story">
+  <div class="container">
+    <div class="story-grid">
+      <div class="section-heading" data-reveal>
+        {{ with .Params.story_kicker }}<span class="section-kicker">{{ . }}</span>{{ end }}
+        <h2>{{ .Params.story_title }}</h2>
+        <p>{{ .Params.story_intro }}</p>
+      </div>
+      <div class="story-copy content" data-reveal>
+        {{ .Content }}
       </div>
     </div>
-    <div class="row justify-content-start">
-      {{ range first 6 (sort $services ".Params.weight") }}
-      <div class="col-12 col-md-4 mb-1">
-        {{ .Render "summary" }}
-      </div>
+    {{ with .Params.story_points }}
+    <div class="benefit-grid">
+      {{ range . }}
+      <article class="benefit-card" data-reveal>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </article>
       {{ end }}
-    </div>
-    {{ if .Site.Params.homepage.show_services_button }}
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{ "services/" | relURL }}">View All Services</a>
-      </div>
     </div>
     {{ end }}
   </div>
-</div>
-{{end}}
+</section>
 
-{{if .Site.Data.features}}
-<div class="strip strip-grey">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-    <div class="row justify-content-center pb-3">
-      <div class="col-12 col-lg-8 text-center">
-        <div class="section-heading">
-          <h2>Patient Reviews</h2>
-          <p>Here are a few of the outcomes patients most often describe after treatment.</p>
-        </div>
-      </div>
+{{ if gt (len $services) 0 }}
+<section class="section">
+  <div class="container">
+    <div class="section-heading section-heading-center" data-reveal>
+      <span class="section-kicker">Signature services</span>
+      <h2>Care designed around the concerns patients bring in most often.</h2>
+      <p>Each treatment plan is personalized, but these are the service areas patients most often explore first.</p>
     </div>
-    <div class="row justify-content-center">
-      {{ range .Site.Data.features }}
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          {{ if .image }}
-          <div class="feature-image"><img width="100" height="100" alt="{{ .title }} review"
-              src="{{ .image | relURL }}" /></div>
-          {{ end }}
-          <h2 class="feature-title">{{ .title }}</h2>
-          <div class="feature-content">
-            <p>{{ .description }}</p>
-          </div>
-        </div>
-      </div>
-      {{end}}
+    <div class="card-grid card-grid-services">
+      {{ range first 6 $services }}
+      {{ .Render "summary" }}
+      {{ end }}
     </div>
   </div>
-</div>
-{{end}}
+</section>
+{{ end }}
+
+{{ with .Params.process_steps }}
+<section class="section section-process">
+  <div class="container">
+    <div class="section-heading section-heading-center" data-reveal>
+      <span class="section-kicker">How it works</span>
+      <h2>{{ $.Params.process_title }}</h2>
+      <p>From the first conversation to follow-up planning, the process stays clear and easy to understand.</p>
+    </div>
+    <div class="process-grid">
+      {{ range . }}
+      <article class="process-step" data-reveal>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Site.Data.features }}
+<section class="section section-testimonials">
+  <div class="container">
+    <div class="section-heading section-heading-center" data-reveal>
+      <span class="section-kicker">Patient experiences</span>
+      <h2>What patients often notice after starting care.</h2>
+      <p>Relief looks different for every person, but these are the themes we hear most often.</p>
+    </div>
+    <div class="card-grid card-grid-testimonials">
+      {{ range .Site.Data.features }}
+      <article class="testimonial-card" data-reveal>
+        <span class="testimonial-headline">{{ .headline }}</span>
+        <p class="testimonial-quote">"{{ .quote }}"</p>
+        <div class="testimonial-meta">
+          <strong>{{ .name }}</strong>
+          <span>{{ .focus }}</span>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.gallery_images }}
+<section class="section section-gallery">
+  <div class="container">
+    <div class="section-heading section-heading-center" data-reveal>
+      <span class="section-kicker">A calming experience</span>
+      <h2>Designed to feel supportive, not clinical or rushed.</h2>
+      <p>The visual direction of the clinic centers on warmth, clarity, and a gentler pace of care.</p>
+    </div>
+    <div class="gallery-grid">
+      {{ range . }}
+      <figure class="gallery-card" data-reveal>
+        <img src="{{ .image | relURL }}" alt="{{ .alt }}" />
+      </figure>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ partial "cta-band.html" (dict
+  "kicker" "Start with a conversation"
+  "title" "Questions about fit, timing, or fees are welcome."
+  "text" "Book a brief consultation to talk through your goals and decide what kind of treatment pace makes sense for you."
+  "primary_label" "Contact the Clinic"
+  "primary_link" "/contact/"
+  "secondary_label" "View Services"
+  "secondary_link" "/services/"
+) }}
 
 {{ end }}
 

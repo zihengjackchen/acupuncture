@@ -1,9 +1,23 @@
 ---
 title: 'Services and Fees'
 description: 'Mobile acupuncture services, fees, and treatment process details for Chicagoland patients.'
-intro_image: "images/illustrations/AdobeStock_1866336824_Preview.jpeg"
-intro_image_absolute: true
-intro_image_hide_on_mobile: false
+page_kicker: "Services and fees"
+hero_summary: "Clear, personalized care for pain relief, fertility, hormones, digestion, respiratory concerns, sleep, and long-term wellness, with fees explained up front."
+hero_image: "images/room.png"
+hero_badges:
+  - "$20 brief virtual consultation"
+  - "$29.99 mobile service base commute rate"
+  - "Package options and senior discounts available"
+fee_cards:
+  - title: "Brief virtual consultation"
+    value: "$20"
+    text: "A pre-booking conversation to review your goals, answer questions, and confirm the right next step."
+  - title: "Mobile service base commute"
+    value: "$29.99"
+    text: "Applied per commute for in-home care. Final treatment pacing is personalized after the first visit."
+  - title: "Packages and discounts"
+    value: "Call for details"
+    text: "We offer package options and senior discounts so ongoing care can stay practical and consistent."
 process_title: "How the treatment process works"
 process_intro: "Our process is straightforward and clearly paced so you know what happens before treatment starts and how follow-up care is planned."
 process_steps:
@@ -18,8 +32,6 @@ process_steps:
 process_safety_title: "Safety and suitability"
 process_safety_text: "Licensed acupuncturists are trained in safe needling techniques. Minor bleeding, bruising, or dizziness can happen in some patients. Extra caution is used for people taking blood thinners. Electro-acupuncture may not be appropriate for people with pacemakers, and non-electric treatment is available."
 ---
-
-# Services and fees
 
 Every treatment plan is personalized after a full consultation. Start with a brief virtual visit, then book mobile treatments based on your goals, symptoms, and response over time.
 

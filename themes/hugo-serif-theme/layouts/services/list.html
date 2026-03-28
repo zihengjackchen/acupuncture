@@ -1,57 +1,96 @@
-{{ define "body_classes" }}page-services-list{{ end }}
+{{ define "body_classes" }}page-services-list page-refresh{{ end }}
 
 {{ define "main" }}
-<div class="intro">
+<section class="page-hero">
   <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        <div class="intro-copy">
-          {{ .Content }}
-        </div>
+    <div class="page-hero-grid">
+      <div class="page-hero-copy" data-reveal>
+        {{ with .Params.page_kicker }}<span class="section-kicker">{{ . }}</span>{{ end }}
+        <h1>{{ .Title }}</h1>
+        <p class="page-hero-summary">{{ .Params.hero_summary }}</p>
       </div>
-      {{ partial "intro-image.html" . }}
+      <div class="page-hero-visual" data-reveal>
+        <figure class="page-hero-image">
+          <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Title }}" />
+        </figure>
+      </div>
     </div>
   </div>
-</div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="detail-layout">
+      <div class="detail-main content page-surface" data-reveal>
+        {{ .Content }}
+      </div>
+      {{ with .Params.fee_cards }}
+      <aside class="detail-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="section-kicker">Fees at a glance</span>
+          <div class="fee-list">
+            {{ range . }}
+            <div class="fee-item">
+              <strong>{{ .title }}</strong>
+              <span>{{ .value }}</span>
+              <p>{{ .text }}</p>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </aside>
+      {{ end }}
+    </div>
+  </div>
+</section>
 
 {{ if .Params.process_steps }}
-<div class="strip strip-grey services-process">
-  <div class="container pt-6 pb-6">
-    <div class="row">
-      <div class="col-12 col-lg-10">
-        <div class="section-heading">
-          {{ with .Params.process_title }}<h2>{{ . }}</h2>{{ end }}
-          {{ with .Params.process_intro }}<p>{{ . }}</p>{{ end }}
-        </div>
-      </div>
+<section class="section section-process">
+  <div class="container">
+    <div class="section-heading section-heading-center" data-reveal>
+      {{ with .Params.process_title }}<h2>{{ . }}</h2>{{ end }}
+      {{ with .Params.process_intro }}<p>{{ . }}</p>{{ end }}
     </div>
-    <div class="row">
+    <div class="process-grid process-grid-four">
       {{ range .Params.process_steps }}
-      <div class="col-12 col-md-6 col-lg-3 mb-2">
-        <div class="process-card">
-          <h3>{{ .title }}</h3>
-          <p>{{ .text }}</p>
-        </div>
-      </div>
+      <article class="process-step" data-reveal>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </article>
       {{ end }}
     </div>
     {{ with .Params.process_safety_title }}
-    <div class="row pt-2">
-      <div class="col-12">
-        <h3>{{ . }}</h3>
-        <p>{{ $.Params.process_safety_text }}</p>
-      </div>
+    <div class="safety-note" data-reveal>
+      <h3>{{ . }}</h3>
+      <p>{{ $.Params.process_safety_text }}</p>
     </div>
     {{ end }}
   </div>
-</div>
+</section>
 {{ end }}
 
-<div class="container pt-6 pb-6">
-  <div class="row">
-    {{ range .Pages.ByWeight }}
-    <div class="col-12 col-md-6 mb-3">{{ .Render "summary" }}</div>
-    {{ end }}
+<section class="section">
+  <div class="container">
+    <div class="section-heading section-heading-center" data-reveal>
+      <span class="section-kicker">Explore services</span>
+      <h2>Find the care area that best matches what you want support with.</h2>
+      <p>Every service page explains what the concern area typically includes and how treatment planning usually starts.</p>
+    </div>
+    <div class="card-grid card-grid-services">
+      {{ range .Pages.ByWeight }}
+      {{ .Render "summary" }}
+      {{ end }}
+    </div>
   </div>
-</div>
+</section>
+
+{{ partial "cta-band.html" (dict
+  "kicker" "Ready to begin?"
+  "title" "Start with a brief consultation and a treatment plan that fits your goals."
+  "text" "If you are unsure which service is the best fit, reach out and we can guide you toward the most appropriate next step."
+  "primary_label" "Contact the Clinic"
+  "primary_link" "/contact/"
+  "secondary_label" "Questions"
+  "secondary_link" "/blog/"
+) }}
 {{ end }}

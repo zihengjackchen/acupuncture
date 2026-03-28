@@ -1,0 +1,19 @@
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-band-inner" data-reveal>
+      <div class="cta-band-copy">
+        {{ with .kicker }}<span class="section-kicker">{{ . }}</span>{{ end }}
+        <h2>{{ .title }}</h2>
+        {{ with .text }}<p>{{ . }}</p>{{ end }}
+      </div>
+      <div class="cta-band-actions">
+        {{ with .primary_label }}
+        <a class="button button-primary" href="{{ $.primary_link | relURL }}">{{ . }}</a>
+        {{ end }}
+        {{ with .secondary_label }}
+        <a class="button button-secondary" href="{{ $.secondary_link | relURL }}">{{ . }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

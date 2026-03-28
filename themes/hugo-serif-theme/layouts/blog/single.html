@@ -1,0 +1,48 @@
+{{ define "body_classes" }}page-question-single page-refresh{{ end }}
+
+{{ define "main" }}
+{{ $heroImage := .Params.hero_image | default "images/converse.png" }}
+{{ $heroSummary := .Params.description | default (.Plain | replaceRE "\\s+" " " | strings.TrimSpace | truncate 190 "...") }}
+{{ $related := first 5 (where .CurrentSection.Pages.ByWeight "Permalink" "!=" .Permalink) }}
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-grid">
+      <div class="page-hero-copy" data-reveal>
+        <span class="section-kicker">Questions</span>
+        <h1>{{ .Title }}</h1>
+        <p class="page-hero-summary">{{ $heroSummary }}</p>
+      </div>
+      <div class="page-hero-visual" data-reveal>
+        <figure class="page-hero-image">
+          <img src="{{ $heroImage | relURL }}" alt="{{ .Title }}" />
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="detail-layout">
+      <div class="detail-main page-surface content" data-reveal>
+        {{ .Content }}
+      </div>
+      <aside class="detail-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="section-kicker">More questions</span>
+          <ul class="sidebar-list">
+            {{ range $related }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <span class="section-kicker">Need a direct answer?</span>
+          <p>Reach out if you want to talk through symptoms, fit, pricing, or how treatment typically starts.</p>
+          <a class="button button-primary" href="{{ "contact/" | relURL }}">Contact the Clinic</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+{{ end }}

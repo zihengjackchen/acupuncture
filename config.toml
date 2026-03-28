@@ -17,31 +17,31 @@ title = "Wang's Harmony Acupuncture LLC"
 
   [params.homepage]
     sticky_header = true
-    show_contact_box = true      # show / hide the contaxt box on the homepage
+    show_contact_box = false     # show / hide the contaxt box on the homepage
     show_services_button = false # show / hide the "view all services" button
 
   [params.logo]
-    mobile = "images/logo/logo-mobile.svg"
-    mobile_height = "36px"
-    desktop = "images/logo/logo.svg"
-    desktop_height = "36px"
+    mobile = "images/logo/text-only-cropped.svg"
+    mobile_height = "28px"
+    desktop = "images/logo/text-only-cropped.svg"
+    desktop_height = "32px"
     alt = "Wang's Harmony Acupuncture LLC"
 
   [params.fonts]
     # sets the google font link in layouts/partials/google-fonts.html
-    google_fonts = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;700&display=swap'
-    heading = "Playfair Display"
-    base = "Source Sans Pro"
+    google_fonts = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap'
+    heading = "Cormorant Garamond"
+    base = "Manrope"
 
   [params.colors]
-    primary = "#3B6255"
-    black = "#2f2f41"
+    primary = "#4F6B61"
+    black = "#2A211C"
     white = "#ffffff"
-    white_offset = "#E2DFDA"
-    grey = "#5C5A5A"
-    secondary = "#8BA49A"
-    accent_dark = "#5C5A5A"
-    accent_warm = "#D2C49E"
+    white_offset = "#F7F0E7"
+    grey = "#71625B"
+    secondary = "#C8D0BC"
+    accent_dark = "#A2674C"
+    accent_warm = "#E8C7A7"
 
   [params.seo]
     meta_twitter_site = "@zerostaticio"

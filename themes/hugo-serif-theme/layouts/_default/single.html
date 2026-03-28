@@ -1,14 +1,39 @@
-{{ define "body_classes" }}page-default-single{{ end }}
+{{ define "body_classes" }}page-default-single page-refresh{{ end }}
 
 {{ define "main" }}
-<div class="container pb-6 pt-6 pt-md-14 pb-md-14">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="page-surface">
-        <h1 class="title">{{.Title}}</h1>
-        <div class="content">{{.Content}}</div>
+{{ $heroImage := .Params.hero_image | default "images/converse.png" }}
+{{ $heroSummary := .Params.description | default (.Summary | plainify) }}
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-grid">
+      <div class="page-hero-copy" data-reveal>
+        <span class="section-kicker">Questions</span>
+        <h1>{{ .Title }}</h1>
+        <p class="page-hero-summary">{{ $heroSummary }}</p>
+      </div>
+      <div class="page-hero-visual" data-reveal>
+        <figure class="page-hero-image">
+          <img src="{{ $heroImage | relURL }}" alt="{{ .Title }}" />
+        </figure>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="detail-layout">
+      <aside class="detail-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="section-kicker">Still have questions?</span>
+          <p>We can talk through symptoms, timing, cost, and whether acupuncture is a reasonable fit for your goals.</p>
+          <a class="button button-primary" href="{{ "contact/" | relURL }}">Contact the Clinic</a>
+        </div>
+      </aside>
+      <div class="detail-main page-surface content" data-reveal>
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
 {{ end }}

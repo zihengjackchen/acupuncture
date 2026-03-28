@@ -1,6 +1,8 @@
-<div class="summary">
+<article class="article-card" data-reveal>
+  <span class="section-kicker">Question</span>
   <h2>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </h2>
-  <p>{{ .Plain | replaceRE "\\s+" " " | strings.TrimSpace | truncate 165 "..." }}</p>
-</div>
+  <p>{{ .Plain | replaceRE "\\s+" " " | strings.TrimSpace | truncate 170 "..." }}</p>
+  <a class="text-link" href="{{ .RelPermalink }}">Read answer</a>
+</article>

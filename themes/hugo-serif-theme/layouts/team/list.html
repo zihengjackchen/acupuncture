@@ -1,50 +1,86 @@
-{{ define "body_classes" }}page-team-list{{ end }}
+{{ define "body_classes" }}page-team-list page-refresh{{ end }}
 
 {{ define "main" }}
-<div class="intro">
+<section class="page-hero">
   <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        <div class="intro-copy">
-          {{ .Content }}
-        </div>
+    <div class="page-hero-grid">
+      <div class="page-hero-copy" data-reveal>
+        {{ with .Params.page_kicker }}<span class="section-kicker">{{ . }}</span>{{ end }}
+        <h1>{{ .Title }}</h1>
+        <p class="page-hero-summary">{{ .Params.hero_summary }}</p>
       </div>
-      {{ partial "intro-image.html" . }}
+      <div class="page-hero-visual" data-reveal>
+        <figure class="page-hero-image">
+          <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Title }}" />
+        </figure>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="container">
-  <div class="row justify-content-center">
-    {{ range where .Pages.ByWeight ".Params.promoted" true }}
-    <div class="col-12 col-md-8 col-lg-7 mb-2">{{ .Render "summary-large" }}</div>
-    {{ end }}
+<section class="section">
+  <div class="container">
+    <div class="detail-layout detail-layout-wide">
+      <div class="detail-main content page-surface" data-reveal>
+        {{ .Content }}
+      </div>
+      {{ with .Params.values }}
+      <aside class="detail-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="section-kicker">Clinic values</span>
+          <ul class="value-list">
+            {{ range . }}
+            <li>
+              <strong>{{ .title }}</strong>
+              <p>{{ .text }}</p>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </aside>
+      {{ end }}
+    </div>
   </div>
-  {{ $others := where .Pages.ByWeight ".Params.promoted" "!=" true }}
-  {{ if gt (len $others) 0 }}
-  <div class="row  pt-6 pb-6">
-    {{ range $others }}
-    <div class="col-12 col-md-4 mb-3">{{ .Render "summary" }}</div>
-    {{ end }}
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading section-heading-center" data-reveal>
+      <span class="section-kicker">Meet your practitioner</span>
+      <h2>Experienced care led by Dr. Dan Wang.</h2>
+      <p>The practice is built around close listening, calm treatment, and thoughtful coordination with each patient's needs and timeline.</p>
+    </div>
+    <div class="team-featured-grid">
+      {{ range where .Pages.ByWeight ".Params.promoted" true }}
+      {{ .Render "summary-large" }}
+      {{ end }}
+    </div>
   </div>
-  {{ end }}
-</div>
+</section>
 
 {{ if .Params.clinic_section }}
-<div class="team-clinic">
-  <div class="container pt-4 pb-6">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-9">
-        <h2>{{ .Params.clinic_section.title }}</h2>
-        <p>{{ .Params.clinic_section.description }}</p>
-        {{ with .Params.clinic_section.paragraphs }}
-          {{ range . }}
-          <p>{{ . }}</p>
-          {{ end }}
-        {{ end }}
-      </div>
+<section class="section section-clinic">
+  <div class="container">
+    <div class="page-surface team-clinic-copy" data-reveal>
+      <h2>{{ .Params.clinic_section.title }}</h2>
+      <p>{{ .Params.clinic_section.description }}</p>
+      {{ with .Params.clinic_section.paragraphs }}
+      {{ range . }}
+      <p>{{ . }}</p>
+      {{ end }}
+      {{ end }}
     </div>
   </div>
-</div>
+</section>
 {{ end }}
+
+{{ partial "cta-band.html" (dict
+  "kicker" "Questions about treatment?"
+  "title" "Reach out if you want to talk through your goals before booking."
+  "text" "A short consultation can help clarify whether acupuncture is a good fit and which service area makes the most sense to start with."
+  "primary_label" "Contact the Clinic"
+  "primary_link" "/contact/"
+  "secondary_label" "Services and Fees"
+  "secondary_link" "/services/"
+) }}
 {{ end }}

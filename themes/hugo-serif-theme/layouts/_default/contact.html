@@ -1,0 +1,50 @@
+{{ define "body_classes" }}page-contact page-refresh{{ end }}
+
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-grid">
+      <div class="page-hero-copy" data-reveal>
+        {{ with .Params.page_kicker }}<span class="section-kicker">{{ . }}</span>{{ end }}
+        <h1>{{ .Title }}</h1>
+        <p class="page-hero-summary">{{ .Params.hero_summary }}</p>
+      </div>
+      <div class="page-hero-visual" data-reveal>
+        <figure class="page-hero-image">
+          <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Title }}" />
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="detail-layout">
+      <aside class="detail-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="section-kicker">Reach out</span>
+          <div class="contact-stack">
+            {{ with .Site.Data.contact.phone }}
+            <a href="tel:{{ . }}">{{ . }}</a>
+            {{ end }}
+            {{ with .Site.Data.contact.email }}
+            <a href="mailto:{{ . }}">{{ . }}</a>
+            {{ end }}
+            {{ with .Site.Data.contact.service_area }}
+            <span>{{ . }}</span>
+            {{ end }}
+            {{ with .Site.Data.contact.availability }}
+            <p>{{ . }}</p>
+            {{ end }}
+          </div>
+        </div>
+      </aside>
+      <div class="detail-main page-surface content" data-reveal>
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

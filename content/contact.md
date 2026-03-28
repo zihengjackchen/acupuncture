@@ -2,6 +2,14 @@
 title: 'Contact'
 date: 2018-02-22T17:01:34+07:00
 layout: contact
+description: "Contact Wang's Harmony Acupuncture LLC to book a consultation, ask questions, or review service area and appointment details."
+page_kicker: "Contact"
+hero_summary: "Reach out to book your first consultation, ask about mobile treatment planning, or confirm whether acupuncture is a good fit for your goals."
+hero_image: "images/converse.png"
+hero_badges:
+  - "630-408-7875"
+  - "hello@harmonyhealthclinic.com"
+  - "Mobile acupuncture across Chicagoland"
 ---
 
 We welcome new and returning patients. Call or email to book your first appointment, ask about treatment plans, or find out whether acupuncture is a good fit for your goals.

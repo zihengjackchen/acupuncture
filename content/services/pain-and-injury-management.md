@@ -5,6 +5,23 @@ draft: false
 featured: true
 weight: 2
 summary: "Acupuncture care for musculoskeletal pain, headaches, nerve-related symptoms, and injury recovery."
+description: "Mobile acupuncture care for musculoskeletal pain, headaches, nerve-related symptoms, and injury recovery."
+card_image: "images/acupuncture.png"
+hero_image: "images/acupuncture.png"
+hero_kicker: "Pain and recovery"
+hero_intro: "Treatment is tailored for recent injuries, chronic pain, headaches, nerve-related symptoms, and mobility limitations that are affecting everyday life."
+highlights:
+  - "Acute and chronic pain support"
+  - "Mobility and recovery focused care"
+  - "Follow-up pacing based on severity and duration"
+ideal_for:
+  - "Neck, back, hip, knee, and shoulder pain"
+  - "Headaches, migraines, and nerve irritation"
+  - "Sports, work, or accident recovery support"
+visit_notes:
+  - "Acute flare-ups may need more frequent visits early on"
+  - "Chronic pain often improves best with a structured series"
+  - "Patients with suspected fractures should seek medical evaluation first"
 ---
 
 Acupuncture can reduce pain, improve mobility, and support tissue healing. We treat both recent injuries and long-standing pain conditions with treatment plans adapted to your symptoms and activity level.

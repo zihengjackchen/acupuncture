@@ -1,8 +1,14 @@
-<div class="service service-summary">
-  <div class="service-content">
-    <h2 class="service-title">
+{{ $cardImage := .Params.card_image | default "images/room.png" }}
+<article class="service-card" data-reveal>
+  <a class="service-card-image" href="{{ .RelPermalink }}">
+    <img src="{{ $cardImage | relURL }}" alt="{{ .Title }}" />
+  </a>
+  <div class="service-card-content">
+    {{ with .Params.hero_kicker }}<span class="section-kicker">{{ . }}</span>{{ end }}
+    <h2 class="service-card-title">
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
     <p>{{ .Summary | plainify | htmlUnescape }}</p>
+    <a class="text-link" href="{{ .RelPermalink }}">Explore service</a>
   </div>
-</div>
+</article>

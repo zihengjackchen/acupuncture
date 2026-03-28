@@ -1,16 +1,69 @@
-{{ define "body_classes" }}page-services-single{{ end }}
+{{ define "body_classes" }}page-services-single page-refresh{{ end }}
 
 {{ define "main" }}
-<div class="container pb-6 pt-6 pt-md-14 pb-md-14">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="service service-single page-surface">
-        <h1 class="title">{{.Title}}</h1>
-        <div class="content">{{.Content}}</div>
+{{ $heroImage := .Params.hero_image | default .Params.card_image | default "images/converse.png" }}
+<section class="page-hero page-hero-service">
+  <div class="container">
+    <div class="page-hero-grid">
+      <div class="page-hero-copy" data-reveal>
+        {{ with .Params.hero_kicker }}<span class="section-kicker">{{ . }}</span>{{ end }}
+        <h1>{{ .Title }}</h1>
+        <p class="page-hero-summary">{{ .Params.hero_intro | default (.Summary | plainify) }}</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="{{ "contact/" | relURL }}">Book a Consultation</a>
+          <a class="button button-secondary" href="{{ "services/" | relURL }}">Back to Services</a>
+        </div>
+      </div>
+      <div class="page-hero-visual" data-reveal>
+        <figure class="page-hero-image">
+          <img src="{{ $heroImage | relURL }}" alt="{{ .Title }}" />
+        </figure>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="detail-layout">
+      <aside class="detail-sidebar" data-reveal>
+        {{ with .Params.ideal_for }}
+        <div class="sidebar-card">
+          <span class="section-kicker">Often a fit for</span>
+          <ul class="sidebar-list">
+            {{ range . }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+        {{ with .Params.visit_notes }}
+        <div class="sidebar-card">
+          <span class="section-kicker">What to know</span>
+          <ul class="sidebar-list">
+            {{ range . }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </aside>
+      <div class="detail-main page-surface content" data-reveal>
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "cta-band.html" (dict
+  "kicker" "Need help deciding?"
+  "title" "We can help you choose the best service area to start with."
+  "text" "A brief consultation is the easiest way to talk through symptoms, goals, timing, and what kind of follow-up rhythm makes sense."
+  "primary_label" "Contact the Clinic"
+  "primary_link" "/contact/"
+  "secondary_label" "More Services"
+  "secondary_link" "/services/"
+) }}
 {{ end }}
 
 {{ define "footer_js" }}

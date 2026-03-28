@@ -5,6 +5,23 @@ draft: false
 featured: true
 weight: 3
 summary: "Holistic acupuncture care for cycle health, fertility, hormonal transitions, and pelvic wellness."
+description: "Holistic acupuncture care for cycle health, fertility, hormonal transitions, pelvic wellness, and postpartum recovery."
+card_image: "images/team/sage-kirk-485982-unsplash.jpg"
+hero_image: "images/team/sage-kirk-485982-unsplash.jpg"
+hero_kicker: "Women's health"
+hero_intro: "Care is paced around your symptoms, cycle timing, fertility plan, and broader health picture so support feels individualized instead of generic."
+highlights:
+  - "Cycle, fertility, and hormone support"
+  - "Thoughtful coordination with IUI and IVF timing"
+  - "Gentle care for pelvic wellness and recovery"
+ideal_for:
+  - "Cycle irregularity, PMS, and painful periods"
+  - "Natural conception, IUI, and IVF support"
+  - "Postpartum recovery and menopause transitions"
+visit_notes:
+  - "Treatment plans are adjusted around cycle timing and symptom changes"
+  - "Integrative support may include herbs, nutrition referral, and mind-body strategies"
+  - "Always coordinate supplements and fertility decisions with your physician or dietitian"
 ---
 
 We provide gentle, personalized care for hormonal and reproductive health at every stage of life. Treatment plans are created around your cycle, symptoms, and broader health picture.

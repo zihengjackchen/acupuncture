@@ -1,19 +1,23 @@
-<div class="team team-summary team-summary-large">
+<article class="doctor-card" data-reveal>
   {{ if .Params.image }}
-  <div class="team-image">
-    <img width="360" height="360" alt="Photo of {{ .Title }}" class="img-fluid mb-2" src="{{ .Params.image | relURL }}" />
+  <div class="doctor-card-image">
+    <img width="420" height="460" alt="Photo of {{ .Title }}" class="img-fluid" src="{{ .Params.image | relURL }}" />
   </div>
   {{ end }}
-  <div class="team-meta">
+  <div class="doctor-card-content">
+    <span class="section-kicker">Lead practitioner</span>
     <h2 class="team-name">
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
     <p class="team-description">{{ .Params.Jobtitle }}</p>
-    {{ if .Params.Linkedinurl }}
-    <a target="_blank" rel="noreferrer" href="{{ .Params.Linkedinurl }}">LinkedIn</a> {{ end }}
-    {{ if .Params.Twitterhandle }}
-    <a target="_blank" rel="noreferrer" href="https://twitter.com/{{ .Params.Twitterhandle }}">Twitter</a> {{ end }}
-
+    <p>{{ .Plain | replaceRE "\\s+" " " | strings.TrimSpace | truncate 250 "..." }}</p>
+    {{ with .Params.focus_areas }}
+    <ul class="sidebar-list">
+      {{ range first 3 . }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    <a class="text-link" href="{{ .RelPermalink }}">Meet Dr. Dan Wang</a>
   </div>
-  <div class="team-content">    {{ .Content | truncate (.Site.Params.team.summary_large_truncate | default 120 ) "…" }}</div>
-</div>
+</article>

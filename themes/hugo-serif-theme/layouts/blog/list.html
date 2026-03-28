@@ -1,0 +1,67 @@
+{{ define "body_classes" }}page-questions-list page-refresh{{ end }}
+
+{{ define "main" }}
+{{ $questions := .Pages.ByWeight }}
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-grid">
+      <div class="page-hero-copy" data-reveal>
+        {{ with .Params.page_kicker }}<span class="section-kicker">{{ . }}</span>{{ end }}
+        <h1>{{ .Title }}</h1>
+        <p class="page-hero-summary">{{ .Params.hero_summary }}</p>
+      </div>
+      <div class="page-hero-visual" data-reveal>
+        <figure class="page-hero-image">
+          <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Title }}" />
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="detail-layout detail-layout-wide">
+      <div class="detail-main content page-surface" data-reveal>
+        <span class="section-kicker">Frequently asked questions</span>
+        {{ .Content }}
+      </div>
+      <aside class="detail-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="section-kicker">Popular questions</span>
+          <ul class="sidebar-list">
+            {{ range first 5 $questions }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading section-heading-center" data-reveal>
+      <span class="section-kicker">Browse answers</span>
+      <h2>Clear answers before you book.</h2>
+      <p>Explore the most common questions patients ask about comfort, safety, treatment planning, and what to expect during care.</p>
+    </div>
+    <div class="card-grid card-grid-articles">
+      {{ range $questions }}
+      {{ .Render "summary" }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ partial "cta-band.html" (dict
+  "kicker" "Still deciding?"
+  "title" "Reach out if you want help figuring out whether acupuncture is a good fit."
+  "text" "We're happy to answer practical questions about pricing, scheduling, mobile visits, and where to start."
+  "primary_label" "Contact the Clinic"
+  "primary_link" "/contact/"
+  "secondary_label" "Services and Fees"
+  "secondary_link" "/services/"
+) }}
+{{ end }}

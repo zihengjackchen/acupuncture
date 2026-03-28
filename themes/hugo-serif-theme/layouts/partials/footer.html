@@ -1,11 +1,48 @@
 <div class="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="footer-inner">
-          <h3 class="footer-title">{{.Site.Title}}</h3>
-          {{ partial "footer-menu" . }}
-          
+    <div class="footer-grid">
+      <div class="footer-brand" data-reveal>
+        <a class="footer-logo" href="{{ .Site.Home.RelPermalink }}">
+          <img height="34" alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.desktop | relURL }}" />
+        </a>
+        <p class="footer-intro">Personalized mobile acupuncture care across Chicagoland for pain, fertility, digestion, sleep, and stress support.</p>
+      </div>
+      <nav class="footer-column footer-nav" data-reveal aria-label="Footer navigation">
+        <h3>Navigate</h3>
+        <ul class="footer-links">
+          {{ range sort .Site.Menus.main "Weight" }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+      <div class="footer-column footer-contact" data-reveal>
+        <h3>Contact</h3>
+        <div class="footer-items">
+          {{ with .Site.Data.contact.phone }}
+          <div class="footer-item">
+            <span class="footer-label">Phone</span>
+            <a href="tel:{{ . }}">{{ . }}</a>
+          </div>
+          {{ end }}
+          {{ with .Site.Data.contact.email }}
+          <div class="footer-item">
+            <span class="footer-label">Email</span>
+            <a href="mailto:{{ . }}">{{ . }}</a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      <div class="footer-column footer-serving" data-reveal>
+        <h3>Serving</h3>
+        <div class="footer-items">
+          <div class="footer-item">
+            <span class="footer-label">Area</span>
+            <span>Chicagoland house calls</span>
+          </div>
+          <div class="footer-item">
+            <span class="footer-label">Care</span>
+            <span>Virtual consults and in-home follow-up</span>
+          </div>
         </div>
       </div>
     </div>

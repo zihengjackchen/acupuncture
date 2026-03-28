@@ -1,17 +1,13 @@
-<div class="team team-summary">
+<article class="team-mini-card" data-reveal>
   {{ if .Params.image }}
-  <div class="team-image">
-    <img width="360" height="360" alt="Photo of {{ .Title }}" class="img-fluid mb-2" src="{{ .Params.image | relURL }}" />
+  <div class="team-mini-card-image">
+    <img width="300" height="300" alt="Photo of {{ .Title }}" class="img-fluid" src="{{ .Params.image | relURL }}" />
   </div>
   {{ end }}
-  <div class="team-meta">
+  <div class="team-mini-card-content">
     <h2 class="team-name">
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
     <p class="team-description">{{ .Params.Jobtitle }}</p>
-    {{ if .Params.Linkedinurl }}
-      <a target="_blank" rel="noreferrer" href="{{ .Params.Linkedinurl }}">LinkedIn</a>
-    {{ end }}
   </div>
-  <div class="team-content"></div>
-</div>
+</article>

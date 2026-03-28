@@ -1,24 +1,46 @@
-{{ define "body_classes" }}page-default-list{{ end }}
+{{ define "body_classes" }}page-default-list page-refresh{{ end }}
 
 {{ define "main" }}
-<div class="intro">
+{{ $heroImage := .Params.hero_image | default "images/converse.png" }}
+<section class="page-hero">
   <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        <div class="intro-copy">
-          {{ .Content }}
-        </div>
+    <div class="page-hero-grid">
+      <div class="page-hero-copy" data-reveal>
+        {{ with .Params.page_kicker }}<span class="section-kicker">{{ . }}</span>{{ end }}
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.hero_summary }}
+        <p class="page-hero-summary">{{ . }}</p>
+        {{ else }}
+        <p class="page-hero-summary">{{ .Description }}</p>
+        {{ end }}
       </div>
-      {{ partial "intro-image.html" . }}
+      <div class="page-hero-visual" data-reveal>
+        <figure class="page-hero-image">
+          <img src="{{ $heroImage | relURL }}" alt="{{ .Title }}" />
+        </figure>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="container pt-6 pb-md-12">
-  <div class="row">
-    {{ range .Pages.ByWeight }}
-    <div class="col-12 col-md-6 mb-2 ">{{ .Render "summary" }}</div>
-    {{ end }}
+<section class="section">
+  <div class="container">
+    <div class="detail-layout detail-layout-wide">
+      <aside class="detail-sidebar" data-reveal>
+        <div class="sidebar-card">
+          <span class="section-kicker">Helpful next step</span>
+          <p>If your question is not answered here, reach out and we can talk through whether acupuncture is a good fit for your goals.</p>
+          <a class="button button-secondary" href="{{ "contact/" | relURL }}">Contact the Clinic</a>
+        </div>
+      </aside>
+      <div class="detail-main">
+        <div class="card-grid card-grid-articles">
+          {{ range .Pages.ByWeight }}
+          {{ .Render "summary" }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 {{ end }}

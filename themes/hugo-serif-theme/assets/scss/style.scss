@@ -53,6 +53,7 @@ $font-family-heading: {{ .Site.Params.fonts.heading }}, serif, -apple-system;
 @import 'pages/team/team-list';
 @import 'pages/services/page-services-list';
 @import 'pages/services/page-services-single';
+@import 'pages/brand-refresh';
 
 body {
   font-size: 16px;
