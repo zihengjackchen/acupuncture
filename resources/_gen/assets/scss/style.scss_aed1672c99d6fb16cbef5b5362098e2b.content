@@ -13726,6 +13726,14 @@ ol {
   display: inline-flex;
   align-items: center; }
 
+.page-refresh .brand-mark {
+  display: inline-flex;
+  align-items: center; }
+  .page-refresh .brand-mark img {
+    display: block;
+    width: auto;
+    height: var(--desktop-logo-height, 32px); }
+
 .page-refresh .header-tag {
   font-size: 0.78rem;
   letter-spacing: 0.14em;
@@ -14348,7 +14356,7 @@ ol {
         gap: 32px; } }
     @media (min-width: 992px) {
       .footer .footer-grid {
-        grid-template-columns: minmax(0, 1.55fr) repeat(3, minmax(0, 1fr));
+        grid-template-columns: minmax(0, 1.55fr) repeat(2, minmax(0, 1fr));
         gap: clamp(28px, 3.4vw, 56px); } }
   .footer .footer-brand,
   .footer .footer-column {
@@ -14356,6 +14364,12 @@ ol {
     color: #ffffff; }
   .footer .footer-brand {
     max-width: 36rem; }
+    @media (min-width: 768px) {
+      .footer .footer-brand {
+        grid-column: 1 / -1; } }
+    @media (min-width: 992px) {
+      .footer .footer-brand {
+        grid-column: auto; } }
   .footer .footer-logo {
     display: inline-flex;
     margin-bottom: 20px; }
@@ -14376,16 +14390,16 @@ ol {
     font-weight: 800;
     letter-spacing: 0.18em;
     text-transform: uppercase; }
-  .footer .footer-links,
   .footer .footer-items {
     margin: 0;
     padding: 0;
     display: grid;
     gap: 14px;
+    justify-items: start;
     list-style: none; }
-  .footer .footer-links li,
   .footer .footer-item {
     margin: 0;
+    margin-right: 0;
     list-style: none; }
   .footer .footer-item {
     display: grid;
@@ -14396,15 +14410,16 @@ ol {
     font-weight: 800;
     letter-spacing: 0.14em;
     text-transform: uppercase; }
-  .footer .footer-links a,
   .footer .footer-item a,
   .footer .footer-item span:last-child {
     color: rgba(255, 255, 255, 0.9);
     font-size: 1rem;
     line-height: 1.65;
+    display: inline-flex;
+    height: auto;
+    padding: 0;
     text-decoration: none;
     transition: color 0.25s ease; }
-  .footer .footer-links a:hover,
   .footer .footer-item a:hover {
     color: #f9f0e8; }
 
@@ -14448,7 +14463,9 @@ ol {
   .page-refresh .main-menu {
     display: none; }
   .page-refresh .hamburger {
-    display: inline-flex; } }
+    display: inline-flex; }
+  .brand-mark img {
+    height: var(--mobile-logo-height, 28px); } }
 
 @media (max-width: 767.98px) {
   .hero-grid,

@@ -7,9 +7,12 @@
     <div class="header-inner">
       <div class="header-brand">
         <a class="header-logo" href="{{ .Site.Home.RelPermalink }}">
-          <img height={{ .Site.Params.logo.desktop_height }} alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.desktop | relURL }}" />
+          <picture class="brand-mark" style="--desktop-logo-height: {{ .Site.Params.logo.desktop_height }}; --mobile-logo-height: {{ .Site.Params.logo.mobile_height }};">
+            <source media="(max-width: 991.98px)" srcset="{{ .Site.Params.logo.mobile | relURL }}" />
+            <img alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.desktop | relURL }}" />
+          </picture>
         </a>
-        <span class="header-tag">Mobile acupuncture across Chicagoland</span>
+        <span class="header-tag">Chicagoland house calls</span>
       </div>
       <div class="header-navigation">
         {{ partial "main-menu.html" . }}

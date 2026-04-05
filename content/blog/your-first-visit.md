@@ -6,12 +6,12 @@ weight: 4
 slug: "how-many-sessions-will-i-need"
 ---
 
-The number of sessions depends on your condition and how long you have had it.
+The number of sessions depends on your condition and how long it has been going on.
 
 In general, long-standing issues take longer to treat than newer concerns.
 
-Acupuncture supports the body's healing response, so it can take time to see clear and lasting results.
+Acupuncture works best as a process, so it can take time to see clear and lasting results.
 
-A typical recommendation is about twice per week for severe pain, or weekly treatment for four to six weeks for many other concerns before deciding how much it is helping.
+A common starting point is twice per week for severe pain, or weekly treatment for four to six weeks for many other concerns before judging progress.
 
-Your practitioner adjusts the plan over time based on your response.
+Your practitioner adjusts the plan based on your response.

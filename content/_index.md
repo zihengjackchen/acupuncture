@@ -1,25 +1,25 @@
 ---
 title: 'Homepage'
-meta_title: "Wang's Harmony Acupuncture LLC"
-description: "Mobile acupuncture in Chicagoland for pain relief, fertility support, stress recovery, digestion, sleep, and women's health."
+meta_title: "Wang's Harmony Acupuncture"
+description: "Mobile acupuncture across Chicagoland for pain, fertility, hormones, digestion, sleep, and stress."
 hero_kicker: "Mobile acupuncture across Chicagoland"
-hero_title: "Warm, personalized acupuncture care that feels restorative from the first visit."
-hero_summary: "Wang's Harmony Acupuncture LLC brings calm, one-on-one Traditional Chinese Medicine care to your home, with treatment plans shaped around pain relief, fertility, hormones, sleep, digestion, and everyday stress."
-hero_primary_label: "Book a Consultation"
+hero_title: "Acupuncture care that comes to you."
+hero_summary: "Get clear, personalized acupuncture for pain, fertility, hormones, sleep, digestion, and stress without adding another trip to your week."
+hero_primary_label: "Book Your Consult"
 hero_primary_link: "/contact/"
 hero_secondary_label: "Explore Services"
 hero_secondary_link: "/services/"
 hero_badges:
   - "In-home mobile appointments"
-  - "Brief virtual consultation before booking"
-  - "Supportive care for pain, hormones, sleep, digestion, and stress"
+  - "Brief virtual consult before booking"
+  - "Pain, hormones, sleep, digestion, stress"
 hero_stats:
   - value: "1:1"
     label: "Personalized treatment planning"
   - value: "Mobile"
     label: "Appointments that come to you"
   - value: "TCM"
-    label: "Rooted in Traditional Chinese Medicine"
+    label: "TCM-based care"
 hero_images:
   - image: "images/converse.png"
     alt: "Illustration of a consultation"
@@ -28,23 +28,23 @@ hero_images:
   - image: "images/dan-wang.webp"
     alt: "Dr. Dan Wang portrait"
 story_kicker: "Committed to your health"
-story_title: "A more personal acupuncture experience for busy households and long-term wellness goals."
-story_intro: "Care is designed to feel clear, calming, and tailored to the whole person instead of rushed, generic, or hard to fit into your day."
+story_title: "Care that feels clear, calm, and worth keeping up."
+story_intro: "Appointments are built around your goals, your schedule, and real follow-through."
 story_points:
   - title: "Thoughtful consultations"
-    text: "We start by listening closely to your symptoms, health history, goals, and pace so your treatment plan feels grounded from the beginning."
+    text: "We start by understanding your symptoms, history, and goals so the plan fits from day one."
   - title: "Convenient care"
-    text: "Mobile visits make it easier to keep care consistent when work, family life, recovery, or fertility treatment already take up so much energy."
+    text: "House calls make it easier to stay consistent when work, family, recovery, or fertility treatment already fill your week."
   - title: "Practical follow-up"
-    text: "You'll leave with a clear sense of next steps, treatment rhythm, and when to expect a check-in on progress."
-process_title: "How care flows from first contact to follow-up"
+    text: "You leave knowing the next step, the likely treatment rhythm, and what progress should look like."
+process_title: "How to start"
 process_steps:
   - title: "1. Start with a brief consult"
-    text: "We review your main concern, goals, and whether mobile acupuncture is the right fit before moving into treatment planning."
+    text: "We review your main concern, answer questions, and confirm whether mobile care is the right fit."
   - title: "2. Receive care at home"
-    text: "Your appointment includes a full intake, TCM assessment, and a treatment experience tailored to your symptoms and stage of healing."
+    text: "Your visit includes a full intake, TCM assessment, and treatment shaped to your symptoms and stage of healing."
   - title: "3. Build momentum with follow-up"
-    text: "We recommend an initial treatment rhythm, check how you're responding, and adjust as your symptoms, cycle, or stress load changes."
+    text: "We set a starting rhythm, track your response, and adjust as your symptoms, cycle, or stress load changes."
 gallery_images:
   - image: "images/room.png"
     alt: "Treatment room illustration"
@@ -56,6 +56,6 @@ gallery_images:
     alt: "Practitioner portrait"
 ---
 
-Wang's Harmony Acupuncture LLC helps Chicagoland patients find steadier relief and a calmer healthcare experience through mobile acupuncture rooted in Traditional Chinese Medicine.
+Wang's Harmony Acupuncture helps Chicagoland patients get skilled, one-on-one care without another drive, waiting room, or rushed visit.
 
-We commonly support acute and chronic pain, injury recovery, fertility and IVF care, hormonal transitions, insomnia, stress, digestion issues, sinus symptoms, postpartum recovery, and menopause support with treatment plans shaped around the full picture of your health.
+We commonly support pain, injury recovery, fertility and IVF care, hormonal transitions, insomnia, stress, digestion issues, sinus symptoms, postpartum recovery, and menopause with practical treatment plans that stay clear from the start.

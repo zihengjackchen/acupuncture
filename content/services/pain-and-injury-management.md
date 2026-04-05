@@ -4,12 +4,12 @@ date: 2024-01-15T09:00:00-06:00
 draft: false
 featured: true
 weight: 2
-summary: "Acupuncture care for musculoskeletal pain, headaches, nerve-related symptoms, and injury recovery."
-description: "Mobile acupuncture care for musculoskeletal pain, headaches, nerve-related symptoms, and injury recovery."
+summary: "Mobile acupuncture for pain, headaches, nerve symptoms, and injury recovery."
+description: "Mobile acupuncture care for musculoskeletal pain, headaches, nerve symptoms, and injury recovery."
 card_image: "images/acupuncture.png"
 hero_image: "images/acupuncture.png"
 hero_kicker: "Pain and recovery"
-hero_intro: "Treatment is tailored for recent injuries, chronic pain, headaches, nerve-related symptoms, and mobility limitations that are affecting everyday life."
+hero_intro: "Get mobile acupuncture for pain, headaches, nerve symptoms, and recovery, with follow-up paced to how severe and how recent the issue is."
 highlights:
   - "Acute and chronic pain support"
   - "Mobility and recovery focused care"
@@ -24,7 +24,7 @@ visit_notes:
   - "Patients with suspected fractures should seek medical evaluation first"
 ---
 
-Acupuncture can reduce pain, improve mobility, and support tissue healing. We treat both recent injuries and long-standing pain conditions with treatment plans adapted to your symptoms and activity level.
+Acupuncture can help reduce pain, improve mobility, and support healing. We treat recent injuries and long-standing pain with plans matched to your symptoms and activity level.
 
 ## Common pain conditions
 
@@ -56,4 +56,4 @@ Acupuncture can reduce pain, improve mobility, and support tissue healing. We tr
 
 ## Treatment plan expectations
 
-Pain plans are customized by severity and duration. Acute injuries may improve in fewer sessions, while chronic pain often requires a structured series of visits with home-care support between appointments.
+Pain plans depend on severity and duration. Acute injuries may improve faster, while chronic pain often needs a structured series of visits with support between appointments.

@@ -6,10 +6,10 @@ weight: 3
 slug: "how-much-does-mobile-acupuncture-cost"
 ---
 
-Our mobile service currently has a base commute rate of $29.99 per commute.
+Our mobile service has a base commute rate of $29.99 per commute.
 
-Before booking further appointments, patients complete a brief virtual consultation for $20.
+Before booking further appointments, new patients complete a brief virtual consultation for $20.
 
-We keep acupuncture rates fair and offer package options and senior discounts.
+We keep rates clear and offer package options and senior discounts.
 
-For package and senior discount information, call 630-408-7875.
+Call 630-408-7875 for current package and senior discount details.

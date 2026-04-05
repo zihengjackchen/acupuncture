@@ -2,7 +2,7 @@ baseURL = "/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
-title = "Wang's Harmony Acupuncture LLC"
+title = "Wang's Harmony Acupuncture"
 
 [module]
   [module.hugoVersion]
@@ -21,11 +21,11 @@ title = "Wang's Harmony Acupuncture LLC"
     show_services_button = false # show / hide the "view all services" button
 
   [params.logo]
-    mobile = "images/logo/text-only-cropped.svg"
+    mobile = "images/logo/logo-mobile.svg"
     mobile_height = "28px"
-    desktop = "images/logo/text-only-cropped.svg"
+    desktop = "images/logo/logo.svg"
     desktop_height = "32px"
-    alt = "Wang's Harmony Acupuncture LLC"
+    alt = "Wang's Harmony Acupuncture"
 
   [params.fonts]
     # sets the google font link in layouts/partials/google-fonts.html
@@ -55,7 +55,7 @@ title = "Wang's Harmony Acupuncture LLC"
     summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
-    copyright_text = "&copy; Wang's Harmony Acupuncture LLC"
+    copyright_text = "&copy; Wang's Harmony Acupuncture PLLC"
 
 [menu]
   # Main Menu

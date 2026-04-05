@@ -5,8 +5,8 @@ draft: false
 weight: 0
 ---
 
-Traditional Chinese Medicine (TCM) has a history of thousands of years and remains an important part of traditional Chinese culture.
+Traditional Chinese Medicine (TCM) is a long-standing system of care that looks at patterns in the body rather than only isolated symptoms.
 
-It looks at how the body functions, how patterns of imbalance develop, and how those patterns can be addressed through diagnosis, prevention, and treatment.
+It looks at how the body functions, how imbalance develops, and how those patterns can be addressed through diagnosis, prevention, and treatment.
 
-Its framework is shaped by ideas such as Yin-Yang, the Five Elements, organ systems, meridians, and syndrome differentiation. In practice, that means treatment is based on the whole picture rather than one symptom by itself.
+Its framework includes ideas like Yin-Yang, the Five Elements, organ systems, meridians, and syndrome differentiation. In practice, treatment is based on the whole picture rather than one symptom alone.

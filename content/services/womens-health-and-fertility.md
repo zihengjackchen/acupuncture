@@ -4,12 +4,12 @@ date: 2024-01-15T09:00:00-06:00
 draft: false
 featured: true
 weight: 3
-summary: "Holistic acupuncture care for cycle health, fertility, hormonal transitions, and pelvic wellness."
-description: "Holistic acupuncture care for cycle health, fertility, hormonal transitions, pelvic wellness, and postpartum recovery."
+summary: "Acupuncture care for cycle health, fertility, hormone balance, and pelvic wellness."
+description: "Acupuncture care for cycle health, fertility, hormonal transitions, pelvic wellness, and postpartum recovery."
 card_image: "images/team/sage-kirk-485982-unsplash.jpg"
 hero_image: "images/team/sage-kirk-485982-unsplash.jpg"
 hero_kicker: "Women's health"
-hero_intro: "Care is paced around your symptoms, cycle timing, fertility plan, and broader health picture so support feels individualized instead of generic."
+hero_intro: "Care is timed around your cycle, fertility plan, symptoms, and stage of life so treatment feels specific to you."
 highlights:
   - "Cycle, fertility, and hormone support"
   - "Thoughtful coordination with IUI and IVF timing"
@@ -24,11 +24,11 @@ visit_notes:
   - "Always coordinate supplements and fertility decisions with your physician or dietitian"
 ---
 
-We provide gentle, personalized care for hormonal and reproductive health at every stage of life. Treatment plans are created around your cycle, symptoms, and broader health picture.
+We provide personalized care for hormonal and reproductive health at every stage of life. Treatment plans are built around your cycle, symptoms, and broader health picture.
 
 ## How acupuncture can support fertility
 
-Acupuncture is not a cure for infertility, but it can be a meaningful part of an integrative fertility plan. Depending on your diagnosis and care plan, acupuncture may help:
+Acupuncture is not a cure for infertility, but it can be a useful part of an integrative fertility plan. Depending on your diagnosis and care plan, it may help:
 
 - Improve blood flow to reproductive organs
 - Support hormone regulation

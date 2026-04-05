@@ -3,18 +3,13 @@
     <div class="footer-grid">
       <div class="footer-brand" data-reveal>
         <a class="footer-logo" href="{{ .Site.Home.RelPermalink }}">
-          <img height="34" alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.desktop | relURL }}" />
+          <picture class="brand-mark" style="--desktop-logo-height: {{ .Site.Params.logo.desktop_height }}; --mobile-logo-height: {{ .Site.Params.logo.mobile_height }};">
+            <source media="(max-width: 991.98px)" srcset="{{ .Site.Params.logo.mobile | relURL }}" />
+            <img alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.desktop | relURL }}" />
+          </picture>
         </a>
-        <p class="footer-intro">Personalized mobile acupuncture care across Chicagoland for pain, fertility, digestion, sleep, and stress support.</p>
+        <p class="footer-intro">Personalized mobile acupuncture across Chicagoland for pain, fertility, digestion, sleep, and stress.</p>
       </div>
-      <nav class="footer-column footer-nav" data-reveal aria-label="Footer navigation">
-        <h3>Navigate</h3>
-        <ul class="footer-links">
-          {{ range sort .Site.Menus.main "Weight" }}
-          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-      </nav>
       <div class="footer-column footer-contact" data-reveal>
         <h3>Contact</h3>
         <div class="footer-items">

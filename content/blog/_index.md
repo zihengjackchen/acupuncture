@@ -1,8 +1,8 @@
 ---
 title: 'Questions'
-description: 'Frequently asked questions about Traditional Chinese Medicine, acupuncture safety, cost, sessions, and treatment scope.'
+description: 'Quick answers about acupuncture comfort, safety, pricing, sessions, and what treatment can help.'
 page_kicker: "Questions"
-hero_summary: "Helpful answers about what acupuncture is, what treatment feels like, how pricing works, and what to expect when you begin care."
+hero_summary: "Quick answers about comfort, safety, pricing, sessions, and what to expect when you start care."
 hero_image: "images/converse.png"
 hero_badges:
   - "Treatment comfort and safety"
@@ -10,4 +10,4 @@ hero_badges:
   - "First-visit expectations"
 ---
 
-This section answers common patient questions, including what acupuncture is, what treatment feels like, safety, cost, expected treatment frequency, and the concerns we commonly support.
+This section covers the questions patients ask most often before they book, from comfort and safety to cost, timing, and treatment fit.

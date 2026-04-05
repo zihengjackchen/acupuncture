@@ -4,12 +4,12 @@ date: 2024-01-15T09:00:00-06:00
 draft: false
 featured: true
 weight: 5
-summary: "Acupuncture for allergy, asthma, sinus, cough, skin, and facial nerve concerns."
+summary: "Acupuncture for allergies, sinus symptoms, cough, skin flare-ups, and immune support."
 description: "Acupuncture support for sinus congestion, allergies, cough, skin flare-ups, and immune resilience."
 card_image: "images/team/michael-dam-258165-unsplash.jpg"
 hero_image: "images/team/michael-dam-258165-unsplash.jpg"
 hero_kicker: "Respiratory and immune support"
-hero_intro: "Recurring respiratory, immune, and skin symptoms can be draining, so treatment focuses on easing flare-ups and helping your system stay steadier between episodes."
+hero_intro: "Treatment aims to calm flare-ups and help your system stay steadier between them."
 highlights:
   - "Allergy, sinus, and cough support"
   - "Skin concerns including acne and Bell's palsy support"
@@ -24,7 +24,7 @@ visit_notes:
   - "Lifestyle trigger review can help improve stability between episodes"
 ---
 
-Recurring respiratory, immune, and skin symptoms can be exhausting. We use acupuncture to help calm flare-ups, reduce symptom frequency, and support resilience over time.
+Recurring respiratory, immune, and skin symptoms can be exhausting. We use acupuncture to calm flare-ups, reduce repeat episodes, and support steadier recovery over time.
 
 ## Common concerns we treat
 

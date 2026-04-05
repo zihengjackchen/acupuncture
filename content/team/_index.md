@@ -1,8 +1,8 @@
 ---
 title: 'About'
-description: "Learn about Wang's Harmony Acupuncture LLC and Dr. Dan Wang's patient-centered approach to mobile acupuncture care."
+description: "Learn how Wang's Harmony Acupuncture approaches mobile care with calm, clear treatment planning."
 page_kicker: "About"
-hero_summary: "Wang's Harmony Acupuncture LLC is built around calm, respectful care that blends Traditional Chinese Medicine with clear guidance, practical scheduling, and close listening."
+hero_summary: "Wang's Harmony Acupuncture blends Traditional Chinese Medicine with clear guidance, practical scheduling, and calm, one-on-one care."
 hero_image: "images/dan-wang.webp"
 hero_badges:
   - "Licensed acupuncturist and herbalist"
@@ -10,23 +10,23 @@ hero_badges:
   - "Thoughtful support for pain, sleep, digestion, and women's health"
 values:
   - title: "Whole-person care"
-    text: "Treatment considers symptoms, stress load, recovery patterns, sleep, digestion, and hormonal context instead of chasing only one complaint."
+    text: "Treatment looks at symptoms, stress, sleep, digestion, hormones, and recovery patterns instead of chasing one complaint."
   - title: "Clear communication"
-    text: "Patients deserve to understand what the treatment plan is for, how often follow-up may be needed, and what signs of progress to watch for."
+    text: "You should understand what the plan is for, how often follow-up may help, and what progress to watch for."
   - title: "Calm continuity"
-    text: "Care is designed to feel grounding and sustainable so patients can stay engaged without feeling overwhelmed."
+    text: "Care is meant to feel steady and sustainable so you can stay engaged without feeling overwhelmed."
 clinic_section:
   title: "Clinic approach"
-  description: "Wang's Harmony Acupuncture LLC serves Chicagoland with mobile acupuncture rooted in Traditional Chinese Medicine and practical, patient-centered care."
+  description: "Wang's Harmony Acupuncture serves Chicagoland with mobile care rooted in TCM and shaped around real-life follow-through."
   paragraphs:
     - "Founded in 2022, the clinic focuses on individualized treatment planning and clear continuity of care."
-    - "Treatment looks at the whole picture, including pain, sleep, digestion, stress, cycle health, and energy patterns."
+    - "Treatment looks at the full picture, including pain, sleep, digestion, stress, cycle health, and energy patterns."
     - "Common support areas include pain, anxiety, sinus congestion, insomnia, digestion, fertility, IVF support, postpartum care, and menopause."
     - "After acute injury, patients are encouraged to seek medical evaluation first to rule out fractures or structural damage."
 ---
 
-Wang's Harmony Acupuncture LLC is led by Dr. Dan Wang, a licensed acupuncturist and herbalist trained in Traditional Chinese Medicine.
+Wang's Harmony Acupuncture is led by Dr. Dan Wang, a licensed acupuncturist and herbalist trained in Traditional Chinese Medicine.
 
-Traditional Chinese Medicine has been practiced for thousands of years and is built on long clinical observation, pattern recognition, and individualized care.
+Traditional Chinese Medicine is built on pattern recognition, whole-person care, and treatment tailored to the individual.
 
-Its core ideas emphasize balance, whole-body function, and tailoring treatment to the person's overall pattern instead of focusing on one symptom alone.
+Its core ideas emphasize balance, whole-body function, and treating the bigger pattern rather than only one symptom.

@@ -4,12 +4,12 @@ date: 2024-01-15T09:00:00-06:00
 draft: false
 featured: true
 weight: 6
-summary: "Whole-person acupuncture care for anxiety, fatigue, insomnia, addiction support, and healthy aging."
-description: "Whole-person acupuncture care for anxiety, fatigue, insomnia, addiction support, and preventive wellness."
+summary: "Acupuncture care for stress, anxiety, insomnia, fatigue, and long-term wellness."
+description: "Acupuncture care for stress, anxiety, insomnia, fatigue, addiction support, and preventive wellness."
 card_image: "images/team/cristian-newman-94319-unsplash.jpg"
 hero_image: "images/team/cristian-newman-94319-unsplash.jpg"
 hero_kicker: "Stress and sleep"
-hero_intro: "Many patients come in not just for pain, but for emotional overload, poor sleep, low energy, and a need for more consistent recovery support."
+hero_intro: "If stress, poor sleep, or burnout keep draining you, care is designed to help your system settle and recover."
 highlights:
   - "Stress, anxiety, and insomnia support"
   - "Fatigue, resilience, and wellness maintenance"
@@ -24,7 +24,7 @@ visit_notes:
   - "Maintenance care may help reduce recurrence once symptoms improve"
 ---
 
-Acupuncture is not only for pain. Many patients come for emotional balance, better sleep, and long-term wellness support. We build treatment plans that help restore calm, energy, and resilience.
+Acupuncture is not only for pain. Many patients come for better sleep, steadier energy, and help getting out of a constant stress cycle. Treatment is designed to restore calm, recovery, and resilience.
 
 ## Concerns in this category
 

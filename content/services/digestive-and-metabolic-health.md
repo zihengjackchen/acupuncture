@@ -4,12 +4,12 @@ date: 2024-01-15T09:00:00-06:00
 draft: false
 featured: true
 weight: 4
-summary: "Support for abdominal discomfort, IBS, and metabolic health concerns including cholesterol, weight, and blood sugar balance."
+summary: "Support for abdominal discomfort, IBS, reflux, bloating, and metabolic health concerns."
 description: "Acupuncture support for abdominal discomfort, IBS, reflux, bloating, and metabolic health concerns."
 card_image: "images/room.png"
 hero_image: "images/room.png"
 hero_kicker: "Digestive support"
-hero_intro: "Digestive symptoms can affect energy, mood, appetite, and quality of life, so treatment is designed to calm flare-ups while supporting steadier regulation over time."
+hero_intro: "Treatment focuses on calming flare-ups and building steadier digestion, energy, and daily comfort."
 highlights:
   - "IBS, bloating, reflux, and abdominal discomfort"
   - "Metabolic support for cholesterol, weight, and blood sugar balance"
@@ -24,7 +24,7 @@ visit_notes:
   - "Follow-up recommendations depend on duration and severity"
 ---
 
-Digestive and metabolic symptoms can affect energy, mood, and quality of life. Acupuncture can support better regulation while we focus on the underlying pattern of imbalance.
+Digestive and metabolic symptoms can drain energy and daily comfort. Acupuncture can help support steadier regulation while we focus on the bigger pattern behind the symptoms.
 
 ## Conditions in this category
 

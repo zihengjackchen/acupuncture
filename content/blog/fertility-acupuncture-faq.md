@@ -6,10 +6,10 @@ weight: 2
 slug: "does-acupuncture-hurt"
 ---
 
-Acupuncture needles are hair-thin filiform needles. They are very different from the hollow needles used for injections or blood draws, and insertion is painless or only mildly noticeable for most people.
+Acupuncture needles are hair-thin and very different from the hollow needles used for injections or blood draws. For most people, insertion feels minimal or only briefly noticeable.
 
-Points on the hands, feet, and face can sometimes feel more sensitive, but that usually lasts only a moment.
+Points on the hands, feet, and face can feel a bit more sensitive, but that usually passes quickly.
 
-During treatment, some people feel soreness, numbness, heaviness, warmth, coolness, or brief itching. These sensations are usually temporary.
+During treatment, some people notice soreness, heaviness, warmth, coolness, or brief tingling. These sensations are usually temporary.
 
-After treatment, many people feel calm and deeply relaxed. That sense of settling is one of the ways people first notice acupuncture working.
+After treatment, many people feel calm and deeply relaxed. That sense of settling is often one of the first things they notice.
