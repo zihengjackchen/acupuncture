@@ -3,3 +3,20 @@ phone: '847-786-0066'
 contact_button_link: 'contact'
 service_area: 'Cook, Lake, and Kane counties'
 availability: 'Select McHenry, DeKalb, and Kendall appointments available by request.'
+core_regions:
+  - 'Chicago'
+  - 'North suburbs'
+core_counties:
+  - 'Cook County'
+  - 'Lake County'
+  - 'Kane County'
+zip_prefixes:
+  - '600'
+  - '601'
+  - '602'
+  - '606'
+  - '607'
+request_counties:
+  - 'McHenry County'
+  - 'DeKalb County'
+  - 'Kendall County'

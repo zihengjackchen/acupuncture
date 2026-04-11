@@ -1,6 +1,7 @@
 {{ define "body_classes" }}page-contact page-refresh{{ end }}
 
 {{ define "main" }}
+{{ $contact := .Site.Data.contact }}
 <section class="page-hero">
   <div class="container">
     <div class="page-hero-grid">
@@ -8,6 +9,13 @@
         {{ with .Params.page_kicker }}<span class="section-kicker">{{ . }}</span>{{ end }}
         <h1>{{ .Title }}</h1>
         <p class="page-hero-summary">{{ .Params.hero_summary }}</p>
+        {{ with .Params.hero_badges }}
+        <div class="chip-group">
+          {{ range . }}
+          <span class="chip">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
       </div>
       <div class="page-hero-visual" data-reveal>
         <figure class="page-hero-image">
@@ -42,6 +50,69 @@
       </aside>
       <div class="detail-main page-surface content" data-reveal>
         {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section service-area-section">
+  <div class="container">
+    <div class="section-heading" data-reveal>
+      <span class="section-kicker">Coverage map</span>
+      <h2>Where we travel</h2>
+      <p>Core house calls are concentrated across {{ $contact.service_area }}, with select extended appointments available by request.</p>
+    </div>
+    <div class="service-area-grid">
+      <div class="service-area-map-card" data-reveal>
+        <div class="service-area-map" aria-hidden="true">
+          <div class="service-area-ring service-area-ring-outer"></div>
+          <div class="service-area-ring service-area-ring-middle"></div>
+          <div class="service-area-ring service-area-ring-inner"></div>
+          <div class="service-area-pin">
+            <span class="service-area-pin-dot"></span>
+            {{ with index $contact.core_regions 0 }}<strong>{{ . }}</strong>{{ end }}
+            <span>Core visit area</span>
+          </div>
+          {{ with index $contact.core_regions 1 }}<span class="service-area-marker service-area-marker-top">{{ . }}</span>{{ end }}
+          {{ with index $contact.core_counties 1 }}<span class="service-area-marker service-area-marker-right">{{ . }}</span>{{ end }}
+          {{ with index $contact.core_counties 2 }}<span class="service-area-marker service-area-marker-left">{{ . }}</span>{{ end }}
+          {{ with index $contact.core_counties 0 }}<span class="service-area-marker service-area-marker-bottom">{{ . }}</span>{{ end }}
+          <div class="service-area-zip-band">
+            <span>Common ZIP prefixes</span>
+            <strong>600, 601, 602, 606, 607</strong>
+          </div>
+        </div>
+      </div>
+      <div class="service-area-summary page-surface" data-reveal>
+        <div class="service-area-block">
+          <h3>Core coverage</h3>
+          <ul class="service-chip-list">
+            {{ range $contact.core_counties }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="service-area-block">
+          <h3>Core regions</h3>
+          <ul class="service-chip-list">
+            {{ range $contact.core_regions }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="service-area-block">
+          <h3>ZIP prefixes</h3>
+          <ul class="service-chip-list service-chip-list-compact">
+            {{ range $contact.zip_prefixes }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="service-area-block">
+          <h3>By request</h3>
+          <p>{{ delimit $contact.request_counties ", " }}</p>
+        </div>
+        <p class="service-area-note">Outside the core area? Contact us with your ZIP code and we will confirm availability before booking.</p>
       </div>
     </div>
   </div>

@@ -22,16 +22,7 @@ We welcome new and returning patients. Call or email to book, ask a question, or
 
 Call 847-786-0066 for package and senior discount details.
 
-## Service area
-
-| Coverage | Details |
-| -------- | ------- |
-| Core counties | Cook, Lake, and Kane |
-| Core regions | Chicago and the north suburbs |
-| Common ZIP prefixes | 600, 601, 602, 606, 607 |
-| Extended availability | Select McHenry, DeKalb, and Kendall appointments by request |
-
-If you're outside the core service area, contact us before booking and we can confirm availability.
+We serve Chicago and the north suburbs with a core area across Cook, Lake, and Kane counties. If you're outside that area, contact us and we can confirm availability before booking.
 
 | Day       | Opening Hours   |
 | --------- | --------------- |
