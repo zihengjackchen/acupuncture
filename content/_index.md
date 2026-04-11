@@ -1,8 +1,8 @@
 ---
 title: 'Homepage'
-meta_title: "Wang's Harmony Acupuncture"
-description: "Mobile acupuncture across Chicagoland for pain, fertility, hormones, digestion, sleep, and stress."
-hero_kicker: "Mobile acupuncture across Chicagoland"
+meta_title: "Mobile Acupuncture in Chicago | Wang's Harmony Acupuncture"
+description: "Mobile acupuncture in Chicago and Chicagoland for pain, fertility, hormones, digestion, sleep, and stress."
+hero_kicker: "Mobile acupuncture in Chicago and Chicagoland"
 hero_title: "Acupuncture care that comes to you."
 hero_summary: "Get clear, personalized acupuncture for pain, fertility, hormones, sleep, digestion, and stress without adding another trip to your week."
 hero_primary_label: "Book Your Consult"
@@ -56,6 +56,6 @@ gallery_images:
     alt: "Practitioner portrait"
 ---
 
-Wang's Harmony Acupuncture helps Chicagoland patients get skilled, one-on-one care without another drive, waiting room, or rushed visit.
+Wang's Harmony Acupuncture helps Chicago-area patients get skilled, one-on-one care without another drive, waiting room, or rushed visit.
 
 We commonly support pain, injury recovery, fertility and IVF care, hormonal transitions, insomnia, stress, digestion issues, sinus symptoms, postpartum recovery, and menopause with practical treatment plans that stay clear from the start.

@@ -1,8 +1,9 @@
-baseURL = "/"
+baseURL = "https://wangsharmonyacu.com/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
 title = "Wang's Harmony Acupuncture"
+enableRobotsTXT = true
 
 [module]
   [module.hugoVersion]
@@ -47,6 +48,9 @@ title = "Wang's Harmony Acupuncture"
     meta_twitter_site = "@zerostaticio"
     meta_twitter_creator = "@zerostaticio"
     meta_og_image = "images/logo/logo.svg"
+    local_keywords = "mobile acupuncture chicago, mobile acupuncture chicagoland, acupuncture chicago suburbs, fertility acupuncture chicago, pain acupuncture chicago"
+    service_area = "Chicago and Chicagoland, Illinois"
+    business_type = "MedicalBusiness"
 
   [params.services]
     summary_truncate = 120 # How many characters to include in the summary of the services before truncating

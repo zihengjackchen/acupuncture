@@ -1,0 +1,18 @@
+{{ $phoneRaw := .Site.Data.contact.phone | default "" }}
+{{ $phoneDigits := replaceRE "[^0-9]" "" $phoneRaw }}
+{{ $phoneE164 := cond (eq (len $phoneDigits) 10) (printf "+1%s" $phoneDigits) $phoneRaw }}
+{{ $description := .Params.description | default .Site.Home.Params.description | default .Site.Title }}
+{{ $schema := dict
+  "@context" "https://schema.org"
+  "@type" (.Site.Params.seo.business_type | default "MedicalBusiness")
+  "name" .Site.Title
+  "url" .Site.BaseURL
+  "description" $description
+  "telephone" $phoneE164
+  "email" (.Site.Data.contact.email | default "")
+  "areaServed" (.Site.Params.seo.service_area | default (.Site.Data.contact.service_area | default "Chicagoland, Illinois"))
+  "keywords" (.Site.Params.seo.local_keywords | default "")
+  "image" ((.Params.image | default .Site.Params.seo.meta_og_image) | absURL)
+  "logo" (.Site.Params.logo.desktop | absURL)
+}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>

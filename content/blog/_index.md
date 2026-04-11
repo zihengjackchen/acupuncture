@@ -1,6 +1,6 @@
 ---
 title: 'Questions'
-description: 'Quick answers about acupuncture comfort, safety, pricing, sessions, and what treatment can help.'
+description: 'Quick answers about mobile acupuncture in Chicago, including comfort, safety, pricing, sessions, and fit.'
 page_kicker: "Questions"
 hero_summary: "Quick answers about comfort, safety, pricing, sessions, and what to expect when you start care."
 hero_image: "images/converse.png"

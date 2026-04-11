@@ -39,7 +39,7 @@ Every new patient starts with a brief virtual consultation before booking furthe
 - Brief virtual consultation: $20 before further booking
 - Clear rates with package options and senior discounts
 
-For package and senior discount information, call 630-408-7875.
+For package and senior discount information, call 847-786-0066.
 
 ## Typical treatment frequency guidance
 

@@ -22,6 +22,7 @@
 
   {{ block "meta_tags" . }}
     {{ with .Params.description }}<meta name="description" content="{{ . }}"/>{{ end }}
+    <link rel="canonical" href="{{ .Permalink }}"/>
     <meta property="og:title" content="{{ .Params.meta_title | default .Title }}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="{{ .Permalink }}"/>
@@ -30,6 +31,7 @@
     <meta name="twitter:card" content="summary"/>
     {{ with .Site.Params.seo.meta_twitter_site }}<meta name="twitter:site" content="{{ . }}"/>{{ end }}
     {{ with .Site.Params.seo.meta_twitter_creator }}<meta name="twitter:creator" content="{{ . }}"/>{{ end }}
+    {{ partial "seo-local-business.html" . }}
   {{ end }}
 
 </head>

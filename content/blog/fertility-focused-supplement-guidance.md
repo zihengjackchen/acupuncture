@@ -12,4 +12,4 @@ Before booking further appointments, new patients complete a brief virtual consu
 
 We keep rates clear and offer package options and senior discounts.
 
-Call 630-408-7875 for current package and senior discount details.
+Call 847-786-0066 for current package and senior discount details.

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Wang&#39;s Harmony Acupuncture</title>
-    <link>/team/</link>
+    <link>https://wangsharmonyacu.com/team/</link>
     <description>Recent content in About on Wang&#39;s Harmony Acupuncture</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Nov 2018 10:47:58 +1000</lastBuildDate>
-    <atom:link href="/team/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wangsharmonyacu.com/team/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dr. Dan Wang</title>
-      <link>/team/dr-dan-wang/</link>
+      <link>https://wangsharmonyacu.com/team/dr-dan-wang/</link>
       <pubDate>Mon, 19 Nov 2018 10:47:58 +1000</pubDate>
-      <guid>/team/dr-dan-wang/</guid>
+      <guid>https://wangsharmonyacu.com/team/dr-dan-wang/</guid>
       <description>&lt;p&gt;Originally from Northeast China, Dan brings both cultural depth and clinical experience in Traditional Chinese Medicine. She earned her degree from the Liaoning University of Traditional Chinese Medicine in the 1990s and has practiced in the western suburbs of Chicago for the past four years.&lt;/p&gt;&#xA;&lt;p&gt;Dan believes healing works best when care is calm, personalized, and clearly explained. She works closely with each patient to understand symptoms, explain the plan, and support steady progress over time.&lt;/p&gt;</description>
     </item>
   </channel>

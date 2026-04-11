@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Services and Fees on Wang&#39;s Harmony Acupuncture</title>
-    <link>//localhost:1313/services/</link>
+    <link>http://localhost:1313/services/</link>
     <description>Recent content in Services and Fees on Wang&#39;s Harmony Acupuncture</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jan 2024 09:00:00 -0600</lastBuildDate>
-    <atom:link href="//localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Acupuncture Consultation and Personalized Care</title>
-      <link>//localhost:1313/services/acupuncture-consultation/</link>
+      <link>http://localhost:1313/services/acupuncture-consultation/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>//localhost:1313/services/acupuncture-consultation/</guid>
+      <guid>http://localhost:1313/services/acupuncture-consultation/</guid>
       <description>Start with a brief virtual consult, then move into mobile acupuncture care with clear next steps.</description>
     </item>
     <item>
       <title>Acute and Chronic Pain Management</title>
-      <link>//localhost:1313/services/pain-and-injury-management/</link>
+      <link>http://localhost:1313/services/pain-and-injury-management/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>//localhost:1313/services/pain-and-injury-management/</guid>
+      <guid>http://localhost:1313/services/pain-and-injury-management/</guid>
       <description>Mobile acupuncture for pain, headaches, nerve symptoms, and injury recovery.</description>
     </item>
     <item>
       <title>Women&#39;s Health and Fertility Support</title>
-      <link>//localhost:1313/services/womens-health-and-fertility/</link>
+      <link>http://localhost:1313/services/womens-health-and-fertility/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>//localhost:1313/services/womens-health-and-fertility/</guid>
+      <guid>http://localhost:1313/services/womens-health-and-fertility/</guid>
       <description>Acupuncture care for cycle health, fertility, hormone balance, and pelvic wellness.</description>
     </item>
     <item>
       <title>Digestive and Metabolic Health</title>
-      <link>//localhost:1313/services/digestive-and-metabolic-health/</link>
+      <link>http://localhost:1313/services/digestive-and-metabolic-health/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>//localhost:1313/services/digestive-and-metabolic-health/</guid>
+      <guid>http://localhost:1313/services/digestive-and-metabolic-health/</guid>
       <description>Support for abdominal discomfort, IBS, reflux, bloating, and metabolic health concerns.</description>
     </item>
     <item>
       <title>Respiratory, Immune, and Skin Support</title>
-      <link>//localhost:1313/services/respiratory-immune-and-skin/</link>
+      <link>http://localhost:1313/services/respiratory-immune-and-skin/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>//localhost:1313/services/respiratory-immune-and-skin/</guid>
+      <guid>http://localhost:1313/services/respiratory-immune-and-skin/</guid>
       <description>Acupuncture for allergies, sinus symptoms, cough, skin flare-ups, and immune support.</description>
     </item>
     <item>
       <title>Stress, Sleep, and Preventive Wellness</title>
-      <link>//localhost:1313/services/stress-sleep-and-wellness/</link>
+      <link>http://localhost:1313/services/stress-sleep-and-wellness/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 -0600</pubDate>
-      <guid>//localhost:1313/services/stress-sleep-and-wellness/</guid>
+      <guid>http://localhost:1313/services/stress-sleep-and-wellness/</guid>
       <description>Acupuncture care for stress, anxiety, insomnia, fatigue, and long-term wellness.</description>
     </item>
   </channel>

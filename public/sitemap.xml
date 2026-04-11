@@ -2,70 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/services/acupuncture-consultation/</loc>
+    <loc>http://localhost:1313/services/acupuncture-consultation/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/what-is-acupuncture/</loc>
+    <loc>http://localhost:1313/blog/what-is-acupuncture/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/team/dr-dan-wang/</loc>
+    <loc>http://localhost:1313/team/dr-dan-wang/</loc>
     <lastmod>2018-11-19T10:47:58+10:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/services/pain-and-injury-management/</loc>
+    <loc>http://localhost:1313/services/pain-and-injury-management/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/does-acupuncture-hurt/</loc>
+    <loc>http://localhost:1313/blog/does-acupuncture-hurt/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/how-much-does-mobile-acupuncture-cost/</loc>
+    <loc>http://localhost:1313/blog/how-much-does-mobile-acupuncture-cost/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/services/womens-health-and-fertility/</loc>
+    <loc>http://localhost:1313/services/womens-health-and-fertility/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/services/digestive-and-metabolic-health/</loc>
+    <loc>http://localhost:1313/services/digestive-and-metabolic-health/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/how-many-sessions-will-i-need/</loc>
+    <loc>http://localhost:1313/blog/how-many-sessions-will-i-need/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/services/respiratory-immune-and-skin/</loc>
+    <loc>http://localhost:1313/services/respiratory-immune-and-skin/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/what-can-acupuncture-treat/</loc>
+    <loc>http://localhost:1313/blog/what-can-acupuncture-treat/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/services/stress-sleep-and-wellness/</loc>
+    <loc>http://localhost:1313/services/stress-sleep-and-wellness/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/what-are-the-risks-of-acupuncture/</loc>
+    <loc>http://localhost:1313/blog/what-are-the-risks-of-acupuncture/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/services/</loc>
+    <loc>http://localhost:1313/services/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/what-is-traditional-chinese-medicine/</loc>
+    <loc>http://localhost:1313/blog/what-is-traditional-chinese-medicine/</loc>
     <lastmod>2024-01-15T09:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/team/</loc>
+    <loc>http://localhost:1313/team/</loc>
     <lastmod>2018-11-19T10:47:58+10:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2018-02-22T17:01:34+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
     <lastmod>2018-02-22T17:01:34+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>//localhost:1313/404/</loc>
+    <loc>http://localhost:1313/404/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

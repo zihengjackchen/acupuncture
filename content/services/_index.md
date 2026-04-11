@@ -1,6 +1,6 @@
 ---
 title: 'Services and Fees'
-description: 'See what treatment can help, what it costs, and how mobile acupuncture care starts.'
+description: 'Mobile acupuncture in Chicago and Chicagoland: services, fees, and how care starts.'
 page_kicker: "Services and fees"
 hero_summary: "See what treatment can help, what it costs, and how mobile care starts before you book."
 hero_image: "images/room.png"

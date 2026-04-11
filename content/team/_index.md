@@ -1,6 +1,6 @@
 ---
 title: 'About'
-description: "Learn how Wang's Harmony Acupuncture approaches mobile care with calm, clear treatment planning."
+description: "Learn how Wang's Harmony Acupuncture brings mobile acupuncture to Chicago and Chicagoland."
 page_kicker: "About"
 hero_summary: "Wang's Harmony Acupuncture blends Traditional Chinese Medicine with clear guidance, practical scheduling, and calm, one-on-one care."
 hero_image: "images/dan-wang.webp"
