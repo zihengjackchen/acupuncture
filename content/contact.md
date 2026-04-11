@@ -2,14 +2,14 @@
 title: 'Contact'
 date: 2018-02-22T17:01:34+07:00
 layout: contact
-description: "Contact Wang's Harmony Acupuncture for mobile acupuncture in Chicago and Chicagoland."
+description: "Contact Wang's Harmony Acupuncture for mobile acupuncture in Chicago, the north suburbs, and nearby Chicagoland."
 page_kicker: "Contact"
 hero_summary: "Call or email to start, ask a quick question, or confirm whether treatment is a good fit."
 hero_image: "images/converse.png"
 hero_badges:
   - "847-786-0066"
-  - "wangsharmonyacu@gmail.com"
-  - "Mobile acupuncture across Chicago and Chicagoland"
+  - "hello@wangsharmonyacu.com"
+  - "Cook, Lake, and Kane counties"
 ---
 
 We welcome new and returning patients. Call or email to book, ask a question, or find out whether acupuncture is the right next step.
@@ -22,18 +22,16 @@ We welcome new and returning patients. Call or email to book, ask a question, or
 
 Call 847-786-0066 for package and senior discount details.
 
-## Service area ZIP codes
+## Service area
 
-- 60001
-- 60002
-- 60003
-- 60004
-- 60005
-- 60006
-- 60007
-- 60008
-- 60009
-- 60010
+| Coverage | Details |
+| -------- | ------- |
+| Core counties | Cook, Lake, and Kane |
+| Core regions | Chicago and the north suburbs |
+| Common ZIP prefixes | 600, 601, 602, 606, 607 |
+| Extended availability | Select McHenry, DeKalb, and Kendall appointments by request |
+
+If you're outside the core service area, contact us before booking and we can confirm availability.
 
 | Day       | Opening Hours   |
 | --------- | --------------- |

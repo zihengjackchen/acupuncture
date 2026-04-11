@@ -48,8 +48,8 @@ enableRobotsTXT = true
     meta_twitter_site = "@zerostaticio"
     meta_twitter_creator = "@zerostaticio"
     meta_og_image = "images/logo/logo.svg"
-    local_keywords = "mobile acupuncture chicago, mobile acupuncture chicagoland, acupuncture chicago suburbs, fertility acupuncture chicago, pain acupuncture chicago"
-    service_area = "Chicago and Chicagoland, Illinois"
+    local_keywords = "mobile acupuncture chicago, mobile acupuncture north suburbs, cook county acupuncture, lake county acupuncture, kane county acupuncture"
+    service_area = "Cook, Lake, and Kane counties in Illinois"
     business_type = "MedicalBusiness"
 
   [params.services]
