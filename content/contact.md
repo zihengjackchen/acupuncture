@@ -1,18 +1,19 @@
 ---
 title: 'Contact'
+meta_title: "Contact Mobile Acupuncture in Chicago | Wang's Harmony Acupuncture"
 date: 2018-02-22T17:01:34+07:00
 layout: contact
-description: "Contact Wang's Harmony Acupuncture for mobile acupuncture in Chicago, the north suburbs, and nearby Chicagoland."
+description: "Contact Wang's Harmony Acupuncture for in-home mobile acupuncture in Chicago, the north suburbs, and nearby areas across Cook, Lake, and Kane counties."
 page_kicker: "Contact"
-hero_summary: "Call or email to start, ask a quick question, or confirm whether treatment is a good fit."
+hero_summary: "Call or email to ask a quick question, confirm service-area fit, or start with a brief consultation before booking."
 hero_image: "images/converse.png"
 hero_badges:
   - "847-786-0066"
   - "hello@wangsharmonyacu.com"
-  - "Cook, Lake, and Kane counties"
+  - "Chicago, Cook, Lake, and Kane counties"
 ---
 
-We welcome new and returning patients. Call or email to book, ask a question, or find out whether acupuncture is the right next step.
+We welcome new and returning patients. Call or email to ask about symptoms, pricing, service-area fit, or the best way to start mobile acupuncture care.
 
 ## Appointment options
 
@@ -22,7 +23,16 @@ We welcome new and returning patients. Call or email to book, ask a question, or
 
 Call 847-786-0066 for package and senior discount details.
 
-We serve Chicago and the north suburbs with a core area across Cook, Lake, and Kane counties. If you're outside that area, contact us and we can confirm availability before booking.
+## Service area highlights
+
+- Chicago and nearby neighborhoods
+- North suburban home visits
+- Core coverage across Cook, Lake, and Kane counties
+- Select McHenry, DeKalb, and Kendall County appointments by request
+
+If you are outside the core area, contact us with your ZIP code and we can confirm availability before booking.
+
+You can also review [Services and Fees](/services/) or browse common [Questions](/blog/) before reaching out.
 
 | Day       | Opening Hours   |
 | --------- | --------------- |

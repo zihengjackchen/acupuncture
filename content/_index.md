@@ -1,10 +1,10 @@
 ---
 title: 'Homepage'
-meta_title: "Mobile Acupuncture in Chicago | Wang's Harmony Acupuncture"
-description: "Mobile acupuncture in Chicago and Chicagoland for pain, fertility, hormones, digestion, sleep, and stress."
-hero_kicker: "Mobile acupuncture in Chicago and Chicagoland"
-hero_title: "Acupuncture care that comes to you."
-hero_summary: "Get clear, personalized acupuncture for pain, fertility, hormones, sleep, digestion, and stress without adding another trip to your week."
+meta_title: "Mobile Acupuncture in Chicago and North Suburbs | Wang's Harmony Acupuncture"
+description: "In-home mobile acupuncture across Chicago, the north suburbs, and nearby Chicagoland areas for pain, fertility, hormones, digestion, sleep, and stress."
+hero_kicker: "Mobile acupuncture in Chicago and the north suburbs"
+hero_title: "Mobile acupuncture care that comes to you."
+hero_summary: "Receive clear, personalized in-home acupuncture for pain, fertility, hormones, digestion, sleep, and stress without adding another drive to your week."
 hero_primary_label: "Book Your Consult"
 hero_primary_link: "/contact/"
 hero_secondary_label: "Explore Services"
@@ -12,7 +12,7 @@ hero_secondary_link: "/services/"
 hero_badges:
   - "In-home mobile appointments"
   - "Brief virtual consult before booking"
-  - "Pain, hormones, sleep, digestion, stress"
+  - "Chicago, Cook, Lake, and Kane counties"
 hero_stats:
   - value: "1:1"
     label: "Personalized treatment planning"
@@ -29,7 +29,7 @@ hero_images:
     alt: "Dr. Dan Wang portrait"
 story_kicker: "Committed to your health"
 story_title: "Care that feels clear, calm, and worth keeping up."
-story_intro: "Appointments are built around your goals, your schedule, and real follow-through."
+story_intro: "Appointments are built around your goals, your schedule, and practical follow-through."
 story_points:
   - title: "Thoughtful consultations"
     text: "We start by understanding your symptoms, history, and goals so the plan fits from day one."
@@ -56,6 +56,8 @@ gallery_images:
     alt: "Practitioner portrait"
 ---
 
-Wang's Harmony Acupuncture helps Chicago-area patients get skilled, one-on-one care without another drive, waiting room, or rushed visit.
+Wang's Harmony Acupuncture brings mobile, one-on-one care to Chicago and nearby Chicagoland communities so patients can get treatment without another commute, waiting room, or rushed visit.
 
 We commonly support pain, injury recovery, fertility and IVF care, hormonal transitions, insomnia, stress, digestion issues, sinus symptoms, postpartum recovery, and menopause with practical treatment plans that stay clear from the start.
+
+If you want to compare [services and fees](/services/), read common [questions about acupuncture](/blog/), or confirm whether your address is in the [service area](/contact/), the next step is easy.

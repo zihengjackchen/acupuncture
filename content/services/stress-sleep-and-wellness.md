@@ -1,15 +1,16 @@
 ---
 title: "Stress, Sleep, and Preventive Wellness"
+meta_title: "Acupuncture for Stress and Insomnia in Chicago | Mobile Care"
 date: 2024-01-15T09:00:00-06:00
 draft: false
 featured: true
 weight: 6
 summary: "Acupuncture care for stress, anxiety, insomnia, fatigue, and long-term wellness."
-description: "Acupuncture care for stress, anxiety, insomnia, fatigue, addiction support, and preventive wellness."
+description: "Acupuncture care for stress, anxiety, insomnia, fatigue, and long-term wellness support in Chicago and nearby service areas."
 card_image: "images/team/cristian-newman-94319-unsplash.jpg"
 hero_image: "images/team/cristian-newman-94319-unsplash.jpg"
 hero_kicker: "Stress and sleep"
-hero_intro: "If stress, poor sleep, or burnout keep draining you, care is designed to help your system settle and recover."
+hero_intro: "If stress, poor sleep, or burnout keep draining you, mobile care is designed to help your system settle and recover."
 highlights:
   - "Stress, anxiety, and insomnia support"
   - "Fatigue, resilience, and wellness maintenance"
@@ -50,3 +51,5 @@ Acupuncture is not only for pain. Many patients come for better sleep, steadier 
 ## Supportive care context
 
 For patients receiving complex medical treatment, acupuncture may also be used as supportive care to help with fatigue, sleep disruption, nausea, and stress symptoms in coordination with their medical team.
+
+If you want to talk through sleep, stress, or treatment frequency before booking, start with the [brief consultation](/services/acupuncture-consultation/) or [contact the clinic](/contact/).

@@ -2,17 +2,27 @@
 {{ $phoneDigits := replaceRE "[^0-9]" "" $phoneRaw }}
 {{ $phoneE164 := cond (eq (len $phoneDigits) 10) (printf "+1%s" $phoneDigits) $phoneRaw }}
 {{ $description := .Params.description | default .Site.Home.Params.description | default .Site.Title }}
+{{ $areas := slice }}
+{{ range .Site.Data.contact.core_regions }}{{ $areas = $areas | append . }}{{ end }}
+{{ range .Site.Data.contact.core_counties }}{{ $areas = $areas | append . }}{{ end }}
+{{ range .Site.Data.contact.request_counties }}{{ $areas = $areas | append . }}{{ end }}
 {{ $schema := dict
   "@context" "https://schema.org"
   "@type" (.Site.Params.seo.business_type | default "MedicalBusiness")
   "name" .Site.Title
   "url" .Site.BaseURL
+  "mainEntityOfPage" .Permalink
   "description" $description
   "telephone" $phoneE164
   "email" (.Site.Data.contact.email | default "")
-  "areaServed" (.Site.Params.seo.service_area | default (.Site.Data.contact.service_area | default "Chicagoland, Illinois"))
+  "areaServed" (cond (gt (len $areas) 0) $areas (.Site.Params.seo.service_area | default (.Site.Data.contact.service_area | default "Chicagoland, Illinois")))
   "keywords" (.Site.Params.seo.local_keywords | default "")
   "image" ((.Params.image | default .Site.Params.seo.meta_og_image) | absURL)
   "logo" (.Site.Params.logo.desktop | absURL)
+  "address" (dict
+    "@type" "PostalAddress"
+    "addressRegion" "IL"
+    "addressCountry" "US"
+  )
 }}
 <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>

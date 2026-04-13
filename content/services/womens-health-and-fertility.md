@@ -1,15 +1,16 @@
 ---
 title: "Women's Health and Fertility Support"
+meta_title: "Fertility and Women's Health Acupuncture in Chicago | Mobile Care"
 date: 2024-01-15T09:00:00-06:00
 draft: false
 featured: true
 weight: 3
 summary: "Acupuncture care for cycle health, fertility, hormone balance, and pelvic wellness."
-description: "Acupuncture care for cycle health, fertility, hormonal transitions, pelvic wellness, and postpartum recovery."
+description: "Acupuncture care for cycle health, fertility, hormonal transitions, pelvic wellness, and postpartum recovery in Chicago and nearby service areas."
 card_image: "images/team/sage-kirk-485982-unsplash.jpg"
 hero_image: "images/team/sage-kirk-485982-unsplash.jpg"
 hero_kicker: "Women's health"
-hero_intro: "Care is timed around your cycle, fertility plan, symptoms, and stage of life so treatment feels specific to you."
+hero_intro: "Mobile care is timed around your cycle, fertility plan, symptoms, and stage of life so treatment feels specific to you."
 highlights:
   - "Cycle, fertility, and hormone support"
   - "Thoughtful coordination with IUI and IVF timing"
@@ -58,3 +59,5 @@ Acupuncture is not a cure for infertility, but it can be a useful part of an int
 ## Important safety note
 
 Always coordinate supplements and fertility treatment decisions with your physician or registered dietitian, especially during IUI, IVF, or pregnancy.
+
+If you want to talk through timing, treatment fit, or how mobile visits work, start with the [brief consultation](/services/acupuncture-consultation/) or [contact the clinic](/contact/).

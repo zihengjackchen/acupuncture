@@ -21,13 +21,16 @@
   {{ block "header_css" . }}{{ end }}
 
   {{ block "meta_tags" . }}
-    {{ with .Params.description }}<meta name="description" content="{{ . }}"/>{{ end }}
+    {{ $metaDescription := .Params.description | default (.Plain | replaceRE "\\s+" " " | strings.TrimSpace | truncate 160 "...") }}
+    {{ $isNoindex := or (eq .Kind "taxonomy") (eq .Kind "term") (.Params.noindex | default false) }}
+    {{ with $metaDescription }}<meta name="description" content="{{ . }}"/>{{ end }}
+    <meta name="robots" content="{{ if $isNoindex }}noindex,follow{{ else }}index,follow,max-image-preview:large{{ end }}"/>
     <link rel="canonical" href="{{ .Permalink }}"/>
     <meta property="og:title" content="{{ .Params.meta_title | default .Title }}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="{{ .Permalink }}"/>
     {{ with .Params.image | default .Site.Params.seo.meta_og_image }}<meta property="og:image" content="{{ . | absURL }}"/>{{ end }}
-    {{ with .Params.description }}<meta property="og:description" content="{{ . }}"/>{{ end }}
+    {{ with $metaDescription }}<meta property="og:description" content="{{ . }}"/>{{ end }}
     <meta name="twitter:card" content="summary"/>
     {{ with .Site.Params.seo.meta_twitter_site }}<meta name="twitter:site" content="{{ . }}"/>{{ end }}
     {{ with .Site.Params.seo.meta_twitter_creator }}<meta name="twitter:creator" content="{{ . }}"/>{{ end }}

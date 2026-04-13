@@ -45,11 +45,11 @@ enableRobotsTXT = true
     accent_warm = "#E8C7A7"
 
   [params.seo]
-    meta_twitter_site = "@zerostaticio"
-    meta_twitter_creator = "@zerostaticio"
-    meta_og_image = "images/logo/logo.svg"
-    local_keywords = "mobile acupuncture chicago, mobile acupuncture north suburbs, cook county acupuncture, lake county acupuncture, kane county acupuncture"
-    service_area = "Cook, Lake, and Kane counties in Illinois"
+    meta_twitter_site = ""
+    meta_twitter_creator = ""
+    meta_og_image = "images/dan-wang.webp"
+    local_keywords = "mobile acupuncture in chicago, in-home acupuncture chicago, house call acupuncture chicago, mobile acupuncture north suburbs, chicago fertility acupuncture, chicago pain relief acupuncture"
+    service_area = "Chicago, the north suburbs, and nearby areas across Cook, Lake, and Kane counties in Illinois"
     business_type = "MedicalBusiness"
 
   [params.services]

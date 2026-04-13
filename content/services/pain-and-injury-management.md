@@ -1,15 +1,16 @@
 ---
 title: "Acute and Chronic Pain Management"
+meta_title: "Mobile Acupuncture for Pain Relief in Chicago | Wang's Harmony Acupuncture"
 date: 2024-01-15T09:00:00-06:00
 draft: false
 featured: true
 weight: 2
 summary: "Mobile acupuncture for pain, headaches, nerve symptoms, and injury recovery."
-description: "Mobile acupuncture care for musculoskeletal pain, headaches, nerve symptoms, and injury recovery."
+description: "Mobile acupuncture care for musculoskeletal pain, headaches, nerve symptoms, and injury recovery in Chicago and nearby service areas."
 card_image: "images/acupuncture.png"
 hero_image: "images/acupuncture.png"
 hero_kicker: "Pain and recovery"
-hero_intro: "Get mobile acupuncture for pain, headaches, nerve symptoms, and recovery, with follow-up paced to how severe and how recent the issue is."
+hero_intro: "Get in-home mobile acupuncture for pain, headaches, nerve symptoms, and recovery, with follow-up paced to how severe and how recent the issue is."
 highlights:
   - "Acute and chronic pain support"
   - "Mobility and recovery focused care"
@@ -57,3 +58,5 @@ Acupuncture can help reduce pain, improve mobility, and support healing. We trea
 ## Treatment plan expectations
 
 Pain plans depend on severity and duration. Acute injuries may improve faster, while chronic pain often needs a structured series of visits with support between appointments.
+
+If you want help deciding whether this is the right place to start, review the [brief consultation](/services/acupuncture-consultation/) or [contact the clinic](/contact/).

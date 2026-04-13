@@ -3,6 +3,6 @@
   <h2>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </h2>
-  <p>{{ .Plain | replaceRE "\\s+" " " | strings.TrimSpace | truncate 170 "..." }}</p>
+  <p>{{ .Params.description | default (.Plain | replaceRE "\\s+" " " | strings.TrimSpace | truncate 170 "...") }}</p>
   <a class="text-link" href="{{ .RelPermalink }}">Read answer</a>
 </article>

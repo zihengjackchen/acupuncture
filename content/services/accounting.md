@@ -1,16 +1,17 @@
 ---
 title: "Acupuncture Consultation and Personalized Care"
+meta_title: "Mobile Acupuncture Consultation in Chicago | Wang's Harmony Acupuncture"
 date: 2024-01-15T09:00:00-06:00
 draft: false
 featured: true
 weight: 1
 slug: "acupuncture-consultation"
 summary: "Start with a brief virtual consult, then move into mobile acupuncture care with clear next steps."
-description: "Start with a brief consult, then move into personalized mobile acupuncture care with clear pricing and follow-up."
+description: "Start with a brief consult before booking personalized mobile acupuncture in Chicago and nearby service areas, with clear pricing and follow-up."
 card_image: "images/converse.png"
 hero_image: "images/converse.png"
 hero_kicker: "Start here"
-hero_intro: "Start with a brief virtual consult so we can review your goals, answer questions, and recommend the right next step."
+hero_intro: "Start with a brief virtual consult so we can review your goals, answer questions, confirm service-area fit, and recommend the right next step."
 highlights:
   - "Pre-booking clarity"
   - "Mobile visit planning"
@@ -45,3 +46,5 @@ For package and senior discount information, call 847-786-0066.
 
 - Severe pain: often twice weekly
 - Many other concerns: weekly for four to six weeks before judging progress
+
+If you want to ask a practical question before booking, you can also [contact the clinic](/contact/) directly.

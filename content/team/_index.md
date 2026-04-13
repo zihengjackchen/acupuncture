@@ -1,8 +1,9 @@
 ---
 title: 'About'
-description: "Learn how Wang's Harmony Acupuncture brings mobile acupuncture to Chicago and Chicagoland."
+meta_title: "About Wang's Harmony Acupuncture | Mobile Acupuncture in Chicago"
+description: "Learn how Wang's Harmony Acupuncture brings mobile acupuncture to Chicago, the north suburbs, and nearby Chicagoland areas."
 page_kicker: "About"
-hero_summary: "Wang's Harmony Acupuncture blends Traditional Chinese Medicine with clear guidance, practical scheduling, and calm, one-on-one care."
+hero_summary: "Wang's Harmony Acupuncture blends Traditional Chinese Medicine with clear guidance, practical scheduling, and calm, one-on-one mobile care."
 hero_image: "images/dan-wang.webp"
 hero_badges:
   - "Licensed acupuncturist and herbalist"
@@ -17,7 +18,7 @@ values:
     text: "Care is meant to feel steady and sustainable so you can stay engaged without feeling overwhelmed."
 clinic_section:
   title: "Clinic approach"
-  description: "Wang's Harmony Acupuncture serves Chicagoland with mobile care rooted in TCM and shaped around real-life follow-through."
+  description: "Wang's Harmony Acupuncture serves Chicago and nearby Chicagoland communities with mobile care rooted in TCM and shaped around real-life follow-through."
   paragraphs:
     - "Founded in 2022, the clinic focuses on individualized treatment planning and clear continuity of care."
     - "Treatment looks at the full picture, including pain, sleep, digestion, stress, cycle health, and energy patterns."
@@ -27,6 +28,6 @@ clinic_section:
 
 Wang's Harmony Acupuncture is led by Dr. Dan Wang, a licensed acupuncturist and herbalist trained in Traditional Chinese Medicine.
 
-Traditional Chinese Medicine is built on pattern recognition, whole-person care, and treatment tailored to the individual.
+The practice is designed for patients who want clear communication, personalized treatment, and the convenience of care that comes to them.
 
-Its core ideas emphasize balance, whole-body function, and treating the bigger pattern rather than only one symptom.
+Traditional Chinese Medicine emphasizes balance, whole-body function, and treating the bigger pattern rather than only one symptom. You can review [Services and Fees](/services/), read common [Questions](/blog/), or [contact the clinic](/contact/) if you want to talk through fit before booking.
