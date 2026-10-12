@@ -1,0 +1,66 @@
+{
+  "brand": "Wang’s Harmony Acupuncture",
+  "date": "2026-10-11",
+  "concept": "Two opposing botanical forms create a balanced circle around a fine acupuncture needle.",
+  "colors": {
+    "jade": "#28594b",
+    "ink": "#26352e",
+    "paper": "#f7f3eb",
+    "sage": "#dce5d8",
+    "clay": "#a5684e"
+  },
+  "typography": {
+    "display": "Cormorant Garamond",
+    "supporting": "DM Sans",
+    "license": "SIL Open Font License 1.1; included in fonts/"
+  },
+  "svg": "Portable logo SVGs have text converted to paths. Editable SVG masters retain live text and require the bundled fonts.",
+  "clearSpace": "Keep a minimum space of one quarter of the symbol width around all logo variants.",
+  "minimumSizes": {
+    "symbol": "24 CSS px",
+    "horizontal": "320 CSS px",
+    "stacked": "240 CSS px"
+  },
+  "downloadFiles": [
+    "logos/symbol.svg",
+    "logos/symbol-512.png",
+    "logos/symbol-1024.png",
+    "logos/logo-horizontal.svg",
+    "logos/logo-horizontal-1024.png",
+    "logos/logo-horizontal-2048.png",
+    "logos/logo-stacked.svg",
+    "logos/logo-stacked-1024.png",
+    "logos/logo-stacked-2048.png",
+    "logos/symbol-black.svg",
+    "logos/symbol-black-512.png",
+    "logos/symbol-black-1024.png",
+    "logos/logo-horizontal-black.svg",
+    "logos/logo-horizontal-black-1024.png",
+    "logos/logo-horizontal-black-2048.png",
+    "logos/logo-stacked-black.svg",
+    "logos/logo-stacked-black-1024.png",
+    "logos/logo-stacked-black-2048.png",
+    "logos/symbol-ivory.svg",
+    "logos/symbol-ivory-512.png",
+    "logos/symbol-ivory-1024.png",
+    "logos/logo-horizontal-ivory.svg",
+    "logos/logo-horizontal-ivory-1024.png",
+    "logos/logo-horizontal-ivory-2048.png",
+    "logos/logo-stacked-ivory.svg",
+    "logos/logo-stacked-ivory-1024.png",
+    "logos/logo-stacked-ivory-2048.png",
+    "logos/apple-touch-icon.png",
+    "logos/favicon.svg",
+    "logos/favicon-32.png",
+    "logos/favicon-64.png",
+    "wallpaper-16x9.svg",
+    "wallpaper-3840x2160.png",
+    "wallpaper-1920x1080.png",
+    "social-preview.svg",
+    "social-preview.png"
+  ],
+  "fontSources": [
+    "https://github.com/google/fonts/tree/main/ofl/cormorantgaramond",
+    "https://github.com/google/fonts/tree/main/ofl/dmsans"
+  ]
+}

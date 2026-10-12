@@ -1,0 +1,7 @@
+{{- $parts := split . ":" -}}
+{{- $hour := int (index $parts 0) -}}
+{{- $minute := index $parts 1 -}}
+{{- $suffix := "a.m." -}}{{- if ge $hour 12 -}}{{- $suffix = "p.m." -}}{{- end -}}
+{{- $display := mod $hour 12 -}}{{- if eq $display 0 -}}{{- $display = 12 -}}{{- end -}}
+{{- $label := printf "%d" $display -}}{{- if ne $minute "00" -}}{{- $label = printf "%s:%s" $label $minute -}}{{- end -}}
+{{- printf "%s %s" $label $suffix -}}

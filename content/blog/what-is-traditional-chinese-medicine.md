@@ -1,18 +1,13 @@
 ---
-title: "What Is Traditional Chinese Medicine (TCM)?"
-meta_title: "What Is Traditional Chinese Medicine? | Chicago Mobile Acupuncture FAQ"
-date: 2024-01-15T09:00:00-06:00
+title: "What is Traditional Chinese Medicine?"
+meta_title: "What is Traditional Chinese Medicine? | Wang’s Harmony Acupuncture"
 draft: false
 weight: 0
-description: "Learn what Traditional Chinese Medicine is and how it shapes acupuncture care for patients in Chicago and nearby mobile service areas."
+description: "What is Traditional Chinese Medicine? Practical information for your visit with Dan Wang in Chicago or Highland Park."
 ---
 
-Traditional Chinese Medicine (TCM) is a long-standing system of care that looks at patterns in the body rather than only isolated symptoms.
+Traditional Chinese Medicine is a system of care with a long history. Its traditional framework considers patterns in a person’s symptoms and daily life, using concepts such as yin and yang and meridians.
 
-Instead of focusing on just one complaint, TCM looks at how symptoms connect with sleep, stress, digestion, energy, hormones, and recovery patterns.
+At Wang’s Harmony, that tradition informs the conversation about your health and the way your acupuncture care is planned. It sits alongside medical evaluation and the other care you receive.
 
-Its framework includes ideas like yin and yang, the Five Elements, organ systems, meridians, and syndrome differentiation. In practice, treatment is based on the whole picture rather than one symptom alone.
-
-That whole-person approach is part of how Wang's Harmony Acupuncture plans care for concerns like [pain and injury recovery](/services/pain-and-injury-management/), [women's health and fertility](/services/womens-health-and-fertility/), [stress and sleep](/services/stress-sleep-and-wellness/), and [digestive support](/services/digestive-and-metabolic-health/).
-
-If you want to understand how that approach applies to your own symptoms, you can review [Services and Fees](/services/) or [contact the clinic](/contact/).
+[Meet Dan Wang](/team/) or [explore care options](/services/).

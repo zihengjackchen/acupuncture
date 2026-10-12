@@ -1,0 +1,19 @@
+{
+  "retrieved": "2026-10-11",
+  "source_name": "U.S. Census Bureau TIGERweb",
+  "source_layer": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/2",
+  "source_vintage": "2020 Census ZCTA, January 1 2020",
+  "context_layer": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/82",
+  "accepted_inventory": "planning/mobile-service-zip-inventory.csv",
+  "accepted_zips": 263,
+  "mapped_zctas": 201,
+  "accepted_zips_without_zcta": 62,
+  "projection": "Web Mercator EPSG:3857, fitted to SVG viewBox",
+  "simplification": "ArcGIS maxAllowableOffset 65 metres, coordinate precision 0 metres; rendered at 0.1 SVG-unit precision",
+  "notes": [
+    "Census ZCTAs approximate ZIP delivery areas; they are not official USPS ZIP boundaries.",
+    "All 263 inventory ZIPs are accepted for mobile appointment requests; address and availability must be confirmed.",
+    "Color differences distinguish adjacent regions and do not encode a measure.",
+    "Place labels are city reference points, not precise clinic locations."
+  ]
+}

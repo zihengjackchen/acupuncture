@@ -1,55 +1,26 @@
 ---
-title: "Stress, Sleep, and Preventive Wellness"
-meta_title: "Acupuncture for Stress and Insomnia in Chicago | Mobile Care"
-date: 2024-01-15T09:00:00-06:00
+title: "Stress, sleep & wellbeing"
+meta_title: "Stress, sleep & wellbeing | Acupuncture in Chicago & Highland Park"
 draft: false
 featured: true
-weight: 6
-summary: "Acupuncture care for stress, anxiety, insomnia, fatigue, and long-term wellness."
-description: "Acupuncture care for stress, anxiety, insomnia, fatigue, and long-term wellness support in Chicago and nearby service areas."
-card_image: "images/team/cristian-newman-94319-unsplash.jpg"
-hero_image: "images/team/cristian-newman-94319-unsplash.jpg"
-hero_kicker: "Stress and sleep"
-hero_intro: "If stress, poor sleep, or burnout keep draining you, mobile care is designed to help your system settle and recover."
-highlights:
-  - "Stress, anxiety, and insomnia support"
-  - "Fatigue, resilience, and wellness maintenance"
-  - "Care that helps calm the nervous system over time"
-ideal_for:
-  - "Difficulty sleeping or staying asleep"
-  - "Stress overload, tension, or mood changes"
-  - "Patients who want ongoing wellness maintenance"
-visit_notes:
-  - "Weekly treatment is often a good starting point before re-evaluating progress"
-  - "Supportive care can be coordinated with complex medical treatment"
-  - "Maintenance care may help reduce recurrence once symptoms improve"
+weight: 4
+summary: "Make time to discuss rest, daily stress, and what feeling better would mean for you."
+description: "Make time to discuss rest, daily stress, and what feeling better would mean for you. Visit Dan Wang in Chicago or Highland Park."
+card_image: "images/editorial/rest.webp"
+hero_image: "images/editorial/rest.webp"
+hero_kicker: "Rest & wellbeing"
+hero_intro: "Make time to discuss rest, daily stress, and what feeling better would mean for you."
+highlights: ["Daily stress and tension", "Questions about sleep and rest", "A quieter, individual care experience"]
+ideal_for: ["Daily stress and tension", "Questions about sleep and rest", "A quieter, individual care experience"]
+visit_notes: ["Appointments in Chicago and Highland Park", "Confirm the fee and appointment length before booking", "Mobile visits available by request"]
 ---
 
-Acupuncture is not only for pain. Many patients come for better sleep, steadier energy, and help getting out of a constant stress cycle. Treatment is designed to restore calm, recovery, and resilience.
+When stress or disrupted sleep takes up too much of the day, having time to talk can be a meaningful first step. Dan asks about your routines, symptoms, and the support you already have.
 
-## Concerns in this category
+## Your experience matters
 
-- Stress and anxiety
-- Fatigue
-- Insomnia
-- Smoking and addiction support
-- Anti-aging and wellbeing
+Treatment is individualized, with time to discuss comfort and your preferences. Follow-up considers how you are feeling, what has changed, and whether continuing makes sense for you.
 
-## Mental and emotional support concerns
+Acupuncture is complementary care. Ongoing insomnia, anxiety, or mood concerns should also be discussed with an appropriate healthcare professional.
 
-- Anxiety
-- Stress overload
-- Mood changes related to chronic health concerns
-- Irritability
-
-## Ongoing wellness care
-
-- Maintenance treatments to prevent recurrence
-- Mind-body support for daily stress
-- Personalized recommendations for recovery and balance
-
-## Supportive care context
-
-For patients receiving complex medical treatment, acupuncture may also be used as supportive care to help with fatigue, sleep disruption, nausea, and stress symptoms in coordination with their medical team.
-
-If you want to talk through sleep, stress, or treatment frequency before booking, start with the [brief consultation](/services/acupuncture-consultation/) or [contact the clinic](/contact/).
+[Find your appointment](/contact/#locations) or call [847-786-0066](tel:+18477860066).

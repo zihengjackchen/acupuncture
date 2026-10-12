@@ -1,50 +1,30 @@
 ---
-title: "Acupuncture Consultation and Personalized Care"
-meta_title: "Mobile Acupuncture Consultation in Chicago | Wang's Harmony Acupuncture"
-date: 2024-01-15T09:00:00-06:00
+title: "Acupuncture consultation"
+meta_title: "Acupuncture consultation | Acupuncture in Chicago & Highland Park"
 draft: false
 featured: true
 weight: 1
+summary: "Start with a conversation about your health, your questions, and the right next step."
+description: "Start with a conversation about your health, your questions, and the right next step. Visit Dan Wang in Chicago or Highland Park."
+card_image: "images/editorial/consultation.webp"
+hero_image: "images/editorial/consultation.webp"
+hero_kicker: "Your first step"
+hero_intro: "Start with a conversation about your health, your questions, and the right next step."
+highlights: ["New to acupuncture", "Questions about fit, comfort, or timing", "Planning a clinic or mobile visit"]
+ideal_for: ["New to acupuncture", "Questions about fit, comfort, or timing", "Planning a clinic or mobile visit"]
+visit_notes: ["Appointments in Chicago and Highland Park", "Confirm the fee and appointment length before booking", "Mobile visits available by request"]
 slug: "acupuncture-consultation"
-summary: "Start with a brief virtual consult, then move into mobile acupuncture care with clear next steps."
-description: "Start with a brief consult before booking personalized mobile acupuncture in Chicago and nearby service areas, with clear pricing and follow-up."
-card_image: "images/converse.png"
-hero_image: "images/converse.png"
-hero_kicker: "Start here"
-hero_intro: "Start with a brief virtual consult so we can review your goals, answer questions, confirm service-area fit, and recommend the right next step."
-highlights:
-  - "Pre-booking clarity"
-  - "Mobile visit planning"
-  - "Transparent fees and follow-up rhythm"
-ideal_for:
-  - "First-time acupuncture patients"
-  - "Busy households that need mobile care"
-  - "Anyone comparing treatment timing, fees, or fit"
-visit_notes:
-  - "Brief virtual consultation: $20"
-  - "Mobile service base commute rate: $29.99 per commute"
-  - "Package options and senior discounts available by phone"
 ---
 
-Every new patient starts with a brief virtual consultation before booking further appointments. It helps clarify your concern, goals, and best next step.
+A consultation is a place to share what brings you in and ask the questions that matter to you. Dan will review your health history and discuss whether an acupuncture appointment is a suitable next step.
 
-## Intake and planning
+## What we discuss
 
-- Review of health history and treatment goals
-- TCM-based assessment and treatment planning
-- Practical recommendations for follow-up and self-care
+- Your symptoms, health history, and current treatment
+- Medications, supplements, and relevant precautions
+- Your preferences, schedule, and questions about comfort
+- The appointment fee and proposed plan
 
-## Mobile acupuncture service fees
+A consultation does not commit you to a course of treatment. Confirm the consultation format and current fee when you book.
 
-- Mobile service base commute rate: $29.99 per commute
-- Brief virtual consultation: $20 before further booking
-- Clear rates with package options and senior discounts
-
-For package and senior discount information, call 847-786-0066.
-
-## Typical treatment frequency guidance
-
-- Severe pain: often twice weekly
-- Many other concerns: weekly for four to six weeks before judging progress
-
-If you want to ask a practical question before booking, you can also [contact the clinic](/contact/) directly.
+[Find your appointment](/contact/#locations) or call [847-786-0066](tel:+18477860066).

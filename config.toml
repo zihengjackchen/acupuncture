@@ -14,7 +14,7 @@ enableRobotsTXT = true
   # In most cases you will only want to set the google_analytics_id OR the google_tag_manager_id. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
   google_analytics_id = ""
   google_tag_manager_id = ""
-  favicon = "favicon-32x32.svg"
+  favicon = "images/brand/symbol.svg"
 
   [params.homepage]
     sticky_header = true
@@ -22,9 +22,9 @@ enableRobotsTXT = true
     show_services_button = false # show / hide the "view all services" button
 
   [params.logo]
-    mobile = "images/logo/logo-mobile.svg"
+    mobile = "images/brand/symbol.svg"
     mobile_height = "28px"
-    desktop = "images/logo/logo.svg"
+    desktop = "images/brand/logo-horizontal.svg"
     desktop_height = "32px"
     alt = "Wang's Harmony Acupuncture"
 
@@ -47,8 +47,8 @@ enableRobotsTXT = true
   [params.seo]
     meta_twitter_site = ""
     meta_twitter_creator = ""
-    meta_og_image = "images/dan-wang.webp"
-    local_keywords = "mobile acupuncture in chicago, in-home acupuncture chicago, house call acupuncture chicago, mobile acupuncture north suburbs, chicago fertility acupuncture, chicago pain relief acupuncture"
+    meta_og_image = "media-pack/social-preview.png"
+    local_keywords = "acupuncture Chicago, acupuncture Highland Park, Dan Wang, Chinese medicine, mobile acupuncture by request"
     service_area = "Chicago, the north suburbs, and nearby areas across Cook, Lake, and Kane counties in Illinois"
     business_type = "MedicalBusiness"
 

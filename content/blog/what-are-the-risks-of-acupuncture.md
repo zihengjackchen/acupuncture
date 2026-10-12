@@ -1,20 +1,15 @@
 ---
-title: "What Are the Risks of Acupuncture?"
-meta_title: "What Are the Risks of Acupuncture? | Chicago FAQ"
-date: 2024-01-15T09:00:00-06:00
+title: "What should I know about safety?"
+meta_title: "What should I know about safety? | Wang’s Harmony Acupuncture"
 draft: false
 weight: 6
-description: "Learn the common side effects of acupuncture, when extra caution is needed, and what to share before a treatment visit."
+description: "What should I know about safety? Practical information for your visit with Dan Wang in Chicago or Highland Park."
 ---
 
-Licensed acupuncturists are trained in safe needling, so the risk of serious side effects is very low.
+Acupuncture can cause soreness, minor bleeding, or bruising. Serious complications are possible, especially with improper treatment. Ask about the technique and safety practices before you begin.
 
-The most common side effects are minor bleeding, mild bruising, or occasional dizziness after treatment.
+Share your medications, pregnancy status, implanted devices, bleeding conditions, and relevant medical history. These details help Dan decide whether to adjust or avoid a proposed treatment.
 
-Special caution is used for people taking blood thinner medication.
+Do not postpone medical evaluation because you are considering acupuncture. [The NIH explains acupuncture’s risks and safety considerations](https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety).
 
-Electro-acupuncture may not be suitable for people with pacemakers. Non-electric treatment is still available.
-
-Before treatment, it helps to mention any blood thinner use, pacemaker, pregnancy, history of fainting, or major medical condition so care can be adjusted appropriately.
-
-If you want to talk through a specific concern before booking, [contact the clinic](/contact/) and we can answer practical questions directly.
+[Contact Dan](/contact/) with questions before booking.

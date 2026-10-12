@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="{{ "" | relURL }}" aria-label="Wang’s Harmony Acupuncture — home">
+      <img src="{{ "images/brand/symbol.svg" | relURL }}" width="48" height="48" alt="">
+      <span class="brand-type">Wang’s Harmony<span>ACUPUNCTURE</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span>Menu</span><span class="menu-lines" aria-hidden="true"></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a href="{{ "services/" | relURL }}" {{ if eq .Section "services" }}aria-current="page"{{ end }}>Our care</a>
+      <a href="{{ "contact/" | relURL }}" {{ if eq .RelPermalink "/contact/" }}aria-current="page"{{ end }}>Locations & hours</a>
+      <a href="{{ "team/" | relURL }}" {{ if eq .Section "team" }}aria-current="page"{{ end }}>Meet Dan</a>
+      <a href="{{ "blog/" | relURL }}" {{ if eq .Section "blog" }}aria-current="page"{{ end }}>Your questions</a>
+      <a class="button button-small" href="{{ "contact/#locations" | relURL }}">Find an appointment {{ partial "icon.html" "diagonal" }}</a>
+    </nav>
+  </div>
+</header>

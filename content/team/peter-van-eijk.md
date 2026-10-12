@@ -1,32 +1,25 @@
 ---
-title: "Dr. Dan Wang"
-meta_title: "Dr. Dan Wang | Mobile Acupuncturist in Chicago"
-date: 2018-11-19T10:47:58+10:00
+title: "Dan Wang, L.Ac., Dipl OM"
+meta_title: "Dan Wang, L.Ac., Dipl OM | Acupuncture in Chicago & Highland Park"
 draft: false
 slug: "dr-dan-wang"
-image: "images/team/dan-wang.jpg"
-jobtitle: "Licensed Acupuncturist & Herbalist"
+image: "images/dan-wang.webp"
+jobtitle: "Acupuncturist · Chinese medicine"
 promoted: true
 weight: 1
-description: "Meet Dr. Dan Wang, the licensed acupuncturist and herbalist providing mobile acupuncture across Chicago and nearby Chicagoland communities."
-credentials:
-  - "Licensed acupuncturist and herbalist"
-  - "Traditional Chinese Medicine training from Liaoning University of Traditional Chinese Medicine"
-  - "Providing care across the Chicago area for the past four years"
-focus_areas:
-  - "Stress, anxiety, and sleep concerns"
-  - "Women's health, fertility, postpartum care, and menopause support"
-  - "Thoughtful coordination with IUI and IVF care teams"
+description: "Meet Dan Wang, L.Ac., Dipl OM, providing personal acupuncture care at clinics in Chicago and Highland Park."
+credentials: ["L.Ac. · Licensed Acupuncturist", "Dipl OM"]
+focus_areas: ["Pain and everyday comfort", "Women’s health and fertility support", "Stress, sleep, and wellbeing"]
 ---
 
-Originally from Northeast China, Dan brings both cultural depth and clinical experience in Traditional Chinese Medicine. She earned her degree from the Liaoning University of Traditional Chinese Medicine in the 1990s and has practiced in the Chicago area for the past four years.
+Dan Wang brings a thoughtful, personal approach to acupuncture and Chinese medicine. Each visit begins with listening: to your symptoms, your history, and what you would like care to help you work toward.
 
-Dan believes healing works best when care is calm, personalized, and clearly explained. She works closely with each patient to understand symptoms, explain the plan, and support steady progress over time.
+She explains the proposed treatment and checks in on your comfort. Follow-up is a conversation, with your response and priorities guiding the plan.
 
-She has a special interest in stress, anxiety, sleep concerns, and women's health, including menstrual irregularities, fertility challenges, postpartum recovery, and menopause support.
+## Where to find Dan
 
-Dan also supports patients through natural conception, IUI, and IVF in coordination with their medical care team. Patients know her for her compassionate presence and close listening.
+- **Monday and Wednesday, noon–6 pm:** Elite Healthcare, 2732 N Lincoln Ave, Chicago, IL 60614. [Book online](https://elitehcare.janeapp.com/).
+- **Sunday:** Pulling Down the Moon, 1770 1st St, Suite 400, Highland Park, IL 60035. Provisional hours are 9 am–6 pm; [call to confirm](tel:+18477860066).
+- **By request:** mobile acupuncture in the service area.
 
-Her practice through Wang's Harmony Acupuncture focuses on mobile care across Chicago, the north suburbs, and nearby service areas so patients can receive one-on-one treatment with less friction in the week.
-
-Outside the clinic, Dan enjoys reading, listening to music, and spending time with her family and friends.
+[View the weekly schedule](/contact/#locations).

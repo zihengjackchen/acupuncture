@@ -1,0 +1,8 @@
+Shan, Shui by Lingdong Huang
+https://github.com/LingDong-/shan-shui-inf
+Revision: 9f754d2b2e73495db7883d4d4055a7b0903b0454
+License: MIT (see LICENSE)
+
+Adaptation: isolated drawing primitives with local seeded randomness;
+a new bounded tile planner, worker, canvas playback, and static fallback.
+Regenerate using: node scripts/prepare-landscape.mjs

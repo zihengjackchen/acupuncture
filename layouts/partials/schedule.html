@@ -1,0 +1,20 @@
+<section id="locations" class="section location-section">
+  <div class="shell">
+    <div class="section-heading split-heading" data-reveal><div><span class="eyebrow"><span class="section-number">01</span> Find your place</span><h2>Two welcoming spaces.<br><em>The same thoughtful care.</em></h2></div><p>Choose the location and day that work for you.<br>Appointments are booked ahead, with time set aside just for you.</p></div>
+    <div class="schedule-heading"><h3>Where to find Dan this week</h3><span>Usual weekly schedule · Chicago time</span></div>
+    <div class="weekly-schedule" aria-label="Weekly clinic schedule">
+      {{ range slice (dict "day" "Monday" "short" "Mon" "index" 1) (dict "day" "Tuesday" "short" "Tue" "index" 2) (dict "day" "Wednesday" "short" "Wed" "index" 3) (dict "day" "Thursday" "short" "Thu" "index" 4) (dict "day" "Friday" "short" "Fri" "index" 5) (dict "day" "Saturday" "short" "Sat" "index" 6) (dict "day" "Sunday" "short" "Sun" "index" 0) }}
+      {{ $day := . }}{{ $clinic := false }}{{ $slot := dict }}
+      {{ range site.Data.clinics }}{{ $place := . }}{{ range .schedule }}{{ if eq (int .day_index) $day.index }}{{ $clinic = $place }}{{ $slot = . }}{{ end }}{{ end }}{{ end }}
+      <div class="schedule-day {{ if $clinic }}has-clinic{{ end }}" data-day="{{ .short }}"><div class="day-label"><span>{{ .short }}</span><small class="today-label" hidden>Today</small></div>
+      {{ if $clinic }}<a href="#{{ $clinic.id }}"><span class="schedule-dot {{ if eq $clinic.id "pulling-down-the-moon" }}dot-clay{{ end }}"></span><strong>{{ $clinic.short_name }}</strong><span class="schedule-time">{{ if eq $day.index 0 }}9 a.m.–6 p.m.{{ else }}12–6 p.m.{{ end }}</span>{{ if $slot.provisional }}<small>Call to confirm</small>{{ end }}</a>{{ else }}<span class="schedule-empty">By request</span>{{ end }}</div>
+      {{ end }}
+    </div>
+    <div class="clinic-grid">
+      {{ range .Site.Data.clinics }}
+      <article class="clinic" id="{{ .id }}" data-reveal><div class="clinic-top"><span class="eyebrow">{{ .address.city }}{{ if eq .id "elite-healthcare" }} · Lincoln Park{{ end }}</span>{{ partial "icon.html" "pin" }}</div><h3>{{ .name }}</h3><address>{{ .address.street }}{{ with .address.suite }}, {{ . }}{{ end }}<br>{{ .address.city }}, {{ .address.state }} {{ .address.zip }}</address><div class="clinic-hours">{{ .schedule_label }}</div>{{ with .schedule_note }}<p class="small-note">{{ . }}</p>{{ end }}<div class="clinic-actions"><a class="button {{ if eq .id "pulling-down-the-moon" }}button-outline{{ end }}" href="{{ .booking_url | safeURL }}">{{ .booking_label }} {{ partial "icon.html" "diagonal" }}</a><a class="text-link" href="{{ .directions_url }}" target="_blank" rel="noopener noreferrer">Directions <span class="sr-only">(opens a new tab)</span>{{ partial "icon.html" "diagonal" }}</a></div>{{ if eq .id "pulling-down-the-moon" }}<a class="clinic-profile" href="https://www.pullingdownthemoon.com/dan-wang---acupuncturist">Dan’s clinic profile {{ partial "icon.html" "arrow" }}</a>{{ end }}</article>
+      {{ end }}
+    </div>
+    <p class="schedule-note">This is Dan’s regular location schedule, not live appointment availability. Please book ahead.</p>
+  </div>
+</section>

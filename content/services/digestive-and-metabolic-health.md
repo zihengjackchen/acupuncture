@@ -1,49 +1,26 @@
 ---
-title: "Digestive and Metabolic Health"
-meta_title: "Acupuncture for Digestion and IBS in Chicago | Mobile Care"
-date: 2024-01-15T09:00:00-06:00
+title: "Digestive wellbeing"
+meta_title: "Digestive wellbeing | Acupuncture in Chicago & Highland Park"
 draft: false
 featured: true
-weight: 4
-summary: "Support for abdominal discomfort, IBS, reflux, bloating, and metabolic health concerns."
-description: "Acupuncture support for abdominal discomfort, IBS, reflux, bloating, and metabolic health concerns in Chicago and nearby service areas."
-card_image: "images/room.png"
-hero_image: "images/room.png"
-hero_kicker: "Digestive support"
-hero_intro: "Mobile treatment focuses on calming flare-ups and building steadier digestion, energy, and daily comfort."
-highlights:
-  - "IBS, bloating, reflux, and abdominal discomfort"
-  - "Metabolic support for cholesterol, weight, and blood sugar balance"
-  - "Whole-person planning that looks beyond isolated symptoms"
-ideal_for:
-  - "Recurring digestive flare-ups"
-  - "Gut symptoms linked with stress, fatigue, or irregular appetite"
-  - "Patients who want supportive care alongside medical treatment"
-visit_notes:
-  - "Care complements, not replaces, medical evaluation and treatment"
-  - "Progress is assessed by symptom frequency, comfort, and daily function"
-  - "Follow-up recommendations depend on duration and severity"
+weight: 5
+summary: "A whole-person conversation about digestive discomfort and your existing care."
+description: "A whole-person conversation about digestive discomfort and your existing care. Visit Dan Wang in Chicago or Highland Park."
+card_image: "images/editorial/hero-botanical.webp"
+hero_image: "images/editorial/hero-botanical.webp"
+hero_kicker: "Digestive wellbeing"
+hero_intro: "A whole-person conversation about digestive discomfort and your existing care."
+highlights: ["Bloating and digestive discomfort", "Symptoms that affect everyday meals", "Complementary care planning"]
+ideal_for: ["Bloating and digestive discomfort", "Symptoms that affect everyday meals", "Complementary care planning"]
+visit_notes: ["Appointments in Chicago and Highland Park", "Confirm the fee and appointment length before booking", "Mobile visits available by request"]
 ---
 
-Digestive and metabolic symptoms can drain energy and daily comfort. Acupuncture can help support steadier regulation while we focus on the bigger pattern behind the symptoms.
+Digestive symptoms can affect meals, routines, and comfort. We ask about your symptoms and medical history before considering an individual plan.
 
-## Conditions in this category
+## Begin with the right evaluation
 
-- Abdominal pain
-- Irritable bowel syndrome (IBS)
-- GERD and reflux symptoms
-- Constipation
-- Diarrhea
-- Gas and bloating
-- High cholesterol
-- Obesity and weight concerns
-- Type II diabetes support
+Bring any relevant diagnosis, medication list, and guidance from your healthcare team. Persistent or new digestive symptoms deserve medical assessment; acupuncture is not a substitute for that care.
 
-## Treatment goals
+We do not promise to treat diabetes, lower cholesterol, or produce weight loss. Discuss those goals with the clinician managing your health.
 
-- Improve digestion and gut comfort
-- Support appetite and energy regulation
-- Reduce flare frequency and symptom severity
-- Complement your existing medical care plan
-
-If you want to talk through symptoms or service-area fit before booking, start with the [brief consultation](/services/acupuncture-consultation/) or [contact the clinic](/contact/).
+[Find your appointment](/contact/#locations) or call [847-786-0066](tel:+18477860066).

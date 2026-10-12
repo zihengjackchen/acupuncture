@@ -1,0 +1,97 @@
+{
+  "spec_confirmations_date": "2026-10-11",
+  "scope": "Planning and skill installation; site implementation not started",
+  "schedule_timezone": "America/Chicago",
+  "schedule": [
+    {
+      "days": [
+        "Monday",
+        "Wednesday"
+      ],
+      "location": "Elite Healthcare",
+      "address": "2732 N Lincoln Ave, Chicago, IL 60614",
+      "start": "12:00",
+      "end": "18:00",
+      "status": "Noon to 6 p.m. interpretation of user-supplied 12:6",
+      "booking_url": "https://elitehcare.janeapp.com/"
+    },
+    {
+      "days": [
+        "Sunday"
+      ],
+      "location": "Pulling Down the Moon",
+      "address": "1770 1st St Ste 400, Highland Park, IL 60035",
+      "start": "09:00",
+      "end": "18:00",
+      "status": "Provisional hours explicitly supplied by user",
+      "booking_phone": "847-786-0066"
+    }
+  ],
+  "mobile_service": {
+    "availability": "Upon request",
+    "coverage_rule": "All USPS delivery ZIP codes beginning with the approved prefixes",
+    "prefixes": [
+      "600",
+      "601",
+      "602",
+      "606",
+      "607"
+    ],
+    "total_zip_codes": 263,
+    "total_matching_zctas": 201,
+    "total_without_matching_zcta": 62,
+    "counts_by_prefix": {
+      "600": {
+        "usps_zip_codes": 81,
+        "mapped_zctas": 65
+      },
+      "601": {
+        "usps_zip_codes": 89,
+        "mapped_zctas": 72
+      },
+      "602": {
+        "usps_zip_codes": 5,
+        "mapped_zctas": 4
+      },
+      "606": {
+        "usps_zip_codes": 83,
+        "mapped_zctas": 56
+      },
+      "607": {
+        "usps_zip_codes": 5,
+        "mapped_zctas": 4
+      }
+    },
+    "inventory_file": "mobile-service-zip-inventory.csv",
+    "map_note": "Shade each matching ZCTA with a green fill and distinct outline. ZCTA boundaries approximate ZIP areas. Retain unmatched ZIPs in the accepted list and confirm the physical visit address; do not invent polygons.",
+    "field_notes": {
+      "usps_postal_locale": "Postal facility locale from USPS, not necessarily the resident city.",
+      "usps_zip_class": "Raw USPS ZIP CLASS CODE. Blank values preserved.",
+      "zcta_internal_latitude": "Census internal reference point, not a clinic or patient location."
+    }
+  },
+  "sources": [
+    {
+      "provider": "USPS",
+      "landing_page": "https://postalpro.usps.com/ZIP_Locale_Detail",
+      "download": "https://postalpro.usps.com/mnt/glusterfs/2026-10/Zip_Locale_Detail.xlsx",
+      "vintage": "October 2026",
+      "sha256": "6e923786b70a5ab7ed93fd89cf0ffee3633c6daa58c86c6d4c8702dcd860bc07"
+    },
+    {
+      "provider": "US Census Bureau",
+      "landing_page": "https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html",
+      "download": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_zcta_national.zip",
+      "vintage": "2026 Gazetteer / 2020 Census ZCTA geography",
+      "sha256": "f1e9046b91f6e60686a99343cb2752834c02b0764939403b331c78c017e2c54c"
+    }
+  ],
+  "installed_skills": [
+    "editorial-service-booking",
+    "gsap-core",
+    "gsap-timeline",
+    "gsap-scrolltrigger",
+    "gsap-performance",
+    "web-design-guidelines"
+  ]
+}

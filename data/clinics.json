@@ -1,0 +1,34 @@
+[
+  {
+    "id": "elite-healthcare",
+    "name": "Elite Healthcare",
+    "short_name": "Chicago",
+    "address": {"street": "2732 N Lincoln Ave", "suite": "", "city": "Chicago", "state": "IL", "zip": "60614"},
+    "schedule": [
+      {"day": "Monday", "day_index": 1, "start": "12:00", "end": "18:00", "provisional": false},
+      {"day": "Wednesday", "day_index": 3, "start": "12:00", "end": "18:00", "provisional": false}
+    ],
+    "schedule_label": "Monday & Wednesday · 12–6 pm",
+    "schedule_note": "Appointments required. All hours are Central Time.",
+    "booking_url": "https://elitehcare.janeapp.com/",
+    "booking_label": "Book in Chicago",
+    "phone": "847-786-0066",
+    "phone_href": "tel:+18477860066",
+    "directions_url": "https://www.google.com/maps/search/?api=1&query=2732+N+Lincoln+Ave+Chicago+IL+60614"
+  },
+  {
+    "id": "pulling-down-the-moon",
+    "name": "Pulling Down the Moon",
+    "short_name": "Highland Park",
+    "address": {"street": "1770 1st St", "suite": "Suite 400", "city": "Highland Park", "state": "IL", "zip": "60035"},
+    "schedule": [{"day": "Sunday", "day_index": 0, "start": "09:00", "end": "18:00", "provisional": true}],
+    "schedule_label": "Sunday · 9 am–6 pm",
+    "schedule_note": "Sunday hours are provisional. Please call to confirm before visiting. All hours are Central Time.",
+    "booking_url": "tel:+18477860066",
+    "booking_label": "Call to book in Highland Park",
+    "phone": "847-786-0066",
+    "phone_href": "tel:+18477860066",
+    "profile_url": "https://www.pullingdownthemoon.com/dan-wang---acupuncturist",
+    "directions_url": "https://www.google.com/maps/search/?api=1&query=1770+1st+St+Suite+400+Highland+Park+IL+60035"
+  }
+]

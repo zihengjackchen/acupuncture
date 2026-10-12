@@ -1,63 +1,28 @@
 ---
-title: "Women's Health and Fertility Support"
-meta_title: "Fertility and Women's Health Acupuncture in Chicago | Mobile Care"
-date: 2024-01-15T09:00:00-06:00
+title: "Women’s health & fertility support"
+meta_title: "Women’s health & fertility support | Acupuncture in Chicago & Highland Park"
 draft: false
 featured: true
 weight: 3
-summary: "Acupuncture care for cycle health, fertility, hormone balance, and pelvic wellness."
-description: "Acupuncture care for cycle health, fertility, hormonal transitions, pelvic wellness, and postpartum recovery in Chicago and nearby service areas."
-card_image: "images/team/sage-kirk-485982-unsplash.jpg"
-hero_image: "images/team/sage-kirk-485982-unsplash.jpg"
-hero_kicker: "Women's health"
-hero_intro: "Mobile care is timed around your cycle, fertility plan, symptoms, and stage of life so treatment feels specific to you."
-highlights:
-  - "Cycle, fertility, and hormone support"
-  - "Thoughtful coordination with IUI and IVF timing"
-  - "Gentle care for pelvic wellness and recovery"
-ideal_for:
-  - "Cycle irregularity, PMS, and painful periods"
-  - "Natural conception, IUI, and IVF support"
-  - "Postpartum recovery and menopause transitions"
-visit_notes:
-  - "Treatment plans are adjusted around cycle timing and symptom changes"
-  - "Integrative support may include herbs, nutrition referral, and mind-body strategies"
-  - "Always coordinate supplements and fertility decisions with your physician or dietitian"
+summary: "A thoughtful place to discuss your wellbeing through menstrual, fertility, postpartum, and menopausal transitions."
+description: "A thoughtful place to discuss your wellbeing through menstrual, fertility, postpartum, and menopausal transitions. Visit Dan Wang in Chicago or Highland Park."
+card_image: "images/editorial/womens-health.webp"
+hero_image: "images/editorial/womens-health.webp"
+hero_kicker: "Women’s health"
+hero_intro: "A thoughtful place to discuss your wellbeing through menstrual, fertility, postpartum, and menopausal transitions."
+highlights: ["Menstrual wellbeing and life transitions", "Support alongside fertility care", "Postpartum and menopause conversations"]
+ideal_for: ["Menstrual wellbeing and life transitions", "Support alongside fertility care", "Postpartum and menopause conversations"]
+visit_notes: ["Appointments in Chicago and Highland Park", "Confirm the fee and appointment length before booking", "Mobile visits available by request"]
 ---
 
-We provide personalized care for hormonal and reproductive health at every stage of life. Treatment plans are built around your cycle, symptoms, and broader health picture.
+Different stages of life bring different questions. Dan makes space to discuss your symptoms, your priorities, and the care you are already receiving.
 
-## How acupuncture can support fertility
+## Alongside your care team
 
-Acupuncture is not a cure for infertility, but it can be a useful part of an integrative fertility plan. Depending on your diagnosis and care plan, it may help:
+If you are trying to conceive or receiving IUI or IVF, share your treatment schedule and your fertility team’s recommendations. Acupuncture care is planned with that context in mind.
 
-- Improve blood flow to reproductive organs
-- Support hormone regulation
-- Regulate menstruation and ovulation patterns
-- Lower stress related to trying to conceive
-- Reduce inflammatory burden
-- Support egg, embryo, and sperm quality
-- Complement IUI and IVF timelines
+We do not promise pregnancy, improved egg quality, or IVF success. Acupuncture has not been shown to improve IVF pregnancy or live-birth rates compared with sham acupuncture in the research summarized by [the NIH](https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety).
 
-## Women's conditions we commonly treat
+Tell Dan if you are pregnant or may be pregnant. Review any proposed herbs or supplements with your medical care team before use.
 
-- Infertility
-- Premenstrual syndrome (PMS)
-- Menstrual disorders and cycle irregularity
-- Polycystic ovary syndrome (PCOS)
-- Painful menses and endometriosis support
-- Menopausal syndrome
-- Pelvic pain
-- Postpartum recovery
-
-## Session structure for fertility-focused care
-
-- Initial consultation: detailed history, pulse and tongue assessment, and first treatment
-- Follow-up sessions: treatment progression based on cycle timing and symptom updates
-- Integrative options: herbs, nutrition referral, and mind-body support as needed
-
-## Important safety note
-
-Always coordinate supplements and fertility treatment decisions with your physician or registered dietitian, especially during IUI, IVF, or pregnancy.
-
-If you want to talk through timing, treatment fit, or how mobile visits work, start with the [brief consultation](/services/acupuncture-consultation/) or [contact the clinic](/contact/).
+[Find your appointment](/contact/#locations) or call [847-786-0066](tel:+18477860066).

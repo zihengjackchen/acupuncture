@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="shell footer-top">
+    <div class="footer-brand">
+      <a class="brand" href="{{ "" | relURL }}"><img src="{{ "images/brand/symbol-ivory.svg" | relURL }}" width="56" height="56" alt=""><span class="brand-type">Wang’s Harmony<span>ACUPUNCTURE</span></span></a>
+      <p>Rooted in tradition.<br>Care for the way you live.</p>
+    </div>
+    <div><span class="footer-label">A conversation is a good start.</span><a class="footer-phone" href="tel:+18477860066">{{ .Site.Data.contact.phone }}</a><a href="mailto:{{ .Site.Data.contact.email }}">{{ .Site.Data.contact.email }}</a></div>
+    <nav aria-label="Footer navigation"><a href="{{ "services/" | relURL }}">Care & services</a><a href="{{ "contact/" | relURL }}">Locations & appointments</a><a href="{{ "team/" | relURL }}">About Dan Wang</a><a href="{{ "contact/#mobile-visits" | relURL }}">Mobile visits</a><a href="{{ "media-pack/wangs-harmony-media-pack.zip" | relURL }}" download>Brand & media pack {{ partial "icon.html" "diagonal" }}</a></nav>
+  </div>
+  <div class="shell footer-bottom"><span>© {{ now.Year }} Wang’s Harmony Acupuncture PLLC</span><span>Chicago & Highland Park, Illinois</span><a href="{{ "privacy/" | relURL }}">Privacy</a></div>
+</footer>

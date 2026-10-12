@@ -1,9 +1,6 @@
 ---
-title: 'About'
-date: 2018-02-22T17:01:34+07:00
+title: "About"
 noindex: true
 ---
 
-This page has moved.
-
-Please visit [About](/team/) for clinic and practitioner information.
+Meet [Dan Wang, L.Ac., Dipl OM](/team/), and learn about clinic appointments in Chicago and Highland Park.

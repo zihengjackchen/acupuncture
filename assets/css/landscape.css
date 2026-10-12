@@ -1,0 +1,84 @@
+.harmony-landscape {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background: #f7f3eb;
+  color: #435b4d;
+}
+.harmony-landscape__view {
+  position: absolute;
+  inset: 40px 0 0;
+  overflow: hidden;
+  opacity: .78;
+  pointer-events: none;
+}
+.harmony-landscape__view::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#f7f3eb 0%, transparent 26%, transparent 80%, #f7f3eb 100%);
+}
+.harmony-landscape__fallback,
+.harmony-landscape__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.harmony-landscape__fallback { object-fit: cover; object-position: center; }
+.harmony-landscape__canvas { opacity: 0; transition: opacity 1.2s ease; }
+.harmony-landscape.is-ready .harmony-landscape__canvas { opacity: 1; }
+.harmony-landscape__caption {
+  position: absolute;
+  z-index: 1;
+  inset: 10px clamp(20px, 5vw, 80px) auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.harmony-landscape__thought {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(19px, 2vw, 25px);
+  line-height: 1.2;
+}
+.harmony-landscape__toggle {
+  flex-shrink: 0;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #839589;
+  border-radius: 999px;
+  background: #f7f3eb;
+  color: #435b4d;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.harmony-landscape__toggle[hidden] { display: none; }
+.harmony-landscape__toggle:focus-visible,
+.harmony-landscape__credit:focus-visible { outline: 2px solid #435b4d; outline-offset: 4px; }
+.harmony-landscape__credit {
+  position: absolute;
+  z-index: 1;
+  bottom: 8px;
+  right: clamp(20px, 5vw, 80px);
+  padding: 5px 0;
+  color: #53685b;
+  font-size: 10px;
+  line-height: 1.4;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+@media (max-width: 640px) {
+  .harmony-landscape { height: 208px; }
+  .harmony-landscape__view { top: 48px; }
+  .harmony-landscape__caption { gap: 8px; inset-inline: 20px; }
+  .harmony-landscape__thought { max-width: 190px; font-size: 19px; }
+  .harmony-landscape__toggle { padding-inline: 10px; font-size: 11px; }
+  .harmony-landscape__credit { right: 20px; font-size: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .harmony-landscape__canvas { transition: none; }
+}

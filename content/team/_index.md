@@ -1,33 +1,17 @@
 ---
-title: 'About'
-meta_title: "About Wang's Harmony Acupuncture | Mobile Acupuncture in Chicago"
-description: "Learn how Wang's Harmony Acupuncture brings mobile acupuncture to Chicago, the north suburbs, and nearby Chicagoland areas."
-page_kicker: "About"
-hero_summary: "Wang's Harmony Acupuncture blends Traditional Chinese Medicine with clear guidance, practical scheduling, and calm, one-on-one mobile care."
+title: "Meet Dan Wang"
+meta_title: "Dan Wang, L.Ac., Dipl OM | Wang’s Harmony Acupuncture"
+description: "Meet Dan Wang, L.Ac., Dipl OM, and learn about her approach to personalized acupuncture and Chinese medicine in Chicago and Highland Park."
+page_kicker: "Your practitioner"
+hero_summary: "Careful listening. Clear explanations. Care that makes room for the whole person."
 hero_image: "images/dan-wang.webp"
-hero_badges:
-  - "Licensed acupuncturist and herbalist"
-  - "Mobile care across Chicagoland"
-  - "Thoughtful support for pain, sleep, digestion, and women's health"
-values:
-  - title: "Whole-person care"
-    text: "Treatment looks at symptoms, stress, sleep, digestion, hormones, and recovery patterns instead of chasing one complaint."
-  - title: "Clear communication"
-    text: "You should understand what the plan is for, how often follow-up may help, and what progress to watch for."
-  - title: "Calm continuity"
-    text: "Care is meant to feel steady and sustainable so you can stay engaged without feeling overwhelmed."
-clinic_section:
-  title: "Clinic approach"
-  description: "Wang's Harmony Acupuncture serves Chicago and nearby Chicagoland communities with mobile care rooted in TCM and shaped around real-life follow-through."
-  paragraphs:
-    - "Founded in 2022, the clinic focuses on individualized treatment planning and clear continuity of care."
-    - "Treatment looks at the full picture, including pain, sleep, digestion, stress, cycle health, and energy patterns."
-    - "Common support areas include pain, anxiety, sinus congestion, insomnia, digestion, fertility, IVF support, postpartum care, and menopause."
-    - "After acute injury, patients are encouraged to seek medical evaluation first to rule out fractures or structural damage."
+hero_badges: ["Dan Wang, L.Ac., Dipl OM", "Acupuncture & Chinese medicine", "Chicago & Highland Park"]
+values: [{"title": "Listen first", "text": "Your symptoms, daily routines, and priorities shape the conversation."}, {"title": "Explain clearly", "text": "Know what is being proposed, what it costs, and when to review your progress."}, {"title": "Work together", "text": "Care is coordinated with your wider healthcare plan and adjusted to your response."}]
+clinic_section: {"title": "Rooted in Chinese medicine", "description": "A personal approach to care, with regular clinic appointments and a considered plan for follow-up.", "paragraphs": ["Dan welcomes patients at Elite Healthcare in Chicago and Pulling Down the Moon in Highland Park.", "Mobile visits remain available by request."]}
 ---
 
-Wang's Harmony Acupuncture is led by Dr. Dan Wang, a licensed acupuncturist and herbalist trained in Traditional Chinese Medicine.
+Dan Wang, L.Ac., Dipl OM, practices acupuncture and Chinese medicine with an emphasis on listening and individual care. She takes time to understand what brings you in and to explain the next steps.
 
-The practice is designed for patients who want clear communication, personalized treatment, and the convenience of care that comes to them.
+Appointments are available at [two clinic locations](/contact/#locations). Whether you are new to acupuncture or returning to care, you can ask about comfort, scheduling, and what to expect before you book.
 
-Traditional Chinese Medicine emphasizes balance, whole-body function, and treating the bigger pattern rather than only one symptom. You can review [Services and Fees](/services/), read common [Questions](/blog/), or [contact the clinic](/contact/) if you want to talk through fit before booking.
+[Explore care options](/services/) or [find your appointment](/contact/#locations).

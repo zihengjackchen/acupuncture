@@ -1,11 +1,14 @@
 email: 'hello@wangsharmonyacu.com'
 phone: '847-786-0066'
+phone_href: 'tel:+18477860066'
 contact_button_link: 'contact'
-service_area: 'Chicago and nearby areas across Cook, Lake, and Kane counties'
-availability: 'Select McHenry, DeKalb, and Kendall County appointments are available by request.'
+service_area: 'Chicago and Highland Park'
+availability: 'Clinic appointments in Chicago on Monday and Wednesday; Highland Park on Sunday. Mobile visits by request.'
+timezone: 'America/Chicago'
+mobile_note: 'Mobile visits are available by request. Call to confirm the address, travel fee, and appointment time.'
 core_regions:
   - 'Chicago'
-  - 'North suburbs'
+  - 'Highland Park'
 core_counties:
   - 'Cook County'
   - 'Lake County'

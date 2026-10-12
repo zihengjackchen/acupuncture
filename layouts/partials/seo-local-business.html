@@ -1,0 +1,10 @@
+{{ $base := .Site.BaseURL }}
+{{ $businessID := printf "%s#practice" $base }}
+{{ $graph := slice (dict "@type" "MedicalBusiness" "@id" $businessID "name" "Wang’s Harmony Acupuncture" "url" $base "telephone" "+18477860066" "email" .Site.Data.contact.email "logo" ("images/brand/logo-horizontal.svg" | absURL) "image" ("images/dan-wang.webp" | absURL) "description" "Personalized acupuncture and Chinese medicine with Dan Wang in Chicago and Highland Park. Mobile visits available upon request.") (dict "@type" "Person" "@id" (printf "%s#dan-wang" $base) "name" "Dan Wang" "honorificSuffix" "L.Ac., Dipl OM" "jobTitle" "Licensed Acupuncturist and Herbalist" "image" ("images/dan-wang.webp" | absURL) "worksFor" (dict "@id" $businessID)) }}
+{{ range .Site.Data.clinics }}
+  {{ $hours := slice }}{{ range .schedule }}{{ if not .provisional }}{{ $hours = $hours | append (dict "@type" "OpeningHoursSpecification" "dayOfWeek" (printf "https://schema.org/%s" .day) "opens" .start "closes" .end) }}{{ end }}{{ end }}
+  {{ $location := dict "@type" "MedicalBusiness" "@id" (printf "%s#%s" $base .id) "name" (printf "Wang’s Harmony Acupuncture at %s" .name) "parentOrganization" (dict "@id" $businessID) "url" ("contact/" | absURL) "telephone" "+18477860066" "address" (dict "@type" "PostalAddress" "streetAddress" (strings.TrimSpace (printf "%s %s" .address.street .address.suite)) "addressLocality" .address.city "addressRegion" .address.state "postalCode" .address.zip "addressCountry" "US") }}
+  {{ if gt (len $hours) 0 }}{{ $location = merge $location (dict "openingHoursSpecification" $hours) }}{{ end }}
+  {{ $graph = $graph | append $location }}
+{{ end }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>

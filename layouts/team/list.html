@@ -1,0 +1,1 @@
+{{ define "main" }}{{ $person := .Site.GetPage "/team/dr-dan-wang" }}{{ if not $person }}{{ $person = index .RegularPages 0 }}{{ end }}{{ partial "practitioner-page.html" $person }}{{ end }}

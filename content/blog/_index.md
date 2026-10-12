@@ -1,16 +1,11 @@
 ---
-title: 'Questions'
-meta_title: "Mobile Acupuncture Questions | Chicago FAQ"
-description: 'Clear answers about mobile acupuncture in Chicago, including comfort, safety, pricing, sessions, and what to expect before booking.'
-page_kicker: "Questions"
-hero_summary: "Quick answers about comfort, safety, pricing, sessions, and what to expect before you start mobile acupuncture care."
-hero_image: "images/converse.png"
-hero_badges:
-  - "Treatment comfort and safety"
-  - "Cost and session planning"
-  - "First-visit expectations"
+title: "Your questions"
+meta_title: "Acupuncture Questions | Wang’s Harmony Acupuncture"
+description: "What to expect at an acupuncture visit, how to book, and questions about comfort, safety, and cost."
+page_kicker: "A little clarity"
+hero_summary: "It is natural to have questions. Start here, and bring the rest to your conversation with Dan."
+hero_image: "images/editorial/consultation.webp"
+hero_badges: ["Your first visit", "Comfort and safety", "Booking and fees"]
 ---
 
-This section covers the questions patients ask most often before they book, from comfort and safety to cost, timing, and treatment fit.
-
-If you already know what kind of support you want, you can also review [Services and Fees](/services/) or [contact the clinic](/contact/) directly.
+Explore common questions before your visit. You can also [call or email](/contact/) for help choosing a location or discussing the next step.

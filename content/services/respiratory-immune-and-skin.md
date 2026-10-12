@@ -1,45 +1,26 @@
 ---
-title: "Respiratory, Immune, and Skin Support"
-meta_title: "Acupuncture for Allergies and Sinus Relief in Chicago | Mobile Care"
-date: 2024-01-15T09:00:00-06:00
+title: "Seasonal & everyday concerns"
+meta_title: "Seasonal & everyday concerns | Acupuncture in Chicago & Highland Park"
 draft: false
 featured: true
-weight: 5
-summary: "Acupuncture for allergies, sinus symptoms, cough, skin flare-ups, and immune support."
-description: "Acupuncture support for sinus congestion, allergies, cough, skin flare-ups, and immune resilience in Chicago and nearby service areas."
-card_image: "images/team/michael-dam-258165-unsplash.jpg"
-hero_image: "images/team/michael-dam-258165-unsplash.jpg"
-hero_kicker: "Respiratory and immune support"
-hero_intro: "Mobile treatment aims to calm flare-ups and help your system stay steadier between them."
-highlights:
-  - "Allergy, sinus, and cough support"
-  - "Skin concerns including acne and Bell's palsy support"
-  - "Seasonal and lifestyle trigger planning"
-ideal_for:
-  - "Allergy, sinusitis, and asthma support"
-  - "Chronic cough or bronchitis support"
-  - "Patients dealing with repeat flare-ups through the year"
-visit_notes:
-  - "Follow-up care may change with the season and symptom intensity"
-  - "Acupuncture is used as supportive care alongside medical treatment when needed"
-  - "Lifestyle trigger review can help improve stability between episodes"
+weight: 6
+summary: "Discuss seasonal discomfort and other concerns to see whether a consultation is a useful next step."
+description: "Discuss seasonal discomfort and other concerns to see whether a consultation is a useful next step. Visit Dan Wang in Chicago or Highland Park."
+card_image: "images/editorial/consultation.webp"
+hero_image: "images/editorial/consultation.webp"
+hero_kicker: "Everyday comfort"
+hero_intro: "Discuss seasonal discomfort and other concerns to see whether a consultation is a useful next step."
+highlights: ["Seasonal nasal discomfort", "Questions about complementary care", "Coordination with your medical plan"]
+ideal_for: ["Seasonal nasal discomfort", "Questions about complementary care", "Coordination with your medical plan"]
+visit_notes: ["Appointments in Chicago and Highland Park", "Confirm the fee and appointment length before booking", "Mobile visits available by request"]
 ---
 
-Recurring respiratory, immune, and skin symptoms can be exhausting. We use acupuncture to calm flare-ups, reduce repeat episodes, and support steadier recovery over time.
+If seasonal symptoms or recurring discomfort are affecting your day, start by telling us what is happening and what treatment you have already tried.
 
-## Common concerns we treat
+## Clear expectations
 
-- Allergy, asthma, and sinus syndrome
-- Acute and chronic cough
-- Bronchitis support
-- Sinusitis support
-- Acne
-- Bell's palsy
+Dan will discuss whether acupuncture is appropriate for your situation. Care does not replace prescribed treatment or specialist evaluation. We do not promise to boost immunity or cure skin or respiratory conditions.
 
-## What to expect
+For breathing difficulty, an acute illness, or a sudden change in symptoms, seek medical care rather than waiting for an acupuncture visit.
 
-- Symptom-focused treatment during active flare-ups
-- Follow-up care to improve stability between episodes
-- Practical guidance for seasonal and lifestyle triggers
-
-If you are comparing options for allergy, sinus, or cough support, you can start with the [brief consultation](/services/acupuncture-consultation/) or [contact the clinic](/contact/).
+[Find your appointment](/contact/#locations) or call [847-786-0066](tel:+18477860066).

@@ -1,0 +1,16 @@
+<section class="harmony-landscape" data-landscape
+  data-worker-url="{{ "vendor/shan-shui/worker.js" | relURL }}"
+  aria-label="A moment of calm">
+  <div class="harmony-landscape__view" aria-hidden="true">
+    <img class="harmony-landscape__fallback" src="{{ "vendor/shan-shui/fallback.svg" | relURL }}"
+      alt="" width="3072" height="420" loading="lazy" decoding="async">
+    <canvas class="harmony-landscape__canvas"></canvas>
+  </div>
+  <div class="harmony-landscape__caption">
+    <span class="harmony-landscape__thought">A little space to find your balance.</span>
+    <button class="harmony-landscape__toggle" type="button" data-landscape-toggle
+      aria-pressed="false" hidden>Pause landscape</button>
+  </div>
+  <a class="harmony-landscape__credit" href="https://github.com/LingDong-/shan-shui-inf"
+    target="_blank" rel="noopener noreferrer">Landscape after Shan, Shui · Lingdong Huang</a>
+</section>

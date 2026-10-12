@@ -1,18 +1,13 @@
 ---
-title: "What Is Acupuncture?"
-meta_title: "What Is Acupuncture? | Chicago Mobile Acupuncture FAQ"
-date: 2024-01-15T09:00:00-06:00
+title: "What is acupuncture?"
+meta_title: "What is acupuncture? | Wang’s Harmony Acupuncture"
 draft: false
 weight: 1
-description: "Learn what acupuncture is, how it works, and what patients can expect from mobile acupuncture visits in Chicago and nearby service areas."
+description: "What is acupuncture? Practical information for your visit with Dan Wang in Chicago or Highland Park."
 ---
 
-Acupuncture is a core part of Traditional Chinese Medicine and has been used for centuries to help the body regulate pain, stress, and other symptoms.
+Acupuncture involves placing fine needles at selected points on the body. During a visit, Dan discusses your history, explains the proposed treatment, and checks in on your comfort.
 
-In Chinese medicine, health is connected to balance in yin and yang, qi (chee), blood, and the functional harmony of organs and meridians. When that balance shifts, symptoms can develop.
+The evidence varies by condition, and acupuncture does not work the same way for every person. You can read an independent [NIH overview of effectiveness and safety](https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety), then discuss your goals at a consultation.
 
-Acupuncture uses very thin needles placed at specific points on the body to help restore balance. The goal is to support the body's natural healing response and ease symptoms over time.
-
-At Wang's Harmony Acupuncture, treatment is personalized for concerns like [pain and injury recovery](/services/pain-and-injury-management/), [women's health and fertility](/services/womens-health-and-fertility/), [stress and sleep](/services/stress-sleep-and-wellness/), [digestive concerns](/services/digestive-and-metabolic-health/), and [respiratory support](/services/respiratory-immune-and-skin/).
-
-If you are still wondering about comfort, safety, cost, or how many sessions may help, browse the rest of the [Questions](/blog/) section or [contact the clinic](/contact/) for a direct answer.
+[Find a clinic appointment](/contact/#locations).

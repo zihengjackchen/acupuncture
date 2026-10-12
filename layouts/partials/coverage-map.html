@@ -1,0 +1,49 @@
+<section id="mobile-coverage" class="coverage-section" aria-labelledby="coverage-heading" data-coverage>
+  <div class="coverage-inner">
+    <div class="coverage-intro">
+      <p class="coverage-eyebrow">Care that can come to you</p>
+      <h2 id="coverage-heading">A little closer<br> to home.</h2>
+      <p>Our clinics are the main place to see Dan. When a home visit fits your needs better, mobile acupuncture is available by request.</p>
+      <p>Check your ZIP, then call to discuss your address, timing, and travel fee.</p>
+      <form class="coverage-search" data-coverage-form action="#mobile-coverage" hidden>
+        <label for="coverage-zip">Your five-digit ZIP code</label>
+        <div class="coverage-search-row">
+          <input id="coverage-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" pattern="[0-9]{5}" placeholder="e.g. 60035" aria-describedby="coverage-result" required>
+          <button type="submit">Check area <span aria-hidden="true">↗</span></button>
+        </div>
+      </form>
+      <div id="coverage-result" class="coverage-result" role="status" aria-live="polite" aria-atomic="true">
+        <strong data-coverage-result-title>Room to meet you where you are.</strong>
+        <p data-coverage-result-text>{{ .Site.Data.coverage.total }} accepted ZIP codes across Chicago and the northern and western suburbs. Every mobile appointment is confirmed individually.</p>
+      </div>
+      <a class="coverage-call" href="tel:+18477860066">Ask about a home visit <span aria-hidden="true">↗</span><small>847-786-0066</small></a>
+    </div>
+    <div class="coverage-map-column">
+      <div class="coverage-map-frame">
+        <div class="coverage-map-tools" data-coverage-tools hidden>
+          <button type="button" data-coverage-reset aria-label="Show the full mobile service area">View full area</button>
+          <span>Select an area to explore</span>
+        </div>
+        <div class="coverage-map-viewport">{{ readFile "static/images/coverage/mobile-coverage.svg" | safeHTML }}</div>
+        <div class="coverage-legend"><span aria-hidden="true"></span>Mobile visits by request<small>Shades distinguish ZIP areas.</small></div>
+      </div>
+      <p class="coverage-source">{{ .Site.Data.coverage.mapped }} geographic areas shown. Census ZIP Code Tabulation Areas approximate postal coverage; {{ .Site.Data.coverage.unmapped }} accepted ZIP codes have no matching area to draw. <a href="https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html">About the boundaries</a>.</p>
+    </div>
+    <details class="coverage-directory">
+      <summary>View all {{ .Site.Data.coverage.total }} accepted ZIP codes <span aria-hidden="true">+</span></summary>
+      <p>All listed ZIP codes accept mobile appointment requests. A match does not confirm appointment availability or the travel fee. ZIP codes marked with an asterisk have no matching Census polygon; confirm the street address by phone.</p>
+      <div class="coverage-directory-grid">
+        {{ range slice "600" "601" "602" "606" "607" }}
+          {{ $prefix := . }}
+          <div><h3>{{ $prefix }} area</h3><ul>
+            {{ range $.Site.Data.coverage.records }}
+              {{ if hasPrefix .zip $prefix }}<li><button type="button" data-coverage-zip="{{ .zip }}"><strong>{{ .zip }}{{ if not .mapped }}<span aria-label="No map polygon">*</span>{{ end }}</strong><span>{{ .locality }}</span></button></li>{{ end }}
+            {{ end }}
+          </ul></div>
+        {{ end }}
+      </div>
+    </details>
+    <noscript><p>The full service area and ZIP list are available above. Call 847-786-0066 to check your address and request a visit.</p></noscript>
+  </div>
+  <script type="application/json" data-coverage-records>{{ .Site.Data.coverage.records | jsonify | safeJS }}</script>
+</section>

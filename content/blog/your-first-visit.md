@@ -1,21 +1,14 @@
 ---
-title: "How Many Sessions Will I Need?"
-meta_title: "How Many Acupuncture Sessions Will I Need? | Chicago FAQ"
-date: 2024-01-15T09:00:00-06:00
+title: "How many sessions will I need?"
+meta_title: "How many sessions will I need? | Wang’s Harmony Acupuncture"
 draft: false
 weight: 4
+description: "How many sessions will I need? Practical information for your visit with Dan Wang in Chicago or Highland Park."
 slug: "how-many-sessions-will-i-need"
-description: "Learn how acupuncture treatment frequency is usually planned, including common starting points for pain and other ongoing concerns."
 ---
 
-The number of sessions depends on your condition and how long it has been going on.
+There is no single schedule that fits everyone. Dan will discuss an initial plan after hearing your history and goals, then review it with you based on your response.
 
-In general, long-standing issues take longer to treat than newer concerns.
+Ask when to reassess, what changes to watch for, and the cost of the proposed visits. You should feel comfortable discussing whether to continue, adjust, or stop.
 
-Acupuncture works best as a process, so it can take time to see clear and lasting results.
-
-A common starting point is twice per week for severe pain, or weekly treatment for four to six weeks for many other concerns before judging progress.
-
-Your practitioner adjusts the plan based on your response, how quickly symptoms change, and how easy it is for you to stay consistent.
-
-If you want to talk through your situation before booking, start with the [brief consultation](/services/acupuncture-consultation/) or [contact the clinic](/contact/).
+[Book a conversation](/contact/#locations) to discuss your situation.

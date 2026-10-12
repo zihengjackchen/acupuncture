@@ -1,19 +1,16 @@
 ---
-title: "How Much Does Mobile Acupuncture Cost?"
-meta_title: "How Much Does Mobile Acupuncture Cost? | Chicago FAQ"
-date: 2024-01-15T09:00:00-06:00
+title: "What does an appointment cost?"
+meta_title: "What does an appointment cost? | Wang’s Harmony Acupuncture"
 draft: false
 weight: 3
+description: "What does an appointment cost? Practical information for your visit with Dan Wang in Chicago or Highland Park."
 slug: "how-much-does-mobile-acupuncture-cost"
-description: "See the starting cost for mobile acupuncture, including the brief consultation fee and base commute rate for Chicago-area house calls."
 ---
 
-Our mobile service has a base commute rate of $29.99 per commute.
+The current fee depends on your location and appointment type. Confirm the treatment fee, appointment length, and any consultation charge before booking.
 
-Before booking further appointments, new patients complete a brief virtual consultation for $20.
+For **Chicago**, use [Elite Healthcare’s booking system](https://elitehcare.janeapp.com/) or ask the clinic about current fees. For **Highland Park**, call [847-786-0066](tel:+18477860066).
 
-We keep rates clear and offer package options and senior discounts so ongoing care can feel more practical.
+**Mobile visits are available by request.** Please confirm the full treatment and travel cost for your address. A ZIP match does not confirm an appointment or a travel fee.
 
-The best next step is usually the brief consultation, because it lets you discuss symptoms, goals, and how often treatment may make sense before you commit to a plan.
-
-Call 847-786-0066 for current package and senior discount details, or review [Services and Fees](/services/) for a clearer overview.
+Ask about insurance, packages, and available discounts before committing to a visit. [See locations and booking](/contact/#locations).

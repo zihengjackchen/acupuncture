@@ -1,45 +1,28 @@
 ---
-title: 'Contact'
-meta_title: "Contact Mobile Acupuncture in Chicago | Wang's Harmony Acupuncture"
-date: 2018-02-22T17:01:34+07:00
-layout: contact
-description: "Contact Wang's Harmony Acupuncture for in-home mobile acupuncture in Chicago, the north suburbs, and nearby areas across Cook, Lake, and Kane counties."
-page_kicker: "Contact"
-hero_summary: "Call or email to ask a quick question, confirm service-area fit, or start with a brief consultation before booking."
-hero_image: "images/converse.png"
-hero_badges:
-  - "847-786-0066"
-  - "hello@wangsharmonyacu.com"
-  - "Chicago, Cook, Lake, and Kane counties"
+title: "Locations & appointments"
+meta_title: "Acupuncture Locations & Booking | Chicago & Highland Park"
+description: "Find Dan Wang at Elite Healthcare in Chicago on Monday and Wednesday, and Pulling Down the Moon in Highland Park on Sunday. Call 847-786-0066."
+layout: "contact"
+page_kicker: "Come as you are"
+hero_summary: "Two welcoming places to begin. Choose the clinic and day that fit your week."
+hero_image: "images/editorial/consultation.webp"
+hero_badges: ["Chicago · Monday & Wednesday", "Highland Park · Sunday", "Mobile visits by request"]
 ---
 
-We welcome new and returning patients. Call or email to ask about symptoms, pricing, service-area fit, or the best way to start mobile acupuncture care.
+## A place in your week
 
-## Appointment options
+In Chicago, book directly through [Elite Healthcare’s appointment system](https://elitehcare.janeapp.com/). For Highland Park, call [847-786-0066](tel:+18477860066) to arrange an appointment with Dan Wang.
 
-- Brief virtual consult before further booking: $20
-- Mobile service base commute rate: $29.99 per commute
-- Package options and senior discounts available
+All clinic times are **Central Time**. Appointments must be confirmed before visiting. Sunday’s provisional 9 am–6 pm schedule should be confirmed by phone.
 
-Call 847-786-0066 for package and senior discount details.
+## Before your visit
 
-## Service area highlights
+Please ask about the fee for your selected clinic, appointment length, and any forms to complete. If you plan to use insurance, confirm your plan’s benefits and the location’s participation before booking.
 
-- Chicago and nearby neighborhoods
-- North suburban home visits
-- Core coverage across Cook, Lake, and Kane counties
-- Select McHenry, DeKalb, and Kendall County appointments by request
+Bring a list of medications and supplements, and share relevant medical history. We will make time to discuss your goals and questions.
 
-If you are outside the core area, contact us with your ZIP code and we can confirm availability before booking.
+## Mobile care, by request
 
-You can also review [Services and Fees](/services/) or browse common [Questions](/blog/) before reaching out.
+If getting to a clinic is difficult, ask about a home visit. Use the ZIP lookup below, then call to confirm the visit address, timing, treatment fee, and any travel charge.
 
-| Day       | Opening Hours   |
-| --------- | --------------- |
-| Monday    | 9:00am - 6:00pm |
-| Tuesday   | 9:00am - 6:00pm |
-| Wednesday | 9:00am - 6:00pm |
-| Thursday  | 9:00am - 6:00pm |
-| Friday    | 9:00am - 5:00pm |
-| Saturday  | 9:00am - 2:00pm |
-| Sunday    | Closed          |
+For other questions, email [hello@wangsharmonyacu.com](mailto:hello@wangsharmonyacu.com). Please keep sensitive medical details for your appointment or the clinic’s intake process.
