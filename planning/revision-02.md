@@ -36,7 +36,7 @@ Keep the warm jade/ivory design, useful information, existing routes, and GitHub
 - Checked layouts at 320, 390, 768, and 1440 pixels. Fixed mobile card type size and Today-badge contrast after visual review.
 - Restored previously published biography details and the $20 virtual consultation / $29.99 base mobile commute fee. The latter is separate from treatment costs. Clinic fees remain subject to the booking location.
 - The original practice name remains in structured data with the requested Dr honorific; displayed practitioner labels use Dr Wang.
-- Original artwork and prior media exports are archived. Current generated art prompts: assets/generated/editorial-inkwash-v2/prompts.json.
+- Original artwork and prior media exports are archived. Current generated art prompts: development/imagery/editorial-inkwash-v2/prompts.json.
 
 ## Logo feedback
 
@@ -44,4 +44,4 @@ Keep the warm jade/ivory design, useful information, existing routes, and GitHub
 - D: a minimal treatment-table icon was presented and rejected as too different.
 - E: a subtle simplification of the original was presented; the user requested simpler bench and patient shapes.
 - F: the original practitioner, curved frame, colors, and lettering with a simpler reclining patient and bench was presented.
-- Final decision: retain the original logo across the website and media pack. Preserve all generated alternatives and previews in assets/brand/options/, with the previous redesign in assets/brand/archive-v1/.
+- Final decision: retain the original logo across the website and media pack. Preserve all generated alternatives and previews in development/brand/options/, with the previous redesign in development/brand/archive-v1/.

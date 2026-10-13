@@ -1,7 +1,7 @@
 # Revision 05: matching wallpapers and whole ZIP regions
 
 - [x] Label the homepage practitioner portrait **Dr Dan Wang**, aligned left directly below the photo; keep the credentials alongside it.
-- [x] Match every wallpaper to `assets/brand/options/g-wallpaper-ivory.svg`: the same horizontal logo arrangement, fonts, internal spacing, and proportional scale. Keep the approved ivory, jade, and sage backgrounds and all five canvas formats.
+- [x] Match every wallpaper to `development/brand/options/g-wallpaper-ivory.svg`: the same horizontal logo arrangement, fonts, internal spacing, and proportional scale. Keep the approved ivory, jade, and sage backgrounds and all five canvas formats.
 - [x] Highlight the complete shapes of the existing 206 selected ZIP areas. Use the city envelope only to select ZIPs; do not trim their green fills at that envelope. Keep the outer dashed boundary removed.
 - [x] Update map lookup results, coverage notes, data, and export documentation to describe the revised behavior.
 - [x] Check the generated media, map interactions, desktop/mobile presentation, and Hugo production build.

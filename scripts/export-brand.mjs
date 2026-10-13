@@ -8,7 +8,7 @@ import { Resvg } from '@resvg/resvg-js';
 // Option G keeps the original treatment scene, with stronger contours and website typography.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const brand = path.join(root, 'static/images/brand');
-const pack = path.join(root, 'static/media-pack');
+const pack = path.join(root, 'media-pack');
 const masters = path.join(root, 'assets/brand/masters');
 const colors = { jade: '#28594b', ink: '#26352e', paper: '#f7f3eb', sage: '#dce5d8', clay: '#a5684e' };
 const font = {
@@ -18,7 +18,7 @@ const font = {
 };
 await Promise.all([brand, pack, masters, path.join(pack, 'logos'), path.join(pack, 'editable'), path.join(pack, 'fonts')].map(dir => mkdir(dir, { recursive: true })));
 
-const originalLogo = await readFile(path.join(root, 'static/images/logo/logo.svg'), 'utf8');
+const originalLogo = await readFile(path.join(root, 'development/brand/original/logo.svg'), 'utf8');
 const logoPaths = [...originalLogo.matchAll(/<path\b[^>]*\/>/g)].map(match => match[0]);
 assert.equal(logoPaths.length, 42, 'Original logo path count changed; review icon and wordmark extraction before exporting.');
 const sceneColors = ['#557c69', colors.jade, '#8faa98', colors.jade, '#587a65', '#557c69', colors.jade, colors.jade, colors.jade, colors.jade, colors.jade, colors.jade, colors.jade, colors.jade, '#577a63', '#3c6756', '#577a63', '#8faa98'];
@@ -85,7 +85,7 @@ const backgroundLogo = (width, height, background, color, logoWidth, monochrome 
 };
 const wallpaper = backgroundLogo(3840, 2160, colors.paper, colors.jade, 2200);
 const wallpaperOutlined = outlined(wallpaper);
-const wallpaperReference = await readFile(path.join(root, 'assets/brand/options/g-wallpaper-reference/reference.svg'), 'utf8');
+const wallpaperReference = await readFile(path.join(root, 'development/brand/options/g-wallpaper-reference/reference.svg'), 'utf8');
 const wallpaperReferenceHash = createHash('sha256').update(wallpaperReference).digest('hex');
 assert.equal(wallpaperReferenceHash, '7899e208bfa4e3f70678a74b899daea2804abbab04d344e1ef86884c1132c4d5', 'The approved wallpaper reference must remain unchanged.');
 assert.equal(wallpaperOutlined, wallpaperReference, 'Keep the approved wallpaper font, horizontal layout and internal spacing.');
@@ -141,7 +141,7 @@ const social = backgroundLogo(1200, 630, colors.paper, colors.jade, 930);
 await writeFile(path.join(pack, 'social-preview.svg'), outlined(social));
 await writeFile(path.join(pack, 'social-preview.png'), png(social, 1200));
 
-const options = path.join(root, 'assets/brand/options');
+const options = path.join(root, 'development/brand/options');
 await mkdir(options, { recursive: true });
 for (const [name, content] of [
   ['g-horizontal.svg', outlined(horizontalSvg(colors.jade))],
@@ -195,7 +195,7 @@ const manifest = {
   clearSpace: 'Keep a minimum space of one quarter of the symbol width around all logo variants.',
   minimumSizes: { symbol: '48 CSS px', horizontal: '250 CSS px', stacked: '220 CSS px' },
   spacingChecks,
-  wallpaperLayout: { source: 'assets/brand/options/g-wallpaper-ivory.svg', sha256: wallpaperReferenceHash, logo: 'horizontal', logoWidthFraction: wallpaperLogoFraction, placement: 'Uniformly scaled to the same fraction of canvas width, then centered by visible artwork bounds.' },
+  wallpaperLayout: { source: 'development/brand/options/g-wallpaper-ivory.svg', sha256: wallpaperReferenceHash, logo: 'horizontal', logoWidthFraction: wallpaperLogoFraction, placement: 'Uniformly scaled to the same fraction of canvas width, then centered by visible artwork bounds.' },
   wallpapers,
   downloadFiles: [...exports, 'wallpaper-16x9.svg', 'wallpaper-3840x2160.png', 'wallpaper-1920x1080.png', 'wallpaper-jade-16x9.svg', 'wallpaper-jade-3840x2160.png', 'wallpaper-jade-1920x1080.png', 'social-preview.svg', 'social-preview.png', ...wallpapers.flatMap(item => [item.svg, item.editableSvg, ...item.pngs.map(png => png.file)])],
   fontSources: ['https://github.com/google/fonts/tree/main/ofl/cormorantgaramond', 'https://github.com/google/fonts/tree/main/ofl/dmsans'],
@@ -216,7 +216,7 @@ const guide = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta 
 <section><h2>Individual downloads</h2><ul class="download-list">${downloadLinks}</ul><p class="note">PNG logos have transparent backgrounds. App icons and social graphics include their background color. The editable folder contains vector masters with live type. The repository retains the original source SVG files and all earlier alternatives.</p></section>
 </main></body></html>`;
 await writeFile(path.join(pack, 'brand-guide.html'), guide);
-await writeFile(path.join(pack, 'README.txt'), `WANG'S HARMONY ACUPUNCTURE\nTraditional medicine. Personal care.\n\nCurrent identity: option G with increased space below the name. Original treatment scene, jade/sage colors, Cormorant Garamond / DM Sans typography.\n\nOpen brand-guide.html for thumbnail previews, colors, usage notes and individual downloads.\nlogos/: outlined horizontal and stacked logos, symbol, black/ivory variants and transparent PNG exports.\neditable/: vector masters with live typography. Matching TTF files are in fonts/.\n\nWALLPAPERS\nThree color sets: ivory (jade logo), jade (ivory logo), sage (jade logo).\nLandscape 16:9: 3840x2160 and 1920x1080 PNG.\nPortrait 3:4: 1440x1920 PNG.\nPortrait 4:5: 1080x1350 PNG.\nStory / phone 9:16: 1080x1920 PNG.\nSquare 1:1: 1080x1080 PNG.\n\nFilename pattern: wallpapers/{color}-{orientation}-{ratio}-{width}x{height}.png\nExamples: wallpapers/ivory-landscape-16x9-3840x2160.png and wallpapers/sage-story-9x16-1080x1920.png.\nOutlined vectors: wallpapers/{color}-{orientation}-{ratio}.svg\nLive-type masters: editable/wallpapers/{color}-{orientation}-{ratio}.svg\nAll formats use the approved horizontal lockup, with identical typography and internal spacing. The logo spans 2200/3840 (57.2917%) of canvas width and is centered by visible artwork bounds. The reference is assets/brand/options/g-wallpaper-ivory.svg.\n\nThe older wallpaper-*.png and wallpaper-jade-*.png filenames remain available.\nsocial-preview.png: 1200x630 preview.\nfonts/: fonts and their licenses.\n\nRebuild from the repository with npm run brand.\nThe original G spacing and media pack remain in assets/brand/options/g-original-spacing/.\nThe original identity package remains in assets/brand/archive-original-a/.\nEarlier options remain in assets/brand/options/ and assets/brand/archive-v1/.\n`);
+await writeFile(path.join(pack, 'README.txt'), `WANG'S HARMONY ACUPUNCTURE\nTraditional medicine. Personal care.\n\nCurrent identity: option G with increased space below the name. Original treatment scene, jade/sage colors, Cormorant Garamond / DM Sans typography.\n\nOpen brand-guide.html for thumbnail previews, colors, usage notes and individual downloads.\nlogos/: outlined horizontal and stacked logos, symbol, black/ivory variants and transparent PNG exports.\neditable/: vector masters with live typography. Matching TTF files are in fonts/.\n\nWALLPAPERS\nThree color sets: ivory (jade logo), jade (ivory logo), sage (jade logo).\nLandscape 16:9: 3840x2160 and 1920x1080 PNG.\nPortrait 3:4: 1440x1920 PNG.\nPortrait 4:5: 1080x1350 PNG.\nStory / phone 9:16: 1080x1920 PNG.\nSquare 1:1: 1080x1080 PNG.\n\nFilename pattern: wallpapers/{color}-{orientation}-{ratio}-{width}x{height}.png\nExamples: wallpapers/ivory-landscape-16x9-3840x2160.png and wallpapers/sage-story-9x16-1080x1920.png.\nOutlined vectors: wallpapers/{color}-{orientation}-{ratio}.svg\nLive-type masters: editable/wallpapers/{color}-{orientation}-{ratio}.svg\nAll formats use the approved horizontal lockup, with identical typography and internal spacing. The logo spans 2200/3840 (57.2917%) of canvas width and is centered by visible artwork bounds. The reference is development/brand/options/g-wallpaper-ivory.svg.\n\nThe older wallpaper-*.png and wallpaper-jade-*.png filenames remain available.\nsocial-preview.png: 1200x630 preview.\nfonts/: fonts and their licenses.\n\nRebuild from the repository with npm run brand.\nThe original G spacing and media pack remain in development/brand/options/g-original-spacing/.\nThe original identity package remains in development/brand/archive-original-a/.\nEarlier options remain in development/brand/options/ and development/brand/archive-v1/.\n`);
 
 // Small ZIP writer using the standard uncompressed ZIP format: no platform-specific
 // shell or extra package is needed, and an existing ZIP is explicitly excluded.
