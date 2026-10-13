@@ -2,7 +2,21 @@ Shan, Shui by Lingdong Huang
 https://github.com/LingDong-/shan-shui-inf
 Revision: 9f754d2b2e73495db7883d4d4055a7b0903b0454
 License: MIT (see LICENSE)
+Source: https://raw.githubusercontent.com/LingDong-/shan-shui-inf/9f754d2b2e73495db7883d4d4055a7b0903b0454/index.html
 
-Adaptation: isolated drawing primitives with local seeded randomness;
-a new bounded tile planner, worker, canvas playback, and static fallback.
+Actual upstream drawing code: PerlinNoise, PolyTools, stroke/texture/water,
+Tree, Mount (mountain, distMount, flatMount/flatDec, rock), Arch and Man.
+Full upstream vegetation rules, mountain texture density, architecture and
+distant-mountain triangulation are retained. The occasional electricity
+pylon is omitted; Heron's formula clamps floating-point roundoff.
+
+Local adaptation: isolated seeded randomness; a new bounded forward tile
+planner using the original drawing functions, sage ink on warm paper,
+worker generation, buffered canvas playback, and a static SVG fallback. This is not
+the original demo UI or its unbounded chunk cache. No runtime CDN is used.
+
+Revision note: the earlier sparse version capped ornament candidates at12,
+disabled most vegetation, reduced texture counts and coarse-grained the
+distant mountains. Those reductions have been removed.
+
 Regenerate using: node scripts/prepare-landscape.mjs

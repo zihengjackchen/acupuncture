@@ -1,19 +1,200 @@
 {
-  "retrieved": "2026-10-11",
-  "source_name": "U.S. Census Bureau TIGERweb",
+  "updated": "2026-10-12",
+  "source_name": "U.S. Census Bureau TIGERweb / USPS ZIP Locale Detail",
   "source_layer": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/2",
-  "source_vintage": "2020 Census ZCTA, January 1 2020",
-  "context_layer": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/82",
-  "accepted_inventory": "planning/mobile-service-zip-inventory.csv",
-  "accepted_zips": 263,
-  "mapped_zctas": 201,
-  "accepted_zips_without_zcta": 62,
-  "projection": "Web Mercator EPSG:3857, fitted to SVG viewBox",
-  "simplification": "ArcGIS maxAllowableOffset 65 metres, coordinate precision 0 metres; rendered at 0.1 SVG-unit precision",
+  "source_vintage": "2020 Census ZCTA geography",
+  "municipal_layer": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/28",
+  "municipal_vintage": "January 1, 2026",
+  "municipal_query_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/28/query?f=json&where=STATE%3D%2717%27+AND+BASENAME+IN+%28%27Naperville%27%2C%27Orland+Park%27%2C%27Chicago%27%2C%27Highland+Park%27%2C%27Schaumburg%27%29&outFields=GEOID%2CSTATE%2CPLACE%2CBASENAME%2CNAME%2CCENTLAT%2CCENTLON&outSR=3857&returnGeometry=true&geometryPrecision=2",
+  "municipalities": [
+    {
+      "name": "Highland Park city",
+      "geoid": "1734722"
+    },
+    {
+      "name": "Orland Park village",
+      "geoid": "1756640"
+    },
+    {
+      "name": "Schaumburg village",
+      "geoid": "1768003"
+    },
+    {
+      "name": "Chicago city",
+      "geoid": "1714000"
+    },
+    {
+      "name": "Naperville city",
+      "geoid": "1751622"
+    }
+  ],
+  "additional_boundary": "Every vertex of Census ZCTA 60035, as requested for Highland Park",
+  "lincoln_park": "A Chicago neighborhood, already included by the full Chicago municipal boundary",
+  "lincoln_park_reference": "https://ccpsa.chicago.gov/district-council/18th-district-council/",
+  "postal_source": "https://postalpro.usps.com/mnt/glusterfs/2026-10/Zip_Locale_Detail.xlsx",
+  "postal_sha256": "6e923786b70a5ab7ed93fd89cf0ffee3633c6daa58c86c6d4c8702dcd860bc07",
+  "source_snapshots": [
+    "planning/mobile-coverage-source.json",
+    "planning/mobile-coverage-municipalities.json"
+  ],
+  "source_sha256": {
+    "mobile-coverage-source.json": "4300692e0a4e0f64840b80f9ced11b3fbd18f5212e8f1c8bdf0e566b464d03ca",
+    "mobile-coverage-municipalities.json": "59f15b0f71e68c3a8927e8dc14defe97a86b99cac215902c79af6b6067312ce0"
+  },
+  "regenerate": "python scripts/prepare-coverage.py",
+  "refresh_sources": "python scripts/prepare-coverage.py --refresh",
+  "selection_rule": "Take the convex hull of every vertex of the five official municipal boundaries and ZCTA 60035. Select a ZCTA if its intersection with this hull exceeds one square metre in EPSG:3857. Cover and shade the full original geometry of every selected ZCTA, including portions beyond the selection hull. No city-centre, centroid, prefix, or anchor-override selection.",
+  "coordinate_order": "longitude, latitude (EPSG:4326)",
+  "boundary": [
+    [
+      -88.23534703,
+      41.71551701
+    ],
+    [
+      -88.23534604,
+      41.71548804
+    ],
+    [
+      -88.23379699,
+      41.677478
+    ],
+    [
+      -88.23367598,
+      41.67475703
+    ],
+    [
+      -87.90218606,
+      41.552254
+    ],
+    [
+      -87.85718702,
+      41.552118
+    ],
+    [
+      -87.853308,
+      41.55297902
+    ],
+    [
+      -87.52499703,
+      41.64463602
+    ],
+    [
+      -87.52484297,
+      41.64729301
+    ],
+    [
+      -87.52479401,
+      41.65011602
+    ],
+    [
+      -87.52416501,
+      41.70831397
+    ],
+    [
+      -87.52366097,
+      41.759907
+    ],
+    [
+      -87.63197102,
+      41.96524103
+    ],
+    [
+      -87.65527799,
+      42.00673001
+    ],
+    [
+      -87.66405498,
+      42.02134702
+    ],
+    [
+      -87.66510403,
+      42.02301899
+    ],
+    [
+      -87.75128175,
+      42.15618509
+    ],
+    [
+      -87.79903619,
+      42.22404763
+    ],
+    [
+      -87.8095914,
+      42.22593018
+    ],
+    [
+      -87.82780923,
+      42.22746678
+    ],
+    [
+      -88.13894603,
+      42.04694798
+    ],
+    [
+      -88.15442904,
+      42.031879
+    ],
+    [
+      -88.23000897,
+      41.80111898
+    ],
+    [
+      -88.23008802,
+      41.800082
+    ],
+    [
+      -88.23017004,
+      41.79900503
+    ],
+    [
+      -88.23151203,
+      41.78132303
+    ],
+    [
+      -88.23180497,
+      41.77676803
+    ],
+    [
+      -88.23534703,
+      41.71551701
+    ]
+  ],
+  "boundary_geojson": "static/data/mobile-service-boundary.geojson",
+  "display_rule": "Fill each selected ZCTA's complete original rings. Fit all highlighted geometry with at least 24 SVG units of padding; draw no outer selection perimeter.",
+  "intersecting_zips": 206,
+  "fully_covered_zctas": 206,
+  "partially_covered_zctas": 0,
+  "selection_fully_inside_zctas": 155,
+  "selection_intersecting_edge_zctas": 51,
+  "mapped_zctas": 206,
+  "accepted_zips_without_zcta": 0,
+  "outside_context_zctas": 108,
+  "neutral_base_zctas": 314,
+  "query_extent": [
+    -88.6,
+    41.43,
+    -87.4,
+    42.34
+  ],
+  "view_extent": [
+    -88.64812228,
+    41.46335837,
+    -87.22991905,
+    42.30799583
+  ],
+  "projection": "Web Mercator EPSG:3857; complete selected ZCTA geometry fitted to 900 by 720 SVG with at least 24 units padding",
+  "simplification": "Municipal boundaries: no simplification, 0.01 m coordinates. ZCTAs: ArcGIS maxAllowableOffset 65 m and integer projected coordinates. SVG: 0.1 units.",
   "notes": [
-    "Census ZCTAs approximate ZIP delivery areas; they are not official USPS ZIP boundaries.",
-    "All 263 inventory ZIPs are accepted for mobile appointment requests; address and availability must be confirmed.",
-    "Color differences distinguish adjacent regions and do not encode a measure.",
-    "Place labels are city reference points, not precise clinic locations."
+    "The convex hull is the smallest convex envelope containing all supplied outer boundary vertices; it includes intervening areas and is not a travel-distance calculation.",
+    "Municipal holes and disconnected parts do not create holes in the envelope. Full Chicago includes O'Hare and the Far South Side.",
+    "Sutherland-Hodgman computes intersection areas for ZIP selection and audit only. Display and coverage use complete original ZCTA rings, preserving holes and disconnected parts.",
+    "An intersection must exceed one projected square metre to exclude numerical and point-only contacts. Selection intersection fractions in the audit are projected area ratios, not coverage percentages.",
+    "All 206 previously selected ZIPs remain selected. The 51 ZIPs crossing the internal hull now receive full-region coverage, including areas well beyond the hull where the original intersection was small.",
+    "Small-intersection examples include 46327 (Hammond), 46394 (Whiting), 60120, and 60502. Their entire Census ZIP areas are now highlighted, including Indiana portions.",
+    "Lake Michigan is not painted with an invented land shape: green follows the complete source ZCTA geography.",
+    "ZCTAs approximate ZIP areas and are not official USPS delivery boundaries. Unmatched and PO-box-only ZIPs require a call, not an outside-area assertion.",
+    "The directory and lookup treat every selected ZIP as a whole service region. The internal municipal envelope is a selection aid, not a displayed or enforced cutoff.",
+    "USPS locale names may identify postal facilities rather than municipalities. Green shades distinguish ZIP areas, not a numerical value.",
+    "All mobile visits need street-address, schedule, and travel-fee confirmation."
   ]
 }

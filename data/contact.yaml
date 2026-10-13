@@ -6,20 +6,6 @@ service_area: 'Chicago and Highland Park'
 availability: 'Clinic appointments in Chicago on Monday and Wednesday; Highland Park on Sunday. Mobile visits by request.'
 timezone: 'America/Chicago'
 mobile_note: 'Mobile visits are available by request. Call to confirm the address, travel fee, and appointment time.'
-core_regions:
-  - 'Chicago'
-  - 'Highland Park'
-core_counties:
-  - 'Cook County'
-  - 'Lake County'
-  - 'Kane County'
-zip_prefixes:
-  - '600'
-  - '601'
-  - '602'
-  - '606'
-  - '607'
-request_counties:
-  - 'McHenry County'
-  - 'DeKalb County'
-  - 'Kendall County'
+mobile_service_area: '206 complete ZIP areas across Chicago and the surrounding area, selected around Highland Park, Schaumburg, Naperville, and Orland Park'
+mobile_zip_count: 206
+mobile_coverage_data: 'data/coverage.json'

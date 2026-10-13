@@ -26,7 +26,7 @@
 <body class="{{ if .IsHome }}page-home{{ else }}page-inner{{ end }}">
   <a class="skip-link" href="#main">Skip to content</a>
   {{ partial "header.html" . }}
-  <main id="main">{{ block "main" . }}{{ end }}</main>
+  <main id="main">{{ block "main" . }}{{ end }}{{ partial "booking-cta.html" . }}</main>
   {{ partial "landscape.html" . }}
   {{ partial "footer.html" . }}
   {{ $script := resources.Get "js/main.js" | js.Build (dict "targetPath" "js/harmony.js" "minify" hugo.IsProduction "target" "es2020") | fingerprint }}

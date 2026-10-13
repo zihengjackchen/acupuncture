@@ -1783,7 +1783,6 @@ Math.random = function () {
         }
       }
 
-      var vegetationBudget = 12;
       function vegetate(treeFunc, growthRule, proofRule) {
         var veglist = [];
         for (var i = 0; i < ptlist.length; i += 1) {
@@ -1794,7 +1793,7 @@ Math.random = function () {
           }
         }
         for (var i = 0; i < veglist.length; i++) {
-          if (vegetationBudget-- > 0 && proofRule(veglist, i)) {
+          if (proofRule(veglist, i)) {
             canv += treeFunc(veglist[i][0], veglist[i][1]);
           }
         }
@@ -2348,7 +2347,7 @@ Math.random = function () {
         });
 
         var T = PolyTools.triangulate(ptlist[i], {
-          area: 900,
+          area: 100,
           convex: true,
           optimize: false,
         });
@@ -3636,8 +3635,8 @@ Math.random = function () {
 
 
 scope.ShanShui = {
-  mountain: Mount.mountain, distantMountain: Mount.distMount,
-  tree: Tree.tree02, water: water, boat: Arch.boat01,
+  mountain: Mount.mountain, distantMountain: Mount.distMount, flatMountain: Mount.flatMount.bind(Mount),
+  tree: Tree.tree02, water: water, boat: Arch.boat01, pavilion: Arch.arch02,
   random: Math.random,
   seed: function (seed) { randomState = seed | 0; },
   noiseSeed: function (seed) { Noise.noiseSeed(seed); }

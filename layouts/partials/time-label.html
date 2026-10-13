@@ -1,5 +1,5 @@
 {{- $parts := split . ":" -}}
-{{- $hour := int (index $parts 0) -}}
+{{- $hour := int (strings.TrimPrefix "0" (index $parts 0)) -}}
 {{- $minute := index $parts 1 -}}
 {{- $suffix := "a.m." -}}{{- if ge $hour 12 -}}{{- $suffix = "p.m." -}}{{- end -}}
 {{- $display := mod $hour 12 -}}{{- if eq $display 0 -}}{{- $display = 12 -}}{{- end -}}

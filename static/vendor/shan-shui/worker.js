@@ -14,19 +14,19 @@ function ink(svg) {
   return svg
     .replace(/rgba?\((\d+),(\d+),(\d+)(?:,([\d.]+))?\)/g, (_, red, green, blue, opacity) => {
       const shade = (Number(red) + Number(green) + Number(blue)) / 3;
-      const strength = Math.max(0, Math.min(0.9, (255 - shade) / 180));
+      const strength = Math.max(0, Math.min(1, (255 - shade) / 200));
       // Preserve opaque fills: alpha-blending the tessellated distant hills
       // would darken overlapping triangles and create distracting facets.
       if (opacity === undefined) {
         const paper = [247, 243, 235];
-        const pigment = [79, 107, 97];
+        const pigment = [48, 69, 59];
         return `rgb(${paper.map((value, i) => Math.round(value + (pigment[i] - value) * strength)).join(',')})`;
       }
       const alpha = strength * Number(opacity);
-      return `rgba(79,107,97,${Math.max(0, alpha).toFixed(3)})`;
+      return `rgba(48,69,59,${Math.max(0, alpha).toFixed(3)})`;
     })
     .replace(/\bwhite\b/g, '#F7F3EB')
-    .replace(/\bblack\b/g, '#4F6B61');
+    .replace(/\bblack\b/g, '#30453B');
 }
 
 function region(index) {
@@ -37,27 +37,33 @@ function region(index) {
   const x = index * TILE_WIDTH;
   const objects = [];
   const add = (depth, svg) => objects.push({ depth, svg: ink(svg) });
-  add(0, art.distantMountain(x - 90, 230 + random() * 25, random() * 100, {
+  add(0, art.distantMountain(x - 90, 205 + random() * 25, random() * 100, {
     // Upstream sampling expects a length divisible by span (10) * seg (5).
-    hei: 130 + random() * 85, len: random() > 0.5 ? 1000 : 1250, seg: 5,
+    hei: 160 + random() * 85, len: random() > 0.5 ? 1000 : 1250, seg: 5,
   }));
-  const center = x + 310 + random() * 390;
-  const shore = 320 + random() * 35;
-  add(1, art.water(center, shore + 14, random(), { len: 800, clu: 5, hei: 1.4 }));
+  const center = x + 260 + random() * 240;
+  const shore = 280 + random() * 25;
+  add(1, art.water(center, shore + 18, random(), { len: 1000, clu: 12, hei: 2 }));
   add(shore, art.mountain(center, shore, random() * 100, {
-      hei: 220 + random() * 170, wid: 490 + random() * 260, tex: 50, veg: false,
+    hei: 350 + random() * 140, wid: 500 + random() * 220,
   }));
-  if (random() > 0.3) {
-    const nearShore = 365 + random() * 15;
-    add(nearShore, art.mountain(x + 900 + random() * 90, nearShore, random() * 100, {
-      hei: 130 + random() * 100, wid: 320 + random() * 100, tex: 35, veg: false,
-    }));
-  }
-  if (random() > 0.45) {
-    add(390, art.boat(x + 95 + random() * 150, 370 + random() * 20, random(), {
-      sca: 0.32 + random() * 0.1, fli: random() > 0.5,
-    }));
-  }
+  const nearShore = 325 + random() * 25;
+  add(1, art.water(x + 780, nearShore + 25, random(), { len: 950, clu: 10, hei: 2 }));
+  add(nearShore, art.mountain(x + 740 + random() * 100, nearShore, random() * 100, {
+    hei: 290 + random() * 160, wid: 430 + random() * 170,
+  }));
+  // Upstream flatMount adds its own mature trees, rocks and occasional cottages.
+  const bankX = x + 160 + random() * 280;
+  const bankY = 370 + random() * 10;
+  add(bankY, art.flatMountain(bankX, bankY, random() * 100, {
+    wid: 410 + random() * 120, hei: 65, cho: .55 + random() * .15,
+  }));
+  if (random() > .45) add(bankY + 1, art.pavilion(bankX + 50, bankY - 18, random(), {
+    wid: 40 + random() * 20, sto: 1, rot: .3 + random() * .4, sty: 1,
+  }));
+  add(400, art.boat(x + 650 + random() * 170, 380 + random() * 18, random(), {
+    sca: .42 + random() * .13, fli: random() > .5,
+  }));
   features.set(index, objects);
   while (features.size > MAX_FEATURES) features.delete(features.keys().next().value);
   return objects;

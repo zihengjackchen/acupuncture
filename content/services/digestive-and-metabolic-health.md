@@ -4,23 +4,20 @@ meta_title: "Digestive wellbeing | Acupuncture in Chicago & Highland Park"
 draft: false
 featured: true
 weight: 5
-summary: "A whole-person conversation about digestive discomfort and your existing care."
-description: "A whole-person conversation about digestive discomfort and your existing care. Visit Dan Wang in Chicago or Highland Park."
-card_image: "images/editorial/hero-botanical.webp"
-hero_image: "images/editorial/hero-botanical.webp"
+summary: "Discuss bloating, digestive discomfort, and how symptoms affect your meals."
+description: "Discuss bloating, digestive discomfort, and how symptoms affect your meals. See Dan in Chicago or Highland Park."
+card_image: "images/editorial/digestive.webp"
+hero_image: "images/editorial/herbal-digestion.webp"
+hero_alt: "Ink-wash still life of ginger, mandarin peel, and a ceramic teapot"
 hero_kicker: "Digestive wellbeing"
-hero_intro: "A whole-person conversation about digestive discomfort and your existing care."
+hero_intro: "Discuss bloating, digestive discomfort, and how symptoms affect your meals."
 highlights: ["Bloating and digestive discomfort", "Symptoms that affect everyday meals", "Complementary care planning"]
-ideal_for: ["Bloating and digestive discomfort", "Symptoms that affect everyday meals", "Complementary care planning"]
-visit_notes: ["Appointments in Chicago and Highland Park", "Confirm the fee and appointment length before booking", "Mobile visits available by request"]
 ---
 
-Digestive symptoms can affect meals, routines, and comfort. We ask about your symptoms and medical history before considering an individual plan.
+Dan asks about your digestive symptoms, medical history, and current treatment before discussing acupuncture.
 
-## Begin with the right evaluation
+Bring any diagnosis and guidance from your healthcare team. See your medical clinician for new or persistent symptoms; acupuncture does not replace that assessment.
 
-Bring any relevant diagnosis, medication list, and guidance from your healthcare team. Persistent or new digestive symptoms deserve medical assessment; acupuncture is not a substitute for that care.
+Discuss diabetes, cholesterol, or weight-management goals with the clinician managing those conditions. We do not promise changes in those outcomes.
 
-We do not promise to treat diabetes, lower cholesterol, or produce weight loss. Discuss those goals with the clinician managing your health.
-
-[Find your appointment](/contact/#locations) or call [847-786-0066](tel:+18477860066).
+[Find an appointment](/contact/#locations) or call [847-786-0066](tel:+18477860066).

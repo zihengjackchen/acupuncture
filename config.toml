@@ -48,7 +48,7 @@ enableRobotsTXT = true
     meta_twitter_site = ""
     meta_twitter_creator = ""
     meta_og_image = "media-pack/social-preview.png"
-    local_keywords = "acupuncture Chicago, acupuncture Highland Park, Dan Wang, Chinese medicine, mobile acupuncture by request"
+    local_keywords = "acupuncture Chicago, acupuncture Highland Park, Dan, Chinese medicine, mobile acupuncture by request"
     service_area = "Chicago, the north suburbs, and nearby areas across Cook, Lake, and Kane counties in Illinois"
     business_type = "MedicalBusiness"
 

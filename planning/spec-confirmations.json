@@ -28,47 +28,77 @@
     }
   ],
   "mobile_service": {
+    "updated": "2026-10-12",
     "availability": "Upon request",
-    "coverage_rule": "All USPS delivery ZIP codes beginning with the approved prefixes",
-    "prefixes": [
+    "coverage_rule": "Take the convex hull of every vertex of the five official municipal boundaries and ZCTA 60035. Select a ZCTA if its intersection with this hull exceeds one square metre in EPSG:3857. Cover and shade the full original geometry of every selected ZCTA, including portions beyond the selection hull. No city-centre, centroid, prefix, or anchor-override selection.",
+    "boundary_details": "mobile-coverage-provenance.json",
+    "boundary_geojson": "../static/data/mobile-service-boundary.geojson",
+    "municipalities": [
+      "Highland Park city",
+      "Orland Park village",
+      "Schaumburg village",
+      "Chicago city",
+      "Naperville city"
+    ],
+    "additional_boundary": "Every vertex of Census ZCTA 60035, as requested for Highland Park",
+    "lincoln_park": "A Chicago neighborhood, already included by the full Chicago municipal boundary",
+    "prefixes_with_selected_zips": [
+      "463",
       "600",
       "601",
       "602",
+      "603",
+      "604",
+      "605",
       "606",
-      "607"
+      "607",
+      "608"
     ],
-    "total_zip_codes": 263,
-    "total_matching_zctas": 201,
-    "total_without_matching_zcta": 62,
+    "total_zip_codes": 206,
+    "fully_covered_zctas": 206,
+    "partially_covered_zctas": 0,
+    "total_matching_zctas": 206,
+    "total_without_matching_zcta": 0,
+    "outside_context_zctas": 108,
     "counts_by_prefix": {
-      "600": {
-        "usps_zip_codes": 81,
-        "mapped_zctas": 65
-      },
-      "601": {
-        "usps_zip_codes": 89,
-        "mapped_zctas": 72
-      },
-      "602": {
-        "usps_zip_codes": 5,
-        "mapped_zctas": 4
-      },
-      "606": {
-        "usps_zip_codes": 83,
-        "mapped_zctas": 56
-      },
-      "607": {
-        "usps_zip_codes": 5,
-        "mapped_zctas": 4
-      }
+      "463": 2,
+      "600": 29,
+      "601": 41,
+      "602": 3,
+      "603": 4,
+      "604": 36,
+      "605": 27,
+      "606": 56,
+      "607": 4,
+      "608": 4
     },
     "inventory_file": "mobile-service-zip-inventory.csv",
-    "map_note": "Shade each matching ZCTA with a green fill and distinct outline. ZCTA boundaries approximate ZIP areas. Retain unmatched ZIPs in the accepted list and confirm the physical visit address; do not invent polygons.",
+    "audit_file": "mobile-service-zip-audit.csv",
+    "geometry_sources": [
+      {
+        "layer": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/28",
+        "vintage": "January 1, 2026",
+        "cache": "mobile-coverage-municipalities.json"
+      },
+      {
+        "layer": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/2",
+        "vintage": "2020 Census ZCTA geography",
+        "cache": "mobile-coverage-source.json"
+      }
+    ],
+    "map_note": "All 206 selected ZCTAs are covered and highlighted in full, including their portions beyond the internal municipal envelope. The envelope only selects ZIPs and is not drawn. Full-region display expands the previous 51 edge ZIPs, including small-intersection areas such as 46327, 46394, 60120, and 60502. Every highlighted vertex fits the initial viewport. Unmatched or postal-only ZIPs require a call.",
     "field_notes": {
-      "usps_postal_locale": "Postal facility locale from USPS, not necessarily the resident city.",
-      "usps_zip_class": "Raw USPS ZIP CLASS CODE. Blank values preserved.",
-      "zcta_internal_latitude": "Census internal reference point, not a clinic or patient location."
-    }
+      "usps_postal_locale": "USPS postal facility locale, not necessarily the resident city.",
+      "centroid_latitude": "Census CENTLAT, retained for audit reference only; not used for selection.",
+      "centroid_longitude": "Census CENTLON, retained for audit reference only; not used for selection.",
+      "coverage_status": "full for every selected ZIP; outside for candidates not selected.",
+      "selection_reason": "intersects_municipal_envelope or outside_municipal_envelope.",
+      "selection_overlap": "full, partial, or outside describes overlap with the internal selection envelope only; it does not restrict service within a selected ZIP.",
+      "selection_intersection_fraction_projected": "Intersection area divided by source ZCTA area in EPSG:3857, retained for selection audit only; not a service-coverage percentage."
+    },
+    "display_rule": "Fill each selected ZCTA's complete original rings. Fit all highlighted geometry with at least 24 SVG units of padding; draw no outer selection perimeter.",
+    "selection_fully_inside_zctas": 155,
+    "selection_intersecting_edge_zctas": 51
   },
   "sources": [
     {

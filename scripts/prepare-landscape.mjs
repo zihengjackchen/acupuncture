@@ -22,18 +22,14 @@ const primitives = html.slice(start, end)
   // Clamp roundoff for degenerate triangles before Heron's square root.
   .replace('Math.sqrt(s * (s - a) * (s - b) * (s - c))',
     'Math.sqrt(Math.max(0, s * (s - a) * (s - b) * (s - c)))')
-  // A footer needs fewer tiny ornaments than the original full-screen artwork.
-  .replace('function vegetate(treeFunc, growthRule, proofRule) {',
-    'var vegetationBudget = 12;\n      function vegetate(treeFunc, growthRule, proofRule) {')
-  .replace('if (proofRule(veglist, i)) {', 'if (vegetationBudget-- > 0 && proofRule(veglist, i)) {')
+  // Keep traditional architecture, omitting the occasional electricity pylon.
   .replace(/      \/\/TRANSM[\s\S]*?(?=      \/\/BOTT ROCK)/, '')
-  .replace('area: 100,\n          convex: true,', 'area: 900,\n          convex: true,')
   .replace(/^.*console\.log\(.*$/gm, '');
-const adapted = `/*\n${license}\nAdapted from ${source}index.html\nOnly the drawing primitives are retained. Browser UI and global PRNG are excluded.\n*/\n(function (scope) {\nvar Math = Object.create(globalThis.Math);\nvar randomState = 1;\nMath.random = function () {\n  var t = randomState = (randomState + 0x6D2B79F5) | 0;\n  t = Math.imul(t ^ (t >>> 15), t | 1);\n  t ^= t + Math.imul(t ^ (t >>> 7), t | 61);\n  return ((t ^ (t >>> 14)) >>> 0) / 4294967296;\n};\n${primitives}\nscope.ShanShui = {\n  mountain: Mount.mountain, distantMountain: Mount.distMount,\n  tree: Tree.tree02, water: water, boat: Arch.boat01,\n  random: Math.random,\n  seed: function (seed) { randomState = seed | 0; },\n  noiseSeed: function (seed) { Noise.noiseSeed(seed); }\n};\n})(self);\n`;
+const adapted = `/*\n${license}\nAdapted from ${source}index.html\nOnly the drawing primitives are retained. Browser UI and global PRNG are excluded.\n*/\n(function (scope) {\nvar Math = Object.create(globalThis.Math);\nvar randomState = 1;\nMath.random = function () {\n  var t = randomState = (randomState + 0x6D2B79F5) | 0;\n  t = Math.imul(t ^ (t >>> 15), t | 1);\n  t ^= t + Math.imul(t ^ (t >>> 7), t | 61);\n  return ((t ^ (t >>> 14)) >>> 0) / 4294967296;\n};\n${primitives}\nscope.ShanShui = {\n  mountain: Mount.mountain, distantMountain: Mount.distMount, flatMountain: Mount.flatMount.bind(Mount),\n  tree: Tree.tree02, water: water, boat: Arch.boat01, pavilion: Arch.arch02,\n  random: Math.random,\n  seed: function (seed) { randomState = seed | 0; },\n  noiseSeed: function (seed) { Noise.noiseSeed(seed); }\n};\n})(self);\n`;
 await mkdir(destination, { recursive: true });
 await writeFile(path.join(destination, 'primitives.js'), adapted);
 await writeFile(path.join(destination, 'LICENSE'), license);
-await writeFile(path.join(destination, 'ORIGIN.txt'), `Shan, Shui by Lingdong Huang\nhttps://github.com/LingDong-/shan-shui-inf\nRevision: ${revision}\nLicense: MIT (see LICENSE)\n\nAdaptation: isolated drawing primitives with local seeded randomness;\na new bounded tile planner, worker, canvas playback, and static fallback.\nRegenerate using: node scripts/prepare-landscape.mjs\n`);
+await writeFile(path.join(destination, 'ORIGIN.txt'), `Shan, Shui by Lingdong Huang\nhttps://github.com/LingDong-/shan-shui-inf\nRevision: ${revision}\nLicense: MIT (see LICENSE)\nSource: ${source}index.html\n\nActual upstream drawing code: PerlinNoise, PolyTools, stroke/texture/water,\nTree, Mount (mountain, distMount, flatMount/flatDec, rock), Arch and Man.\nFull upstream vegetation rules, mountain texture density, architecture and\ndistant-mountain triangulation are retained. The occasional electricity\npylon is omitted; Heron's formula clamps floating-point roundoff.\n\nLocal adaptation: isolated seeded randomness; a new bounded forward tile\nplanner using the original drawing functions, sage ink on warm paper,\nworker generation, buffered canvas playback, and a static SVG fallback. This is not\nthe original demo UI or its unbounded chunk cache. No runtime CDN is used.\n\nRevision note: the earlier sparse version capped ornament candidates at12,\ndisabled most vegetation, reduced texture counts and coarse-grained the\ndistant mountains. Those reductions have been removed.\n\nRegenerate using: node scripts/prepare-landscape.mjs\n`);
 
 // The same deterministic renderer supplies the no-JavaScript illustration.
 const workerSource = await readFile(path.join(destination, 'worker.js'), 'utf8');

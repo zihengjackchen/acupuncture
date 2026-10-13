@@ -1,25 +1,23 @@
 ---
-title: "Dan Wang, L.Ac., Dipl OM"
-meta_title: "Dan Wang, L.Ac., Dipl OM | Acupuncture in Chicago & Highland Park"
+title: "Dr Dan Wang, L.Ac., Dipl OM"
+meta_title: "Dr Dan Wang, L.Ac., Dipl OM | Acupuncture in Chicago & Highland Park"
 draft: false
 slug: "dr-dan-wang"
 image: "images/dan-wang.webp"
-jobtitle: "Acupuncturist · Chinese medicine"
+jobtitle: "Licensed Acupuncturist & Herbalist"
 promoted: true
 weight: 1
-description: "Meet Dan Wang, L.Ac., Dipl OM, providing personal acupuncture care at clinics in Chicago and Highland Park."
+description: "Dan is a licensed acupuncturist and herbalist from Northeast China, trained at Liaoning University of Traditional Chinese Medicine."
 credentials: ["L.Ac. · Licensed Acupuncturist", "Dipl OM"]
 focus_areas: ["Pain and everyday comfort", "Women’s health and fertility support", "Stress, sleep, and wellbeing"]
 ---
 
-Dan Wang brings a thoughtful, personal approach to acupuncture and Chinese medicine. Each visit begins with listening: to your symptoms, your history, and what you would like care to help you work toward.
+Dan is a licensed acupuncturist and herbalist from Northeast China. She earned her degree from Liaoning University of Traditional Chinese Medicine in the 1990s. Wang’s Harmony Acupuncture began in 2022.
 
-She explains the proposed treatment and checks in on your comfort. Follow-up is a conversation, with your response and priorities guiding the plan.
+Her interests include stress and sleep concerns, women’s health, fertility, postpartum care, and menopause. She works with patients receiving IUI or IVF in coordination with their medical care teams.
 
-## Where to find Dan
+At your appointment, she reviews your symptoms and health history, explains the proposed treatment, and checks your comfort. You decide on follow-up with her based on your response.
 
-- **Monday and Wednesday, noon–6 pm:** Elite Healthcare, 2732 N Lincoln Ave, Chicago, IL 60614. [Book online](https://elitehcare.janeapp.com/).
-- **Sunday:** Pulling Down the Moon, 1770 1st St, Suite 400, Highland Park, IL 60035. Provisional hours are 9 am–6 pm; [call to confirm](tel:+18477860066).
-- **By request:** mobile acupuncture in the service area.
+Outside the clinic, she enjoys reading, listening to music, and spending time with family and friends.
 
-[View the weekly schedule](/contact/#locations).
+[See the clinic schedule and booking options](/contact/#locations).

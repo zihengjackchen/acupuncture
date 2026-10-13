@@ -1,10 +1,9 @@
-/* Local, progressively enhanced footer. SVG generation stays in a worker;
- * the page retains a bounded set of rasterized tiles and one canvas. */
+/* Generate scenery in a worker, paint a bounded strip, then move its composited layer. */
 (() => {
   const TILE = 1024;
   const HEIGHT = 420;
   const MAX_TILES = 10;
-  const SPEED = 6; // CSS pixels per second, independent of refresh rate.
+  const SPEED = 3; // CSS pixels per second, independent of refresh rate.
 
   function mount(section) {
     if (section.harmonyLandscape) return;
@@ -20,7 +19,6 @@
     let busy = false;
     let destroyed = false;
     let failed = false;
-    let near = false;
     let visible = false;
     let paused = false;
     let frame = 0;
@@ -29,18 +27,30 @@
     let width = 1;
     let height = 1;
     let scale = 1;
+    let density = 1;
+    let bufferFirst = -1;
+    let bufferCount = 0;
+    let bufferDirty = true;
     let generation = 0;
     let featureCount = 0;
     let generatedTiles = 0;
+    let paintCount = 0;
+    let drawCalls = 0;
+    let animationFrames = 0;
+    let renderStarted = 0;
+    let maxTileMs = 0;
 
-    const active = () => !destroyed && !failed && !reduced.matches && !document.hidden;
+    const active = () => !destroyed && !failed && !paused && !reduced.matches && !document.hidden;
     const firstTile = () => Math.floor(offset / TILE);
     const lastTile = () => Math.floor((offset + width / scale) / TILE);
     const covered = () => {
       for (let index = firstTile(); index <= lastTile(); index++) if (!tiles.has(index)) return false;
       return true;
     };
-    const stop = () => { cancelAnimationFrame(frame); frame = 0; previousTime = 0; };
+    const stop = () => {
+      cancelAnimationFrame(frame); frame = 0; previousTime = 0;
+      canvas.style.willChange = 'auto';
+    };
     const release = () => {
       generation++;
       worker?.terminate();
@@ -49,16 +59,39 @@
       for (const url of objectURLs) URL.revokeObjectURL(url);
       objectURLs.clear();
       tiles.clear();
+      bufferFirst = -1;
+      bufferDirty = true;
+      canvas.width = canvas.height = 1;
     };
 
+    function position() {
+      canvas.style.transform = `translate3d(${(bufferFirst * TILE - offset) * scale}px,0,0)`;
+    }
+
     function paint() {
-      if (!covered()) return;
+      if (!active() || !visible || !covered()) return;
+      if (bufferFirst !== firstTile()) bufferDirty = true;
+      if (!bufferDirty) return;
+      bufferFirst = firstTile();
+      bufferCount = Math.ceil(width / (TILE * scale)) + 1;
+      const bufferWidth = bufferCount * TILE * scale;
+      const pixelWidth = Math.ceil(bufferWidth * density);
+      const pixelHeight = Math.ceil(height * density);
+      if (canvas.width !== pixelWidth) canvas.width = pixelWidth;
+      if (canvas.height !== pixelHeight) canvas.height = pixelHeight;
+      canvas.style.width = `${bufferWidth}px`;
+      context.setTransform(density, 0, 0, density, 0, 0);
       context.fillStyle = '#F7F3EB';
-      context.fillRect(0, 0, width, height);
-      for (let index = firstTile(); index <= lastTile(); index++) {
-        const x = (index * TILE - offset) * scale;
+      context.fillRect(0, 0, bufferWidth, height);
+      for (let index = bufferFirst; index < bufferFirst + bufferCount; index++) {
+        if (!tiles.has(index)) continue;
+        const x = (index - bufferFirst) * TILE * scale;
         context.drawImage(tiles.get(index), x, height - HEIGHT * scale, TILE * scale + .5, HEIGHT * scale);
+        drawCalls++;
       }
+      paintCount++;
+      bufferDirty = false;
+      position();
       section.classList.add('is-ready');
     }
 
@@ -71,10 +104,11 @@
     }
 
     function requestTile() {
-      if (!worker || busy || !active() || !near || (paused && covered())) return;
+      if (!worker || busy || !active() || !visible) return;
       for (let index = firstTile(); index <= lastTile() + 2; index++) {
         if (!tiles.has(index)) {
           busy = true;
+          renderStarted = performance.now();
           worker.postMessage({ type: 'render', index });
           return;
         }
@@ -108,8 +142,10 @@
             tiles.set(data.index, image);
             featureCount = data.featureCount;
             generatedTiles++;
+            maxTileMs = Math.max(maxTileMs, performance.now() - renderStarted);
             busy = false;
             trim();
+            if (data.index >= bufferFirst && data.index < bufferFirst + bufferCount) bufferDirty = true;
             paint();
             requestTile();
             start();
@@ -119,38 +155,47 @@
         const entropy = new Uint32Array(1);
         window.crypto.getRandomValues(entropy);
         worker.postMessage({ type: 'init', seed: entropy[0] });
-        toggle.hidden = false;
       } catch { fail(); }
     }
 
     function tick(time) {
       frame = 0;
-      if (!active() || !visible || paused) { previousTime = 0; return; }
+      if (!active() || !visible) { previousTime = 0; return; }
       const elapsed = previousTime ? Math.min((time - previousTime) / 1000, .08) : 0;
       previousTime = time;
       const nextOffset = offset + elapsed * SPEED / scale;
       const nextLast = Math.floor((nextOffset + width / scale) / TILE);
+      const beforeFirst = firstTile();
+      const beforeLast = lastTile();
       // Never expose an empty seam if a low-powered device needs more time.
-      if (covered() && tiles.has(nextLast)) offset = nextOffset;
-      trim();
-      paint();
-      requestTile();
+      if (tiles.has(nextLast)) offset = nextOffset;
+      if (firstTile() !== beforeFirst || lastTile() !== beforeLast) {
+        trim();
+        paint();
+        requestTile();
+      }
+      position();
+      animationFrames++;
       frame = requestAnimationFrame(tick);
     }
 
     function start() {
-      if (!frame && active() && visible && !paused && covered()) frame = requestAnimationFrame(tick);
+      if (!frame && active() && visible && covered()) {
+        paint();
+        canvas.style.willChange = 'transform';
+        frame = requestAnimationFrame(tick);
+      }
     }
 
     function sync() {
-      if (!active() || !visible || paused) stop();
+      if (!active() || !visible || !covered()) stop();
+      toggle.hidden = destroyed || failed || reduced.matches;
       if (reduced.matches) {
         release();
         section.classList.remove('is-ready');
-        toggle.hidden = true;
         return;
       }
-      if (active() && near) { createWorker(); requestTile(); start(); }
+      if (active() && visible) { createWorker(); paint(); requestTile(); start(); }
     }
 
     function resize() {
@@ -159,10 +204,8 @@
       height = Math.max(1, bounds.height);
       // Limit even ultrawide displays to six visible scene panels.
       scale = Math.max(height / HEIGHT, width / (TILE * 6));
-      const density = Math.min(window.devicePixelRatio || 1, 2);
-      canvas.width = Math.round(width * density);
-      canvas.height = Math.round(height * density);
-      context.setTransform(density, 0, 0, density, 0, 0);
+      density = Math.min(window.devicePixelRatio || 1, 2);
+      bufferDirty = true;
       trim();
       paint();
       if (!covered()) section.classList.remove('is-ready');
@@ -171,15 +214,9 @@
 
     function onToggle() {
       paused = !paused;
-      toggle.textContent = paused ? 'Play landscape' : 'Pause landscape';
-      toggle.setAttribute('aria-pressed', String(paused));
+      toggle.textContent = paused ? 'Resume landscape' : 'Pause landscape';
       sync();
     }
-
-    const warmupObserver = new IntersectionObserver(([entry]) => {
-      near = entry.isIntersecting;
-      sync();
-    }, { rootMargin: '180px 0px' });
     const visibilityObserver = new IntersectionObserver(([entry]) => {
       visible = entry.isIntersecting;
       sync();
@@ -193,7 +230,6 @@
       destroyed = true;
       stop();
       release();
-      warmupObserver.disconnect();
       visibilityObserver.disconnect();
       resizeObserver?.disconnect();
       reduced.removeEventListener('change', sync);
@@ -210,19 +246,19 @@
       destroy,
       get diagnostics() {
         return { tiles: tiles.size, maxTiles: MAX_TILES, featureCount, maxFeatures: 9,
-          generatedTiles, firstTile: firstTile(), offset, running: Boolean(frame), paused,
+          generatedTiles, firstTile: firstTile(), offset, offsetCSS: offset * scale, running: Boolean(frame), paused,
+          paintCount, drawCalls, animationFrames, maxTileMs, canvasBytes: canvas.width * canvas.height * 4,
           visible, reducedMotion: reduced.matches, pending: busy, objectURLs: objectURLs.size, destroyed, failed };
       },
     };
-    toggle.addEventListener('click', onToggle);
     reduced.addEventListener('change', sync);
+    toggle.addEventListener('click', onToggle);
     document.addEventListener('visibilitychange', sync);
     window.addEventListener('pagehide', onPageHide);
     window.addEventListener('pageshow', onPageShow);
     if (resizeObserver) resizeObserver.observe(viewport);
     else window.addEventListener('resize', resize);
     resize();
-    warmupObserver.observe(section);
     visibilityObserver.observe(section);
   }
 

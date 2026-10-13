@@ -1,7 +1,9 @@
 {
   "brand": "Wang’s Harmony Acupuncture",
-  "date": "2026-10-11",
-  "concept": "Two opposing botanical forms create a balanced circle around a fine acupuncture needle.",
+  "date": "2026-10-12",
+  "brandLine": "Traditional medicine. Personal care.",
+  "concept": "The original practitioner and acupuncture scene, with subtly stronger contours, a jade and muted sage palette, and a two-line Cormorant Garamond / DM Sans wordmark.",
+  "activeOption": "G, revised spacing: original scene in the website palette with refined contours and website typography. Previous options and original masters remain archived.",
   "colors": {
     "jade": "#28594b",
     "ink": "#26352e",
@@ -10,17 +12,286 @@
     "clay": "#a5684e"
   },
   "typography": {
-    "display": "Cormorant Garamond",
+    "logo": "Cormorant Garamond 500 for Wang’s Harmony; DM Sans 500 for ACUPUNCTURE.",
+    "websiteDisplay": "Cormorant Garamond",
     "supporting": "DM Sans",
-    "license": "SIL Open Font License 1.1; included in fonts/"
+    "license": "Font files use the SIL Open Font License 1.1; included in fonts/"
   },
-  "svg": "Portable logo SVGs have text converted to paths. Editable SVG masters retain live text and require the bundled fonts.",
+  "svg": "Production logos use outlined lettering and need no installed fonts. Editable masters retain live type; the matching TTF files are included.",
+  "scenePalette": {
+    "jade": "#28594b",
+    "mutedJade": "#557c69",
+    "softSage": "#8faa98",
+    "practitioner": "#577a63",
+    "ink": "#26352e"
+  },
   "clearSpace": "Keep a minimum space of one quarter of the symbol width around all logo variants.",
   "minimumSizes": {
-    "symbol": "24 CSS px",
-    "horizontal": "320 CSS px",
-    "stacked": "240 CSS px"
+    "symbol": "48 CSS px",
+    "horizontal": "250 CSS px",
+    "stacked": "220 CSS px"
   },
+  "spacingChecks": [
+    {
+      "shape": "horizontal",
+      "displayWidth": 250,
+      "gapPixels": 7.09
+    },
+    {
+      "shape": "stacked",
+      "displayWidth": 220,
+      "gapPixels": 13.05
+    }
+  ],
+  "wallpaperLayout": {
+    "source": "assets/brand/options/g-wallpaper-ivory.svg",
+    "sha256": "7899e208bfa4e3f70678a74b899daea2804abbab04d344e1ef86884c1132c4d5",
+    "logo": "horizontal",
+    "logoWidthFraction": 0.5729166666666666,
+    "placement": "Uniformly scaled to the same fraction of canvas width, then centered by visible artwork bounds."
+  },
+  "wallpapers": [
+    {
+      "theme": "ivory",
+      "themeLabel": "Jade on ivory",
+      "format": "landscape-16x9",
+      "formatLabel": "Landscape · 16:9",
+      "svg": "wallpapers/ivory-landscape-16x9.svg",
+      "editableSvg": "editable/wallpapers/ivory-landscape-16x9.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/ivory-landscape-16x9-3840x2160.png",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "file": "wallpapers/ivory-landscape-16x9-1920x1080.png",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "theme": "jade",
+      "themeLabel": "Ivory on jade",
+      "format": "landscape-16x9",
+      "formatLabel": "Landscape · 16:9",
+      "svg": "wallpapers/jade-landscape-16x9.svg",
+      "editableSvg": "editable/wallpapers/jade-landscape-16x9.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/jade-landscape-16x9-3840x2160.png",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "file": "wallpapers/jade-landscape-16x9-1920x1080.png",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "theme": "sage",
+      "themeLabel": "Jade on sage",
+      "format": "landscape-16x9",
+      "formatLabel": "Landscape · 16:9",
+      "svg": "wallpapers/sage-landscape-16x9.svg",
+      "editableSvg": "editable/wallpapers/sage-landscape-16x9.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/sage-landscape-16x9-3840x2160.png",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "file": "wallpapers/sage-landscape-16x9-1920x1080.png",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "theme": "ivory",
+      "themeLabel": "Jade on ivory",
+      "format": "portrait-3x4",
+      "formatLabel": "Portrait · 3:4",
+      "svg": "wallpapers/ivory-portrait-3x4.svg",
+      "editableSvg": "editable/wallpapers/ivory-portrait-3x4.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/ivory-portrait-3x4-1440x1920.png",
+          "width": 1440,
+          "height": 1920
+        }
+      ]
+    },
+    {
+      "theme": "jade",
+      "themeLabel": "Ivory on jade",
+      "format": "portrait-3x4",
+      "formatLabel": "Portrait · 3:4",
+      "svg": "wallpapers/jade-portrait-3x4.svg",
+      "editableSvg": "editable/wallpapers/jade-portrait-3x4.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/jade-portrait-3x4-1440x1920.png",
+          "width": 1440,
+          "height": 1920
+        }
+      ]
+    },
+    {
+      "theme": "sage",
+      "themeLabel": "Jade on sage",
+      "format": "portrait-3x4",
+      "formatLabel": "Portrait · 3:4",
+      "svg": "wallpapers/sage-portrait-3x4.svg",
+      "editableSvg": "editable/wallpapers/sage-portrait-3x4.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/sage-portrait-3x4-1440x1920.png",
+          "width": 1440,
+          "height": 1920
+        }
+      ]
+    },
+    {
+      "theme": "ivory",
+      "themeLabel": "Jade on ivory",
+      "format": "portrait-4x5",
+      "formatLabel": "Portrait · 4:5",
+      "svg": "wallpapers/ivory-portrait-4x5.svg",
+      "editableSvg": "editable/wallpapers/ivory-portrait-4x5.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/ivory-portrait-4x5-1080x1350.png",
+          "width": 1080,
+          "height": 1350
+        }
+      ]
+    },
+    {
+      "theme": "jade",
+      "themeLabel": "Ivory on jade",
+      "format": "portrait-4x5",
+      "formatLabel": "Portrait · 4:5",
+      "svg": "wallpapers/jade-portrait-4x5.svg",
+      "editableSvg": "editable/wallpapers/jade-portrait-4x5.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/jade-portrait-4x5-1080x1350.png",
+          "width": 1080,
+          "height": 1350
+        }
+      ]
+    },
+    {
+      "theme": "sage",
+      "themeLabel": "Jade on sage",
+      "format": "portrait-4x5",
+      "formatLabel": "Portrait · 4:5",
+      "svg": "wallpapers/sage-portrait-4x5.svg",
+      "editableSvg": "editable/wallpapers/sage-portrait-4x5.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/sage-portrait-4x5-1080x1350.png",
+          "width": 1080,
+          "height": 1350
+        }
+      ]
+    },
+    {
+      "theme": "ivory",
+      "themeLabel": "Jade on ivory",
+      "format": "story-9x16",
+      "formatLabel": "Story / phone · 9:16",
+      "svg": "wallpapers/ivory-story-9x16.svg",
+      "editableSvg": "editable/wallpapers/ivory-story-9x16.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/ivory-story-9x16-1080x1920.png",
+          "width": 1080,
+          "height": 1920
+        }
+      ]
+    },
+    {
+      "theme": "jade",
+      "themeLabel": "Ivory on jade",
+      "format": "story-9x16",
+      "formatLabel": "Story / phone · 9:16",
+      "svg": "wallpapers/jade-story-9x16.svg",
+      "editableSvg": "editable/wallpapers/jade-story-9x16.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/jade-story-9x16-1080x1920.png",
+          "width": 1080,
+          "height": 1920
+        }
+      ]
+    },
+    {
+      "theme": "sage",
+      "themeLabel": "Jade on sage",
+      "format": "story-9x16",
+      "formatLabel": "Story / phone · 9:16",
+      "svg": "wallpapers/sage-story-9x16.svg",
+      "editableSvg": "editable/wallpapers/sage-story-9x16.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/sage-story-9x16-1080x1920.png",
+          "width": 1080,
+          "height": 1920
+        }
+      ]
+    },
+    {
+      "theme": "ivory",
+      "themeLabel": "Jade on ivory",
+      "format": "square-1x1",
+      "formatLabel": "Square · 1:1",
+      "svg": "wallpapers/ivory-square-1x1.svg",
+      "editableSvg": "editable/wallpapers/ivory-square-1x1.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/ivory-square-1x1-1080x1080.png",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "theme": "jade",
+      "themeLabel": "Ivory on jade",
+      "format": "square-1x1",
+      "formatLabel": "Square · 1:1",
+      "svg": "wallpapers/jade-square-1x1.svg",
+      "editableSvg": "editable/wallpapers/jade-square-1x1.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/jade-square-1x1-1080x1080.png",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "theme": "sage",
+      "themeLabel": "Jade on sage",
+      "format": "square-1x1",
+      "formatLabel": "Square · 1:1",
+      "svg": "wallpapers/sage-square-1x1.svg",
+      "editableSvg": "editable/wallpapers/sage-square-1x1.svg",
+      "pngs": [
+        {
+          "file": "wallpapers/sage-square-1x1-1080x1080.png",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    }
+  ],
   "downloadFiles": [
     "logos/symbol.svg",
     "logos/symbol-512.png",
@@ -56,8 +327,59 @@
     "wallpaper-16x9.svg",
     "wallpaper-3840x2160.png",
     "wallpaper-1920x1080.png",
+    "wallpaper-jade-16x9.svg",
+    "wallpaper-jade-3840x2160.png",
+    "wallpaper-jade-1920x1080.png",
     "social-preview.svg",
-    "social-preview.png"
+    "social-preview.png",
+    "wallpapers/ivory-landscape-16x9.svg",
+    "editable/wallpapers/ivory-landscape-16x9.svg",
+    "wallpapers/ivory-landscape-16x9-3840x2160.png",
+    "wallpapers/ivory-landscape-16x9-1920x1080.png",
+    "wallpapers/jade-landscape-16x9.svg",
+    "editable/wallpapers/jade-landscape-16x9.svg",
+    "wallpapers/jade-landscape-16x9-3840x2160.png",
+    "wallpapers/jade-landscape-16x9-1920x1080.png",
+    "wallpapers/sage-landscape-16x9.svg",
+    "editable/wallpapers/sage-landscape-16x9.svg",
+    "wallpapers/sage-landscape-16x9-3840x2160.png",
+    "wallpapers/sage-landscape-16x9-1920x1080.png",
+    "wallpapers/ivory-portrait-3x4.svg",
+    "editable/wallpapers/ivory-portrait-3x4.svg",
+    "wallpapers/ivory-portrait-3x4-1440x1920.png",
+    "wallpapers/jade-portrait-3x4.svg",
+    "editable/wallpapers/jade-portrait-3x4.svg",
+    "wallpapers/jade-portrait-3x4-1440x1920.png",
+    "wallpapers/sage-portrait-3x4.svg",
+    "editable/wallpapers/sage-portrait-3x4.svg",
+    "wallpapers/sage-portrait-3x4-1440x1920.png",
+    "wallpapers/ivory-portrait-4x5.svg",
+    "editable/wallpapers/ivory-portrait-4x5.svg",
+    "wallpapers/ivory-portrait-4x5-1080x1350.png",
+    "wallpapers/jade-portrait-4x5.svg",
+    "editable/wallpapers/jade-portrait-4x5.svg",
+    "wallpapers/jade-portrait-4x5-1080x1350.png",
+    "wallpapers/sage-portrait-4x5.svg",
+    "editable/wallpapers/sage-portrait-4x5.svg",
+    "wallpapers/sage-portrait-4x5-1080x1350.png",
+    "wallpapers/ivory-story-9x16.svg",
+    "editable/wallpapers/ivory-story-9x16.svg",
+    "wallpapers/ivory-story-9x16-1080x1920.png",
+    "wallpapers/jade-story-9x16.svg",
+    "editable/wallpapers/jade-story-9x16.svg",
+    "wallpapers/jade-story-9x16-1080x1920.png",
+    "wallpapers/sage-story-9x16.svg",
+    "editable/wallpapers/sage-story-9x16.svg",
+    "wallpapers/sage-story-9x16-1080x1920.png",
+    "wallpapers/ivory-square-1x1.svg",
+    "editable/wallpapers/ivory-square-1x1.svg",
+    "wallpapers/ivory-square-1x1-1080x1080.png",
+    "wallpapers/jade-square-1x1.svg",
+    "editable/wallpapers/jade-square-1x1.svg",
+    "wallpapers/jade-square-1x1-1080x1080.png",
+    "wallpapers/sage-square-1x1.svg",
+    "editable/wallpapers/sage-square-1x1.svg",
+    "wallpapers/sage-square-1x1-1080x1080.png"
   ],
   "fontSources": [
     "https://github.com/google/fonts/tree/main/ofl/cormorantgaramond",

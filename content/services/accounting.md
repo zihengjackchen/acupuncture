@@ -4,27 +4,25 @@ meta_title: "Acupuncture consultation | Acupuncture in Chicago & Highland Park"
 draft: false
 featured: true
 weight: 1
-summary: "Start with a conversation about your health, your questions, and the right next step."
-description: "Start with a conversation about your health, your questions, and the right next step. Visit Dan Wang in Chicago or Highland Park."
+summary: "Review your health history and ask about treatment, comfort, and cost."
+description: "Review your health history and ask about treatment, comfort, and cost. See Dan in Chicago or Highland Park."
 card_image: "images/editorial/consultation.webp"
-hero_image: "images/editorial/consultation.webp"
-hero_kicker: "Your first step"
-hero_intro: "Start with a conversation about your health, your questions, and the right next step."
+hero_image: "images/editorial/pulse-consultation.webp"
+hero_alt: "Ink-wash illustration of a practitioner taking a pulse"
+hero_kicker: "Consultation"
+hero_intro: "Review your health history and ask about treatment, comfort, and cost."
 highlights: ["New to acupuncture", "Questions about fit, comfort, or timing", "Planning a clinic or mobile visit"]
-ideal_for: ["New to acupuncture", "Questions about fit, comfort, or timing", "Planning a clinic or mobile visit"]
-visit_notes: ["Appointments in Chicago and Highland Park", "Confirm the fee and appointment length before booking", "Mobile visits available by request"]
 slug: "acupuncture-consultation"
 ---
 
-A consultation is a place to share what brings you in and ask the questions that matter to you. Dan will review your health history and discuss whether an acupuncture appointment is a suitable next step.
+Dan reviews your health history and discusses whether acupuncture suits your needs.
 
-## What we discuss
+## During your consultation
 
-- Your symptoms, health history, and current treatment
-- Medications, supplements, and relevant precautions
-- Your preferences, schedule, and questions about comfort
-- The appointment fee and proposed plan
+Bring your medication and supplement list, and tell her about your symptoms and current treatment. Ask about comfort, scheduling, and the proposed plan.
 
-A consultation does not commit you to a course of treatment. Confirm the consultation format and current fee when you book.
+At your first in-person treatment, she assesses your pulse and tongue as part of the intake.
 
-[Find your appointment](/contact/#locations) or call [847-786-0066](tel:+18477860066).
+A brief virtual consultation costs **$20**. Confirm the format when booking. You can decide whether to proceed with treatment after the consultation.
+
+[See appointment fees](/blog/how-much-does-mobile-acupuncture-cost/) or [find a clinic appointment](/contact/#locations).

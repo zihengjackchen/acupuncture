@@ -3,12 +3,12 @@ title: "What can I discuss at an appointment?"
 meta_title: "What can I discuss at an appointment? | Wang’s Harmony Acupuncture"
 draft: false
 weight: 5
-description: "What can I discuss at an appointment? Practical information for your visit with Dan Wang in Chicago or Highland Park."
+description: "Discuss pain, women’s health, sleep, digestion, and how acupuncture might fit with your current care."
 slug: "what-can-acupuncture-treat"
 ---
 
-You can bring questions about pain, women’s health, stress, sleep, digestion, or other symptoms that are affecting everyday life.
+You can ask about pain, women’s health, stress, sleep, digestion, or other symptoms that affect your day.
 
-A consultation helps establish whether acupuncture is appropriate and how it might fit alongside your existing care. The presence of a service category does not mean a particular condition will respond to treatment.
+Dan will review your history and discuss whether acupuncture fits alongside your existing care. Results vary by condition and person.
 
-[Explore our care areas](/services/) or [contact Dan](/contact/) to discuss your starting point.
+[Explore care areas](/services/) or [contact Dan](/contact/).

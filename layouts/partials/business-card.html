@@ -1,13 +1,26 @@
-<section class="section card-section" id="keep-in-touch">
-  <div class="shell card-layout">
-    <div class="card-copy" data-reveal><span class="eyebrow"><span class="section-number">04</span> A personal connection</span><h2>A familiar face.<br><em>A number you can keep.</em></h2><p>Questions about your first visit, the right location, or mobile care? You’re welcome to get in touch.</p><a class="large-phone" href="tel:+18477860066">847-786-0066 {{ partial "icon.html" "diagonal" }}</a><a class="text-link" href="mailto:hello@wangsharmonyacu.com">hello@wangsharmonyacu.com</a></div>
-    <div class="card-stage" data-card-stage>
-      <div class="card-flipper" data-card-flipper aria-hidden="true">
-        <div class="business-card card-front"><div class="card-front-main"><div class="card-brand"><svg viewBox="0 0 100 100" width="85" height="85" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#fff9e9" stroke="#292d2a" stroke-width="2"/><path d="M50 4a46 46 0 0 0 0 92 23 23 0 0 1 0-46 23 23 0 0 0 0-46" fill="#292d2a"/><circle cx="50" cy="27" r="6" fill="#fff9e9"/><circle cx="50" cy="73" r="6" fill="#292d2a"/></svg><strong>Wang’s Harmony</strong><span>ACUPUNCTURE</span></div><div class="card-person"><strong>Dan Wang <small>L.Ac., Dipl OM</small></strong><span>Licensed Acupuncturist & Herbalist</span><ul><li>Chinese acupuncture</li><li>Traditional Chinese Medicine</li><li>Personalized, thoughtful care</li><li>Chicago & Highland Park</li></ul></div></div><div class="card-band"><div><strong>847-786-0066</strong><span>hello@wangsharmonyacu.com</span></div><div><span>2732 N Lincoln Ave.</span><span>Chicago, IL 60614</span><strong>elitehcare.janeapp.com</strong></div></div></div>
-        <div class="business-card card-back"><div class="card-back-title">Integrative Chinese Medicine & Acupuncture</div><div class="card-back-content"><p>Pain & recovery · Women’s health & fertility<br>Stress & sleep · Digestive concerns<br>Respiratory & seasonal concerns</p><strong>Clinic appointments in Chicago & Highland Park</strong><p class="card-mobile">Mobile acupuncture available upon request</p><div class="appointment-line">Appointment date / time <span></span></div></div></div>
+<section class="section connection-section" id="keep-in-touch" data-card-section>
+  <div class="shell connection-layout" data-card-pin>
+    <div class="connection-copy">
+      <span class="eyebrow">A personal connection</span>
+      <h2>Contact <em>Dan.</em></h2>
+      <a class="large-phone" href="tel:+18477860066">{{ .Site.Data.contact.phone }} {{ partial "icon.html" "diagonal" }}</a>
+      <a class="text-link" href="mailto:{{ .Site.Data.contact.email }}">{{ .Site.Data.contact.email }}</a>
+    </div>
+    <div class="namecard-stage" data-card-stage>
+      <div class="namecard-flipper" data-card-flipper>
+        <div class="namecard namecard-front">
+          <div class="namecard-main">
+            <div class="namecard-brand"><img src="{{ "images/brand/logo-stacked.svg" | relURL }}" width="260" height="199" alt="Wang’s Harmony Acupuncture"></div>
+            <div class="namecard-person"><strong>Dr Dan Wang</strong><span>L.Ac., Dipl OM</span><p>Licensed Acupuncturist<br>& Herbalist</p><ul><li>Chinese acupuncture</li><li>Herbal medicine</li><li>Individual treatment plans</li></ul></div>
+          </div>
+          <div class="namecard-band"><div><strong>{{ .Site.Data.contact.phone }}</strong><span>{{ .Site.Data.contact.email }}</span></div><div><span>2732 N Lincoln Ave.</span><span>Chicago, IL 60614</span><strong>elitehcare.janeapp.com</strong></div></div>
+        </div>
+        <div class="namecard namecard-back">
+          <div class="namecard-back-title">Acupuncture & Chinese Medicine</div>
+          <div class="namecard-back-body"><p>Pain & recovery · Women’s health & fertility<br>Stress & sleep · Digestive concerns<br>Respiratory, immune & skin concerns</p><span>Chicago & Highland Park<br>Mobile visits by request</span><div class="appointment-line">Appointment date / time <span></span></div></div>
+        </div>
       </div>
-      <div class="card-controls" hidden data-card-controls><span data-card-hint>Scroll slowly to turn the card</span><button type="button" class="text-link" data-card-toggle aria-label="Show back of business card">Flip card <span aria-hidden="true">↻</span></button></div>
-      <span class="sr-only" role="status" data-card-status></span>
+      <p class="namecard-scroll-hint" hidden data-card-hint>Scroll to turn the card <span aria-hidden="true">↓</span></p>
     </div>
   </div>
 </section>

@@ -3,12 +3,12 @@ title: "Does acupuncture hurt?"
 meta_title: "Does acupuncture hurt? | Wang’s Harmony Acupuncture"
 draft: false
 weight: 2
-description: "Does acupuncture hurt? Practical information for your visit with Dan Wang in Chicago or Highland Park."
+description: "Learn about needle sensations and how to discuss comfort with Dan."
 slug: "does-acupuncture-hurt"
 ---
 
-Experiences differ. You may feel a brief sensation when a needle is placed, followed by tingling, pressure, or heaviness. Tell Dan about anything that feels painful or uncomfortable so she can respond.
+You may feel tingling, pressure, or heaviness during needling. Tell Dan if you feel pain or discomfort so she can respond.
 
-If you feel nervous about needles, say so before treatment. You can ask questions, take a pause, or discuss whether another approach would be more comfortable.
+Tell her before treatment if you feel nervous about needles. You can ask for a pause or discuss another approach.
 
-Your appointment is a conversation. [Contact Dan](/contact/) before booking if comfort is on your mind.
+[Contact Dan](/contact/) with questions about comfort.

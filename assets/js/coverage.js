@@ -31,8 +31,8 @@
     input.value = zip;
     if (!record) {
       svg.setAttribute('viewBox', defaultView);
-      title.textContent = `${zip} is outside our listed area.`;
-      text.textContent = 'Call 847-786-0066 to ask about your address, or choose a clinic appointment in Chicago or Highland Park.';
+      title.textContent = `We cannot confirm coverage for ${zip}.`;
+      text.textContent = 'This ZIP is not in the mapped service area. Some postal-only ZIPs have no map boundary. Call 847-786-0066 to check your street address or book a clinic visit.';
       return;
     }
     title.textContent = `${zip} · ${record.locality}`;
@@ -43,7 +43,7 @@
       regions[focusIndex].setAttribute('tabindex', '-1');
       focusIndex = regions.indexOf(selected);
       selected.setAttribute('tabindex', '0');
-      text.textContent = 'Mobile visits are available by request in this ZIP area. Call to confirm your street address, appointment time, and travel fee.';
+      text.textContent = 'Dan accepts mobile requests throughout this ZIP area. Call to confirm your address, appointment, and travel fee.';
       if (zoom) {
         const bounds = selected.getBBox();
         const width = Math.max(bounds.width + 80, 180);
@@ -53,7 +53,7 @@
       }
     } else {
       svg.setAttribute('viewBox', defaultView);
-      text.textContent = 'This ZIP code is accepted for mobile appointment requests. It has no matching Census map polygon, so there is no area to highlight. Call to confirm the visit’s street address and travel fee.';
+      text.textContent = 'Call to confirm whether your street address is within the mobile service area and ask about the travel fee.';
     }
   }
 
@@ -99,8 +99,8 @@
     svg.setAttribute('viewBox', defaultView);
     clearSelection();
     input.value = '';
-    title.textContent = 'Room to meet you where you are.';
-    text.textContent = '263 accepted ZIP codes across Chicago and the northern and western suburbs. Every mobile appointment is confirmed individually.';
+    title.textContent = 'Check your ZIP code.';
+    text.textContent = `The service area includes ${records.length} ZIP areas, shown in full in green. Gray areas are outside it.`;
   });
   root.querySelectorAll('[data-coverage-zip]').forEach(button => {
     button.addEventListener('click', () => {

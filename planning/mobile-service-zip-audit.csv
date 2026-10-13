@@ -1,0 +1,315 @@
+zip_code,prefix,usps_zip_class,usps_postal_locale,census_zcta,map_status,centroid_latitude,centroid_longitude,accepted,coverage_status,selection_overlap,selection_intersection_fraction_projected,selection_reason
+46307,463,,Crown Point Annex,46307,zcta_available,41.4021647,-87.3269483,False,outside,outside,0.0,outside_municipal_envelope
+46311,463,,Dyer / Schererville,46311,zcta_available,41.4683809,-87.5091874,False,outside,outside,0.0,outside_municipal_envelope
+46312,463,,East Chicago / Harbor,46312,zcta_available,41.6501986,-87.4517435,False,outside,outside,0.0,outside_municipal_envelope
+46319,463,,Griffith,46319,zcta_available,41.5221431,-87.4209113,False,outside,outside,0.0,outside_municipal_envelope
+46320,463,,Hammond In Sdc,46320,zcta_available,41.6089223,-87.4975543,False,outside,outside,0.0,outside_municipal_envelope
+46321,463,,Munster / Munster Annex,46321,zcta_available,41.5470394,-87.5040467,False,outside,outside,0.0,outside_municipal_envelope
+46322,463,,Highland,46322,zcta_available,41.5482034,-87.4588383,False,outside,outside,0.0,outside_municipal_envelope
+46323,463,,Hessville,46323,zcta_available,41.5896178,-87.4532697,False,outside,outside,0.0,outside_municipal_envelope
+46324,463,,Hammond In Sdc / South Calumet Avenue,46324,zcta_available,41.5832183,-87.5015004,False,outside,outside,0.0,outside_municipal_envelope
+46327,463,,Hammond In Sdc,46327,zcta_available,41.6404126,-87.5067237,True,full,partial,0.000811,intersects_municipal_envelope
+46373,463,,Saint John,46373,zcta_available,41.4457836,-87.4695393,False,outside,outside,0.0,outside_municipal_envelope
+46375,463,,Schererville,46375,zcta_available,41.4916513,-87.4519805,False,outside,outside,0.0,outside_municipal_envelope
+46394,463,,Whiting,46394,zcta_available,41.6821108,-87.4996445,True,full,partial,0.004915,intersects_municipal_envelope
+46406,464,,Gary / Tolleston,46406,zcta_available,41.6057633,-87.4084969,False,outside,outside,0.0,outside_municipal_envelope
+46408,464,,Gary,46408,zcta_available,41.544662,-87.3694457,False,outside,outside,0.0,outside_municipal_envelope
+60004,600,,Arlington Heights,60004,zcta_available,42.1120937,-87.9789544,True,full,partial,0.846907,intersects_municipal_envelope
+60005,600,,Arlington Heights,60005,zcta_available,42.0652276,-87.9868484,True,full,full,1,intersects_municipal_envelope
+60007,600,,Elk Grove Village,60007,zcta_available,42.014344,-87.9983099,True,full,full,1,intersects_municipal_envelope
+60008,600,,Arlington Heights,60008,zcta_available,42.0738744,-88.0228533,True,full,full,1,intersects_municipal_envelope
+60010,600,,Barrington,60010,zcta_available,42.1525569,-88.1652098,False,outside,outside,0.0,outside_municipal_envelope
+60012,600,,Crystal Lake,60012,zcta_available,42.2720036,-88.3115558,False,outside,outside,0.0,outside_municipal_envelope
+60013,600,,Cary,60013,zcta_available,42.2202182,-88.2357432,False,outside,outside,0.0,outside_municipal_envelope
+60014,600,,Crystal Lake,60014,zcta_available,42.2312773,-88.3267269,False,outside,outside,0.0,outside_municipal_envelope
+60015,600,,Deerfield,60015,zcta_available,42.1723738,-87.8748684,True,full,partial,0.931642,intersects_municipal_envelope
+60016,600,,Des Plaines / Downtown Des Plaines,60016,zcta_available,42.0523241,-87.8898739,True,full,full,1,intersects_municipal_envelope
+60018,600,,Des Plaines / Rosemont Branch,60018,zcta_available,41.9962821,-87.8984387,True,full,full,1,intersects_municipal_envelope
+60020,600,,Fox Lake / Round Lake,60020,zcta_available,42.3954064,-88.1734767,False,outside,outside,0.0,outside_municipal_envelope
+60021,600,,Fox River Grove,60021,zcta_available,42.1951086,-88.2176768,False,outside,outside,0.0,outside_municipal_envelope
+60022,600,,Glencoe,60022,zcta_available,42.1368485,-87.7609773,True,full,partial,0.944641,intersects_municipal_envelope
+60025,600,,Glenview,60025,zcta_available,42.0746712,-87.8120259,True,full,full,1,intersects_municipal_envelope
+60026,600,,Glenview,60026,zcta_available,42.092205,-87.8379132,True,full,full,1,intersects_municipal_envelope
+60029,600,P,Golf,60029,zcta_available,42.0585491,-87.7849406,True,full,full,1,intersects_municipal_envelope
+60030,600,,Grayslake,60030,zcta_available,42.33534,-88.045264,False,outside,outside,0.0,outside_municipal_envelope
+60035,600,,Highland Park,60035,zcta_available,42.184499,-87.8053923,True,full,full,1,intersects_municipal_envelope
+60040,600,,Highwood,60040,zcta_available,42.2065246,-87.8128182,True,full,full,1,intersects_municipal_envelope
+60041,600,,Ingleside / Round Lake,60041,zcta_available,42.3694296,-88.1531116,False,outside,outside,0.0,outside_municipal_envelope
+60042,600,,Island Lake,60042,zcta_available,42.2791243,-88.197767,False,outside,outside,0.0,outside_municipal_envelope
+60043,600,,Kenilworth / Wilmette,60043,zcta_available,42.0888177,-87.7144974,True,full,partial,0.799185,intersects_municipal_envelope
+60044,600,,Lake Bluff / Lake Forest Carrier Annex,60044,zcta_available,42.2848011,-87.8572335,False,outside,outside,0.0,outside_municipal_envelope
+60045,600,,Lake Forest / Lake Forest Carrier Annex,60045,zcta_available,42.2386775,-87.8663034,True,full,partial,0.046256,intersects_municipal_envelope
+60047,600,,Lake Zurich,60047,zcta_available,42.2020366,-88.0452368,False,outside,outside,0.0,outside_municipal_envelope
+60048,600,,Libertyville,60048,zcta_available,42.2949372,-87.9466149,False,outside,outside,0.0,outside_municipal_envelope
+60050,600,,Mchenry,60050,zcta_available,42.3291815,-88.2935471,False,outside,outside,0.0,outside_municipal_envelope
+60051,600,,Mchenry,60051,zcta_available,42.3509663,-88.2240853,False,outside,outside,0.0,outside_municipal_envelope
+60053,600,,Morton Grove,60053,zcta_available,42.0422389,-87.7889284,True,full,full,1,intersects_municipal_envelope
+60056,600,,Mount Prospect,60056,zcta_available,42.0661299,-87.9347888,True,full,full,1,intersects_municipal_envelope
+60060,600,,Mundelein,60060,zcta_available,42.2694877,-88.0399958,False,outside,outside,0.0,outside_municipal_envelope
+60061,600,,Vernon Hills,60061,zcta_available,42.2333843,-87.9604459,False,outside,outside,0.0,outside_municipal_envelope
+60062,600,,Northbrook,60062,zcta_available,42.1266223,-87.8423495,True,full,full,1,intersects_municipal_envelope
+60064,600,,North Chicago,60064,zcta_available,42.3237145,-87.861171,False,outside,outside,0.0,outside_municipal_envelope
+60067,600,,Palatine,60067,zcta_available,42.1077501,-88.0648081,True,full,partial,0.201828,intersects_municipal_envelope
+60068,600,,Park Ridge,60068,zcta_available,42.0127628,-87.844352,True,full,full,1,intersects_municipal_envelope
+60069,600,,Lincolnshire,60069,zcta_available,42.195962,-87.9243682,True,full,partial,0.01615,intersects_municipal_envelope
+60070,600,,Mount Prospect / Prospect Heights,60070,zcta_available,42.1040618,-87.9277364,True,full,full,1,intersects_municipal_envelope
+60073,600,,Round Lake,60073,zcta_available,42.3515831,-88.1059887,False,outside,outside,0.0,outside_municipal_envelope
+60074,600,,Palatine,60074,zcta_available,42.1317997,-88.0265921,True,full,partial,0.238122,intersects_municipal_envelope
+60076,600,,Skokie / Skokie Postal Store,60076,zcta_available,42.0341335,-87.7294451,True,full,full,1,intersects_municipal_envelope
+60077,600,,Skokie,60077,zcta_available,42.0361537,-87.756328,True,full,full,1,intersects_municipal_envelope
+60084,600,,Wauconda,60084,zcta_available,42.268069,-88.1386193,False,outside,outside,0.0,outside_municipal_envelope
+60085,600,,Waukegan,60085,zcta_available,42.3551691,-87.8602162,False,outside,outside,0.0,outside_municipal_envelope
+60088,600,,Great Lakes / North Chicago,60088,zcta_available,42.3097745,-87.844225,False,outside,outside,0.0,outside_municipal_envelope
+60089,600,,Buffalo Grove,60089,zcta_available,42.167375,-87.9608054,True,full,partial,0.204265,intersects_municipal_envelope
+60090,600,,Wheeling,60090,zcta_available,42.1302974,-87.9226445,True,full,partial,0.99688,intersects_municipal_envelope
+60091,600,,Wilmette,60091,zcta_available,42.078789,-87.7203268,True,full,partial,0.656613,intersects_municipal_envelope
+60093,600,,Glenview / Northfield / Winnetka,60093,zcta_available,42.1044958,-87.7530654,True,full,partial,0.910726,intersects_municipal_envelope
+60098,600,,Woodstock,60098,zcta_available,42.3246214,-88.4567316,False,outside,outside,0.0,outside_municipal_envelope
+60101,601,,Addison,60101,zcta_available,41.931022,-88.0108066,True,full,full,1,intersects_municipal_envelope
+60102,601,,Algonquin / Algonquin East,60102,zcta_available,42.1640062,-88.3092805,False,outside,outside,0.0,outside_municipal_envelope
+60103,601,,Bartlett / Hanover Park Il S&Dc,60103,zcta_available,41.9781379,-88.2050697,True,full,partial,0.168109,intersects_municipal_envelope
+60104,601,,Bellwood,60104,zcta_available,41.8825626,-87.8764439,True,full,full,1,intersects_municipal_envelope
+60106,601,,Bensenville,60106,zcta_available,41.9611428,-87.9419741,True,full,full,1,intersects_municipal_envelope
+60107,601,,Hanover Park Il S&Dc / Streamwood,60107,zcta_available,42.0214848,-88.1782383,True,full,partial,0.149412,intersects_municipal_envelope
+60108,601,,Bloomingdale,60108,zcta_available,41.9490405,-88.0924202,True,full,full,1,intersects_municipal_envelope
+60109,601,P,Burlington,60109,zcta_available,42.0444494,-88.5627079,False,outside,outside,0.0,outside_municipal_envelope
+60110,601,,Carpentersville,60110,zcta_available,42.1229581,-88.2883387,False,outside,outside,0.0,outside_municipal_envelope
+60118,601,,Dundee,60118,zcta_available,42.1079131,-88.3060932,False,outside,outside,0.0,outside_municipal_envelope
+60119,601,,Elburn,60119,zcta_available,41.8615361,-88.4770626,False,outside,outside,0.0,outside_municipal_envelope
+60120,601,,Hanover Park Il S&Dc,60120,zcta_available,42.0331441,-88.2374098,True,full,partial,0.000476,intersects_municipal_envelope
+60123,601,,Elgin West Side Annex,60123,zcta_available,42.0401008,-88.3116558,False,outside,outside,0.0,outside_municipal_envelope
+60124,601,,Elgin West Side Annex,60124,zcta_available,42.0262246,-88.3969058,False,outside,outside,0.0,outside_municipal_envelope
+60126,601,,Elmhurst,60126,zcta_available,41.8962587,-87.9419408,True,full,full,1,intersects_municipal_envelope
+60130,601,,Forest Park / Oak Park South,60130,zcta_available,41.8670311,-87.8179345,True,full,full,1,intersects_municipal_envelope
+60131,601,,Franklin Park,60131,zcta_available,41.937783,-87.883025,True,full,full,1,intersects_municipal_envelope
+60133,601,,Hanover Park Il S&Dc,60133,zcta_available,41.9780704,-88.1429059,True,full,partial,0.997022,intersects_municipal_envelope
+60134,601,,Geneva / Saint Charles,60134,zcta_available,41.8783894,-88.3419904,False,outside,outside,0.0,outside_municipal_envelope
+60135,601,,Genoa,60135,zcta_available,42.1126289,-88.6786897,False,outside,outside,0.0,outside_municipal_envelope
+60136,601,,Gilberts / Huntley Carrier Annex,60136,zcta_available,42.1053198,-88.3780786,False,outside,outside,0.0,outside_municipal_envelope
+60137,601,,Glen Ellyn,60137,zcta_available,41.8652938,-88.062219,True,full,full,1,intersects_municipal_envelope
+60139,601,,Carol Stream / Glendale Heights Finance,60139,zcta_available,41.9190903,-88.0773551,True,full,full,1,intersects_municipal_envelope
+60140,601,,Hampshire / Hampshire Carrier Annex,60140,zcta_available,42.0799818,-88.5086168,False,outside,outside,0.0,outside_municipal_envelope
+60141,601,P,Hines,60141,zcta_available,41.8583442,-87.8379105,True,full,full,1,intersects_municipal_envelope
+60142,601,,Huntley / Huntley Carrier Annex,60142,zcta_available,42.1751489,-88.4448166,False,outside,outside,0.0,outside_municipal_envelope
+60143,601,,Itasca,60143,zcta_available,41.9735073,-88.0207123,True,full,full,1,intersects_municipal_envelope
+60144,601,P,Kaneville,60144,zcta_available,41.8350763,-88.51986,False,outside,outside,0.0,outside_municipal_envelope
+60148,601,,Lombard,60148,zcta_available,41.8749919,-88.0185775,True,full,full,1,intersects_municipal_envelope
+60151,601,,Elburn / Maple Park,60151,zcta_available,41.9171678,-88.5661535,False,outside,outside,0.0,outside_municipal_envelope
+60152,601,,Marengo,60152,zcta_available,42.2387701,-88.625959,False,outside,outside,0.0,outside_municipal_envelope
+60153,601,,Maywood,60153,zcta_available,41.8798174,-87.8438701,True,full,full,1,intersects_municipal_envelope
+60154,601,,Westchester,60154,zcta_available,41.8492344,-87.8898489,True,full,full,1,intersects_municipal_envelope
+60155,601,,Broadview / Maywood,60155,zcta_available,41.8577846,-87.8563161,True,full,full,1,intersects_municipal_envelope
+60156,601,,Algonquin,60156,zcta_available,42.191199,-88.3477445,False,outside,outside,0.0,outside_municipal_envelope
+60157,601,,Medinah,60157,zcta_available,41.9739684,-88.0547582,True,full,full,1,intersects_municipal_envelope
+60160,601,,Melrose Park,60160,zcta_available,41.9034912,-87.8617696,True,full,full,1,intersects_municipal_envelope
+60162,601,,Hillside,60162,zcta_available,41.8675481,-87.9019457,True,full,full,1,intersects_municipal_envelope
+60163,601,,Hillside,60163,zcta_available,41.88793,-87.9094671,True,full,full,1,intersects_municipal_envelope
+60164,601,,Melrose Park / Northlake,60164,zcta_available,41.9166905,-87.9011822,True,full,full,1,intersects_municipal_envelope
+60165,601,,Melrose Park,60165,zcta_available,41.9032344,-87.8807317,True,full,full,1,intersects_municipal_envelope
+60169,601,,Hoffman Estates,60169,zcta_available,42.0519271,-88.1165446,True,full,partial,0.613944,intersects_municipal_envelope
+60171,601,,River Grove,60171,zcta_available,41.9250589,-87.8383338,True,full,full,1,intersects_municipal_envelope
+60172,601,,Roselle,60172,zcta_available,41.9797832,-88.0893644,True,full,full,1,intersects_municipal_envelope
+60173,601,,Schaumburg,60173,zcta_available,42.0528879,-88.0525918,True,full,full,1,intersects_municipal_envelope
+60174,601,,Saint Charles / St Charles East Side Station,60174,zcta_available,41.9275747,-88.2990798,False,outside,outside,0.0,outside_municipal_envelope
+60175,601,,Saint Charles,60175,zcta_available,41.9469494,-88.3913273,False,outside,outside,0.0,outside_municipal_envelope
+60176,601,,Franklin Park / Schiller Park,60176,zcta_available,41.9583239,-87.8696549,True,full,full,1,intersects_municipal_envelope
+60177,601,,Elgin West Side Annex / South Elgin,60177,zcta_available,41.9893024,-88.309859,False,outside,outside,0.0,outside_municipal_envelope
+60178,601,,Sycamore,60178,zcta_available,42.0062338,-88.6720892,False,outside,outside,0.0,outside_municipal_envelope
+60180,601,,Marengo / Union,60180,zcta_available,42.2233772,-88.5202071,False,outside,outside,0.0,outside_municipal_envelope
+60181,601,,Villa Park,60181,zcta_available,41.8779983,-87.9762898,True,full,full,1,intersects_municipal_envelope
+60183,601,P,Wasco,60183,zcta_available,41.940234,-88.4091415,False,outside,outside,0.0,outside_municipal_envelope
+60184,601,,Hanover Park Il S&Dc / Wayne / Wayne Carrier Annex,60184,zcta_available,41.9520799,-88.2533036,False,outside,outside,0.0,outside_municipal_envelope
+60185,601,,West Chicago,60185,zcta_available,41.8930466,-88.215,True,full,partial,0.344161,intersects_municipal_envelope
+60187,601,,Wheaton,60187,zcta_available,41.8723048,-88.1126039,True,full,full,1,intersects_municipal_envelope
+60188,601,,Carol Stream,60188,zcta_available,41.9155938,-88.1296243,True,full,full,1,intersects_municipal_envelope
+60189,601,,Wheaton South,60189,zcta_available,41.8395754,-88.1212849,True,full,full,1,intersects_municipal_envelope
+60190,601,,Winfield,60190,zcta_available,41.8731794,-88.1576243,True,full,full,1,intersects_municipal_envelope
+60191,601,,Wood Dale,60191,zcta_available,41.9646894,-87.9808949,True,full,full,1,intersects_municipal_envelope
+60192,601,,Hoffman Estates,60192,zcta_available,42.0726489,-88.1679442,True,full,partial,0.03892,intersects_municipal_envelope
+60193,601,,Roselle / Schaumburg,60193,zcta_available,42.0119465,-88.0954815,True,full,full,1,intersects_municipal_envelope
+60194,601,,Schaumburg,60194,zcta_available,42.0333796,-88.1112489,True,full,full,1,intersects_municipal_envelope
+60195,601,,Hoffman Estates,60195,zcta_available,42.0653673,-88.0865722,True,full,partial,0.762035,intersects_municipal_envelope
+60201,602,,Evanston,60201,zcta_available,42.0555878,-87.6930308,True,full,partial,0.620278,intersects_municipal_envelope
+60202,602,,Evanston,60202,zcta_available,42.0295419,-87.6851804,True,full,partial,0.815647,intersects_municipal_envelope
+60203,602,,Evanston,60203,zcta_available,42.0490352,-87.7174553,True,full,full,1,intersects_municipal_envelope
+60208,602,U,Evanston,60208,zcta_available,42.0558554,-87.6700561,False,outside,outside,0.0,outside_municipal_envelope
+60301,603,,Oak Park,60301,zcta_available,41.8886543,-87.7965384,True,full,full,1,intersects_municipal_envelope
+60302,603,,Oak Park,60302,zcta_available,41.8947716,-87.7898251,True,full,full,1,intersects_municipal_envelope
+60304,603,,Oak Park South,60304,zcta_available,41.8724685,-87.7893309,True,full,full,1,intersects_municipal_envelope
+60305,603,,River Forest,60305,zcta_available,41.8950112,-87.8194351,True,full,full,1,intersects_municipal_envelope
+60402,604,,Berwyn,60402,zcta_available,41.8323687,-87.7898342,True,full,full,1,intersects_municipal_envelope
+60403,604,,Joliet,60403,zcta_available,41.5669422,-88.1243523,False,outside,outside,0.0,outside_municipal_envelope
+60404,604,,Joliet,60404,zcta_available,41.508646,-88.2226859,False,outside,outside,0.0,outside_municipal_envelope
+60406,604,,Blue Island,60406,zcta_available,41.6550839,-87.6818566,True,full,full,1,intersects_municipal_envelope
+60409,604,,Calumet City / Wentworth Avenue,60409,zcta_available,41.6129949,-87.55142,True,full,partial,0.086472,intersects_municipal_envelope
+60410,604,,Channahon,60410,zcta_available,41.4211783,-88.217163,False,outside,outside,0.0,outside_municipal_envelope
+60411,604,,Chicago Heights,60411,zcta_available,41.507909,-87.5903018,False,outside,outside,0.0,outside_municipal_envelope
+60415,604,,Bridgeview Il Sdc / Chicago Ridge,60415,zcta_available,41.7034379,-87.7795424,True,full,full,1,intersects_municipal_envelope
+60417,604,,Crete,60417,zcta_available,41.4305763,-87.5926972,False,outside,outside,0.0,outside_municipal_envelope
+60418,604,,Midlothian,60418,zcta_available,41.6456317,-87.7408882,True,full,full,1,intersects_municipal_envelope
+60419,604,,Dolton,60419,zcta_available,41.6274846,-87.598691,True,full,partial,0.649088,intersects_municipal_envelope
+60421,604,,Elwood,60421,zcta_available,41.4084959,-88.0893552,False,outside,outside,0.0,outside_municipal_envelope
+60422,604,,Flossmoor / Tri City Carrier Annex,60422,zcta_available,41.5386077,-87.6844039,False,outside,outside,0.0,outside_municipal_envelope
+60423,604,,Frankfort,60423,zcta_available,41.4792139,-87.8396077,False,outside,outside,0.0,outside_municipal_envelope
+60425,604,,Glenwood / Tri City Carrier Annex,60425,zcta_available,41.5434268,-87.6107539,False,outside,outside,0.0,outside_municipal_envelope
+60426,604,,Harvey,60426,zcta_available,41.6102507,-87.6530379,True,full,partial,0.575218,intersects_municipal_envelope
+60428,604,,Harvey / Markham,60428,zcta_available,41.5998098,-87.6906174,True,full,partial,0.504275,intersects_municipal_envelope
+60429,604,,Hazel Crest,60429,zcta_available,41.5737016,-87.6832925,False,outside,outside,0.0,outside_municipal_envelope
+60430,604,,Homewood / Tri City Carrier Annex,60430,zcta_available,41.5583586,-87.6621604,False,outside,outside,0.0,outside_municipal_envelope
+60431,604,,Joliet,60431,zcta_available,41.5335768,-88.2056714,False,outside,outside,0.0,outside_municipal_envelope
+60432,604,,Joliet,60432,zcta_available,41.5408683,-88.0406304,False,outside,outside,0.0,outside_municipal_envelope
+60433,604,,Joliet,60433,zcta_available,41.4989446,-88.0424676,False,outside,outside,0.0,outside_municipal_envelope
+60435,604,,Joliet,60435,zcta_available,41.544889,-88.1287954,False,outside,outside,0.0,outside_municipal_envelope
+60436,604,,Joliet,60436,zcta_available,41.4897454,-88.123962,False,outside,outside,0.0,outside_municipal_envelope
+60438,604,,Lansing / Sta #1,60438,zcta_available,41.5662599,-87.5506392,False,outside,outside,0.0,outside_municipal_envelope
+60439,604,,Lemont / Lemont Annex,60439,zcta_available,41.6769089,-87.9762802,True,full,full,1,intersects_municipal_envelope
+60440,604,,Bolingbrook,60440,zcta_available,41.7012312,-88.0757051,True,full,full,1,intersects_municipal_envelope
+60441,604,,Lockport / Lockport Carrier Annex,60441,zcta_available,41.5923793,-88.0510687,True,full,partial,0.308162,intersects_municipal_envelope
+60442,604,,Manhattan,60442,zcta_available,41.391844,-87.9606146,False,outside,outside,0.0,outside_municipal_envelope
+60443,604,,Matteson,60443,zcta_available,41.5037013,-87.7463752,False,outside,outside,0.0,outside_municipal_envelope
+60445,604,,Midlothian,60445,zcta_available,41.6283273,-87.7353696,True,full,full,1,intersects_municipal_envelope
+60446,604,,Romeoville,60446,zcta_available,41.6330116,-88.0985889,True,full,partial,0.584844,intersects_municipal_envelope
+60447,604,,Minooka,60447,zcta_available,41.4879603,-88.3249573,False,outside,outside,0.0,outside_municipal_envelope
+60448,604,,Frankfort / Mokena,60448,zcta_available,41.5381904,-87.8939634,True,full,partial,0.098513,intersects_municipal_envelope
+60449,604,,Monee,60449,zcta_available,41.4139246,-87.7697726,False,outside,outside,0.0,outside_municipal_envelope
+60450,604,,Morris,60450,zcta_available,41.3701062,-88.4341666,False,outside,outside,0.0,outside_municipal_envelope
+60451,604,,New Lenox,60451,zcta_available,41.5071568,-87.9608756,False,outside,outside,0.0,outside_municipal_envelope
+60452,604,,Oak Forest,60452,zcta_available,41.6085036,-87.7543187,True,full,partial,0.938188,intersects_municipal_envelope
+60453,604,,Bridgeview Il Sdc,60453,zcta_available,41.7141164,-87.7527711,True,full,full,1,intersects_municipal_envelope
+60455,604,,Bridgeview Il Sdc,60455,zcta_available,41.7409816,-87.8067687,True,full,full,1,intersects_municipal_envelope
+60456,604,,Bridgeview Il Sdc,60456,zcta_available,41.7312484,-87.7311338,True,full,full,1,intersects_municipal_envelope
+60457,604,,Bridgeview Il Sdc,60457,zcta_available,41.7247436,-87.8298725,True,full,full,1,intersects_municipal_envelope
+60458,604,,Bridgeview Il Sdc,60458,zcta_available,41.7489064,-87.8348546,True,full,full,1,intersects_municipal_envelope
+60459,604,,Bridgeview Il Sdc,60459,zcta_available,41.7443895,-87.7685984,True,full,full,1,intersects_municipal_envelope
+60461,604,,Matteson / Olympia Fields,60461,zcta_available,41.5175142,-87.6914776,False,outside,outside,0.0,outside_municipal_envelope
+60462,604,,Orland Park / Orland Park Retail,60462,zcta_available,41.6252897,-87.8354777,True,full,full,1,intersects_municipal_envelope
+60463,604,,Palos Heights / Worth,60463,zcta_available,41.6608508,-87.7903217,True,full,full,1,intersects_municipal_envelope
+60464,604,,Palos Park / Worth,60464,zcta_available,41.670896,-87.8686888,True,full,full,1,intersects_municipal_envelope
+60465,604,,Worth,60465,zcta_available,41.6987698,-87.8266898,True,full,full,1,intersects_municipal_envelope
+60466,604,,Park Forest,60466,zcta_available,41.479658,-87.6828136,False,outside,outside,0.0,outside_municipal_envelope
+60467,604,,Orland Park,60467,zcta_available,41.5985532,-87.8884745,True,full,full,1,intersects_municipal_envelope
+60469,604,,Posen,60469,zcta_available,41.6286972,-87.6863116,True,full,full,1,intersects_municipal_envelope
+60471,604,,Park Forest / Richton Park,60471,zcta_available,41.4800724,-87.7297848,False,outside,outside,0.0,outside_municipal_envelope
+60472,604,,Robbins,60472,zcta_available,41.6436645,-87.7083423,True,full,full,1,intersects_municipal_envelope
+60473,604,,South Holland,60473,zcta_available,41.59731,-87.6011821,True,full,partial,0.03677,intersects_municipal_envelope
+60475,604,,Steger,60475,zcta_available,41.4719583,-87.6283381,False,outside,outside,0.0,outside_municipal_envelope
+60476,604,,Thornton / Tri City Carrier Annex,60476,zcta_available,41.5693989,-87.6056339,False,outside,outside,0.0,outside_municipal_envelope
+60477,604,,Tinley Park,60477,zcta_available,41.5734524,-87.7859784,True,full,partial,0.552331,intersects_municipal_envelope
+60478,604,,Country Club Hills / Tinley Park,60478,zcta_available,41.5538345,-87.7358651,True,full,partial,0.004301,intersects_municipal_envelope
+60480,604,,Willow Springs,60480,zcta_available,41.7191206,-87.8767573,True,full,full,1,intersects_municipal_envelope
+60482,604,,Worth,60482,zcta_available,41.6873711,-87.7923932,True,full,full,1,intersects_municipal_envelope
+60484,604,,Park Forest,60484,zcta_available,41.443149,-87.7094984,False,outside,outside,0.0,outside_municipal_envelope
+60487,604,,Tinley Park,60487,zcta_available,41.5624012,-87.8309548,True,full,partial,0.598577,intersects_municipal_envelope
+60490,604,,Bolingbrook,60490,zcta_available,41.675738,-88.1411751,True,full,partial,0.972835,intersects_municipal_envelope
+60491,604,,Lockport Carrier Annex,60491,zcta_available,41.6031092,-87.9595091,True,full,partial,0.867603,intersects_municipal_envelope
+60501,605,,Summit Argo,60501,zcta_available,41.7798134,-87.82392,True,full,full,1,intersects_municipal_envelope
+60502,605,,Aurora Il Sdc,60502,zcta_available,41.7891398,-88.2595239,True,full,partial,0.000905,intersects_municipal_envelope
+60503,605,,Aurora East,60503,zcta_available,41.7078758,-88.2547492,False,outside,outside,0.0,outside_municipal_envelope
+60504,605,,Aurora Il Sdc,60504,zcta_available,41.7465137,-88.2395265,True,full,partial,0.462902,intersects_municipal_envelope
+60505,605,,Aurora Il Sdc,60505,zcta_available,41.7652255,-88.2957712,False,outside,outside,0.0,outside_municipal_envelope
+60506,605,,Aurora Il Sdc,60506,zcta_available,41.761751,-88.3712791,False,outside,outside,0.0,outside_municipal_envelope
+60510,605,,Batavia,60510,zcta_available,41.8428516,-88.3119074,True,full,partial,0.014172,intersects_municipal_envelope
+60511,605,,Big Rock,60511,zcta_available,41.7577934,-88.5560036,False,outside,outside,0.0,outside_municipal_envelope
+60512,605,,Bristol / Yorkville,60512,zcta_available,41.7013626,-88.4398649,False,outside,outside,0.0,outside_municipal_envelope
+60513,605,,Brookfield,60513,zcta_available,41.8245735,-87.8469216,True,full,full,1,intersects_municipal_envelope
+60514,605,,Clarendon Hills,60514,zcta_available,41.7965483,-87.9568287,True,full,full,1,intersects_municipal_envelope
+60515,605,,Downers Grove,60515,zcta_available,41.8098911,-88.0246911,True,full,full,1,intersects_municipal_envelope
+60516,605,,Woodridge,60516,zcta_available,41.7632303,-88.0131744,True,full,full,1,intersects_municipal_envelope
+60517,605,,Woodridge,60517,zcta_available,41.7391556,-88.0415929,True,full,full,1,intersects_municipal_envelope
+60519,605,P,Eola,60519,zcta_available,41.7774797,-88.2425534,False,outside,outside,0.0,outside_municipal_envelope
+60521,605,,Oak Brook,60521,zcta_available,41.800121,-87.9287976,True,full,full,1,intersects_municipal_envelope
+60523,605,,Oak Brook,60523,zcta_available,41.8371143,-87.9540541,True,full,full,1,intersects_municipal_envelope
+60525,605,,La Grange,60525,zcta_available,41.783718,-87.8678216,True,full,full,1,intersects_municipal_envelope
+60526,605,,La Grange / La Grange Park,60526,zcta_available,41.8300346,-87.8836161,True,full,full,1,intersects_municipal_envelope
+60527,605,,Wbd Carrier Annex,60527,zcta_available,41.744693,-87.9338421,True,full,full,1,intersects_municipal_envelope
+60532,605,,Lisle,60532,zcta_available,41.7915371,-88.0857499,True,full,full,1,intersects_municipal_envelope
+60534,605,,Lyons,60534,zcta_available,41.8130997,-87.8206066,True,full,full,1,intersects_municipal_envelope
+60536,605,P,Millbrook,60536,zcta_available,41.5985419,-88.5520607,False,outside,outside,0.0,outside_municipal_envelope
+60537,605,P,Millington,60537,zcta_available,41.5615458,-88.6024172,False,outside,outside,0.0,outside_municipal_envelope
+60538,605,,Montgomery,60538,zcta_available,41.7216254,-88.3563736,False,outside,outside,0.0,outside_municipal_envelope
+60539,605,,Batavia,60539,zcta_available,41.8249777,-88.3352437,False,outside,outside,0.0,outside_municipal_envelope
+60540,605,,Naperville Il Sdc,60540,zcta_available,41.7636033,-88.144745,True,full,full,1,intersects_municipal_envelope
+60541,605,,Newark,60541,zcta_available,41.5192868,-88.5254852,False,outside,outside,0.0,outside_municipal_envelope
+60542,605,,North Aurora,60542,zcta_available,41.8087979,-88.3489195,False,outside,outside,0.0,outside_municipal_envelope
+60543,605,,Oswego / Yorkville,60543,zcta_available,41.6653583,-88.3244208,False,outside,outside,0.0,outside_municipal_envelope
+60544,605,,Plainfield,60544,zcta_available,41.6139274,-88.21779,True,full,partial,0.032112,intersects_municipal_envelope
+60545,605,,Plano,60545,zcta_available,41.6781259,-88.5358444,False,outside,outside,0.0,outside_municipal_envelope
+60546,605,,North Riverside / Riverside,60546,zcta_available,41.8383126,-87.8213614,True,full,full,1,intersects_municipal_envelope
+60548,605,,Sandwich,60548,zcta_available,41.6481094,-88.6347248,False,outside,outside,0.0,outside_municipal_envelope
+60551,605,,Sheridan,60551,zcta_available,41.5246377,-88.6900265,False,outside,outside,0.0,outside_municipal_envelope
+60554,605,,Sugar Grove / Yorkville,60554,zcta_available,41.7785266,-88.4583903,False,outside,outside,0.0,outside_municipal_envelope
+60555,605,,Warrenville,60555,zcta_available,41.8226288,-88.1885534,True,full,partial,0.911873,intersects_municipal_envelope
+60558,605,,Western Springs,60558,zcta_available,41.8020715,-87.9007522,True,full,full,1,intersects_municipal_envelope
+60559,605,,Westmont,60559,zcta_available,41.7949063,-87.9746772,True,full,full,1,intersects_municipal_envelope
+60560,605,,Yorkville,60560,zcta_available,41.6079472,-88.4283649,False,outside,outside,0.0,outside_municipal_envelope
+60561,605,,Wbd Carrier Annex,60561,zcta_available,41.7451228,-87.9817535,True,full,full,1,intersects_municipal_envelope
+60563,605,,Naperville Il Sdc,60563,zcta_available,41.7993172,-88.1688482,True,full,partial,0.977815,intersects_municipal_envelope
+60564,605,,Naper West,60564,zcta_available,41.7090088,-88.1996,True,full,partial,0.997061,intersects_municipal_envelope
+60565,605,,Naperville Il Sdc,60565,zcta_available,41.7296996,-88.1231366,True,full,full,1,intersects_municipal_envelope
+60585,605,,Plainfield,60585,zcta_available,41.6586333,-88.2234033,True,full,partial,0.197234,intersects_municipal_envelope
+60586,605,,Plainfield,60586,zcta_available,41.5703622,-88.231617,False,outside,outside,0.0,outside_municipal_envelope
+60601,606,,Loop Carrier Annex,60601,zcta_available,41.8852155,-87.6217271,True,full,full,1,intersects_municipal_envelope
+60602,606,,Loop Carrier Annex,60602,zcta_available,41.8830405,-87.6290785,True,full,full,1,intersects_municipal_envelope
+60603,606,,Loop Carrier Annex,60603,zcta_available,41.8802616,-87.6273962,True,full,full,1,intersects_municipal_envelope
+60604,606,,Loop Carrier Annex,60604,zcta_available,41.8781126,-87.629071,True,full,full,1,intersects_municipal_envelope
+60605,606,,Loop Carrier Annex,60605,zcta_available,41.8681495,-87.6171703,True,full,full,1,intersects_municipal_envelope
+60606,606,,Chicago Cent Carrier Annex,60606,zcta_available,41.8816378,-87.6371848,True,full,full,1,intersects_municipal_envelope
+60607,606,,Chicago Cent Carrier Annex,60607,zcta_available,41.8746746,-87.6518616,True,full,full,1,intersects_municipal_envelope
+60608,606,,Pilsen,60608,zcta_available,41.8488923,-87.6714317,True,full,full,1,intersects_municipal_envelope
+60609,606,,Finance Station L / Stockyard Carriers,60609,zcta_available,41.8126251,-87.655561,True,full,full,1,intersects_municipal_envelope
+60610,606,,Fort Dearborn,60610,zcta_available,41.9045293,-87.6351372,True,full,full,1,intersects_municipal_envelope
+60611,606,,Fort Dearborn / Streeterville,60611,zcta_available,41.8940263,-87.6142481,True,full,full,1,intersects_municipal_envelope
+60612,606,,Nancy B Jefferson,60612,zcta_available,41.8805107,-87.6878671,True,full,full,1,intersects_municipal_envelope
+60613,606,,Lakeview,60613,zcta_available,41.9565269,-87.6529233,True,full,partial,0.979499,intersects_municipal_envelope
+60614,606,,Lincoln Park Carrier Annex / Lincoln Park Postal Store,60614,zcta_available,41.922228,-87.6471379,True,full,full,1,intersects_municipal_envelope
+60615,606,,Henry W Mcgee,60615,zcta_available,41.8024177,-87.5967259,True,full,full,1,intersects_municipal_envelope
+60616,606,,Chinatown / Twenty Second Street,60616,zcta_available,41.8444933,-87.6240407,True,full,full,1,intersects_municipal_envelope
+60617,606,,Finance Station W / John Buchanan,60617,zcta_available,41.7135218,-87.5556615,True,full,full,1,intersects_municipal_envelope
+60618,606,,Daniel J Doffyn / Finance Station T,60618,zcta_available,41.9469599,-87.7025419,True,full,full,1,intersects_municipal_envelope
+60619,606,,Grand Crossing / Grand Crossing C Annex,60619,zcta_available,41.7434386,-87.6053181,True,full,full,1,intersects_municipal_envelope
+60620,606,,Auburn Park,60620,zcta_available,41.7409743,-87.6525575,True,full,full,1,intersects_municipal_envelope
+60621,606,,Englewood,60621,zcta_available,41.7762318,-87.6395268,True,full,full,1,intersects_municipal_envelope
+60622,606,,Detached Po Box 60622 / Graceland / Wicker Park Carrier Annex,60622,zcta_available,41.9026355,-87.683551,True,full,full,1,intersects_municipal_envelope
+60623,606,,Otis Grant Collins,60623,zcta_available,41.8479132,-87.7175387,True,full,full,1,intersects_municipal_envelope
+60624,606,,Mary Alice Henry,60624,zcta_available,41.8804194,-87.7236672,True,full,full,1,intersects_municipal_envelope
+60625,606,,Finance Station Q / Ravenswood,60625,zcta_available,41.9731722,-87.699598,True,full,full,1,intersects_municipal_envelope
+60626,606,,Rogers Park,60626,zcta_available,42.0087769,-87.6676948,True,full,partial,0.951674,intersects_municipal_envelope
+60628,606,,Roseland,60628,zcta_available,41.6916177,-87.6183056,True,full,full,1,intersects_municipal_envelope
+60629,606,,Chicago Lawn / Southwest Carrier Annex,60629,zcta_available,41.7753948,-87.7124137,True,full,full,1,intersects_municipal_envelope
+60630,606,,Jefferson Park / Jefferson Park Carrier Annex,60630,zcta_available,41.9722286,-87.7575835,True,full,full,1,intersects_municipal_envelope
+60631,606,,Norwood Park,60631,zcta_available,41.9947695,-87.8131043,True,full,full,1,intersects_municipal_envelope
+60632,606,,Elsdon / Southwest Carrier Annex,60632,zcta_available,41.8114349,-87.7134612,True,full,full,1,intersects_municipal_envelope
+60633,606,,Hegewisch,60633,zcta_available,41.6631543,-87.5604302,True,full,partial,0.897157,intersects_municipal_envelope
+60634,606,,Roger P Mc Auliffe,60634,zcta_available,41.9462836,-87.8063781,True,full,full,1,intersects_municipal_envelope
+60636,606,,Ogden Park,60636,zcta_available,41.7757892,-87.6690712,True,full,full,1,intersects_municipal_envelope
+60637,606,,Jackson Park,60637,zcta_available,41.7815265,-87.6034105,True,full,full,1,intersects_municipal_envelope
+60638,606,,Clearing,60638,zcta_available,41.7817601,-87.7705813,True,full,full,1,intersects_municipal_envelope
+60639,606,,Cragin,60639,zcta_available,41.9205977,-87.755942,True,full,full,1,intersects_municipal_envelope
+60640,606,,Uptown,60640,zcta_available,41.9728741,-87.6615525,True,full,partial,0.999907,intersects_municipal_envelope
+60641,606,,Irving Park,60641,zcta_available,41.9467176,-87.7468874,True,full,full,1,intersects_municipal_envelope
+60642,606,,Wicker Park Carrier Annex,60642,zcta_available,41.9019568,-87.6579986,True,full,full,1,intersects_municipal_envelope
+60643,606,,Finance Station H / Morgan Park,60643,zcta_available,41.7002861,-87.663044,True,full,full,1,intersects_municipal_envelope
+60644,606,,Rev Milton R Brunson,60644,zcta_available,41.8801388,-87.7575475,True,full,full,1,intersects_municipal_envelope
+60645,606,,Northtown,60645,zcta_available,42.0086034,-87.6945792,True,full,full,1,intersects_municipal_envelope
+60646,606,,Edgebk/Lincolnwood Annex / Edgebrook,60646,zcta_available,41.9936498,-87.7613246,True,full,full,1,intersects_municipal_envelope
+60647,606,,Detached Po Box 60647-2 / Roberto Clemente,60647,zcta_available,41.9207466,-87.7019753,True,full,full,1,intersects_municipal_envelope
+60649,606,,Charles A Hayes,60649,zcta_available,41.759769,-87.5566026,True,full,partial,0.999264,intersects_municipal_envelope
+60651,606,,Robert Leflore Jr,60651,zcta_available,41.9020063,-87.7410158,True,full,full,1,intersects_municipal_envelope
+60652,606,,Ashburn / Detached Po Box 60652,60652,zcta_available,41.7474321,-87.7144028,True,full,full,1,intersects_municipal_envelope
+60653,606,,Henry W Mcgee,60653,zcta_available,41.8199008,-87.6061422,True,full,full,1,intersects_municipal_envelope
+60654,606,,Fort Dearborn,60654,zcta_available,41.8920826,-87.6366808,True,full,full,1,intersects_municipal_envelope
+60655,606,,Detached Po Box 60655 / Mount Greenwood,60655,zcta_available,41.6947708,-87.7037606,True,full,full,1,intersects_municipal_envelope
+60656,606,,Harwood Heights / Harwood Heights Carrier Anx,60656,zcta_available,41.9742575,-87.8270517,True,full,full,1,intersects_municipal_envelope
+60657,606,,Graceland / Graceland Carrier Annex,60657,zcta_available,41.9395061,-87.6506874,True,full,full,1,intersects_municipal_envelope
+60659,606,,Northtown,60659,zcta_available,41.9894642,-87.7066446,True,full,full,1,intersects_municipal_envelope
+60660,606,,Finance Station M / Rogers Park,60660,zcta_available,41.9912149,-87.6636962,True,full,full,1,intersects_municipal_envelope
+60661,606,,Chicago Cent Carrier Annex,60661,zcta_available,41.8829966,-87.6441143,True,full,full,1,intersects_municipal_envelope
+60706,607,,Harwood Heights Carrier Anx,60706,zcta_available,41.9638848,-87.8167884,True,full,full,1,intersects_municipal_envelope
+60707,607,,Elmwood Park,60707,zcta_available,41.9217523,-87.8074367,True,full,full,1,intersects_municipal_envelope
+60712,607,,Edgebk/Lincolnwood Annex,60712,zcta_available,42.0054299,-87.7329594,True,full,full,1,intersects_municipal_envelope
+60714,607,,Niles,60714,zcta_available,42.0283509,-87.811304,True,full,full,1,intersects_municipal_envelope
+60803,608,,Mount Greenwood,60803,zcta_available,41.6723064,-87.7365242,True,full,full,1,intersects_municipal_envelope
+60804,608,,Cicero,60804,zcta_available,41.8400333,-87.7592551,True,full,full,1,intersects_municipal_envelope
+60805,608,,Evergreen Park,60805,zcta_available,41.7220014,-87.7024457,True,full,full,1,intersects_municipal_envelope
+60827,608,,Riverdale,60827,zcta_available,41.6496624,-87.6301305,True,full,full,1,intersects_municipal_envelope
+61360,613,,Seneca,61360,zcta_available,41.3344336,-88.605243,False,outside,outside,0.0,outside_municipal_envelope

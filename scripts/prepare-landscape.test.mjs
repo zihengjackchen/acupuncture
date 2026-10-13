@@ -28,6 +28,8 @@ const render = (index) => {
   return reply.svg;
 };
 const initial = render(0);
+assert.ok((initial.match(/<polyline/g) || []).length > 3000, 'Retain the upstream drawing detail.');
+assert.ok(!primitives.includes('vegetationBudget'), 'Do not truncate upstream vegetation and architecture.');
 assert.notEqual(render(1), initial, 'New panels must contain new scenery.');
 for (let index = 2; index < 120; index++) render(index);
 assert.equal(render(0), initial, 'Evicted regions must regenerate deterministically.');
@@ -45,14 +47,14 @@ const js = await readFile(path.join(root, 'assets/js/landscape.js'), 'utf8');
 const server = createServer(async (request, response) => {
   const url = new URL(request.url, 'http://localhost');
   if (url.pathname === '/') {
-    response.setHeader('Content-Type', 'text/html');
+    response.setHeader('Content-Type', 'text/html; charset=utf-8');
     response.end(`<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{margin:0;font-family:Arial;background:#f7f3eb}</style><link rel="stylesheet" href="/landscape.css"></head><body><main style="height:1100px">Local landscape verification</main>${partial}<script>window.originalRandom = Math.random;</script><script src="/landscape.js${url.search}" defer></script></body></html>`);
   } else if (url.pathname === '/landscape.css') {
     response.setHeader('Content-Type', 'text/css'); response.end(css);
   } else if (url.pathname === '/landscape.js') {
     response.setHeader('Content-Type', 'text/javascript');
     // Accelerated playback exercises retirement in seconds instead of minutes.
-    response.end(url.searchParams.has('fast') ? js.replace('const SPEED = 6;', 'const SPEED = 6000;') : js);
+    response.end(url.searchParams.has('fast') ? js.replace('const SPEED = 3;', 'const SPEED = 6000;') : js);
   } else if (url.pathname.startsWith('/vendor/shan-shui/')) {
     const name = path.basename(url.pathname);
     response.setHeader('Content-Type', name.endsWith('.svg') ? 'image/svg+xml' : 'text/javascript');
@@ -77,13 +79,38 @@ try {
   await page.waitForTimeout(300);
   assert.ok((await diagnostics()).offset > 0);
   assert.equal(await page.evaluate(() => window.originalRandom === Math.random), true);
-  await page.getByRole('button', { name: 'Pause landscape' }).click();
-  const stopped = (await diagnostics()).offset;
+  await page.waitForFunction(() => {
+    const state = document.querySelector('[data-landscape]').harmonyLandscape.diagnostics;
+    return !state.pending && state.generatedTiles >= 4;
+  });
+  const beforeMotion = await diagnostics();
+  await page.waitForTimeout(2000);
+  const afterMotion = await diagnostics();
+  assert.ok(afterMotion.animationFrames > beforeMotion.animationFrames + 10);
+  assert.equal(afterMotion.paintCount, beforeMotion.paintCount, 'Steady drift must not repaint the canvas.');
+  assert.equal(afterMotion.drawCalls, beforeMotion.drawCalls, 'Reuse the painted strip between buffer changes.');
+  assert.ok(afterMotion.offsetCSS - beforeMotion.offsetCSS > 4);
+  assert.ok(afterMotion.offsetCSS - beforeMotion.offsetCSS < 8);
+  console.log('Two-second steady motion sample:', JSON.stringify({
+    frames: afterMotion.animationFrames - beforeMotion.animationFrames,
+    paints: afterMotion.paintCount - beforeMotion.paintCount,
+    drawCalls: afterMotion.drawCalls - beforeMotion.drawCalls,
+    distanceCSS: afterMotion.offsetCSS - beforeMotion.offsetCSS,
+    generatedTiles: afterMotion.generatedTiles - beforeMotion.generatedTiles,
+    maxTileMs: Math.round(afterMotion.maxTileMs), canvasBytes: afterMotion.canvasBytes,
+  }));
+  await page.getByRole('button', { name: 'Pause landscape' }).focus();
+  await page.keyboard.press('Enter');
+  const stopped = await diagnostics();
+  await page.waitForTimeout(250);
+  assert.equal((await diagnostics()).offset, stopped.offset);
+  assert.equal((await diagnostics()).animationFrames, stopped.animationFrames);
+  assert.equal((await diagnostics()).paintCount, stopped.paintCount);
+  assert.equal((await diagnostics()).generatedTiles, stopped.generatedTiles);
+  assert.equal((await diagnostics()).running, false);
+  await page.getByRole('button', { name: 'Resume landscape' }).click();
   await page.waitForTimeout(150);
-  assert.equal((await diagnostics()).offset, stopped);
-  await page.getByRole('button', { name: 'Play landscape' }).click();
-  await page.waitForTimeout(150);
-  assert.ok((await diagnostics()).offset > stopped);
+  assert.ok((await diagnostics()).offset > stopped.offset);
   await page.evaluate(() => {
     Object.defineProperty(document, 'hidden', { configurable: true, value: true });
     document.dispatchEvent(new Event('visibilitychange'));
@@ -110,6 +137,7 @@ try {
   assert.equal((await diagnostics()).tiles, 0);
   assert.equal((await diagnostics()).running, false);
   assert.equal(await page.locator('[data-landscape-toggle]').isVisible(), false);
+  assert.equal(await page.locator('.harmony-landscape__fallback').isVisible(), true);
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await page.waitForSelector('.harmony-landscape.is-ready');
   await page.goto(`${origin}/?fast=1`);
@@ -130,7 +158,7 @@ try {
   assert.equal(await noScript.locator('.harmony-landscape__fallback').isVisible(), true);
   assert.equal(await noScript.locator('[data-landscape-toggle]').isVisible(), false);
   await noScript.close();
-  console.log('Browser: lazy start, motion, pause/play, hidden document, mobile width, offscreen pause, reduced motion, no-JS fallback, 20+ tile retirement, and cleanup passed.');
+  console.log('Browser: visible-only start, buffered drift, keyboard pause/resume, hidden document, mobile width, offscreen pause, reduced motion, no-JS fallback, 20+ tile retirement, and cleanup passed.');
   console.log(JSON.stringify(longRun));
   console.log(`Previews: ${path.join(os.tmpdir(), 'harmony-landscape-desktop.png')} and harmony-landscape-mobile.png`);
 } finally {
