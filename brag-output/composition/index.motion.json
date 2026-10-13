@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "assertions": [
+    {"kind":"appearsBy","selector":"#hero-title","bySec":1},
+    {"kind":"appearsBy","selector":"#zip-result","bySec":13.2},
+    {"kind":"staysInFrame","selector":"#hero-title"},
+    {"kind":"staysInFrame","selector":"#calendar"},
+    {"kind":"staysInFrame","selector":"#zip-result"},
+    {"kind":"staysInFrame","selector":"#closing-title"}
+  ]
+}

@@ -1,70 +1,95 @@
 # Wang’s Harmony Acupuncture
 
-A static Hugo website for Dr Wang’s Chicago and Highland Park clinics, with a mobile-service map, a card that turns as visitors scroll, and a locally hosted ink landscape.
+Website for Dan’s acupuncture practice in Chicago and Highland Park, Illinois. Visitors can explore services, learn about their first appointment, check the weekly clinic schedule, and request a home visit.
 
-## Develop and check
+[Visit the website](https://wangsharmonyacu.com/)
 
-Install **Node.js 24**, **Hugo Extended** (CI uses **0.155.3**), and Google Chrome for the browser checks. Run from the repository root:
+The site uses Hugo, custom templates, CSS, and JavaScript with GSAP. Its design pairs Chinese ink-wash illustrations with jade and ivory colors, serif headings, and slow motion.
+
+## Features
+
+- Clinic schedule with location-specific booking links, directions, and phone contact.
+- Mobile-service map with ZIP lookup, keyboard navigation, and 206 complete highlighted ZIP regions.
+- Service pages, appointment FAQs, practitioner biography, and fees.
+- Business card that turns as visitors scroll, plus a continuous ink landscape with a pause control.
+- Responsive layouts, local fonts, and reduced-motion and no-JavaScript fallbacks.
+- Downloadable logos, brand guide, and 15 wallpaper variants in five formats and three colors.
+
+## Launch video
+
+A 20-second landscape tour of the website’s design, clinic schedule, mobile-service map, and motion.
+
+[![Watch the Wang’s Harmony website tour](brag-output/brag.jpg)](brag-output/brag.mp4)
+
+[Download the video](brag-output/brag.mp4) · [Share copy](brag-output/share-copy.txt) · [Editable composition](brag-output/composition/)
+
+## Run locally
+
+Install **Node.js 24** and **Hugo Extended**. GitHub Pages uses Hugo **0.155.3**. Install Google Chrome to run the browser checks.
 
 ```powershell
 npm.cmd ci
 npm.cmd run dev
-npm.cmd run build
-npm.cmd test
-npm.cmd run brand
 ```
 
-- `dev`: serves the site at `http://127.0.0.1:1313`; generated files go to `.qa/preview/`.
-- `build`: creates the production site in `dist/`.
-- `test`: checks pages, links, booking routes, interactions, and mobile layouts in headless Chrome; starts a local Hugo server if needed. Screenshots live in `.qa/`; results print to the terminal. `HARMONY_TEST_URL` and `HARMONY_BROWSER` can select an existing server or another installed browser channel.
-- `brand`: regenerates logo exports, social wallpapers, the brand guide, and the downloadable media pack.
+Open **http://127.0.0.1:1313**. Hugo writes the preview to `.qa/preview/`.
 
-Use normal `npm` commands on macOS/Linux or where PowerShell allows `npm.ps1`. `npm.cmd` avoids that script-policy issue on Windows.
-
-## Maintain the site
-
-| Change | Source |
+| Command | Purpose |
 | --- | --- |
-| Clinic addresses, booking links, weekly hours | `data/clinics.json` |
-| Main phone, email, service-area description | `data/contact.yaml` |
-| Page copy and service/FAQ content | `content/` |
-| Page structure and components | Root `layouts/` |
-| Main design and interaction code | `assets/css/site.css`, `assets/js/main.js` |
-| Map data and presentation | `data/coverage.json`, `layouts/partials/coverage-map.html`, `assets/css/coverage.css`, `assets/js/coverage.js` |
-| Chinese ink-wash imagery | WebP exports in `static/images/editorial/`; PNG originals and prompts in `development/imagery/editorial-inkwash-v2/`, `editorial-inkwash-v3/`, and `editorial-inkwash-v4/` |
-| Real practitioner portrait | `static/images/dan-wang.webp` |
-| Logo generator and editable masters | `scripts/export-brand.mjs`, `assets/brand/masters/` |
-| Production logos and media downloads | `static/images/brand/`, `media-pack/` |
-| Logo history and original artwork | `development/brand/`, `development/imagery/` |
+| `npm.cmd run build` | Build the production site in `dist/` |
+| `npm.cmd test` | Check routes, links, booking, map interactions, motion fallbacks, and mobile layouts |
+| `npm.cmd run brand` | Rebuild logo exports, wallpapers, the brand guide, and media-pack ZIP |
 
-Hugo mounts the top-level `media-pack/` directory at `/media-pack/`, so existing download links stay the same. `development/` stores sources and design history and is not published.
+Use `npm` instead of `npm.cmd` on macOS/Linux or when PowerShell permits `npm.ps1`. The test script starts a Hugo server when needed and saves screenshots in `.qa/`. Set `HARMONY_TEST_URL` to test an existing server or `HARMONY_BROWSER` to select another installed browser channel.
 
-The logo generator controls repeatable exports; update it when changing the identity so regeneration preserves the change. The active G identity preserves the original scene, refines its contours, uses jade/sage colors, and pairs Cormorant Garamond with DM Sans. Original logos remain in `development/brand/original/`; the options index in `development/brand/options/README.md` links every exploration and archive. Fonts and licenses are bundled locally. The footer links to the media guide and downloadable ZIP at `/media-pack/brand-guide.html` and `/media-pack/wangs-harmony-media-pack.zip`.
+## Project files
 
-Keep `development/imagery/IMAGE_PROMPTS.md` and `development/imagery/editorial/` as historical references. The v2 ink-wash collection supplies the botanical service images; v3 adds twelve treatment, consultation, and traditional-medicine illustrations, with nine used and three reserves. The user chose the V3 paintings; the rejected V4 likeness edits remain archived and are not used on the website. Each collection's README records assignments and prompts. Editorial images do not repeat within an individual page; logos and the real practitioner portrait remain shared identity assets. Introduce the practitioner as **Dr Dan Wang** on Meet Dan, beneath her homepage portrait, and on the homepage name card; use **Dan** elsewhere in visible copy.
+| Location | Contents |
+| --- | --- |
+| [content/](content/) | Page copy, service descriptions, biography, and FAQs |
+| [layouts/](layouts/) | Hugo page templates and shared components |
+| [assets/](assets/) | CSS, JavaScript, active brand masters, and source fonts |
+| [data/](data/) | Clinic schedules, contact information, and ZIP records |
+| [static/](static/) | Website images, fonts, map exports, and landscape runtime |
+| [media-pack/](media-pack/) | Downloadable brand assets and guide |
+| [development/](development/README.md) | Logo explorations, original artwork, prompts, and design history |
+| [brag-output/](brag-output/) | Launch video, poster, share copy, and editable composition |
+| [planning/](planning/) | Specifications, coverage inventory, and source provenance |
+| [scripts/](scripts/) | Asset generators and verification scripts |
 
-The media pack includes fifteen wallpaper variants: ivory, jade, and sage backgrounds in 16:9, 3:4, 4:5, 9:16, and square formats. Every variant uses the horizontal arrangement, font outlines, internal spacing, and proportional width of `development/brand/options/g-wallpaper-ivory.svg`, centered on its canvas. The guide previews and links to PNGs, outlined SVGs, and editable masters. The current G has added clearance below the wordmark; its previous spacing is preserved in `development/brand/options/g-original-spacing/`.
+Hugo mounts the root `media-pack/` directory at `/media-pack/`. Keep those public download URLs when organizing files. Hugo does not publish `development/`.
 
-Chicago appointments are Monday and Wednesday, **noon–6 pm Central**, at Elite Healthcare. Highland Park’s **Sunday 9 am–6 pm** hours remain **provisional** and should be confirmed by phone. The site retains **847-786-0066** and **hello@wangsharmonyacu.com**. When confirming hours or changing contact details, update the data and any corresponding prose in `content/contact.md` and `content/team/peter-van-eijk.md`. Keep existing slugs unless providing redirects.
+## Maintain clinic information
 
-The content retains the previously published biography, **$20 virtual consultation**, and **$29.99 base travel fee per commute**. The travel charge is separate from treatment fees. Update the fee FAQ (`content/blog/fertility-focused-supplement-guidance.md`), consultation page, and `layouts/partials/contact-page.html` together when rates change.
+Edit [data/clinics.json](data/clinics.json) for schedules, addresses, and booking links. Edit [data/contact.yaml](data/contact.yaml) for the main contact details. Keep corresponding page copy in `content/` and `layouts/partials/contact-page.html` in sync.
 
-## Mobile coverage and landscape
+| Clinic | Schedule, Central Time | Address |
+| --- | --- | --- |
+| Elite Healthcare | Monday and Wednesday, noon–6 pm | 2732 N Lincoln Ave, Chicago, IL 60614 |
+| Pulling Down the Moon | Sunday, 9 am–6 pm; provisional, confirm by phone | 1770 1st St, Suite 400, Highland Park, IL 60035 |
 
-The map highlights **206 complete Census ZIP areas**. Selection uses an internal convex envelope around the outer boundaries of Naperville, Orland Park, Chicago, Highland Park, and Schaumburg, plus Highland Park ZIP **60035**. Lincoln Park is already within Chicago. Any ZCTA intersecting that envelope by more than one projected square metre is selected. The **entire selected ZIP region** is then green, including portions beyond the envelope; no outer line or hard cutoff is drawn. Another **108 ZIP areas** provide neutral context. The initial view fits all highlighted shapes with padding.
+Chicago booking uses [Elite Healthcare’s Jane portal](https://elitehcare.janeapp.com/). Highland Park and home-visit requests use **847-786-0066**. The main email is **hello@wangsharmonyacu.com**.
 
-The same 206 ZIPs remain selected. Of these, 155 lie wholly inside the internal envelope and 51 cross it; these are selection statistics, not partial service restrictions. Showing full ZIPs expands the highlighted area for those 51 edge regions. This includes entire regions with small original intersections, such as **46327 (Hammond), 46394 (Whiting), 60120, and 60502**, including Indiana portions.
+Published fees include a **$20 virtual consultation** and a **$29.99 base travel fee per commute**, separate from treatment fees. Update the consultation page, [fee FAQ](content/blog/fertility-focused-supplement-guidance.md), and contact-page template together when rates change. Preserve existing page URLs or provide redirects.
 
-`planning/mobile-service-zip-inventory.csv` lists selected ZIPs; `planning/mobile-service-zip-audit.csv` records each selection decision, overlap type, and projected intersection fraction. Coverage status is `full` for every selected ZIP. `planning/mobile-coverage-provenance.json` stores the internal selection coordinates, selection/display rules, source URLs, vintages, and snapshot hashes. Municipal boundaries come from the Census Bureau's January 2026 incorporated-place layer; postal-area geometry uses 2020 ZCTAs. ZCTAs approximate postal coverage. Unmapped and postal-only ZIPs require a call. Confirm the street address, appointment, and travel fee for every home visit.
+## Maintain maps and artwork
 
-Run `python scripts/prepare-coverage.py` with Python 3 to regenerate the inventory, `data/coverage.json`, `static/data/mobile-coverage.json`, `static/data/mobile-service-boundary.geojson`, and `static/images/coverage/mobile-coverage.svg`. The GeoJSON preserves the **internal selection envelope**, not the final outer edge of coverage. The script reads cached official geography from `planning/mobile-coverage-source.json` and `planning/mobile-coverage-municipalities.json`. Add `--refresh` to download the sources again. It uses the Python standard library and checks selection geometry, named locations, outside locations, and viewport containment of every highlighted vertex. Keep the documented count in `data/contact.yaml` in sync if selection changes. The website makes no map API requests.
+The map highlights 206 whole Census ZIP areas. Its internal selection envelope follows the outer boundaries of Chicago, Highland Park, Schaumburg, Naperville, and Orland Park, plus ZIP 60035. Some selected ZIPs extend beyond that envelope, including border areas in Indiana. Census ZCTAs approximate postal areas; confirm the street address and travel fee when booking.
 
-The footer uses a pinned adaptation of Lingdong Huang’s **Shan, Shui**. Source attribution and the MIT license are in `static/vendor/shan-shui/`. Its runtime is in `assets/js/landscape.js`. `node scripts/prepare-landscape.mjs` regenerates the local drawing primitives and fallback from the pinned upstream revision; this maintenance command needs network access. Preserve its attribution and license.
+```powershell
+python scripts/prepare-coverage.py
+```
 
-The landscape moves at 3 CSS pixels per second while visible and stops when offscreen or in a hidden tab. A Pause/Resume button gives visitors control. A worker generates the detailed scenery ahead of the viewport; the browser paints a bounded strip and translates it instead of repainting the canvas every frame. Reduced-motion and no-JavaScript visitors see the static fallback. The business-card section uses GSAP ScrollTrigger in `assets/js/main.js` to pin the card and turn it with native scrolling. It has no flip button. Reduced-motion and no-JavaScript visitors can read both faces without the animation. Entrances, accordion transitions, and the global bottom invitation use slower GSAP timing, with immediate keyboard-focus visibility.
+Python 3 regenerates map assets and inventories from cached Census/USPS sources. Add `--refresh` to fetch them again. Review [coverage provenance](planning/mobile-coverage-provenance.json) when changing selection, and keep the count in `data/contact.yaml` consistent. The website uses the generated SVG without a map API.
 
-## Deployment
+Use `npm.cmd run brand` to maintain the active G identity. Keep editable masters in `assets/brand/masters/`, production logos in `static/images/brand/`, and earlier concepts in [development/brand/](development/brand/options/README.md). Preserve the media pack’s horizontal logo arrangement and spacing across wallpaper formats.
 
-`.github/workflows/hugo.yaml` builds and deploys to GitHub Pages on a push to `main` or manual workflow dispatch. It installs Node 24 and Hugo Extended 0.155.3, runs `npm ci`, builds into `dist/`, and uploads that static artifact. The domain is configured by `static/CNAME` and `config.toml`.
+Website illustrations live in `static/images/editorial/`. Keep their original PNGs and prompts in [development/imagery/](development/imagery/README.md), including reserve and rejected artwork. Use `static/images/dan-wang.webp` for the real practitioner portrait.
 
-Edit source files rather than generated output. `dist/`, `.qa/`, `resources/`, and `node_modules/` are ignored local/build directories. The site uses the root `layouts/` and `assets/` directly; it has no external Hugo theme. Old `public/` and `tmp_build/` snapshots have been removed.
+The footer adapts Lingdong Huang’s **Shan, Shui**. Preserve its attribution and MIT license in `static/vendor/shan-shui/`. Run `node scripts/prepare-landscape.mjs` to regenerate the drawing code and static fallback from the pinned upstream revision; that command needs network access. The landscape pauses offscreen or in a hidden tab and supports reduced motion.
+
+## Deploy
+
+[.github/workflows/hugo.yaml](.github/workflows/hugo.yaml) builds and deploys to GitHub Pages on a push to `main` or a manual workflow run. It installs Node 24 and Hugo Extended 0.155.3, runs `npm ci`, and uploads `dist/`.
+
+Set the domain in `static/CNAME` and `config.toml`. Edit source files; `dist/`, `.qa/`, `resources/`, and `node_modules/` contain ignored local or build output.

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "duration": 20,
+  "fps": 30,
+  "voice": false,
+  "music": {
+    "src": "assets/music/happy-beats-business-moves-vol-12-by-ende-dot-app.mp3",
+    "sourceDuration": 117.384,
+    "start": 0,
+    "duration": 20,
+    "mediaStart": 0,
+    "volume": 0.22,
+    "fadeIn": 0.65,
+    "fadeOut": 1,
+    "trackIndex": 10,
+    "gainBaked": false,
+    "fadesBaked": false
+  },
+  "sfx": [
+    {
+      "src": "assets/sfx/interface/bong_001.ogg",
+      "start": 3.35,
+      "duration": 0.123,
+      "sourceDuration": 0.122834,
+      "volume": 0.35,
+      "trackIndex": 11,
+      "gesture": "Hero Book an appointment button click",
+      "brightness": "warm",
+      "highFrequencyRisk": "low"
+    },
+    {
+      "src": "assets/sfx/impact/impactSoft_medium_001.ogg",
+      "start": 12.4,
+      "duration": 0.184,
+      "sourceDuration": 0.183288,
+      "volume": 0.4,
+      "trackIndex": 12,
+      "gesture": "ZIP Check area button click",
+      "brightness": "warm",
+      "highFrequencyRisk": "low"
+    }
+  ],
+  "cueGuidance": [
+    {
+      "sceneBoundary": 4,
+      "nearbyBeat": 3.8197,
+      "intensity": 0.7925,
+      "use": "Optional timing guidance; keep actual scene boundaries at 4, 10, and 16 seconds for readability."
+    },
+    {
+      "sceneBoundary": 10,
+      "nearbyBeat": 9.8337,
+      "intensity": 0.7568,
+      "use": "Optional timing guidance; keep actual scene boundaries at 4, 10, and 16 seconds for readability."
+    },
+    {
+      "sceneBoundary": 16,
+      "nearbyBeat": 15.836,
+      "intensity": 0.9598,
+      "use": "Optional timing guidance; keep actual scene boundaries at 4, 10, and 16 seconds for readability."
+    }
+  ],
+  "reactiveData": {
+    "json": "assets/music/audio-data.json",
+    "script": "assets/music/audio-data.js",
+    "global": "window.AUDIO_DATA",
+    "duration": 20,
+    "totalFrames": 600,
+    "fps": 30,
+    "bands": 16,
+    "helper": "hyperframes-creative/scripts/extract-audio-data.py",
+    "input": "First20s of music with0.65s fade-in and1s fade-out; no loudness gain baked. Normalized RMS and bands.",
+    "permittedUse": "Optional subtle opacity changes to artwork atmosphere on the same deterministic root timeline; do not animate text to the beat."
+  },
+  "copiedAssetSha256": {
+    "music/happy-beats-business-moves-vol-12-by-ende-dot-app.mp3": "5888d4bd2ba0119b87a94e502ae2cc401c08192945cc5e5c2f8e8a33aa47a0a1",
+    "music/cues/happy-beats-business-moves-vol-12-by-ende-dot-app.music-cues.json": "b5d9d3fab3d73565fd7931b3f5ea22bf18b04ebcea56815df659c64639381c4f",
+    "sfx/interface/bong_001.ogg": "d21d0f0b782445db579d11e2506b24cd1ac9d664ee33aeaf807761aa7b6fd710",
+    "sfx/impact/impactSoft_medium_001.ogg": "7642a4fd43e547afe4f7adfadb3dabb681c0ff512f52c1674bae30a726841faf"
+  },
+  "preflight": {
+    "node": "v24.13.0",
+    "npm": "11.6.2 via npm.cmd",
+    "hyperframes": "0.8.151",
+    "ffmpeg": "6.1.1-essentials_build-www.gyan.dev",
+    "ffprobe": "4.0.2",
+    "ffmpegPath": ".hyperframes/bin/ffmpeg.exe",
+    "ffprobePath": ".hyperframes/bin/ffprobe.exe",
+    "doctorRequiredChecks": {
+      "FFmpeg": true,
+      "FFprobe": true,
+      "Chrome": true
+    },
+    "optionalUnavailable": [
+      "Docker",
+      "whisper-cpp",
+      "Kokoro",
+      "MusicGen"
+    ]
+  }
+}
