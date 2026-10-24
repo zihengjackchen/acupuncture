@@ -74,7 +74,7 @@ Chicago booking uses [Elite Healthcare’s Jane portal](https://elitehcare.janea
 
 Published fees include a **$20 virtual consultation** and a **$29.99 base travel fee per commute**, separate from treatment fees. Update the consultation page, [fee FAQ](content/blog/fertility-focused-supplement-guidance.md), and contact-page template together when rates change. Preserve existing page URLs or provide redirects.
 
-Patient quotes live in [data/testimonials.json](data/testimonials.json). Keep their approved wording and attribution; see [testimonial provenance](planning/testimonial-provenance.md) for the two restored quotes.
+Patient quotes live in [data/testimonials.json](data/testimonials.json). Keep their approved wording and attribution; see [testimonial provenance](planning/testimonial-provenance.md) for the approved reviews.
 
 ## Maintain maps and artwork
 

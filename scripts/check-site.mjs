@@ -79,7 +79,8 @@ async function waitForEntrances(page) {
   await page.waitForFunction(() => [...document.querySelectorAll('.hero-enter')].every(element => !element.style.opacity));
 }
 async function checkTestimonials(page) {
-  assert.deepEqual(await page.locator('.testimonial blockquote p').allTextContents(), testimonials.map(item => `“${item.quote}”`), 'Both original quotes are present in full');
+  assert.deepEqual(await page.locator('.testimonial blockquote p').allTextContents(), testimonials.map(item => `“${item.quote}”`), 'Approved quotes are present in full');
+  assert.deepEqual(await page.locator('.testimonial figcaption').allTextContents(), testimonials.map(item => item.author || 'Patient testimonial'), 'Approved attribution accompanies each quote');
   assert.doesNotMatch(await page.locator('.testimonials-section').innerText(), /FAKE|REAL #/i, 'No historical placeholder labels are published');
   const track = page.locator('[data-testimonials]');
   assert.ok(await track.evaluate(el => el.scrollWidth > el.clientWidth), 'Quotes form a horizontal scrolling row');

@@ -11,7 +11,7 @@
       {{ range .Site.Data.testimonials }}
       <figure class="testimonial">
         <blockquote><p>“{{ .quote }}”</p></blockquote>
-        <figcaption>Patient testimonial</figcaption>
+        <figcaption>{{ .author | default "Patient testimonial" }}</figcaption>
       </figure>
       {{ end }}
     </div>
