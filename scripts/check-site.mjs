@@ -12,6 +12,7 @@ const checkedLinks = new Set();
 const checkedFragments = new Set();
 const output = path.resolve('.qa');
 const coverage = JSON.parse(await fs.readFile('data/coverage.json', 'utf8'));
+const testimonials = JSON.parse(await fs.readFile('data/testimonials.json', 'utf8'));
 await fs.mkdir(output, { recursive: true });
 
 async function ready() {
@@ -77,6 +78,19 @@ async function waitForCardAngle(page, face) {
 async function waitForEntrances(page) {
   await page.waitForFunction(() => [...document.querySelectorAll('.hero-enter')].every(element => !element.style.opacity));
 }
+async function checkTestimonials(page) {
+  assert.deepEqual(await page.locator('.testimonial blockquote p').allTextContents(), testimonials.map(item => `“${item.quote}”`), 'Both original quotes are present in full');
+  assert.doesNotMatch(await page.locator('.testimonials-section').innerText(), /FAKE|REAL #/i, 'No historical placeholder labels are published');
+  const track = page.locator('[data-testimonials]');
+  assert.ok(await track.evaluate(el => el.scrollWidth > el.clientWidth), 'Quotes form a horizontal scrolling row');
+  assert.ok(await page.locator('[data-testimonial-previous]').isDisabled());
+  await page.locator('[data-testimonial-next]').click();
+  await page.waitForFunction(() => document.querySelector('[data-testimonial-next]').disabled);
+  assert.ok(await track.evaluate(el => el.scrollLeft > 0), 'Next brings the second quote into view');
+  await page.locator('[data-testimonial-previous]').focus();
+  await page.keyboard.press('Enter');
+  await page.waitForFunction(() => document.querySelector('[data-testimonial-previous]').disabled);
+}
 async function validateLocalReferences(page, route) {
   const refs = await page.evaluate(() => [...document.querySelectorAll('a[href],img[src],script[src],link[rel="stylesheet"],link[rel="preload"]')].map(el => el.href || el.src).filter(Boolean));
   for (const ref of refs) {
@@ -124,6 +138,7 @@ try {
   }
 
   await visit(page, '/');
+  await checkTestimonials(page);
   assert.equal(await page.locator('.clinic-calendar [data-period="morning"] .calendar-available').count(), 1);
   assert.equal(await page.locator('.clinic-calendar [data-period="afternoon"] .calendar-available').count(), 3);
   assert.match(await page.locator('.clinic-calendar [data-period="morning"] .calendar-available').innerText(), /9 a.m.–12 p.m./);
@@ -215,6 +230,7 @@ try {
   }
   await page.setViewportSize({ width: 390, height: 844 });
   await visit(page, '/');
+  await checkTestimonials(page);
   assert.equal(await page.locator('#main-nav').isVisible(), false);
   await page.locator('.menu-toggle').click();
   assert.equal(await page.locator('#main-nav').isVisible(), true);
@@ -243,6 +259,7 @@ try {
 
   const reduced = await browser.newPage({ viewport: { width: 390, height: 844 }, reducedMotion: 'reduce' });
   await visit(reduced, '/');
+  await checkTestimonials(reduced);
   assert.equal(await reduced.locator('.namecard-stage.is-animated').count(), 0);
   assert.equal(await reduced.locator('[data-card-hint]').isVisible(), false);
   assert.equal(await reduced.locator('[data-landscape-toggle]').isVisible(), false);
@@ -255,6 +272,17 @@ try {
 
   const plain = await browser.newPage({ viewport: { width: 390, height: 844 }, javaScriptEnabled: false });
   await plain.goto(origin, { waitUntil: 'networkidle' });
+  await plain.bringToFront();
+  assert.deepEqual(await plain.locator('.testimonial blockquote p').allTextContents(), testimonials.map(item => `“${item.quote}”`), 'Quotes remain available without JavaScript');
+  assert.equal(await plain.locator('[data-testimonial-controls]').isVisible(), false);
+  await plain.locator('[data-testimonials]').scrollIntoViewIfNeeded();
+  await plain.locator('[data-testimonials]').focus();
+  await plain.keyboard.press('ArrowRight');
+  // Poll from Node: page animation-frame polling is disabled along with JavaScript.
+  for (let attempt = 0; attempt < 100 && await plain.locator('[data-testimonials]').evaluate(el => el.scrollLeft === 0); attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 50));
+  }
+  assert.ok(await plain.locator('[data-testimonials]').evaluate(el => el.scrollLeft > 0), 'Native keyboard scrolling works without JavaScript');
   assert.equal(await plain.locator('#main-nav').isVisible(), true);
   assert.equal(await plain.locator('.menu-toggle').isVisible(), false);
   const navBottom = (await plain.locator('#main-nav').boundingBox()).y + (await plain.locator('#main-nav').boundingBox()).height;

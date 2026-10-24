@@ -1,9 +1,9 @@
 ---
 title: "What should I know about safety?"
-meta_title: "What should I know about safety? | Wang’s Harmony Acupuncture"
+meta_title: "Acupuncture Safety & Side Effects | Wang’s Harmony"
 draft: false
 weight: 6
-description: "Review possible side effects and the health information to share before treatment."
+description: "Read about acupuncture side effects and the medications, pregnancy status, devices, and medical history to discuss with Dan before treatment."
 ---
 
 Acupuncture can cause soreness, minor bleeding, or bruising. Improper treatment can cause serious complications. Ask Dan about technique and safety practices before you begin.

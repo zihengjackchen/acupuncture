@@ -1,0 +1,20 @@
+<section class="section testimonials-section" aria-labelledby="testimonials-heading">
+  <div class="shell">
+    <div class="section-heading testimonials-heading">
+      <div><span class="eyebrow">Patient experiences</span><h2 id="testimonials-heading">In their <em>words.</em></h2></div>
+      <div class="testimonials-controls" data-testimonial-controls hidden>
+        <button type="button" class="testimonial-previous" data-testimonial-previous aria-label="Previous testimonial" aria-controls="patient-testimonials" disabled>{{ partial "icon.html" "arrow" }}</button>
+        <button type="button" data-testimonial-next aria-label="Next testimonial" aria-controls="patient-testimonials">{{ partial "icon.html" "arrow" }}</button>
+      </div>
+    </div>
+    <div class="testimonial-track" id="patient-testimonials" role="region" aria-label="Patient quotes" aria-describedby="testimonials-hint" tabindex="0" data-testimonials>
+      {{ range .Site.Data.testimonials }}
+      <figure class="testimonial">
+        <blockquote><p>“{{ .quote }}”</p></blockquote>
+        <figcaption>Patient testimonial</figcaption>
+      </figure>
+      {{ end }}
+    </div>
+    <div class="testimonials-notes"><p id="testimonials-hint">Scroll or swipe to read more.</p><p>Individual experiences. Results vary.</p></div>
+  </div>
+</section>

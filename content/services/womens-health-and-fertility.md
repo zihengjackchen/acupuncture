@@ -1,11 +1,11 @@
 ---
 title: "Women’s health & fertility support"
-meta_title: "Women’s health & fertility support | Acupuncture in Chicago & Highland Park"
+meta_title: "Fertility & Women’s Health Acupuncture | Chicago & Highland Park"
 draft: false
 featured: true
 weight: 3
 summary: "Care discussions for menstrual health, fertility, postpartum recovery, and menopause."
-description: "Care discussions for menstrual health, fertility, postpartum recovery, and menopause. See Dan in Chicago or Highland Park."
+description: "Discuss acupuncture alongside fertility care, menstrual health, postpartum recovery, and menopause with Dan Wang in Chicago or Highland Park."
 card_image: "images/editorial/womens-health.webp"
 hero_image: "images/editorial/womens-conversation.webp"
 hero_alt: "Ink-wash illustration of two women discussing care"

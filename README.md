@@ -2,7 +2,7 @@
 
 Website for Dan’s acupuncture practice in Chicago and Highland Park, Illinois. Visitors can explore services, learn about their first appointment, check the weekly clinic schedule, and request a home visit.
 
-[Visit the website](https://wangsharmonyacu.com/)
+[Visit the website](https://www.wangsharmonyacu.com/)
 
 The site uses Hugo, custom templates, CSS, and JavaScript with GSAP. Its design pairs Chinese ink-wash illustrations with jade and ivory colors, serif headings, and slow motion.
 
@@ -11,6 +11,7 @@ The site uses Hugo, custom templates, CSS, and JavaScript with GSAP. Its design 
 - Clinic schedule with location-specific booking links, directions, and phone contact.
 - Mobile-service map with ZIP lookup, keyboard navigation, and 206 complete highlighted ZIP regions.
 - Service pages, appointment FAQs, practitioner biography, and fees.
+- Patient testimonials in a horizontal row with swipe, keyboard, and arrow controls.
 - Business card that turns as visitors scroll, plus a continuous ink landscape with a pause control.
 - Responsive layouts, local fonts, and reduced-motion and no-JavaScript fallbacks.
 - Downloadable logos, brand guide, and 15 wallpaper variants in five formats and three colors.
@@ -38,6 +39,7 @@ Open **http://127.0.0.1:1313**. Hugo writes the preview to `.qa/preview/`.
 | --- | --- |
 | `npm.cmd run build` | Build the production site in `dist/` |
 | `npm.cmd test` | Check routes, links, booking, map interactions, motion fallbacks, and mobile layouts |
+| `node scripts/check-seo.mjs` | Check production canonicals, structured URLs, robots, and sitemap after a build |
 | `npm.cmd run brand` | Rebuild logo exports, wallpapers, the brand guide, and media-pack ZIP |
 
 Use `npm` instead of `npm.cmd` on macOS/Linux or when PowerShell permits `npm.ps1`. The test script starts a Hugo server when needed and saves screenshots in `.qa/`. Set `HARMONY_TEST_URL` to test an existing server or `HARMONY_BROWSER` to select another installed browser channel.
@@ -49,7 +51,7 @@ Use `npm` instead of `npm.cmd` on macOS/Linux or when PowerShell permits `npm.ps
 | [content/](content/) | Page copy, service descriptions, biography, and FAQs |
 | [layouts/](layouts/) | Hugo page templates and shared components |
 | [assets/](assets/) | CSS, JavaScript, active brand masters, and source fonts |
-| [data/](data/) | Clinic schedules, contact information, and ZIP records |
+| [data/](data/) | Clinic schedules, contact information, patient testimonials, and ZIP records |
 | [static/](static/) | Website images, fonts, map exports, and landscape runtime |
 | [media-pack/](media-pack/) | Downloadable brand assets and guide |
 | [development/](development/README.md) | Logo explorations, original artwork, prompts, and design history |
@@ -72,6 +74,8 @@ Chicago booking uses [Elite Healthcare’s Jane portal](https://elitehcare.janea
 
 Published fees include a **$20 virtual consultation** and a **$29.99 base travel fee per commute**, separate from treatment fees. Update the consultation page, [fee FAQ](content/blog/fertility-focused-supplement-guidance.md), and contact-page template together when rates change. Preserve existing page URLs or provide redirects.
 
+Patient quotes live in [data/testimonials.json](data/testimonials.json). Keep their approved wording and attribution; see [testimonial provenance](planning/testimonial-provenance.md) for the two restored quotes.
+
 ## Maintain maps and artwork
 
 The map highlights 206 whole Census ZIP areas. Its internal selection envelope follows the outer boundaries of Chicago, Highland Park, Schaumburg, Naperville, and Orland Park, plus ZIP 60035. Some selected ZIPs extend beyond that envelope, including border areas in Indiana. Census ZCTAs approximate postal areas; confirm the street address and travel fee when booking.
@@ -92,4 +96,4 @@ The footer adapts Lingdong Huang’s **Shan, Shui**. Preserve its attribution an
 
 [.github/workflows/hugo.yaml](.github/workflows/hugo.yaml) builds and deploys to GitHub Pages on a push to `main` or a manual workflow run. It installs Node 24 and Hugo Extended 0.155.3, runs `npm ci`, and uploads `dist/`.
 
-Set the domain in `static/CNAME` and `config.toml`. Edit source files; `dist/`, `.qa/`, `resources/`, and `node_modules/` contain ignored local or build output.
+Set the domain in `static/CNAME` and `config.toml`. Keep `baseURL` set to `https://www.wangsharmonyacu.com/`; the deployment uses this value for canonical and sitemap URLs. The workflow checks production SEO output before uploading. Edit source files; `dist/`, `.qa/`, `resources/`, and `node_modules/` contain ignored local or build output.

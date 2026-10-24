@@ -1,6 +1,6 @@
 ---
 title: "What can I discuss at an appointment?"
-meta_title: "What can I discuss at an appointment? | Wang’s Harmony Acupuncture"
+meta_title: "What Can I Discuss at an Acupuncture Appointment?"
 draft: false
 weight: 5
 description: "Discuss pain, women’s health, sleep, digestion, and how acupuncture might fit with your current care."

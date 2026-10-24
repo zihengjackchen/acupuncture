@@ -48,7 +48,9 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo --gc --minify --destination dist --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --gc --minify --destination dist
+      - name: Verify production SEO
+        run: node scripts/check-seo.mjs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

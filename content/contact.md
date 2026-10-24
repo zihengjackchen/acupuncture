@@ -1,10 +1,10 @@
 ---
 title: "Locations & hours"
-meta_title: "Acupuncture Locations & Booking | Chicago & Highland Park"
-description: "Find Dan at Elite Healthcare in Chicago on Monday and Wednesday, and Pulling Down the Moon in Highland Park on Sunday. Call 847-786-0066."
+meta_title: "Acupuncture in Chicago & Highland Park | Locations & Booking"
+description: "Book acupuncture with Dan Wang in Lincoln Park, Chicago, or Highland Park. View clinic hours, booking links, and the service area for at-home visits."
 layout: "contact"
 page_kicker: "Locations & hours"
-hero_summary: "Book a clinic visit in Chicago or Highland Park. Mobile visits are available by request."
+hero_summary: "Book acupuncture in Lincoln Park, Chicago, or Highland Park. Ask about at-home visits in Chicago and the suburbs."
 hero_image: "images/editorial/consultation.webp"
 ---
 

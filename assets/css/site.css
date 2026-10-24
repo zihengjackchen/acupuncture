@@ -93,3 +93,20 @@
 @media(max-width:360px){.shell{width:calc(100% - 32px)}.brand-type{font-size:21px}.hero h1{font-size:59px}.hero .button-row{gap:12px}.hero .button{font-size:11px;padding-inline:14px;gap:12px}.hero .text-link{font-size:11px}.care-item h3{font-size:25px}}
 @media(max-width:760px){.site-header:not(.nav-ready){position:static}.site-header:not(.nav-ready) .header-inner{height:auto;flex-wrap:wrap;padding-block:16px}.site-header:not(.nav-ready) .menu-toggle{display:none}.site-header:not(.nav-ready) .main-nav{position:static;box-shadow:none;border:0;padding:12px 0 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.button:hover{transform:none}}
+/* Patient quotes use native horizontal scrolling, including without JavaScript. */
+.testimonials-section{border-bottom:1px solid var(--line)}
+.testimonials-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:36px}
+.testimonials-heading .eyebrow{margin-bottom:18px}
+.testimonials-controls{display:flex;gap:12px;flex-shrink:0}
+.testimonials-controls button{display:grid;place-items:center;width:48px;height:48px;padding:0;background:transparent;border:1px solid #829889;border-radius:50%;color:var(--jade);transition:background .2s}
+.testimonials-controls button:hover:not(:disabled){background:var(--sage)}
+.testimonials-controls button:disabled{opacity:.35}
+.testimonial-previous .icon{transform:rotate(180deg)}
+.testimonial-track{display:flex;gap:28px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#9baca0 transparent;padding:2px 2px 24px}
+.testimonial{display:flex;flex:0 0 72%;flex-direction:column;justify-content:space-between;gap:28px;min-width:0;padding:38px 42px;background:var(--white);border:1px solid var(--line);border-radius:2px}
+.testimonial blockquote{margin:0}
+.testimonial blockquote p{font:400 clamp(25px,2.4vw,34px)/1.4 var(--serif);color:var(--ink);text-wrap:pretty}
+.testimonial figcaption{font-size:11px;letter-spacing:.06em;color:var(--jade)}
+.testimonials-notes{display:flex;justify-content:space-between;gap:16px;margin-top:14px}
+.testimonials-notes p{font-size:11px}
+@media(max-width:760px){.testimonials-heading{gap:16px;margin-bottom:28px}.testimonials-heading h2{font-size:44px}.testimonials-heading .eyebrow{font-size:10px}.testimonials-controls{gap:8px}.testimonials-controls button{width:44px;height:44px}.testimonial-track{gap:16px}.testimonial{flex-basis:90%;padding:27px 24px;gap:24px}.testimonials-notes{flex-direction:column;gap:4px}}

@@ -1,9 +1,9 @@
 ---
 title: "What does an appointment cost?"
-meta_title: "What does an appointment cost? | Wang’s Harmony Acupuncture"
+meta_title: "Acupuncture Costs in Chicago & Highland Park | Clinic & Home"
 draft: false
 weight: 3
-description: "Virtual consultation and mobile travel rates, plus clinic fees, packages, and senior discounts."
+description: "Check the $20 virtual consultation and $29.99 base home-visit travel fee. Confirm separate treatment costs for Chicago, Highland Park, or mobile appointments."
 slug: "how-much-does-mobile-acupuncture-cost"
 ---
 

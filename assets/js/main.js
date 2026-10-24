@@ -32,6 +32,25 @@ markToday();
 document.addEventListener('visibilitychange', () => { if (!document.hidden) markToday(); });
 
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+const testimonials = document.querySelector('[data-testimonials]');
+if (testimonials) {
+  const previous = document.querySelector('[data-testimonial-previous]');
+  const next = document.querySelector('[data-testimonial-next]');
+  const updateControls = () => {
+    previous.disabled = testimonials.scrollLeft <= 1;
+    next.disabled = testimonials.scrollLeft + testimonials.clientWidth >= testimonials.scrollWidth - 1;
+  };
+  const scrollQuote = direction => {
+    const gap = parseFloat(getComputedStyle(testimonials).columnGap) || 0;
+    testimonials.scrollBy({ left: direction * (testimonials.firstElementChild.offsetWidth + gap), behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+  };
+  previous.addEventListener('click', () => scrollQuote(-1));
+  next.addEventListener('click', () => scrollQuote(1));
+  testimonials.addEventListener('scroll', updateControls, { passive: true });
+  new ResizeObserver(updateControls).observe(testimonials);
+  document.querySelector('[data-testimonial-controls]').hidden = false;
+  updateControls();
+}
 const careItems = [...document.querySelectorAll('[data-care-item]')];
 const careImage = document.querySelector('#care-visual');
 const nextImage = document.querySelector('.care-image-next');

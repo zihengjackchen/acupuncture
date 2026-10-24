@@ -1,9 +1,9 @@
 ---
 title: "How many sessions will I need?"
-meta_title: "How many sessions will I need? | Wang’s Harmony Acupuncture"
+meta_title: "How Many Acupuncture Sessions Will I Need? | Wang’s Harmony"
 draft: false
 weight: 4
-description: "Discuss treatment frequency, follow-up, and when to review your progress."
+description: "Discuss acupuncture frequency and follow-up with Dan Wang. Learn what to ask about reviewing your response, adjusting treatment, and appointment costs."
 slug: "how-many-sessions-will-i-need"
 ---
 
