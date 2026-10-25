@@ -1,6 +1,6 @@
 ---
 title: "Dr Dan Wang, L.Ac., Dipl OM"
-meta_title: "Dr Dan Wang, L.Ac., Dipl OM | Acupuncture in Chicago & Highland Park"
+meta_title: "Dr Dan Wang, L.Ac., Dipl OM | Acupuncture in Chicago, Niles & Highland Park"
 draft: false
 slug: "dr-dan-wang"
 canonical: "/team/"

@@ -140,9 +140,20 @@ try {
 
   await visit(page, '/');
   await checkTestimonials(page);
-  assert.equal(await page.locator('.clinic-calendar [data-period="morning"] .calendar-available').count(), 1);
-  assert.equal(await page.locator('.clinic-calendar [data-period="afternoon"] .calendar-available').count(), 3);
-  assert.match(await page.locator('.clinic-calendar [data-period="morning"] .calendar-available').innerText(), /9 a.m.–12 p.m./);
+  assert.equal(await page.locator('.clinic-calendar [data-period="morning"] .calendar-available').count(), 2);
+  assert.equal(await page.locator('.clinic-calendar [data-period="afternoon"] .calendar-available').count(), 4);
+  assert.match(await page.locator('.clinic-calendar [data-period="morning"] a[href="#pulling-down-the-moon"]').innerText(), /9 a.m.–12 p.m./);
+  for (const route of ['/', '/contact/']) {
+    await visit(page, route);
+    assert.equal(await page.locator('.clinic-grid .clinic').count(), 3);
+    assert.match(await page.locator('.clinic-calendar [data-period="morning"] a[href="#ginkgo-wellness"]').innerText(), /Niles\s+10 a.m.–12 p.m./);
+    assert.match(await page.locator('.clinic-calendar [data-period="afternoon"] a[href="#ginkgo-wellness"]').innerText(), /Niles\s+12 p.m.–6 p.m./);
+    assert.match(await page.locator('#ginkgo-wellness address').innerText(), /8604 W Golf Rd\s+Niles, IL 60714/);
+    assert.equal(await page.locator('#ginkgo-wellness .clinic-hours').innerText(), 'Thursday · 10 am–6 pm');
+    assert.equal(await page.locator('#ginkgo-wellness .button').getAttribute('href'), 'tel:+18477860066');
+    assert.equal(await page.locator('#ginkgo-wellness .clinic-profile').getAttribute('href'), 'https://www.ginkgowellnesscenter.com/');
+  }
+  await visit(page, '/');
   const sectionOrder = await page.locator('#care, #practitioner, #first-visit, #keep-in-touch, #locations, #mobile-visits').evaluateAll(nodes => nodes.map(node => node.id));
   assert.deepEqual(sectionOrder, ['care', 'practitioner', 'first-visit', 'keep-in-touch', 'locations', 'mobile-visits']);
   assert.equal(await page.locator('.harmony-seal, [data-card-toggle]').count(), 0);

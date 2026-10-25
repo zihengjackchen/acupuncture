@@ -3,7 +3,7 @@ title: "Meet Dan"
 meta_title: "Dr Dan Wang, L.Ac., Dipl OM | Wang’s Harmony Acupuncture"
 description: "Meet Dan, a licensed acupuncturist and herbalist trained at Liaoning University of Traditional Chinese Medicine."
 page_kicker: "Your practitioner"
-hero_summary: "Licensed acupuncturist and herbalist in Chicago and Highland Park."
+hero_summary: "Licensed acupuncturist and herbalist in Chicago, Niles, and Highland Park."
 hero_image: "images/dan-wang.webp"
 ---
 

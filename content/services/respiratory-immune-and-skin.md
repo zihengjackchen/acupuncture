@@ -1,11 +1,11 @@
 ---
 title: "Respiratory, immune & skin concerns"
-meta_title: "Seasonal Symptoms & Acupuncture | Chicago & Highland Park"
+meta_title: "Seasonal Symptoms & Acupuncture | Chicago, Niles & Highland Park"
 draft: false
 featured: true
 weight: 6
 summary: "Discuss seasonal nasal symptoms and questions about complementary care."
-description: "Discuss seasonal nasal symptoms and acupuncture with Dan Wang in Chicago or Highland Park. Ask how complementary care may fit with your medical plan."
+description: "Discuss seasonal nasal symptoms and acupuncture with Dan Wang in Chicago, Niles, or Highland Park. Ask how complementary care may fit with your medical plan."
 card_image: "images/editorial/respiratory.webp"
 hero_image: "images/editorial/seasonal-breath.webp"
 hero_alt: "Ink-wash illustration of a person seated beside an open window"

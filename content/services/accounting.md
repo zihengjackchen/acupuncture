@@ -1,11 +1,11 @@
 ---
 title: "Acupuncture consultation"
-meta_title: "Acupuncture Consultation in Chicago & Highland Park"
+meta_title: "Acupuncture Consultation in Chicago, Niles & Highland Park"
 draft: false
 featured: true
 weight: 1
 summary: "Review your health history and ask about treatment, comfort, and cost."
-description: "Plan your acupuncture care with Dan Wang in Chicago or Highland Park. Discuss your health history, treatment options, comfort, and appointment costs."
+description: "Plan your acupuncture care with Dan Wang in Chicago, Niles, or Highland Park. Discuss your health history, treatment options, comfort, and appointment costs."
 card_image: "images/editorial/consultation.webp"
 hero_image: "images/editorial/pulse-consultation.webp"
 hero_alt: "Ink-wash illustration of a practitioner taking a pulse"

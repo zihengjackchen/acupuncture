@@ -1,6 +1,6 @@
 # Wang’s Harmony Acupuncture
 
-Website for Dan’s acupuncture practice in Chicago and Highland Park, Illinois. Visitors can explore services, learn about their first appointment, check the weekly clinic schedule, and request a home visit.
+Website for Dan’s acupuncture practice in Chicago, Niles, and Highland Park, Illinois. Visitors can explore services, learn about their first appointment, check the weekly clinic schedule, and request a home visit.
 
 [Visit the website](https://www.wangsharmonyacu.com/)
 
@@ -68,9 +68,10 @@ Edit [data/clinics.json](data/clinics.json) for schedules, addresses, and bookin
 | Clinic | Schedule, Central Time | Address |
 | --- | --- | --- |
 | Elite Healthcare | Monday and Wednesday, noon–6 pm | 2732 N Lincoln Ave, Chicago, IL 60614 |
+| [Ginkgo Wellness](https://www.ginkgowellnesscenter.com/) | Thursday, 10 am–6 pm | 8604 W Golf Rd, Niles, IL 60714 |
 | Pulling Down the Moon | Sunday, 9 am–6 pm; provisional, confirm by phone | 1770 1st St, Suite 400, Highland Park, IL 60035 |
 
-Chicago booking uses [Elite Healthcare’s Jane portal](https://elitehcare.janeapp.com/). Highland Park and home-visit requests use **847-786-0066**. The main email is **hello@wangsharmonyacu.com**.
+Chicago booking uses [Elite Healthcare’s Jane portal](https://elitehcare.janeapp.com/). Niles, Highland Park, and home-visit requests use **847-786-0066**. The main email is **hello@wangsharmonyacu.com**.
 
 Published fees include a **$20 virtual consultation** and a **$29.99 base travel fee per commute**, separate from treatment fees. Update the consultation page, [fee FAQ](content/blog/fertility-focused-supplement-guidance.md), and contact-page template together when rates change. Preserve existing page URLs or provide redirects.
 

@@ -18,7 +18,7 @@ For general questions, call [847-786-0066](tel:+18477860066) or email [hello@wan
 
 ## Appointment and directions links
 
-The Chicago booking link takes you to Elite Healthcare’s Jane appointment system. Directions links open Google Maps. These services operate under their own privacy policies. Highland Park appointments are arranged by telephone.
+The Chicago booking link takes you to Elite Healthcare’s Jane appointment system. The Ginkgo Wellness link opens its clinic website. Directions links open Google Maps. These services operate under their own privacy policies. Niles and Highland Park appointments are arranged by telephone.
 
 ## Website delivery
 

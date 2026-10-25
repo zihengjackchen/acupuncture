@@ -1,11 +1,11 @@
 ---
 title: "Stress, sleep & wellbeing"
-meta_title: "Acupuncture for Stress & Sleep | Chicago & Highland Park"
+meta_title: "Acupuncture for Stress & Sleep | Chicago, Niles & Highland Park"
 draft: false
 featured: true
 weight: 4
 summary: "Discuss stress, muscle tension, and disrupted sleep."
-description: "Discuss acupuncture for stress, muscle tension, and disrupted sleep with Dan Wang in Chicago or Highland Park, alongside your existing care."
+description: "Discuss acupuncture for stress, muscle tension, and disrupted sleep with Dan Wang in Chicago, Niles, or Highland Park, alongside your existing care."
 card_image: "images/editorial/rest.webp"
 hero_image: "images/editorial/restful-breath.webp"
 hero_alt: "Ink-wash illustration of a person seated in quiet rest"

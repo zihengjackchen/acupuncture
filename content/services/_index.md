@@ -1,7 +1,7 @@
 ---
 title: "Our care"
-meta_title: "Acupuncture Services in Chicago & Highland Park"
-description: "Explore acupuncture for pain, women’s health, stress, sleep, and digestion with Dan Wang. Find a clinic in Chicago or Highland Park, or ask about home visits."
+meta_title: "Acupuncture Services in Chicago, Niles & Highland Park"
+description: "Explore acupuncture for pain, women’s health, stress, sleep, and digestion with Dan Wang. Find a clinic in Chicago, Niles, or Highland Park, or ask about home visits."
 page_kicker: "Acupuncture & Chinese medicine"
 hero_summary: "Discuss your symptoms and treatment options with Dan."
 hero_image: "images/editorial/care-preparation.webp"

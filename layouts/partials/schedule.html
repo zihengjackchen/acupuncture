@@ -38,6 +38,7 @@
         {{ if eq .id "pulling-down-the-moon" }}<p class="small-note">Sunday hours are provisional. Call to confirm.</p>{{ end }}
         <div class="clinic-actions"><a class="button {{ if eq .id "pulling-down-the-moon" }}button-outline{{ end }}" href="{{ .booking_url | safeURL }}">{{ .booking_label }} {{ partial "icon.html" "diagonal" }}</a><a class="text-link" href="{{ .directions_url }}" target="_blank" rel="noopener noreferrer">Directions <span class="sr-only">(opens a new tab)</span>{{ partial "icon.html" "diagonal" }}</a></div>
         {{ with .profile_url }}<a class="clinic-profile" href="{{ . }}">Dan’s clinic profile {{ partial "icon.html" "arrow" }}</a>{{ end }}
+        {{ with .website_url }}<a class="clinic-profile" href="{{ . }}">Clinic website {{ partial "icon.html" "arrow" }}</a>{{ end }}
       </article>
       {{ end }}
     </div>

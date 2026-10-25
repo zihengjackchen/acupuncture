@@ -1,11 +1,11 @@
 ---
 title: "Pain & everyday movement"
-meta_title: "Acupuncture for Pain | Chicago & Highland Park"
+meta_title: "Acupuncture for Pain | Chicago, Niles & Highland Park"
 draft: false
 featured: true
 weight: 2
 summary: "Discuss back, neck, or joint pain, headaches, and muscle tension."
-description: "Discuss acupuncture for back, neck, or joint pain and headaches with Dan Wang in Chicago or Highland Park. Review options alongside your current care."
+description: "Discuss acupuncture for back, neck, or joint pain and headaches with Dan Wang in Chicago, Niles, or Highland Park. Review options alongside your current care."
 card_image: "images/editorial/treatment.webp"
 hero_image: "images/editorial/shoulder-care.webp"
 hero_alt: "Ink-wash illustration of a practitioner checking shoulder comfort"

@@ -1,14 +1,16 @@
 ---
 title: "Locations & hours"
-meta_title: "Acupuncture in Chicago & Highland Park | Locations & Booking"
-description: "Book acupuncture with Dan Wang in Lincoln Park, Chicago, or Highland Park. View clinic hours, booking links, and the service area for at-home visits."
+meta_title: "Acupuncture in Chicago, Niles & Highland Park | Locations & Booking"
+description: "Book acupuncture with Dan Wang in Chicago’s Lincoln Park, Niles, or Highland Park. View clinic hours, booking links, and the service area for at-home visits."
 layout: "contact"
 page_kicker: "Locations & hours"
-hero_summary: "Book acupuncture in Lincoln Park, Chicago, or Highland Park. Ask about at-home visits in Chicago and the suburbs."
+hero_summary: "Book acupuncture in Chicago’s Lincoln Park, Niles, or Highland Park. Ask about at-home visits in Chicago and the suburbs."
 hero_image: "images/editorial/consultation.webp"
 ---
 
-Book Chicago appointments through [Elite Healthcare](https://elitehcare.janeapp.com/). For Highland Park, call [847-786-0066](tel:+18477860066).
+Book Chicago appointments through [Elite Healthcare](https://elitehcare.janeapp.com/). For Niles or Highland Park, call [847-786-0066](tel:+18477860066).
+
+Dan sees patients at [Ginkgo Wellness](https://www.ginkgowellnesscenter.com/) on Thursdays, 10 am–6 pm Central, at 8604 W Golf Rd, Niles, IL 60714.
 
 Check the [clinic schedule](#locations) before you visit. All hours use Central Time; call to confirm Sunday hours.
 
