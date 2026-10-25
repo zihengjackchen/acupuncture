@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ .Site.Language.LanguageCode }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +10,11 @@
   {{ $canonical := .Permalink }}
   {{ with .Params.canonical }}{{ $canonical = . | absURL }}{{ end }}
   <link rel="canonical" href="{{ $canonical }}">
+  {{ range .AllTranslations }}
+    {{ $alternate := .Permalink }}{{ with .Params.canonical }}{{ $alternate = . | absURL }}{{ end }}
+    <link rel="alternate" hreflang="{{ .Site.Language.LanguageCode }}" href="{{ $alternate }}">
+    {{ if eq .Lang "en" }}<link rel="alternate" hreflang="x-default" href="{{ $alternate }}">{{ end }}
+  {{ end }}
   <link rel="icon" type="image/svg+xml" href="{{ "images/brand/symbol.svg" | relURL }}">
   <link rel="apple-touch-icon" href="{{ "images/brand/apple-touch-icon.png" | relURL }}">
   <meta property="og:title" content="{{ .Params.meta_title | default .Title }}">
@@ -26,7 +31,7 @@
   {{ partial "seo-local-business.html" . }}
 </head>
 <body class="{{ if .IsHome }}page-home{{ else }}page-inner{{ end }}">
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">{{ if eq .Lang "zh" }}跳至正文{{ else }}Skip to content{{ end }}</a>
   {{ partial "header.html" . }}
   <main id="main">{{ block "main" . }}{{ end }}{{ partial "booking-cta.html" . }}</main>
   {{ partial "landscape.html" . }}

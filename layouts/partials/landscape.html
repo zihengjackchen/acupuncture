@@ -1,12 +1,12 @@
 <section class="harmony-landscape" data-landscape
   data-worker-url="{{ "vendor/shan-shui/worker.js" | relURL }}"
-  aria-label="Chinese ink landscape">
+  aria-label="{{ i18n "landscape_aria" }}">
   <div class="harmony-landscape__view" aria-hidden="true">
     <img class="harmony-landscape__fallback" src="{{ "vendor/shan-shui/fallback.svg" | relURL }}"
       alt="" width="3072" height="420" loading="lazy" decoding="async">
     <canvas class="harmony-landscape__canvas"></canvas>
   </div>
-  <button class="harmony-landscape__toggle" data-landscape-toggle type="button" hidden>Pause landscape</button>
+  <button class="harmony-landscape__toggle" data-landscape-toggle type="button" hidden>{{ i18n "landscape_pause" }}</button>
   <a class="harmony-landscape__credit" href="https://github.com/LingDong-/shan-shui-inf"
-    target="_blank" rel="noopener noreferrer">Landscape after Shan, Shui · Lingdong Huang</a>
+    target="_blank" rel="noopener noreferrer">{{ i18n "landscape_credit" }}</a>
 </section>

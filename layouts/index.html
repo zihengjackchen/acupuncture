@@ -2,68 +2,68 @@
 <section class="hero">
   <div class="shell hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow hero-enter"><span class="live-dot"></span> Lincoln Park · Niles · Highland Park</span>
-      <h1 class="hero-enter">Acupuncture<br>in <em>Chicago.</em></h1>
-      <p class="hero-enter">Acupuncture and Chinese medicine with Dan Wang, L.Ac., Dipl OM, in Chicago’s Lincoln Park, Niles, and Highland Park. Home visits across Chicago and nearby suburbs are available by request.</p>
+      <span class="eyebrow hero-enter"><span class="live-dot"></span> {{ i18n "hero_locations" }}</span>
+      <h1 class="hero-enter">{{ i18n "hero_title" | safeHTML }}</h1>
+      <p class="hero-enter">{{ i18n "hero_intro" }}</p>
       <div class="button-row hero-enter">
-        <a class="button" href="{{ "contact/#locations" | relURL }}">Book an appointment {{ partial "icon.html" "diagonal" }}</a>
-        <a class="text-link" href="#care">Explore care {{ partial "icon.html" "arrow" }}</a>
+        <a class="button" href="{{ "contact/#locations" | relLangURL }}">{{ i18n "book_appointment" }} {{ partial "icon.html" "diagonal" }}</a>
+        <a class="text-link" href="#care">{{ i18n "explore_care" }} {{ partial "icon.html" "arrow" }}</a>
       </div>
     </div>
     <div class="hero-art hero-enter"><div class="hero-image-wrap">
-      <img class="hero-image" src="{{ "images/editorial/acupuncture-session.webp" | relURL }}" srcset="{{ "images/editorial/acupuncture-session-640.webp" | relURL }} 640w, {{ "images/editorial/acupuncture-session.webp" | relURL }} 1536w" sizes="(max-width: 760px) 100vw, 46vw" width="1536" height="1024" alt="Ink-wash illustration of a practitioner caring for a reclining acupuncture patient" fetchpriority="high">
+      <img class="hero-image" src="{{ "images/editorial/acupuncture-session.webp" | relURL }}" srcset="{{ "images/editorial/acupuncture-session-640.webp" | relURL }} 640w, {{ "images/editorial/acupuncture-session.webp" | relURL }} 1536w" sizes="(max-width: 760px) 100vw, 46vw" width="1536" height="1024" alt="{{ i18n "hero_alt" }}" fetchpriority="high">
     </div></div>
   </div>
 </section>
 <section class="section care-section" id="care">
   <div class="shell">
-    <div class="section-heading split-heading" data-reveal><h2>Care for<br><em>your whole self.</em></h2><p>Choose a concern to learn about treatment options.</p></div>
+    <div class="section-heading split-heading" data-reveal><h2>{{ i18n "care_title" | safeHTML }}</h2><p>{{ i18n "care_intro" }}</p></div>
     <div class="care-layout">
       <figure class="care-image" data-reveal><div class="care-image-stack">
-        <img id="care-visual" src="{{ "images/editorial/treatment.webp" | relURL }}" width="1536" height="1024" alt="Chinese ink-wash illustration of acupuncture care" loading="lazy">
+        <img id="care-visual" src="{{ "images/editorial/treatment.webp" | relURL }}" width="1536" height="1024" alt="{{ i18n "care_image_alt" }}" loading="lazy">
         <img class="care-image-next" width="1536" height="1024" alt="" aria-hidden="true">
       </div></figure>
       <div class="care-list">
         {{ $items := slice
-          (dict "title" "Pain & recovery" "text" "Discuss pain, stiffness, or an injury and how acupuncture may fit your recovery plan." "url" "services/pain-and-injury-management/" "image" "treatment" "alt" "Chinese ink-wash illustration of an acupuncture tray and treatment cushion")
-          (dict "title" "Women’s health & fertility" "text" "Care for menstrual concerns, fertility treatment, pregnancy, postpartum recovery, and menopause." "url" "services/womens-health-and-fertility/" "image" "womens-health" "alt" "Chinese ink-wash illustration of lotus flowers and seed pods")
-          (dict "title" "Stress & sleep" "text" "Discuss stress, disrupted sleep, and treatment suited to your symptoms and routine." "url" "services/stress-sleep-and-wellness/" "image" "rest" "alt" "Chinese ink-wash painting of a mountain lake")
-          (dict "title" "Digestion & metabolism" "text" "Review digestive symptoms, eating habits, and your current care with Dan." "url" "services/digestive-and-metabolic-health/" "image" "digestive" "alt" "Chinese ink-wash illustration of ginger and mandarin oranges")
-          (dict "title" "Respiratory, immune & skin concerns" "text" "Discuss seasonal allergies, breathing concerns, or skin symptoms alongside your medical care." "url" "services/respiratory-immune-and-skin/" "image" "respiratory" "alt" "Chinese ink-wash painting of loquat and bamboo") }}
+          (dict "title" (i18n "care_pain_title") "text" (i18n "care_pain_text") "url" "services/pain-and-injury-management/" "image" "treatment" "alt" (i18n "care_pain_alt"))
+          (dict "title" (i18n "care_women_title") "text" (i18n "care_women_text") "url" "services/womens-health-and-fertility/" "image" "womens-health" "alt" (i18n "care_women_alt"))
+          (dict "title" (i18n "care_stress_title") "text" (i18n "care_stress_text") "url" "services/stress-sleep-and-wellness/" "image" "rest" "alt" (i18n "care_stress_alt"))
+          (dict "title" (i18n "care_digestive_title") "text" (i18n "care_digestive_text") "url" "services/digestive-and-metabolic-health/" "image" "digestive" "alt" (i18n "care_digestive_alt"))
+          (dict "title" (i18n "care_respiratory_title") "text" (i18n "care_respiratory_text") "url" "services/respiratory-immune-and-skin/" "image" "respiratory" "alt" (i18n "care_respiratory_alt")) }}
         {{ range $index, $item := $items }}
         <details class="care-item" {{ if eq $index 0 }}open{{ end }} data-care-item data-image="{{ printf "images/editorial/%s.webp" .image | relURL }}" data-alt="{{ .alt }}">
           <summary><h3>{{ .title }}</h3><span class="care-plus" aria-hidden="true">+</span></summary>
-          <div class="care-description"><p>{{ .text }}</p><a class="text-link" href="{{ .url | relURL }}">Treatment details {{ partial "icon.html" "arrow" }}</a></div>
+          <div class="care-description"><p>{{ .text }}</p><a class="text-link" href="{{ .url | relLangURL }}">{{ i18n "treatment_details" }} {{ partial "icon.html" "arrow" }}</a></div>
         </details>
         {{ end }}
-        <a class="all-services text-link" href="{{ "services/" | relURL }}">All services {{ partial "icon.html" "diagonal" }}</a>
+        <a class="all-services text-link" href="{{ "services/" | relLangURL }}">{{ i18n "all_services" }} {{ partial "icon.html" "diagonal" }}</a>
       </div>
     </div>
   </div>
 </section>
 <section class="section practitioner-section" id="practitioner">
   <div class="shell practitioner-grid">
-    <figure class="practitioner-image" data-reveal><img src="{{ "images/dan-wang.webp" | relURL }}" width="640" height="800" alt="Dan, licensed acupuncturist and herbalist" loading="lazy"><figcaption>Dr Dan Wang <span>L.Ac., Dipl OM</span></figcaption></figure>
+    <figure class="practitioner-image" data-reveal><img src="{{ "images/dan-wang.webp" | relURL }}" width="640" height="800" alt="{{ i18n "dan_portrait_alt" }}" loading="lazy"><figcaption>{{ i18n "dan_name" }} <span>L.Ac., Dipl OM</span></figcaption></figure>
     <div class="practitioner-copy" data-reveal>
-      <span class="eyebrow">Meet your practitioner</span><h2>Dan</h2><p class="lead">Licensed acupuncturist & herbalist</p>
-      <p>Dan grew up in Northeast China and trained at Liaoning University of Traditional Chinese Medicine. She reviews your health history, explains treatment, and checks your comfort throughout your visit.</p>
-      <a class="text-link" href="{{ "team/" | relURL }}">About Dan {{ partial "icon.html" "arrow" }}</a>
+      <span class="eyebrow">{{ i18n "meet_practitioner" }}</span><h2>Dan</h2><p class="lead">{{ i18n "practitioner_profession" }}</p>
+      <p>{{ i18n "dan_home_bio" }}</p>
+      <a class="text-link" href="{{ "team/" | relLangURL }}">{{ i18n "about_dan" }} {{ partial "icon.html" "arrow" }}</a>
     </div>
   </div>
 </section>
 {{ partial "testimonials.html" . }}
 <section class="section first-visit" id="first-visit">
   <div class="shell">
-    <div class="section-heading" data-reveal><h2>Your <em>first visit.</em></h2></div>
+    <div class="section-heading" data-reveal><h2>{{ i18n "first_visit_heading" | safeHTML }}</h2></div>
     <div class="visit-steps">
       {{ range slice
-        (dict "number" "01" "title" "Book a visit" "text" "Choose a clinic and confirm the appointment length and fee.")
-        (dict "number" "02" "title" "Discuss your health" "text" "Bring your questions and a list of medications. Dan will review your symptoms and history.")
-        (dict "number" "03" "title" "Review your treatment" "text" "Dan will explain the proposed care, check your comfort, and discuss follow-up.") }}
+        (dict "number" "01" "title" (i18n "first_book_title") "text" (i18n "first_book_text"))
+        (dict "number" "02" "title" (i18n "first_health_title") "text" (i18n "first_health_text"))
+        (dict "number" "03" "title" (i18n "first_review_title") "text" (i18n "first_review_text")) }}
       <article data-reveal><span class="step-number">{{ .number }}</span><h3>{{ .title }}</h3><p>{{ .text }}</p></article>
       {{ end }}
     </div>
-    <a class="text-link" href="{{ "blog/" | relURL }}">Questions about your visit {{ partial "icon.html" "arrow" }}</a>
+    <a class="text-link" href="{{ "blog/" | relLangURL }}">{{ i18n "visit_questions" }} {{ partial "icon.html" "arrow" }}</a>
   </div>
 </section>
 {{ partial "business-card.html" . }}

@@ -1,8 +1,8 @@
 <section class="section connection-section" id="keep-in-touch" data-card-section>
   <div class="shell connection-layout" data-card-pin>
     <div class="connection-copy">
-      <span class="eyebrow">A personal connection</span>
-      <h2>Contact <em>Dan.</em></h2>
+      <span class="eyebrow">{{ i18n "connection_kicker" }}</span>
+      <h2>{{ i18n "contact_dan_rich" | safeHTML }}</h2>
       <a class="large-phone" href="tel:+18477860066">{{ .Site.Data.contact.phone }} {{ partial "icon.html" "diagonal" }}</a>
       <a class="text-link" href="mailto:{{ .Site.Data.contact.email }}">{{ .Site.Data.contact.email }}</a>
     </div>
@@ -11,16 +11,16 @@
         <div class="namecard namecard-front">
           <div class="namecard-main">
             <div class="namecard-brand"><img src="{{ "images/brand/logo-stacked.svg" | relURL }}" width="260" height="199" alt="Wang’s Harmony Acupuncture"></div>
-            <div class="namecard-person"><strong>Dr Dan Wang</strong><span>L.Ac., Dipl OM</span><p>Licensed Acupuncturist<br>& Herbalist</p><ul><li>Chinese acupuncture</li><li>Herbal medicine</li><li>Individual treatment plans</li></ul></div>
+            <div class="namecard-person"><strong>{{ i18n "dan_name" }}</strong><span>L.Ac., Dipl OM</span><p>{{ i18n "card_profession" | safeHTML }}</p><ul><li>{{ i18n "chinese_acupuncture" }}</li><li>{{ i18n "herbal_medicine" }}</li><li>{{ i18n "individual_plans" }}</li></ul></div>
           </div>
           <div class="namecard-band"><div><strong>{{ .Site.Data.contact.phone }}</strong><span>{{ .Site.Data.contact.email }}</span></div><div><span>2732 N Lincoln Ave.</span><span>Chicago, IL 60614</span><strong>elitehcare.janeapp.com</strong></div></div>
         </div>
         <div class="namecard namecard-back">
-          <div class="namecard-back-title">Acupuncture & Chinese Medicine</div>
-          <div class="namecard-back-body"><p>Pain & recovery · Women’s health & fertility<br>Stress & sleep · Digestive concerns<br>Respiratory, immune & skin concerns</p><span>Chicago · Niles · Highland Park<br>Mobile visits by request</span><div class="appointment-line">Appointment date / time <span></span></div></div>
+          <div class="namecard-back-title">{{ i18n "card_back_title" }}</div>
+          <div class="namecard-back-body"><p>{{ i18n "card_back_care" | safeHTML }}</p><span>{{ i18n "card_locations" | safeHTML }}</span><div class="appointment-line">{{ i18n "appointment_datetime" }} <span></span></div></div>
         </div>
       </div>
-      <p class="namecard-scroll-hint" hidden data-card-hint>Scroll to turn the card <span aria-hidden="true">↓</span></p>
+      <p class="namecard-scroll-hint" hidden data-card-hint>{{ i18n "card_scroll_hint" }} <span aria-hidden="true">↓</span></p>
     </div>
   </div>
 </section>

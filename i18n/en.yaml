@@ -1,0 +1,611 @@
+{
+  "hero_locations": {
+    "other": "Lincoln Park · Niles · Highland Park"
+  },
+  "hero_title": {
+    "other": "Acupuncture<br>in <em>Chicago.</em>"
+  },
+  "hero_intro": {
+    "other": "Acupuncture and Chinese medicine with Dan Wang, L.Ac., Dipl OM, in Chicago’s Lincoln Park, Niles, and Highland Park. Home visits across Chicago and nearby suburbs are available by request."
+  },
+  "book_appointment": {
+    "other": "Book an appointment"
+  },
+  "explore_care": {
+    "other": "Explore care"
+  },
+  "hero_alt": {
+    "other": "Ink-wash illustration of a practitioner caring for a reclining acupuncture patient"
+  },
+  "care_title": {
+    "other": "Care for<br><em>your whole self.</em>"
+  },
+  "care_intro": {
+    "other": "Choose a concern to learn about treatment options."
+  },
+  "care_image_alt": {
+    "other": "Chinese ink-wash illustration of acupuncture care"
+  },
+  "care_pain_title": {
+    "other": "Pain & recovery"
+  },
+  "care_pain_text": {
+    "other": "Discuss pain, stiffness, or an injury and how acupuncture may fit your recovery plan."
+  },
+  "care_pain_alt": {
+    "other": "Chinese ink-wash illustration of an acupuncture tray and treatment cushion"
+  },
+  "care_women_title": {
+    "other": "Women’s health & fertility"
+  },
+  "care_women_text": {
+    "other": "Care for menstrual concerns, fertility treatment, pregnancy, postpartum recovery, and menopause."
+  },
+  "care_women_alt": {
+    "other": "Chinese ink-wash illustration of lotus flowers and seed pods"
+  },
+  "care_stress_title": {
+    "other": "Stress & sleep"
+  },
+  "care_stress_text": {
+    "other": "Discuss stress, disrupted sleep, and treatment suited to your symptoms and routine."
+  },
+  "care_stress_alt": {
+    "other": "Chinese ink-wash painting of a mountain lake"
+  },
+  "care_digestive_title": {
+    "other": "Digestion & metabolism"
+  },
+  "care_digestive_text": {
+    "other": "Review digestive symptoms, eating habits, and your current care with Dan."
+  },
+  "care_digestive_alt": {
+    "other": "Chinese ink-wash illustration of ginger and mandarin oranges"
+  },
+  "care_respiratory_title": {
+    "other": "Respiratory, immune & skin concerns"
+  },
+  "care_respiratory_text": {
+    "other": "Discuss seasonal allergies, breathing concerns, or skin symptoms alongside your medical care."
+  },
+  "care_respiratory_alt": {
+    "other": "Chinese ink-wash painting of loquat and bamboo"
+  },
+  "treatment_details": {
+    "other": "Treatment details"
+  },
+  "all_services": {
+    "other": "All services"
+  },
+  "dan_portrait_alt": {
+    "other": "Dan, licensed acupuncturist and herbalist"
+  },
+  "meet_practitioner": {
+    "other": "Meet your practitioner"
+  },
+  "practitioner_profession": {
+    "other": "Licensed acupuncturist & herbalist"
+  },
+  "dan_home_bio": {
+    "other": "Dan grew up in Northeast China and trained at Liaoning University of Traditional Chinese Medicine. She reviews your health history, explains treatment, and checks your comfort throughout your visit."
+  },
+  "about_dan": {
+    "other": "About Dan"
+  },
+  "first_visit_heading": {
+    "other": "Your <em>first visit.</em>"
+  },
+  "first_book_title": {
+    "other": "Book a visit"
+  },
+  "first_book_text": {
+    "other": "Choose a clinic and confirm the appointment length and fee."
+  },
+  "first_health_title": {
+    "other": "Discuss your health"
+  },
+  "first_health_text": {
+    "other": "Bring your questions and a list of medications. Dan will review your symptoms and history."
+  },
+  "first_review_title": {
+    "other": "Review your treatment"
+  },
+  "first_review_text": {
+    "other": "Dan will explain the proposed care, check your comfort, and discuss follow-up."
+  },
+  "visit_questions": {
+    "other": "Questions about your visit"
+  },
+  "booking_kicker": {
+    "other": "A little time for yourself"
+  },
+  "booking_heading": {
+    "other": "Your next step<br>can be <em>a gentle one.</em>"
+  },
+  "booking_intro": {
+    "other": "Find a time, ask a question, or simply start a conversation."
+  },
+  "find_appointment": {
+    "other": "Find an appointment"
+  },
+  "call_phone": {
+    "other": "Call 847-786-0066"
+  },
+  "connection_kicker": {
+    "other": "A personal connection"
+  },
+  "contact_dan_rich": {
+    "other": "Contact <em>Dan.</em>"
+  },
+  "card_profession": {
+    "other": "Licensed Acupuncturist<br>& Herbalist"
+  },
+  "chinese_acupuncture": {
+    "other": "Chinese acupuncture"
+  },
+  "herbal_medicine": {
+    "other": "Herbal medicine"
+  },
+  "individual_plans": {
+    "other": "Individual treatment plans"
+  },
+  "card_back_title": {
+    "other": "Acupuncture & Chinese Medicine"
+  },
+  "card_back_care": {
+    "other": "Pain & recovery · Women’s health & fertility<br>Stress & sleep · Digestive concerns<br>Respiratory, immune & skin concerns"
+  },
+  "card_locations": {
+    "other": "Chicago · Niles · Highland Park<br>Mobile visits by request"
+  },
+  "appointment_datetime": {
+    "other": "Appointment date / time"
+  },
+  "card_scroll_hint": {
+    "other": "Scroll to turn the card"
+  },
+  "contact_kicker": {
+    "other": "A place in your week"
+  },
+  "contact_heading": {
+    "other": "Acupuncture<br><em>locations & hours.</em>"
+  },
+  "contact_intro": {
+    "other": "Book acupuncture with Dan in Chicago’s Lincoln Park, Niles, or Highland Park. For at-home visits in Chicago and the suburbs, check the mobile service area below."
+  },
+  "contact_call_label": {
+    "other": "CALL TO BOOK OR ASK A QUESTION"
+  },
+  "contact_email_label": {
+    "other": "EMAIL"
+  },
+  "contact_health_privacy": {
+    "other": "Share sensitive health information during your appointment or through your clinic’s intake process."
+  },
+  "arrival_kicker": {
+    "other": "Before you arrive"
+  },
+  "arrival_heading": {
+    "other": "A little preparation.<br><em>A more comfortable visit.</em>"
+  },
+  "arrival_confirm_title": {
+    "other": "Confirm the details"
+  },
+  "arrival_confirm_text": {
+    "other": "Check your location, appointment length, and fee. Ask about forms and insurance before your visit."
+  },
+  "arrival_questions_title": {
+    "other": "Bring your questions"
+  },
+  "arrival_questions_text": {
+    "other": "Share your health history, medications, and supplements. Let Dan know about your comfort and your goals."
+  },
+  "arrival_plan_title": {
+    "other": "Plan together"
+  },
+  "arrival_plan_text": {
+    "other": "Discuss what treatment involves and when to check in again. There is no single plan that fits everyone."
+  },
+  "fees_heading": {
+    "other": "Fees & <em>insurance.</em>"
+  },
+  "fees_confirm": {
+    "other": "Confirm your clinic appointment length and fee before booking. Ask about insurance participation, treatment packages, and senior discounts."
+  },
+  "fees_amounts": {
+    "other": "A brief virtual consultation costs $20. Home visits have a $29.99 base travel fee per commute, separate from treatment fees. Confirm the total when booking."
+  },
+  "appointment_costs": {
+    "other": "Appointment costs"
+  },
+  "questions_heading": {
+    "other": "Questions before<br><em>you book?</em>"
+  },
+  "questions_intro": {
+    "other": "Read about acupuncture, treatment comfort, and what to expect. You can also call Dan to discuss the visit."
+  },
+  "nav_questions": {
+    "other": "Your questions"
+  },
+  "coverage_kicker": {
+    "other": "Care that can come to you"
+  },
+  "coverage_heading": {
+    "other": "At-home acupuncture,<br> by request."
+  },
+  "coverage_intro": {
+    "other": "Dan offers mobile acupuncture across Chicago, including Lincoln Park, and the suburbs between Highland Park, Schaumburg, Naperville, and Orland Park."
+  },
+  "coverage_check_intro": {
+    "other": "Check your ZIP, then call to confirm your address and travel fee."
+  },
+  "coverage_zip_label": {
+    "other": "Your five-digit ZIP code"
+  },
+  "coverage_placeholder": {
+    "other": "e.g. 60035"
+  },
+  "coverage_submit": {
+    "other": "Check area"
+  },
+  "coverage_initial_title": {
+    "other": "Check your ZIP code."
+  },
+  "coverage_call": {
+    "other": "Ask about a home visit"
+  },
+  "coverage_reset_aria": {
+    "other": "Show the full mobile service area"
+  },
+  "coverage_reset": {
+    "other": "View full area"
+  },
+  "coverage_explore": {
+    "other": "Select an area to explore"
+  },
+  "coverage_legend": {
+    "other": "Mobile service area"
+  },
+  "coverage_outside": {
+    "other": "Outside coverage"
+  },
+  "coverage_source_intro": {
+    "other": "Each green region shows a complete ZIP area. Census boundaries approximate postal areas. Confirm your street address when booking."
+  },
+  "coverage_source": {
+    "other": "Census map source"
+  },
+  "coverage_directory_intro": {
+    "other": "Home visits are available by request throughout these ZIP areas. Call to confirm your address, appointment, and travel fee."
+  },
+  "coverage_noscript": {
+    "other": "The full service area and ZIP list are available above. Call 847-786-0066 to check your address and request a visit."
+  },
+  "footer_tagline": {
+    "other": "Traditional medicine. Personal care."
+  },
+  "contact_dan": {
+    "other": "Contact Dan"
+  },
+  "footer_nav": {
+    "other": "Footer navigation"
+  },
+  "nav_care": {
+    "other": "Our care"
+  },
+  "nav_locations": {
+    "other": "Locations & hours"
+  },
+  "nav_dan": {
+    "other": "Meet Dan"
+  },
+  "footer_locations": {
+    "other": "Chicago · Niles · Highland Park, Illinois"
+  },
+  "privacy": {
+    "other": "Privacy"
+  },
+  "landscape_aria": {
+    "other": "Chinese ink landscape"
+  },
+  "landscape_pause": {
+    "other": "Pause landscape"
+  },
+  "landscape_credit": {
+    "other": "Landscape after Shan, Shui · Lingdong Huang"
+  },
+  "breadcrumb": {
+    "other": "Breadcrumb"
+  },
+  "home": {
+    "other": "Home"
+  },
+  "about": {
+    "other": "About"
+  },
+  "page_image_alt": {
+    "other": "Chinese ink-wash illustration for Wang’s Harmony Acupuncture"
+  },
+  "practitioner_kicker": {
+    "other": "Your practitioner"
+  },
+  "practitioner_heading": {
+    "other": "Meet Dan.<br><em>Feel heard.</em>"
+  },
+  "practitioner_credentials": {
+    "other": "Dr Dan Wang, L.Ac., Dipl OM<br>Licensed Acupuncturist & Herbalist"
+  },
+  "practitioner_intro": {
+    "other": "A personal approach to Chinese medicine, grounded in careful listening and thoughtful conversation."
+  },
+  "view_schedule": {
+    "other": "View the weekly schedule"
+  },
+  "practitioner_portrait_alt": {
+    "other": "Dr Dan Wang, licensed acupuncturist and herbalist"
+  },
+  "training_title": {
+    "other": "Training & practice"
+  },
+  "liaoning_university": {
+    "other": "Liaoning University of Traditional Chinese Medicine"
+  },
+  "acupuncture_herbs": {
+    "other": "Acupuncture & herbal medicine"
+  },
+  "schedule_kicker": {
+    "other": "Find your place"
+  },
+  "schedule_heading": {
+    "other": "Locations & <em>appointments.</em>"
+  },
+  "schedule_title": {
+    "other": "Where to find Dan this week"
+  },
+  "schedule_timezone": {
+    "other": "Usual weekly schedule · Chicago time"
+  },
+  "schedule_time_of_day": {
+    "other": "Time of day"
+  },
+  "today": {
+    "other": "Today"
+  },
+  "call_confirm": {
+    "other": "Call to confirm"
+  },
+  "no_regular_hours": {
+    "other": "No regular clinic hours"
+  },
+  "schedule_note": {
+    "other": "Book ahead. These are clinic hours; appointment availability may vary."
+  },
+  "sunday_provisional": {
+    "other": "Sunday hours are provisional. Call to confirm."
+  },
+  "directions": {
+    "other": "Directions"
+  },
+  "new_tab": {
+    "other": "(opens a new tab)"
+  },
+  "clinic_profile": {
+    "other": "Dan’s clinic profile"
+  },
+  "clinic_website": {
+    "other": "Clinic website"
+  },
+  "seo_description": {
+    "other": "Personalized acupuncture and Chinese medicine with Dan in Chicago, Niles, and Highland Park. Mobile visits available upon request."
+  },
+  "seo_job_title": {
+    "other": "Licensed Acupuncturist and Herbalist"
+  },
+  "testimonials_kicker": {
+    "other": "Patient experiences"
+  },
+  "testimonials_heading": {
+    "other": "In their <em>words.</em>"
+  },
+  "testimonial_previous": {
+    "other": "Previous testimonial"
+  },
+  "testimonial_next": {
+    "other": "Next testimonial"
+  },
+  "testimonials_region": {
+    "other": "Patient quotes"
+  },
+  "testimonial_anonymous": {
+    "other": "Patient testimonial"
+  },
+  "testimonials_scroll": {
+    "other": "Scroll or swipe to read more."
+  },
+  "testimonials_caveat": {
+    "other": "Individual experiences. Results vary."
+  },
+  "read_answer": {
+    "other": "Read the answer"
+  },
+  "choose_visit": {
+    "other": "Choosing a visit"
+  },
+  "faq_booking_before": {
+    "other": "You can book without choosing a treatment first. Call Dan to discuss your concerns, or "
+  },
+  "faq_view_schedule": {
+    "other": "view the weekly schedule"
+  },
+  "faq_booking_after": {
+    "other": " and clinic booking options."
+  },
+  "faq_home_before": {
+    "other": "For a home visit, "
+  },
+  "faq_check_zip": {
+    "other": "check your ZIP code"
+  },
+  "faq_home_after": {
+    "other": " and call to confirm the address and availability."
+  },
+  "blog_note": {
+    "other": "This information is general. Your appointment is the place to discuss your own health history, questions, and care."
+  },
+  "all_questions": {
+    "other": "All questions"
+  },
+  "choosing_appointment": {
+    "other": "Choosing your appointment"
+  },
+  "service_ask": {
+    "other": "You can ask Dan which service suits your concerns."
+  },
+  "fees_booking": {
+    "other": "Fees, insurance & booking"
+  },
+  "at_appointment": {
+    "other": "At your appointment"
+  },
+  "read_more": {
+    "other": "Read more"
+  },
+  "error_kicker": {
+    "other": "A small detour"
+  },
+  "error_heading": {
+    "other": "Let’s find<br><em>your way back.</em>"
+  },
+  "error_intro": {
+    "other": "This page isn’t here, but your next step can still be a gentle one."
+  },
+  "return_home": {
+    "other": "Return home"
+  },
+  "day_Mon": {
+    "other": "Mon"
+  },
+  "day_full_Mon": {
+    "other": "Monday"
+  },
+  "day_Tue": {
+    "other": "Tue"
+  },
+  "day_full_Tue": {
+    "other": "Tuesday"
+  },
+  "day_Wed": {
+    "other": "Wed"
+  },
+  "day_full_Wed": {
+    "other": "Wednesday"
+  },
+  "day_Thu": {
+    "other": "Thu"
+  },
+  "day_full_Thu": {
+    "other": "Thursday"
+  },
+  "day_Fri": {
+    "other": "Fri"
+  },
+  "day_full_Fri": {
+    "other": "Friday"
+  },
+  "day_Sat": {
+    "other": "Sat"
+  },
+  "day_full_Sat": {
+    "other": "Saturday"
+  },
+  "day_Sun": {
+    "other": "Sun"
+  },
+  "day_full_Sun": {
+    "other": "Sunday"
+  },
+  "period_Morning": {
+    "other": "Morning"
+  },
+  "period_Afternoon": {
+    "other": "Afternoon"
+  },
+  "clinic_elite-healthcare_city": {
+    "other": "Chicago"
+  },
+  "clinic_ginkgo-wellness_city": {
+    "other": "Niles"
+  },
+  "clinic_pulling-down-the-moon_city": {
+    "other": "Highland Park"
+  },
+  "clinic_elite-healthcare_hours": {
+    "other": "Monday & Wednesday · 12–6 pm"
+  },
+  "clinic_ginkgo-wellness_hours": {
+    "other": "Thursday · 10 am–6 pm"
+  },
+  "clinic_pulling-down-the-moon_hours": {
+    "other": "Sunday · 9 am–6 pm"
+  },
+  "clinic_elite-healthcare_booking": {
+    "other": "Book in Chicago"
+  },
+  "clinic_ginkgo-wellness_booking": {
+    "other": "Call to book in Niles"
+  },
+  "clinic_pulling-down-the-moon_booking": {
+    "other": "Call to book in Highland Park"
+  },
+  "lincoln_park": {
+    "other": "Lincoln Park"
+  },
+  "coverage_initial_text": {
+    "other": "The service area includes {{ .Count }} ZIP areas, shown in full in green. Gray areas are outside it."
+  },
+  "coverage_directory_title": {
+    "other": "View {{ .Count }} ZIP codes in the service area"
+  },
+  "coverage_prefix": {
+    "other": "{{ .Prefix }} area"
+  },
+  "testimonial_translation": {
+    "other": "Translated from English"
+  },
+  "testimonial_quote_0": {
+    "other": ""
+  },
+  "testimonial_quote_1": {
+    "other": ""
+  },
+  "mobile_visits": {
+    "other": "Mobile visits"
+  },
+  "brand_guide": {
+    "other": "Brand & media guide"
+  },
+  "download_media": {
+    "other": "Download media pack"
+  },
+  "dan_name": {
+    "other": "Dr Dan Wang"
+  },
+  "coverage_svg_title": {
+    "other": "Mobile service area: Highland Park, Schaumburg, Naperville, Orland Park, and Chicago"
+  },
+  "coverage_svg_description": {
+    "other": "{{ .Count }} complete ZIP areas are highlighted in green for mobile visits by request. Gray ZIP areas are outside the mapped service area. Use the ZIP lookup or complete text list."
+  },
+  "coverage_svg_suffix": {
+    "other": ". Mobile visits by request."
+  },
+  "coverage_svg_north": {
+    "other": "N"
+  },
+  "coverage_svg_region": {
+    "other": "Northeastern Illinois"
+  },
+  "coverage_svg_lake": {
+    "other": "Lake Michigan"
+  }
+}

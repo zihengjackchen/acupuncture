@@ -1,0 +1,611 @@
+{
+  "hero_locations": {
+    "other": "林肯公园 · Niles · Highland Park"
+  },
+  "hero_title": {
+    "other": "在芝加哥，<br>遇见<em>中医针灸。</em>"
+  },
+  "hero_intro": {
+    "other": "Dan Wang（L.Ac., Dipl OM）在芝加哥林肯公园、Niles 和 Highland Park 提供针灸与中医服务，也可预约芝加哥及周边郊区的上门诊疗。"
+  },
+  "book_appointment": {
+    "other": "预约就诊"
+  },
+  "explore_care": {
+    "other": "了解诊疗服务"
+  },
+  "hero_alt": {
+    "other": "水墨插画：针灸师为平躺的患者诊疗"
+  },
+  "care_title": {
+    "other": "从您的感受出发，<br><em>关照身心。</em>"
+  },
+  "care_intro": {
+    "other": "选择您关心的问题，了解相关诊疗方式。"
+  },
+  "care_image_alt": {
+    "other": "中医针灸主题水墨插画"
+  },
+  "care_pain_title": {
+    "other": "疼痛与康复"
+  },
+  "care_pain_text": {
+    "other": "与王医生讨论疼痛、僵硬或损伤，以及针灸如何配合您的康复计划。"
+  },
+  "care_pain_alt": {
+    "other": "水墨插画：针灸器具托盘与治疗垫"
+  },
+  "care_women_title": {
+    "other": "女性健康与生育支持"
+  },
+  "care_women_text": {
+    "other": "关注月经问题、生育治疗、孕期、产后恢复及更年期的诊疗需求。"
+  },
+  "care_women_alt": {
+    "other": "水墨插画：荷花与莲蓬"
+  },
+  "care_stress_title": {
+    "other": "压力与睡眠"
+  },
+  "care_stress_text": {
+    "other": "讨论压力和睡眠困扰，寻找适合您症状与日常生活的诊疗方案。"
+  },
+  "care_stress_alt": {
+    "other": "山间湖泊水墨画"
+  },
+  "care_digestive_title": {
+    "other": "消化与代谢"
+  },
+  "care_digestive_text": {
+    "other": "与王医生一起了解您的消化症状、饮食习惯和现有治疗。"
+  },
+  "care_digestive_alt": {
+    "other": "水墨插画：生姜与柑橘"
+  },
+  "care_respiratory_title": {
+    "other": "呼吸、免疫与皮肤问题"
+  },
+  "care_respiratory_text": {
+    "other": "在现有医疗照护的基础上，讨论季节性过敏、呼吸或皮肤方面的困扰。"
+  },
+  "care_respiratory_alt": {
+    "other": "枇杷与竹子水墨画"
+  },
+  "treatment_details": {
+    "other": "了解诊疗详情"
+  },
+  "all_services": {
+    "other": "所有诊疗服务"
+  },
+  "dan_portrait_alt": {
+    "other": "持证针灸师与中草药从业者 Dan Wang"
+  },
+  "meet_practitioner": {
+    "other": "认识您的针灸师"
+  },
+  "practitioner_profession": {
+    "other": "持证针灸师与中草药从业者"
+  },
+  "dan_home_bio": {
+    "other": "王医生在中国东北长大，毕业于辽宁中医药大学。她会仔细了解您的健康史，说明诊疗方案，并在就诊过程中持续关注您的感受。"
+  },
+  "about_dan": {
+    "other": "了解王医生"
+  },
+  "first_visit_heading": {
+    "other": "<em>初次就诊。</em>"
+  },
+  "first_book_title": {
+    "other": "预约就诊"
+  },
+  "first_book_text": {
+    "other": "选择诊所，并确认就诊时长和费用。"
+  },
+  "first_health_title": {
+    "other": "交流健康状况"
+  },
+  "first_health_text": {
+    "other": "带上您的问题和用药清单。王医生会了解您的症状和病史。"
+  },
+  "first_review_title": {
+    "other": "了解诊疗安排"
+  },
+  "first_review_text": {
+    "other": "王医生会说明拟定的诊疗方案，关注您的舒适度，并讨论后续安排。"
+  },
+  "visit_questions": {
+    "other": "就诊常见问题"
+  },
+  "booking_kicker": {
+    "other": "留一点时间给自己"
+  },
+  "booking_heading": {
+    "other": "照顾自己，<br>从<em>这一步开始。</em>"
+  },
+  "booking_intro": {
+    "other": "预约一个时间，问一个问题，或先聊聊您的需求。"
+  },
+  "find_appointment": {
+    "other": "查看预约方式"
+  },
+  "call_phone": {
+    "other": "致电 847-786-0066"
+  },
+  "connection_kicker": {
+    "other": "随时与我们联系"
+  },
+  "contact_dan_rich": {
+    "other": "联系<em>王医生。</em>"
+  },
+  "card_profession": {
+    "other": "持证针灸师<br>与中草药从业者"
+  },
+  "chinese_acupuncture": {
+    "other": "中医针灸"
+  },
+  "herbal_medicine": {
+    "other": "中草药"
+  },
+  "individual_plans": {
+    "other": "个体化诊疗方案"
+  },
+  "card_back_title": {
+    "other": "针灸与中医"
+  },
+  "card_back_care": {
+    "other": "疼痛与康复 · 女性健康与生育支持<br>压力与睡眠 · 消化问题<br>呼吸、免疫与皮肤问题"
+  },
+  "card_locations": {
+    "other": "芝加哥 · Niles · Highland Park<br>可预约上门诊疗"
+  },
+  "appointment_datetime": {
+    "other": "预约日期 / 时间"
+  },
+  "card_scroll_hint": {
+    "other": "向下滚动，查看名片背面"
+  },
+  "contact_kicker": {
+    "other": "为健康安排一点时间"
+  },
+  "contact_heading": {
+    "other": "针灸诊所<br><em>地址与时间。</em>"
+  },
+  "contact_intro": {
+    "other": "可在芝加哥林肯公园、Niles 或 Highland Park 预约王医生的针灸诊疗。如需芝加哥及郊区的上门服务，请查看下方服务范围。"
+  },
+  "contact_call_label": {
+    "other": "电话预约或咨询"
+  },
+  "contact_email_label": {
+    "other": "电子邮箱"
+  },
+  "contact_health_privacy": {
+    "other": "请在就诊时或通过诊所的登记流程提供敏感健康信息。"
+  },
+  "arrival_kicker": {
+    "other": "就诊前的准备"
+  },
+  "arrival_heading": {
+    "other": "提前做些准备，<br><em>就诊更加从容。</em>"
+  },
+  "arrival_confirm_title": {
+    "other": "确认就诊安排"
+  },
+  "arrival_confirm_text": {
+    "other": "确认诊所地址、就诊时长与费用，并提前询问所需表格和保险事宜。"
+  },
+  "arrival_questions_title": {
+    "other": "带上您的问题"
+  },
+  "arrival_questions_text": {
+    "other": "告知王医生您的病史、药物和补充剂使用情况，也请说出您的感受与期望。"
+  },
+  "arrival_plan_title": {
+    "other": "共同商量方案"
+  },
+  "arrival_plan_text": {
+    "other": "了解诊疗内容和复诊安排。每个人的情况不同，方案也应有所不同。"
+  },
+  "fees_heading": {
+    "other": "费用与<em>保险。</em>"
+  },
+  "fees_confirm": {
+    "other": "预约前请确认就诊时长和费用，并询问诊所接受的保险、疗程套餐和长者优惠。"
+  },
+  "fees_amounts": {
+    "other": "简短线上咨询费用为 $20。上门诊疗每程基础交通费为 $29.99，治疗费另计。请在预约时确认总费用。"
+  },
+  "appointment_costs": {
+    "other": "就诊费用"
+  },
+  "questions_heading": {
+    "other": "预约前，<br><em>还有疑问？</em>"
+  },
+  "questions_intro": {
+    "other": "了解针灸、治疗时的感受和就诊流程，也欢迎致电王医生咨询。"
+  },
+  "nav_questions": {
+    "other": "常见问题"
+  },
+  "coverage_kicker": {
+    "other": "在家也能接受诊疗"
+  },
+  "coverage_heading": {
+    "other": "上门针灸，<br>可按需预约。"
+  },
+  "coverage_intro": {
+    "other": "王医生提供芝加哥（包括林肯公园）及 Highland Park、Schaumburg、Naperville 与 Orland Park 之间郊区的上门针灸服务。"
+  },
+  "coverage_check_intro": {
+    "other": "先查询邮政编码，再致电确认具体地址和交通费。"
+  },
+  "coverage_zip_label": {
+    "other": "您的五位数邮政编码"
+  },
+  "coverage_placeholder": {
+    "other": "例如 60035"
+  },
+  "coverage_submit": {
+    "other": "查询范围"
+  },
+  "coverage_initial_title": {
+    "other": "查询您的邮政编码。"
+  },
+  "coverage_call": {
+    "other": "咨询上门诊疗"
+  },
+  "coverage_reset_aria": {
+    "other": "显示完整上门服务范围"
+  },
+  "coverage_reset": {
+    "other": "查看全部范围"
+  },
+  "coverage_explore": {
+    "other": "选择区域，了解详情"
+  },
+  "coverage_legend": {
+    "other": "上门服务范围"
+  },
+  "coverage_outside": {
+    "other": "服务范围以外"
+  },
+  "coverage_source_intro": {
+    "other": "每块绿色区域代表一个完整邮编区域。人口普查边界仅近似反映邮政区域，请在预约时确认具体街道地址。"
+  },
+  "coverage_source": {
+    "other": "人口普查地图来源"
+  },
+  "coverage_directory_intro": {
+    "other": "以下邮编区域均可预约上门诊疗。请致电确认地址、就诊时间与交通费。"
+  },
+  "coverage_noscript": {
+    "other": "上方列出了完整服务范围和邮编。请致电 847-786-0066 确认地址并预约上门诊疗。"
+  },
+  "footer_tagline": {
+    "other": "传承中医，悉心照护。"
+  },
+  "contact_dan": {
+    "other": "联系王医生"
+  },
+  "footer_nav": {
+    "other": "页脚导航"
+  },
+  "nav_care": {
+    "other": "诊疗服务"
+  },
+  "nav_locations": {
+    "other": "地址与时间"
+  },
+  "nav_dan": {
+    "other": "认识王医生"
+  },
+  "footer_locations": {
+    "other": "伊利诺伊州：芝加哥 · Niles · Highland Park"
+  },
+  "privacy": {
+    "other": "隐私说明"
+  },
+  "landscape_aria": {
+    "other": "中国水墨山水画"
+  },
+  "landscape_pause": {
+    "other": "暂停山水动画"
+  },
+  "landscape_credit": {
+    "other": "山水画改编自黄灵东《山水》"
+  },
+  "breadcrumb": {
+    "other": "当前位置"
+  },
+  "home": {
+    "other": "首页"
+  },
+  "about": {
+    "other": "关于"
+  },
+  "page_image_alt": {
+    "other": "Wang’s Harmony Acupuncture 中医诊疗水墨插画"
+  },
+  "practitioner_kicker": {
+    "other": "您的针灸师"
+  },
+  "practitioner_heading": {
+    "other": "认识王医生，<br><em>让您的感受被听见。</em>"
+  },
+  "practitioner_credentials": {
+    "other": "Dan Wang 医生，L.Ac., Dipl OM<br>持证针灸师与中草药从业者"
+  },
+  "practitioner_intro": {
+    "other": "从认真倾听与充分交流开始，为您提供合适的中医诊疗。"
+  },
+  "view_schedule": {
+    "other": "查看每周出诊安排"
+  },
+  "practitioner_portrait_alt": {
+    "other": "Dan Wang 医生，持证针灸师与中草药从业者"
+  },
+  "training_title": {
+    "other": "教育与执业"
+  },
+  "liaoning_university": {
+    "other": "辽宁中医药大学"
+  },
+  "acupuncture_herbs": {
+    "other": "针灸与中草药"
+  },
+  "schedule_kicker": {
+    "other": "选择适合您的诊所"
+  },
+  "schedule_heading": {
+    "other": "诊所地址与<em>预约。</em>"
+  },
+  "schedule_title": {
+    "other": "王医生每周出诊安排"
+  },
+  "schedule_timezone": {
+    "other": "常规每周安排 · 美国中部时间（芝加哥）"
+  },
+  "schedule_time_of_day": {
+    "other": "时段"
+  },
+  "today": {
+    "other": "今天"
+  },
+  "call_confirm": {
+    "other": "请致电确认"
+  },
+  "no_regular_hours": {
+    "other": "无固定门诊时间"
+  },
+  "schedule_note": {
+    "other": "请提前预约。以上为门诊时间，具体可预约时段可能有所不同。"
+  },
+  "sunday_provisional": {
+    "other": "周日时间暂定，请致电确认。"
+  },
+  "directions": {
+    "other": "路线导航"
+  },
+  "new_tab": {
+    "other": "（在新标签页打开）"
+  },
+  "clinic_profile": {
+    "other": "王医生在该诊所的简介"
+  },
+  "clinic_website": {
+    "other": "诊所网站"
+  },
+  "seo_description": {
+    "other": "Dan Wang 在芝加哥、Niles 和 Highland Park 提供个体化针灸与中医服务，也可预约上门诊疗。"
+  },
+  "seo_job_title": {
+    "other": "持证针灸师与中草药从业者"
+  },
+  "testimonials_kicker": {
+    "other": "患者分享"
+  },
+  "testimonials_heading": {
+    "other": "听听<em>他们怎么说。</em>"
+  },
+  "testimonial_previous": {
+    "other": "上一条患者分享"
+  },
+  "testimonial_next": {
+    "other": "下一条患者分享"
+  },
+  "testimonials_region": {
+    "other": "患者评价"
+  },
+  "testimonial_anonymous": {
+    "other": "患者分享"
+  },
+  "testimonials_scroll": {
+    "other": "横向滚动或滑动，阅读更多分享。"
+  },
+  "testimonials_caveat": {
+    "other": "以上为个人经历，实际效果因人而异。"
+  },
+  "read_answer": {
+    "other": "阅读解答"
+  },
+  "choose_visit": {
+    "other": "选择就诊方式"
+  },
+  "faq_booking_before": {
+    "other": "预约前无需先决定治疗方式。您可以致电王医生讨论需求，或"
+  },
+  "faq_view_schedule": {
+    "other": "查看每周出诊安排"
+  },
+  "faq_booking_after": {
+    "other": "及各诊所的预约方式。"
+  },
+  "faq_home_before": {
+    "other": "如需上门诊疗，请先"
+  },
+  "faq_check_zip": {
+    "other": "查询邮政编码"
+  },
+  "faq_home_after": {
+    "other": "，再致电确认地址和可预约时间。"
+  },
+  "blog_note": {
+    "other": "以上为一般性信息。请在就诊时与王医生讨论您个人的健康史、疑问和诊疗需求。"
+  },
+  "all_questions": {
+    "other": "所有常见问题"
+  },
+  "choosing_appointment": {
+    "other": "选择适合的就诊方式"
+  },
+  "service_ask": {
+    "other": "您可以向王医生咨询哪些服务适合您的需求。"
+  },
+  "fees_booking": {
+    "other": "费用、保险与预约"
+  },
+  "at_appointment": {
+    "other": "就诊时"
+  },
+  "read_more": {
+    "other": "阅读更多"
+  },
+  "error_kicker": {
+    "other": "页面走失了"
+  },
+  "error_heading": {
+    "other": "让我们一起<br><em>返回首页。</em>"
+  },
+  "error_intro": {
+    "other": "您访问的页面不存在。请返回首页，查找需要的信息。"
+  },
+  "return_home": {
+    "other": "返回首页"
+  },
+  "day_Mon": {
+    "other": "周一"
+  },
+  "day_full_Mon": {
+    "other": "星期一"
+  },
+  "day_Tue": {
+    "other": "周二"
+  },
+  "day_full_Tue": {
+    "other": "星期二"
+  },
+  "day_Wed": {
+    "other": "周三"
+  },
+  "day_full_Wed": {
+    "other": "星期三"
+  },
+  "day_Thu": {
+    "other": "周四"
+  },
+  "day_full_Thu": {
+    "other": "星期四"
+  },
+  "day_Fri": {
+    "other": "周五"
+  },
+  "day_full_Fri": {
+    "other": "星期五"
+  },
+  "day_Sat": {
+    "other": "周六"
+  },
+  "day_full_Sat": {
+    "other": "星期六"
+  },
+  "day_Sun": {
+    "other": "周日"
+  },
+  "day_full_Sun": {
+    "other": "星期日"
+  },
+  "period_Morning": {
+    "other": "上午"
+  },
+  "period_Afternoon": {
+    "other": "下午"
+  },
+  "clinic_elite-healthcare_city": {
+    "other": "芝加哥"
+  },
+  "clinic_ginkgo-wellness_city": {
+    "other": "Niles"
+  },
+  "clinic_pulling-down-the-moon_city": {
+    "other": "Highland Park"
+  },
+  "clinic_elite-healthcare_hours": {
+    "other": "周一、周三 · 中午12点–下午6点"
+  },
+  "clinic_ginkgo-wellness_hours": {
+    "other": "周四 · 上午10点–下午6点"
+  },
+  "clinic_pulling-down-the-moon_hours": {
+    "other": "周日 · 上午9点–下午6点"
+  },
+  "clinic_elite-healthcare_booking": {
+    "other": "预约芝加哥门诊"
+  },
+  "clinic_ginkgo-wellness_booking": {
+    "other": "致电预约 Niles 门诊"
+  },
+  "clinic_pulling-down-the-moon_booking": {
+    "other": "致电预约 Highland Park 门诊"
+  },
+  "lincoln_park": {
+    "other": "林肯公园"
+  },
+  "coverage_initial_text": {
+    "other": "服务范围包含 {{ .Count }} 个邮编区域，绿色显示完整服务区域，灰色为服务范围以外。"
+  },
+  "coverage_directory_title": {
+    "other": "查看服务范围内的 {{ .Count }} 个邮政编码"
+  },
+  "coverage_prefix": {
+    "other": "{{ .Prefix }} 开头的邮编"
+  },
+  "testimonial_translation": {
+    "other": "译自英文原文"
+  },
+  "testimonial_quote_0": {
+    "other": "王医生是一位非常出色的医生。她十分细心，会认真倾听您的具体感受。我已经找她看诊三年了，她帮助我改善了多种问题，包括甲状腺和消化方面的问题。最让我高兴的是，她还帮助我怀孕，并在孕期给予了帮助。她亲切、尊重患者，真的是一位很好的人！"
+  },
+  "testimonial_quote_1": {
+    "other": "王医生是最棒的。她帮助我的血脂得到明显改善，也让我在整个过程中充满希望。她亲切、医术娴熟、细心又容易相处，我非常愿意向大家推荐她。"
+  },
+  "mobile_visits": {
+    "other": "上门诊疗"
+  },
+  "brand_guide": {
+    "other": "品牌与媒体指南（英文）"
+  },
+  "download_media": {
+    "other": "下载媒体素材包（英文）"
+  },
+  "dan_name": {
+    "other": "Dan Wang 医生"
+  },
+  "coverage_svg_title": {
+    "other": "上门诊疗服务区域：Highland Park、Schaumburg、Naperville、Orland Park 和芝加哥"
+  },
+  "coverage_svg_description": {
+    "other": "{{ .Count }} 个完整邮区以绿色标出，可预约上门诊疗。灰色邮区不在地图所示的服务范围内。请使用邮编查询或完整邮编列表。"
+  },
+  "coverage_svg_suffix": {
+    "other": "。可预约上门诊疗。"
+  },
+  "coverage_svg_north": {
+    "other": "北"
+  },
+  "coverage_svg_region": {
+    "other": "伊利诺伊州东北部"
+  },
+  "coverage_svg_lake": {
+    "other": "密歇根湖"
+  }
+}

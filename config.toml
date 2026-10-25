@@ -2,6 +2,23 @@ baseURL = "https://www.wangsharmonyacu.com/"
 languageCode = "en-us"
 title = "Wang's Harmony Acupuncture"
 enableRobotsTXT = true
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages.en]
+  languageCode = "en-US"
+  languageName = "English"
+  weight = 1
+
+[languages.zh]
+  languageCode = "zh-Hans"
+  languageName = "中文"
+  weight = 2
+  hasCJKLanguage = true
+
+# Preserve explicit translated links and tel: URLs in Markdown.
+[markup.goldmark.renderHooks.link]
+  useEmbedded = "never"
 
 [module]
   [module.hugoVersion]

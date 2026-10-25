@@ -1,14 +1,26 @@
 <header class="site-header">
+  {{ $zh := eq .Lang "zh" }}
+  {{ $page := . }}
   <div class="shell header-inner">
-    <a class="brand" href="{{ "" | relURL }}" aria-label="Wang’s Harmony Acupuncture — home">
+    <a class="brand" href="{{ .Site.Home.RelPermalink }}" aria-label="{{ if $zh }}Wang’s Harmony Acupuncture — 首页{{ else }}Wang’s Harmony Acupuncture — home{{ end }}">
       <img class="brand-logo" src="{{ "images/brand/logo-horizontal.svg" | relURL }}" width="260" height="66" alt="Wang’s Harmony Acupuncture">
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span>Menu</span><span class="menu-lines" aria-hidden="true"></span></button>
-    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-      <a href="{{ "services/" | relURL }}" {{ if eq .Section "services" }}aria-current="page"{{ end }}>Our care</a>
-      <a href="{{ "contact/" | relURL }}" {{ if eq .RelPermalink "/contact/" }}aria-current="page"{{ end }}>Locations & hours</a>
-      <a href="{{ "team/" | relURL }}" {{ if eq .Section "team" }}aria-current="page"{{ end }}>Meet Dan</a>
-      <a href="{{ "blog/" | relURL }}" {{ if eq .Section "blog" }}aria-current="page"{{ end }}>Your questions</a>
+    <nav id="main-nav" class="main-nav" aria-label="{{ if $zh }}主导航{{ else }}Main navigation{{ end }}">
+      <a href="{{ "services/" | relLangURL }}" {{ if eq .Section "services" }}aria-current="page"{{ end }}>{{ if $zh }}诊疗服务{{ else }}Our care{{ end }}</a>
+      <a href="{{ "contact/" | relLangURL }}" {{ if eq .RelPermalink ("contact/" | relLangURL) }}aria-current="page"{{ end }}>{{ if $zh }}地点与时间{{ else }}Locations & hours{{ end }}</a>
+      <a href="{{ "team/" | relLangURL }}" {{ if eq .Section "team" }}aria-current="page"{{ end }}>{{ if $zh }}认识王医生{{ else }}Meet Dan{{ end }}</a>
+      <a href="{{ "blog/" | relLangURL }}" {{ if eq .Section "blog" }}aria-current="page"{{ end }}>{{ if $zh }}常见问题{{ else }}Your questions{{ end }}</a>
     </nav>
+    <div class="header-controls">
+      <nav class="language-switch" aria-label="Language / 语言">
+        {{ range .Sites }}
+          {{ $language := .Language.Lang }}
+          {{ $target := .Home.RelPermalink }}
+          {{ range $page.AllTranslations }}{{ if eq .Lang $language }}{{ $target = .RelPermalink }}{{ end }}{{ end }}
+          <a href="{{ $target }}" lang="{{ .Language.LanguageCode }}" hreflang="{{ .Language.LanguageCode }}"{{ if eq $page.Lang $language }} aria-current="true"{{ end }}>{{ .Language.LanguageName }}</a>
+        {{ end }}
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span>{{ if $zh }}菜单{{ else }}Menu{{ end }}</span><span class="menu-lines" aria-hidden="true"></span></button>
+    </div>
   </div>
 </header>

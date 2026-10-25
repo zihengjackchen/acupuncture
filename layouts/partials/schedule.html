@@ -1,19 +1,19 @@
 <section id="locations" class="section location-section">
   <div class="shell">
-    <div class="section-heading" data-reveal><span class="eyebrow">Find your place</span><h2>Locations & <em>appointments.</em></h2></div>
-    <div class="schedule-heading"><h3 id="schedule-title">Where to find Dan this week</h3><span>Usual weekly schedule · Chicago time</span></div>
+    <div class="section-heading" data-reveal><span class="eyebrow">{{ i18n "schedule_kicker" }}</span><h2>{{ i18n "schedule_heading" | safeHTML }}</h2></div>
+    <div class="schedule-heading"><h3 id="schedule-title">{{ i18n "schedule_title" }}</h3><span>{{ i18n "schedule_timezone" }}</span></div>
     {{ $days := slice (dict "name" "Monday" "short" "Mon" "index" 1) (dict "name" "Tuesday" "short" "Tue" "index" 2) (dict "name" "Wednesday" "short" "Wed" "index" 3) (dict "name" "Thursday" "short" "Thu" "index" 4) (dict "name" "Friday" "short" "Fri" "index" 5) (dict "name" "Saturday" "short" "Sat" "index" 6) (dict "name" "Sunday" "short" "Sun" "index" 0) }}
     <table class="clinic-calendar" aria-labelledby="schedule-title">
-      <thead><tr><th scope="col"><span class="sr-only">Time of day</span></th>
+      <thead><tr><th scope="col"><span class="sr-only">{{ i18n "schedule_time_of_day" }}</span></th>
         {{ range $days }}
         {{ $hasClinic := false }}{{ $index := .index }}
         {{ range site.Data.clinics }}{{ range .schedule }}{{ if eq (int .day_index) $index }}{{ $hasClinic = true }}{{ end }}{{ end }}{{ end }}
-        <th scope="col" data-day="{{ .short }}" class="{{ if not $hasClinic }}calendar-off-day{{ end }}"><span aria-label="{{ .name }}">{{ .short }}</span><small class="today-label" hidden>Today</small></th>
+        <th scope="col" data-day="{{ .short }}" class="{{ if not $hasClinic }}calendar-off-day{{ end }}"><span aria-label="{{ i18n (printf "day_full_%s" .short) }}">{{ i18n (printf "day_%s" .short) }}</span><small class="today-label" hidden>{{ i18n "today" }}</small></th>
         {{ end }}
       </tr></thead>
       <tbody>
         {{ range slice (dict "label" "Morning" "start" "09:00" "end" "12:00") (dict "label" "Afternoon" "start" "12:00" "end" "18:00") }}
-        {{ $period := . }}<tr data-period="{{ lower .label }}"><th scope="row">{{ .label }}</th>
+        {{ $period := . }}<tr data-period="{{ lower .label }}"><th scope="row">{{ i18n (printf "period_%s" .label) }}</th>
           {{ range $days }}
           {{ $day := . }}{{ $clinic := false }}{{ $slot := dict }}
           {{ range site.Data.clinics }}{{ $place := . }}{{ range .schedule }}{{ if eq (int .day_index) $day.index }}{{ $clinic = $place }}{{ $slot = . }}{{ end }}{{ end }}{{ end }}
@@ -21,24 +21,24 @@
           <td class="{{ if $active }}calendar-available{{ end }} {{ if not $clinic }}calendar-off-day{{ end }}">
             {{ if $active }}
             {{ $start := cond (lt $slot.start $period.start) $period.start $slot.start }}{{ $end := cond (gt $slot.end $period.end) $period.end $slot.end }}
-            <a href="#{{ $clinic.id }}"><strong>{{ $clinic.short_name }}</strong><span>{{ partial "time-label.html" $start }}–{{ partial "time-label.html" $end }}</span>{{ if $slot.provisional }}<small>Call to confirm</small>{{ end }}</a>
-            {{ else }}<span aria-label="No regular clinic hours">—</span>{{ end }}
+            <a href="#{{ $clinic.id }}"><strong>{{ i18n (printf "clinic_%s_city" $clinic.id) }}</strong><span>{{ partial "time-label.html" $start }}–{{ partial "time-label.html" $end }}</span>{{ if $slot.provisional }}<small>{{ i18n "call_confirm" }}</small>{{ end }}</a>
+            {{ else }}<span aria-label="{{ i18n "no_regular_hours" }}">—</span>{{ end }}
           </td>
           {{ end }}
         </tr>{{ end }}
       </tbody>
     </table>
-    <p class="schedule-note">Book ahead. These are clinic hours; appointment availability may vary.</p>
+    <p class="schedule-note">{{ i18n "schedule_note" }}</p>
     <div class="clinic-grid">
       {{ range .Site.Data.clinics }}
       <article class="clinic" id="{{ .id }}" data-reveal>
-        <div class="clinic-top"><span class="eyebrow">{{ .address.city }}{{ if eq .id "elite-healthcare" }} · Lincoln Park{{ end }}</span>{{ partial "icon.html" "pin" }}</div>
+        <div class="clinic-top"><span class="eyebrow">{{ i18n (printf "clinic_%s_city" .id) }}{{ if eq .id "elite-healthcare" }} · {{ i18n "lincoln_park" }}{{ end }}</span>{{ partial "icon.html" "pin" }}</div>
         <h3>{{ .name }}</h3><address>{{ .address.street }}{{ with .address.suite }}, {{ . }}{{ end }}<br>{{ .address.city }}, {{ .address.state }} {{ .address.zip }}</address>
-        <div class="clinic-hours">{{ .schedule_label }}</div>
-        {{ if eq .id "pulling-down-the-moon" }}<p class="small-note">Sunday hours are provisional. Call to confirm.</p>{{ end }}
-        <div class="clinic-actions"><a class="button {{ if eq .id "pulling-down-the-moon" }}button-outline{{ end }}" href="{{ .booking_url | safeURL }}">{{ .booking_label }} {{ partial "icon.html" "diagonal" }}</a><a class="text-link" href="{{ .directions_url }}" target="_blank" rel="noopener noreferrer">Directions <span class="sr-only">(opens a new tab)</span>{{ partial "icon.html" "diagonal" }}</a></div>
-        {{ with .profile_url }}<a class="clinic-profile" href="{{ . }}">Dan’s clinic profile {{ partial "icon.html" "arrow" }}</a>{{ end }}
-        {{ with .website_url }}<a class="clinic-profile" href="{{ . }}">Clinic website {{ partial "icon.html" "arrow" }}</a>{{ end }}
+        <div class="clinic-hours">{{ i18n (printf "clinic_%s_hours" .id) }}</div>
+        {{ if eq .id "pulling-down-the-moon" }}<p class="small-note">{{ i18n "sunday_provisional" }}</p>{{ end }}
+        <div class="clinic-actions"><a class="button {{ if eq .id "pulling-down-the-moon" }}button-outline{{ end }}" href="{{ .booking_url | safeURL }}">{{ i18n (printf "clinic_%s_booking" .id) }} {{ partial "icon.html" "diagonal" }}</a><a class="text-link" href="{{ .directions_url }}" target="_blank" rel="noopener noreferrer">{{ i18n "directions" }} <span class="sr-only">{{ i18n "new_tab" }}</span>{{ partial "icon.html" "diagonal" }}</a></div>
+        {{ with .profile_url }}<a class="clinic-profile" href="{{ . }}">{{ i18n "clinic_profile" }} {{ partial "icon.html" "arrow" }}</a>{{ end }}
+        {{ with .website_url }}<a class="clinic-profile" href="{{ . }}">{{ i18n "clinic_website" }} {{ partial "icon.html" "arrow" }}</a>{{ end }}
       </article>
       {{ end }}
     </div>

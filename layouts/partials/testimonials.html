@@ -1,20 +1,20 @@
 <section class="section testimonials-section" aria-labelledby="testimonials-heading">
   <div class="shell">
     <div class="section-heading testimonials-heading">
-      <div><span class="eyebrow">Patient experiences</span><h2 id="testimonials-heading">In their <em>words.</em></h2></div>
+      <div><span class="eyebrow">{{ i18n "testimonials_kicker" }}</span><h2 id="testimonials-heading">{{ i18n "testimonials_heading" | safeHTML }}</h2></div>
       <div class="testimonials-controls" data-testimonial-controls hidden>
-        <button type="button" class="testimonial-previous" data-testimonial-previous aria-label="Previous testimonial" aria-controls="patient-testimonials" disabled>{{ partial "icon.html" "arrow" }}</button>
-        <button type="button" data-testimonial-next aria-label="Next testimonial" aria-controls="patient-testimonials">{{ partial "icon.html" "arrow" }}</button>
+        <button type="button" class="testimonial-previous" data-testimonial-previous aria-label="{{ i18n "testimonial_previous" }}" aria-controls="patient-testimonials" disabled>{{ partial "icon.html" "arrow" }}</button>
+        <button type="button" data-testimonial-next aria-label="{{ i18n "testimonial_next" }}" aria-controls="patient-testimonials">{{ partial "icon.html" "arrow" }}</button>
       </div>
     </div>
-    <div class="testimonial-track" id="patient-testimonials" role="region" aria-label="Patient quotes" aria-describedby="testimonials-hint" tabindex="0" data-testimonials>
-      {{ range .Site.Data.testimonials }}
+    <div class="testimonial-track" id="patient-testimonials" role="region" aria-label="{{ i18n "testimonials_region" }}" aria-describedby="testimonials-hint" tabindex="0" data-testimonials>
+      {{ range $index, $testimonial := .Site.Data.testimonials }}
       <figure class="testimonial">
-        <blockquote><p>“{{ .quote }}”</p></blockquote>
-        <figcaption>{{ .author | default "Patient testimonial" }}</figcaption>
+        <blockquote><p>“{{ if eq $.Site.Language.Lang "zh" }}{{ i18n (printf "testimonial_quote_%d" $index) }}{{ else }}{{ .quote }}{{ end }}”</p></blockquote>
+        <figcaption>{{ .author | default (i18n "testimonial_anonymous") }}{{ if eq $.Site.Language.Lang "zh" }} · {{ i18n "testimonial_translation" }}{{ end }}</figcaption>
       </figure>
       {{ end }}
     </div>
-    <div class="testimonials-notes"><p id="testimonials-hint">Scroll or swipe to read more.</p><p>Individual experiences. Results vary.</p></div>
+    <div class="testimonials-notes"><p id="testimonials-hint">{{ i18n "testimonials_scroll" }}</p><p>{{ i18n "testimonials_caveat" }}</p></div>
   </div>
 </section>

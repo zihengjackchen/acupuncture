@@ -1,6 +1,7 @@
 (() => {
   const root = document.querySelector('[data-coverage]');
   if (!root) return;
+  const isChinese = document.documentElement.lang.startsWith('zh');
   const records = JSON.parse(root.querySelector('[data-coverage-records]').textContent);
   const recordByZip = new Map(records.map(record => [record.zip, record]));
   const svg = root.querySelector('.coverage-svg');
@@ -17,6 +18,11 @@
   root.querySelector('[data-coverage-tools]').hidden = false;
   if (regions.length) regions[0].setAttribute('tabindex', '0');
 
+  if (isChinese) {
+    input.addEventListener('invalid', () => input.setCustomValidity('请输入五位数字邮政编码。'));
+    input.addEventListener('input', () => input.setCustomValidity(''));
+  }
+
   function clearSelection() {
     if (selected) {
       selected.classList.remove('is-selected');
@@ -29,10 +35,11 @@
     clearSelection();
     const record = recordByZip.get(zip);
     input.value = zip;
+    if (isChinese) input.setCustomValidity('');
     if (!record) {
       svg.setAttribute('viewBox', defaultView);
-      title.textContent = `We cannot confirm coverage for ${zip}.`;
-      text.textContent = 'This ZIP is not in the mapped service area. Some postal-only ZIPs have no map boundary. Call 847-786-0066 to check your street address or book a clinic visit.';
+      title.textContent = isChinese ? `暂时无法确认邮编 ${zip} 的服务范围。` : `We cannot confirm coverage for ${zip}.`;
+      text.textContent = isChinese ? '此邮编不在地图所示的服务范围内。部分仅用于邮政投递的邮编没有地图边界。请致电 847-786-0066 确认您的详细地址，或预约到诊所就诊。' : 'This ZIP is not in the mapped service area. Some postal-only ZIPs have no map boundary. Call 847-786-0066 to check your street address or book a clinic visit.';
       return;
     }
     title.textContent = `${zip} · ${record.locality}`;
@@ -43,7 +50,7 @@
       regions[focusIndex].setAttribute('tabindex', '-1');
       focusIndex = regions.indexOf(selected);
       selected.setAttribute('tabindex', '0');
-      text.textContent = 'Dan accepts mobile requests throughout this ZIP area. Call to confirm your address, appointment, and travel fee.';
+      text.textContent = isChinese ? 'Dan 可接受此邮区内的上门诊疗预约。请致电确认您的地址、预约时间和交通费用。' : 'Dan accepts mobile requests throughout this ZIP area. Call to confirm your address, appointment, and travel fee.';
       if (zoom) {
         const bounds = selected.getBBox();
         const width = Math.max(bounds.width + 80, 180);
@@ -53,7 +60,7 @@
       }
     } else {
       svg.setAttribute('viewBox', defaultView);
-      text.textContent = 'Call to confirm whether your street address is within the mobile service area and ask about the travel fee.';
+      text.textContent = isChinese ? '请致电确认您的详细地址是否在上门诊疗服务范围内，并咨询交通费用。' : 'Call to confirm whether your street address is within the mobile service area and ask about the travel fee.';
     }
   }
 
@@ -61,8 +68,8 @@
     event.preventDefault();
     const zip = input.value.trim();
     if (!/^\d{5}$/.test(zip)) {
-      title.textContent = 'Enter a five-digit ZIP code.';
-      text.textContent = 'For example, 60035 for Highland Park.';
+      title.textContent = isChinese ? '请输入五位数字邮政编码。' : 'Enter a five-digit ZIP code.';
+      text.textContent = isChinese ? '例如，Highland Park 的邮编为 60035。' : 'For example, 60035 for Highland Park.';
       input.focus();
       return;
     }
@@ -99,8 +106,9 @@
     svg.setAttribute('viewBox', defaultView);
     clearSelection();
     input.value = '';
-    title.textContent = 'Check your ZIP code.';
-    text.textContent = `The service area includes ${records.length} ZIP areas, shown in full in green. Gray areas are outside it.`;
+    if (isChinese) input.setCustomValidity('');
+    title.textContent = isChinese ? '查询您的邮政编码。' : 'Check your ZIP code.';
+    text.textContent = isChinese ? `服务范围包括 ${records.length} 个完整邮区，以绿色标出。灰色区域不在服务范围内。` : `The service area includes ${records.length} ZIP areas, shown in full in green. Gray areas are outside it.`;
   });
   root.querySelectorAll('[data-coverage-zip]').forEach(button => {
     button.addEventListener('click', () => {

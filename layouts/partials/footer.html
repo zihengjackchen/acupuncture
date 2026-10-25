@@ -1,11 +1,11 @@
 <footer class="site-footer">
   <div class="shell footer-top">
     <div class="footer-brand">
-      <a class="brand" href="{{ "" | relURL }}"><img class="brand-logo" src="{{ "images/brand/logo-horizontal-ivory.svg" | relURL }}" width="280" height="71" alt="Wang’s Harmony Acupuncture"></a>
-      <p>Traditional medicine. Personal care.</p>
+      <a class="brand" href="{{ "" | relLangURL }}"><img class="brand-logo" src="{{ "images/brand/logo-horizontal-ivory.svg" | relURL }}" width="280" height="71" alt="Wang’s Harmony Acupuncture"></a>
+      <p>{{ i18n "footer_tagline" }}</p>
     </div>
-    <div><span class="footer-label">Contact Dan</span><a class="footer-phone" href="tel:+18477860066">{{ .Site.Data.contact.phone }}</a><a href="mailto:{{ .Site.Data.contact.email }}">{{ .Site.Data.contact.email }}</a></div>
-    <nav aria-label="Footer navigation"><a href="{{ "services/" | relURL }}">Our care</a><a href="{{ "contact/" | relURL }}">Locations & hours</a><a href="{{ "team/" | relURL }}">Meet Dan</a><a href="{{ "blog/" | relURL }}">Your questions</a><a href="{{ "contact/#mobile-visits" | relURL }}">Mobile visits</a><a href="{{ "media-pack/brand-guide.html" | relURL }}">Brand & media guide {{ partial "icon.html" "diagonal" }}</a><a href="{{ "media-pack/wangs-harmony-media-pack.zip" | relURL }}" download>Download media pack {{ partial "icon.html" "diagonal" }}</a></nav>
+    <div><span class="footer-label">{{ i18n "contact_dan" }}</span><a class="footer-phone" href="tel:+18477860066">{{ .Site.Data.contact.phone }}</a><a href="mailto:{{ .Site.Data.contact.email }}">{{ .Site.Data.contact.email }}</a></div>
+    <nav aria-label="{{ i18n "footer_nav" }}"><a href="{{ "services/" | relLangURL }}">{{ i18n "nav_care" }}</a><a href="{{ "contact/" | relLangURL }}">{{ i18n "nav_locations" }}</a><a href="{{ "team/" | relLangURL }}">{{ i18n "nav_dan" }}</a><a href="{{ "blog/" | relLangURL }}">{{ i18n "nav_questions" }}</a><a href="{{ "contact/#mobile-visits" | relLangURL }}">{{ i18n "mobile_visits" }}</a><a href="{{ "media-pack/brand-guide.html" | relURL }}">{{ i18n "brand_guide" }} {{ partial "icon.html" "diagonal" }}</a><a href="{{ "media-pack/wangs-harmony-media-pack.zip" | relURL }}" download>{{ i18n "download_media" }} {{ partial "icon.html" "diagonal" }}</a></nav>
   </div>
-  <div class="shell footer-bottom"><span>© {{ now.Year }} Wang’s Harmony Acupuncture PLLC</span><span>Chicago · Niles · Highland Park, Illinois</span><a href="{{ "privacy/" | relURL }}">Privacy</a></div>
+  <div class="shell footer-bottom"><span>© {{ now.Year }} Wang’s Harmony Acupuncture PLLC</span><span>{{ i18n "footer_locations" }}</span><a href="{{ "privacy/" | relLangURL }}">{{ i18n "privacy" }}</a></div>
 </footer>

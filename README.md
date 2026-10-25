@@ -14,6 +14,7 @@ The site uses Hugo, custom templates, CSS, and JavaScript with GSAP. Its design 
 - Patient testimonials in a horizontal row with swipe, keyboard, and arrow controls.
 - Business card that turns as visitors scroll, plus a continuous ink landscape with a pause control.
 - Responsive layouts, local fonts, and reduced-motion and no-JavaScript fallbacks.
+- English and Simplified Chinese pages, with a language switch in the header. English remains the default.
 - Downloadable logos, brand guide, and 15 wallpaper variants in five formats and three colors.
 
 ## Launch video
@@ -39,6 +40,7 @@ Open **http://127.0.0.1:1313**. Hugo writes the preview to `.qa/preview/`.
 | --- | --- |
 | `npm.cmd run build` | Build the production site in `dist/` |
 | `npm.cmd test` | Check routes, links, booking, map interactions, motion fallbacks, and mobile layouts |
+| `npm.cmd run test:i18n` | Check Chinese routes, language switching, navigation, and interactive messages |
 | `node scripts/check-seo.mjs` | Check production canonicals, structured URLs, robots, and sitemap after a build |
 | `npm.cmd run brand` | Rebuild logo exports, wallpapers, the brand guide, and media-pack ZIP |
 
@@ -60,6 +62,14 @@ Use `npm` instead of `npm.cmd` on macOS/Linux or when PowerShell permits `npm.ps
 | [scripts/](scripts/) | Asset generators and verification scripts |
 
 Hugo mounts the root `media-pack/` directory at `/media-pack/`. Keep those public download URLs when organizing files. Hugo does not publish `development/`.
+
+## Maintain translations
+
+English stays at the existing URLs. Simplified Chinese pages use `/zh/`. The header links to the corresponding page in each language, and navigation stays in the selected language. Browser language and previous visits do not redirect the English homepage.
+
+For each English page in `content/`, maintain its sibling `.zh.md` file. Keep route slugs the same and prefix Chinese internal links with `/zh/`. Shared interface copy lives in `i18n/en.yaml` and `i18n/zh.yaml`; ZIP lookup and animation messages live in `assets/js/coverage.js` and `assets/js/landscape.js`. Clinic hours and booking labels have translated entries in the catalogs, so update those alongside `data/clinics.json`. Chinese patient reviews are labeled as translations; preserve the approved English originals in `data/testimonials.json`.
+
+Run the build, SEO checks, and both browser checks after changing translations. The sitemap index includes English and Chinese sitemaps, and pages declare their language alternatives for search engines.
 
 ## Maintain clinic information
 

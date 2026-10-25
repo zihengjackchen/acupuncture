@@ -1,41 +1,50 @@
 <section id="mobile-coverage" class="coverage-section" aria-labelledby="coverage-heading" data-coverage>
   <div class="coverage-inner">
     <div class="coverage-intro">
-      <p class="coverage-eyebrow">Care that can come to you</p>
-      <h2 id="coverage-heading">At-home acupuncture,<br> by request.</h2>
-      <p>Dan offers mobile acupuncture across Chicago, including Lincoln Park, and the suburbs between Highland Park, Schaumburg, Naperville, and Orland Park.</p>
-      <p>Check your ZIP, then call to confirm your address and travel fee.</p>
+      <p class="coverage-eyebrow">{{ i18n "coverage_kicker" }}</p>
+      <h2 id="coverage-heading">{{ i18n "coverage_heading" | safeHTML }}</h2>
+      <p>{{ i18n "coverage_intro" }}</p>
+      <p>{{ i18n "coverage_check_intro" }}</p>
       <form class="coverage-search" data-coverage-form action="#mobile-coverage" hidden>
-        <label for="coverage-zip">Your five-digit ZIP code</label>
+        <label for="coverage-zip">{{ i18n "coverage_zip_label" }}</label>
         <div class="coverage-search-row">
-          <input id="coverage-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" pattern="[0-9]{5}" placeholder="e.g. 60035" aria-describedby="coverage-result" required>
-          <button type="submit">Check area <span aria-hidden="true">↗</span></button>
+          <input id="coverage-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" pattern="[0-9]{5}" placeholder="{{ i18n "coverage_placeholder" }}" aria-describedby="coverage-result" required>
+          <button type="submit">{{ i18n "coverage_submit" }} <span aria-hidden="true">↗</span></button>
         </div>
       </form>
       <div id="coverage-result" class="coverage-result" role="status" aria-live="polite" aria-atomic="true">
-        <strong data-coverage-result-title>Check your ZIP code.</strong>
-        <p data-coverage-result-text>The service area includes {{ .Site.Data.coverage.total }} ZIP areas, shown in full in green. Gray areas are outside it.</p>
+        <strong data-coverage-result-title>{{ i18n "coverage_initial_title" }}</strong>
+        <p data-coverage-result-text>{{ i18n "coverage_initial_text" (dict "Count" .Site.Data.coverage.total) }}</p>
       </div>
-      <a class="coverage-call" href="tel:+18477860066">Ask about a home visit <span aria-hidden="true">↗</span><small>847-786-0066</small></a>
+      <a class="coverage-call" href="tel:+18477860066">{{ i18n "coverage_call" }} <span aria-hidden="true">↗</span><small>847-786-0066</small></a>
     </div>
     <div class="coverage-map-column">
       <div class="coverage-map-frame">
         <div class="coverage-map-tools" data-coverage-tools hidden>
-          <button type="button" data-coverage-reset aria-label="Show the full mobile service area">View full area</button>
-          <span>Select an area to explore</span>
+          <button type="button" data-coverage-reset aria-label="{{ i18n "coverage_reset_aria" }}">{{ i18n "coverage_reset" }}</button>
+          <span>{{ i18n "coverage_explore" }}</span>
         </div>
-        <div class="coverage-map-viewport">{{ readFile "static/images/coverage/mobile-coverage.svg" | safeHTML }}</div>
-        <div class="coverage-legend"><span aria-hidden="true"></span>Mobile service area<small><i aria-hidden="true"></i>Outside coverage</small></div>
+        {{ $coverageSVG := readFile "static/images/coverage/mobile-coverage.svg" }}
+        {{ if eq .Site.Language.Lang "zh" }}
+          {{ $coverageSVG = replaceRE `<title id="coverage-map-title">[^<]+</title>` (printf `<title id="coverage-map-title">%s</title>` (i18n "coverage_svg_title")) $coverageSVG }}
+          {{ $coverageSVG = replaceRE `<desc id="coverage-map-description">[^<]+</desc>` (printf `<desc id="coverage-map-description">%s</desc>` (i18n "coverage_svg_description" (dict "Count" .Site.Data.coverage.total))) $coverageSVG }}
+          {{ $coverageSVG = replace $coverageSVG ". Mobile visits by request." (i18n "coverage_svg_suffix") }}
+          {{ $coverageSVG = replace $coverageSVG ">N</text>" (printf ">%s</text>" (i18n "coverage_svg_north")) }}
+          {{ $coverageSVG = replace $coverageSVG "Northeastern Illinois" (i18n "coverage_svg_region") }}
+          {{ $coverageSVG = replaceRE `LAKE<tspan[^>]*>MICHIGAN</tspan>` (i18n "coverage_svg_lake") $coverageSVG }}
+        {{ end }}
+        <div class="coverage-map-viewport">{{ $coverageSVG | safeHTML }}</div>
+        <div class="coverage-legend"><span aria-hidden="true"></span>{{ i18n "coverage_legend" }}<small><i aria-hidden="true"></i>{{ i18n "coverage_outside" }}</small></div>
       </div>
-      <p class="coverage-source">Each green region shows a complete ZIP area. Census boundaries approximate postal areas. Confirm your street address when booking. <a href="https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html">Census map source</a>.</p>
+      <p class="coverage-source">{{ i18n "coverage_source_intro" }} <a href="https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html">{{ i18n "coverage_source" }}</a>.</p>
     </div>
     <details class="coverage-directory">
-      <summary>View {{ .Site.Data.coverage.total }} ZIP codes in the service area <span aria-hidden="true">+</span></summary>
-      <p>Home visits are available by request throughout these ZIP areas. Call to confirm your address, appointment, and travel fee.</p>
+      <summary>{{ i18n "coverage_directory_title" (dict "Count" .Site.Data.coverage.total) }} <span aria-hidden="true">+</span></summary>
+      <p>{{ i18n "coverage_directory_intro" }}</p>
       <div class="coverage-directory-grid">
         {{ range .Site.Data.coverage.prefixes }}
           {{ $prefix := . }}
-          <div><h3>{{ $prefix }} area</h3><ul>
+          <div><h3>{{ i18n "coverage_prefix" (dict "Prefix" $prefix) }}</h3><ul>
             {{ range $.Site.Data.coverage.records }}
               {{ if hasPrefix .zip $prefix }}<li><button type="button" data-coverage-zip="{{ .zip }}"><strong>{{ .zip }}</strong><span>{{ .locality }}</span></button></li>{{ end }}
             {{ end }}
@@ -43,7 +52,7 @@
         {{ end }}
       </div>
     </details>
-    <noscript><p>The full service area and ZIP list are available above. Call 847-786-0066 to check your address and request a visit.</p></noscript>
+    <noscript><p>{{ i18n "coverage_noscript" }}</p></noscript>
   </div>
   <script type="application/json" data-coverage-records>{{ .Site.Data.coverage.records | jsonify | safeJS }}</script>
 </section>

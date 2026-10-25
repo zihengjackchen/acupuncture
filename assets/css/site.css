@@ -110,3 +110,37 @@
 .testimonials-notes{display:flex;justify-content:space-between;gap:16px;margin-top:14px}
 .testimonials-notes p{font-size:11px}
 @media(max-width:760px){.testimonials-heading{gap:16px;margin-bottom:28px}.testimonials-heading h2{font-size:44px}.testimonials-heading .eyebrow{font-size:10px}.testimonials-controls{gap:8px}.testimonials-controls button{width:44px;height:44px}.testimonial-track{gap:16px}.testimonial{flex-basis:90%;padding:27px 24px;gap:24px}.testimonials-notes{flex-direction:column;gap:4px}}
+
+/* The language choice stays visible when the mobile menu is closed. */
+.header-inner{gap:24px}
+.main-nav{margin-left:auto}
+.header-controls{display:flex;align-items:center;gap:18px}
+.language-switch{display:inline-flex;flex-shrink:0;border:1px solid #b3c1ad;border-radius:3px;overflow:hidden;white-space:nowrap}
+.language-switch a{display:flex;align-items:center;justify-content:center;min-height:40px;padding:6px 10px;font:500 12px/1.4 var(--sans);color:var(--jade)}
+.language-switch a[aria-current]{background:var(--jade);color:var(--white)}
+.language-switch a:hover:not([aria-current]){background:var(--sage)}
+.language-switch a:focus-visible{outline-offset:-3px}
+html:lang(zh){--serif:'Songti SC','STSong','Noto Serif CJK SC','SimSun',serif;--sans:'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif}
+html:lang(zh) h1,html:lang(zh) h2,html:lang(zh) h3{line-height:1.35;letter-spacing:0}
+html:lang(zh) em{font-style:normal}
+html:lang(zh) .hero h1{font-size:clamp(44px,5.5vw,72px)}
+html:lang(zh) .eyebrow{letter-spacing:.1em}
+html:lang(zh) .testimonial blockquote p{font-size:clamp(21px,2vw,28px);line-height:1.8}
+@media(min-width:761px) and (max-width:1050px){.header-inner{gap:15px}.site-header .brand>.brand-logo{width:185px}.main-nav{gap:14px}.language-switch a{font-size:11px;padding-inline:8px}}
+@media(max-width:760px){
+  html{scroll-padding-top:140px}
+  .header-inner,.site-header:not(.nav-ready) .header-inner{display:grid;grid-template-columns:1fr auto;height:auto;gap:4px 12px;padding-block:10px}
+  .site-header .brand{grid-column:1;grid-row:1;justify-self:start}
+  .header-controls{display:contents}
+  .language-switch{grid-row:2;grid-column:1/-1;justify-self:end}
+  .language-switch a{min-height:36px;padding:5px 12px;font-size:11px}
+  .menu-toggle{grid-row:1;grid-column:2;padding:12px 0 12px 12px}
+  .main-nav{top:100%;margin-left:0}
+  .site-header:not(.nav-ready) .main-nav{grid-row:3;grid-column:1/-1}
+  .clinic{scroll-margin-top:150px}
+  html:lang(zh) .hero h1{font-size:clamp(42px,10.5vw,64px)}
+  html:lang(zh) .section-heading h2,html:lang(zh) .testimonials-heading h2,html:lang(zh) .faq-grid h2{font-size:34px}
+  html:lang(zh) .page-hero h1{font-size:40px}
+  html:lang(zh) .booking-cta h2{font-size:42px}
+  html:lang(zh) .care-item h3{font-size:23px}
+}

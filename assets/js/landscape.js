@@ -1,5 +1,6 @@
 /* Generate scenery in a worker, paint a bounded strip, then move its composited layer. */
 (() => {
+  const isChinese = document.documentElement.lang.startsWith('zh');
   const TILE = 1024;
   const HEIGHT = 420;
   const MAX_TILES = 10;
@@ -214,7 +215,7 @@
 
     function onToggle() {
       paused = !paused;
-      toggle.textContent = paused ? 'Resume landscape' : 'Pause landscape';
+      toggle.textContent = isChinese ? (paused ? '继续山水动画' : '暂停山水动画') : (paused ? 'Resume landscape' : 'Pause landscape');
       sync();
     }
     const visibilityObserver = new IntersectionObserver(([entry]) => {
