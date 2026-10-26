@@ -43,6 +43,8 @@ jobs:
           cache: npm
       - name: Install Node.js dependencies
         run: npm ci
+      - name: Verify Chinese font coverage
+        run: node scripts/check-chinese-fonts.mjs
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production

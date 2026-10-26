@@ -42,7 +42,6 @@
   background: #f7f3eb;
   color: #30453b;
   font: inherit;
-  font-size: 12px;
   cursor: pointer;
 }
 .harmony-landscape__toggle[hidden] { display: none; }
@@ -56,14 +55,13 @@
   right: clamp(20px, 5vw, 80px);
   padding: 5px 0;
   color: #53685b;
-  font-size: 10px;
   line-height: 1.4;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 @media (max-width: 640px) {
   .harmony-landscape { height: 208px; }
-  .harmony-landscape__credit { right: 20px; font-size: 9px; }
+  .harmony-landscape__credit { right: 20px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .harmony-landscape__canvas { transition: none; }

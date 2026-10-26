@@ -71,6 +71,21 @@ For each English page in `content/`, maintain its sibling `.zh.md` file. Keep ro
 
 Run the build, SEO checks, and both browser checks after changing translations. The sitemap index includes English and Chinese sitemaps, and pages declare their language alternatives for search engines.
 
+## Maintain typography
+
+Both languages share the type roles in `assets/css/typography.css`: display headings, section headings, card titles, quotes, body copy, controls, and captions. Chinese heading sizes have optical adjustments; body copy stays 16px in both languages. Keep the illustrated business card's miniature type separate from normal page text.
+
+English uses Cormorant Garamond and DM Sans. Chinese adds self-hosted Noto Serif SC and Noto Sans SC, with the English fonts first in each stack so Latin names and numbers stay consistent. Font licenses are in `static/fonts/`. The Chinese webfonts cover the characters used on the site and total about 367 KiB; pages make no external font requests.
+
+The build and deployment check font coverage. When new Chinese characters are added, regenerate the subsets before committing:
+
+```powershell
+python -m pip install "fonttools[woff]==4.67.0" "brotli==1.2.1"
+python scripts/prepare-chinese-fonts.py
+```
+
+The generator verifies pinned upstream font sources, caches downloads in `.qa/font-sources/`, and updates the two WOFF2 files and `assets/fonts/chinese-coverage.json`. Commit these generated files together. Normal builds use the committed fonts and require neither Python nor downloads.
+
 ## Maintain clinic information
 
 Edit [data/clinics.json](data/clinics.json) for schedules, addresses, and booking links. Edit [data/contact.yaml](data/contact.yaml) for the main contact details. Keep corresponding page copy in `content/` and `layouts/partials/contact-page.html` in sync.

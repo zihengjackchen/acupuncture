@@ -25,7 +25,11 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="{{ "fonts/cormorant-garamond-latin-variable.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ "fonts/dm-sans-latin-variable.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
-  {{ $styles := slice (resources.Get "css/site.css") (resources.Get "css/coverage.css") (resources.Get "css/landscape.css") }}
+  {{ if eq .Lang "zh" }}
+  <link rel="preload" href="{{ "fonts/noto-serif-sc-variable.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ "fonts/noto-sans-sc-variable.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+  {{ end }}
+  {{ $styles := slice (resources.Get "css/site.css") (resources.Get "css/coverage.css") (resources.Get "css/landscape.css") (resources.Get "css/typography.css") }}
   {{ $css := $styles | resources.Concat "css/harmony.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   {{ partial "seo-local-business.html" . }}

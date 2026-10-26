@@ -3,6 +3,7 @@
     <div class="section-heading" data-reveal><span class="eyebrow">{{ i18n "schedule_kicker" }}</span><h2>{{ i18n "schedule_heading" | safeHTML }}</h2></div>
     <div class="schedule-heading"><h3 id="schedule-title">{{ i18n "schedule_title" }}</h3><span>{{ i18n "schedule_timezone" }}</span></div>
     {{ $days := slice (dict "name" "Monday" "short" "Mon" "index" 1) (dict "name" "Tuesday" "short" "Tue" "index" 2) (dict "name" "Wednesday" "short" "Wed" "index" 3) (dict "name" "Thursday" "short" "Thu" "index" 4) (dict "name" "Friday" "short" "Fri" "index" 5) (dict "name" "Saturday" "short" "Sat" "index" 6) (dict "name" "Sunday" "short" "Sun" "index" 0) }}
+    <div class="calendar-scroll" role="region" aria-labelledby="schedule-title" tabindex="0">
     <table class="clinic-calendar" aria-labelledby="schedule-title">
       <thead><tr><th scope="col"><span class="sr-only">{{ i18n "schedule_time_of_day" }}</span></th>
         {{ range $days }}
@@ -28,6 +29,7 @@
         </tr>{{ end }}
       </tbody>
     </table>
+    </div>
     <p class="schedule-note">{{ i18n "schedule_note" }}</p>
     <div class="clinic-grid">
       {{ range .Site.Data.clinics }}

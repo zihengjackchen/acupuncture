@@ -1,0 +1,145 @@
+/* Shared roles keep both languages on one editorial type scale. */
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('../fonts/noto-serif-sc-variable.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('../fonts/noto-sans-sc-variable.woff2') format('woff2');
+}
+:root {
+  --serif: 'Cormorant Garamond', 'Noto Serif SC', Georgia, serif;
+  --sans: 'DM Sans', 'Noto Sans SC', Arial, sans-serif;
+  --type-display: clamp(3.25rem, 2rem + 4vw, 5.5rem);
+  --type-section: clamp(2.25rem, 1.75rem + 2vw, 3.25rem);
+  --type-title: clamp(1.625rem, 1.4rem + .65vw, 2rem);
+  --type-quote: clamp(1.5rem, 1.25rem + .55vw, 1.875rem);
+  --type-lead: 1.125rem;
+  --type-body: 1rem;
+  --type-label: .8125rem;
+  --type-caption: .75rem;
+  --line-heading: 1.08;
+  --line-title: 1.25;
+  --line-body: 1.75;
+  --line-quote: 1.5;
+}
+html:lang(zh) {
+  --type-display: clamp(2.5rem, 1.75rem + 2.5vw, 4rem);
+  --type-section: clamp(2rem, 1.5rem + 1.5vw, 2.625rem);
+  --type-title: clamp(1.5rem, 1.25rem + .6vw, 1.75rem);
+  --type-quote: clamp(1.375rem, 1.15rem + .45vw, 1.625rem);
+  --line-heading: 1.3;
+  --line-title: 1.45;
+  --line-body: 1.85;
+  --line-quote: 1.8;
+}
+body { font-size: var(--type-body); line-height: var(--line-body); }
+h1, h2, h3 { overflow-wrap: anywhere; }
+.hero-grid>*, .page-hero-grid>*, .connection-layout>* { min-width: 0; }
+.footer-top>*, .coverage-inner>* { min-width: 0; }
+.footer-top a { max-width: 100%; overflow-wrap: anywhere; }
+.connection-copy>.text-link { max-width: 100%; overflow-wrap: anywhere; }
+.coverage-search-row, .coverage-map-tools { flex-wrap: wrap; }
+.coverage-search input { flex-basis: 8rem; }
+h1, .hero h1, .page-hero h1 {
+  font-size: var(--type-display);
+  line-height: var(--line-heading);
+  letter-spacing: -.035em;
+}
+h2, .section-heading h2, .practitioner-copy h2, .connection-copy h2,
+.testimonials-heading h2, .booking-cta h2, .faq-grid h2, .coverage-intro h2 {
+  font-family: var(--serif);
+  font-size: var(--type-section);
+  line-height: var(--line-heading);
+  letter-spacing: -.025em;
+}
+h3, .service-card h2, .article-card h2, .clinic h3, .care-item h3,
+.visit-steps h3, .page-content h2, .pricing-note h2, .appointment-notes h2 {
+  font-size: var(--type-title);
+  line-height: var(--line-title);
+  letter-spacing: -.015em;
+}
+.page-content h3 { font-size: var(--type-lead); line-height: var(--line-title); }
+.hero-copy>p, .page-hero p, .page-content, .about-details .page-content,
+.section-heading p, .care-description p, .service-card p, .article-card p,
+.visit-steps p, .practitioner-copy p, .appointment-notes p, .pricing-note p,
+.faq-list p, .booking-cta p, .coverage-intro>p:not(.coverage-eyebrow), .clinic address {
+  font-size: var(--type-body);
+  line-height: var(--line-body);
+}
+.practitioner-copy p.lead { font-size: var(--type-lead); }
+.testimonial blockquote p, .page-content blockquote {
+  font-family: var(--serif);
+  font-size: var(--type-quote);
+  line-height: var(--line-quote);
+}
+.button, .text-link, .menu-toggle, .main-nav>a:not(.button), .language-switch a,
+.clinic-hours, .clinic-actions .button, .clinic-actions .text-link, .clinic-profile,
+.care-description .text-link, .all-services, .practitioner-copy .text-link,
+.first-visit>.shell>.text-link, .mobile-section .split-heading .text-link,
+.faq-grid>.text-link, .faq-grid>div>.text-link, .booking-cta .text-link,
+.hero .button, .hero .text-link, .booking-cta .button, .service-card>.text-link,
+.article-card .text-link, .connection-copy>.text-link, .footer-top>nav,
+.footer-top>div>a:not(.footer-phone), .coverage-search label, .coverage-search button,
+.coverage-map-tools button, .coverage-call, .coverage-directory summary,
+.harmony-landscape__toggle, .credential-list {
+  font-size: var(--type-label);
+  line-height: 1.6;
+}
+.small-note, .schedule-note, .contact-shortcuts p, .testimonials-notes p,
+.footer-brand p, .coverage-result p, .coverage-directory>p, .faq-list summary {
+  font-size: var(--type-label);
+  line-height: var(--line-body);
+}
+.eyebrow, .hero-copy>.eyebrow, .clinic-top .eyebrow, .article-card .eyebrow,
+.testimonials-heading .eyebrow, .coverage-eyebrow, .schedule-heading>span,
+.contact-shortcuts>a small, .breadcrumb, .footer-label, .footer-bottom,
+.testimonial figcaption, .namecard-scroll-hint, .care-image figcaption,
+.practitioner-image figcaption span, .coverage-call small, .coverage-map-tools span,
+.coverage-legend, .coverage-legend small, .coverage-source,
+.coverage-directory li button, .coverage-directory li strong, .harmony-landscape__credit {
+  font-size: var(--type-caption);
+  line-height: 1.6;
+}
+.eyebrow, .coverage-eyebrow { font-weight: 500; letter-spacing: .12em; }
+.schedule-heading h3, .coverage-directory h3, .about-details aside h2 {
+  font-family: var(--sans);
+  font-size: var(--type-label);
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+.contact-shortcuts>a strong, .coverage-result strong { font-size: var(--type-body); font-weight: 500; }
+.large-phone, .connection-copy .large-phone, .footer-phone, .practitioner-image figcaption {
+  font-size: var(--type-title);
+  line-height: var(--line-title);
+}
+.page-content table { font-size: var(--type-label); }
+.coverage-svg text { font-family: var(--sans); }
+.calendar-scroll { overflow-x: auto; }
+.clinic-calendar { min-width: 24em; }
+.clinic-calendar, .clinic-calendar th, .clinic-calendar td span, .clinic-calendar small {
+  font-size: var(--type-caption);
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+.clinic-calendar strong { font-size: var(--type-caption); font-weight: 500; overflow-wrap: anywhere; }
+.clinic-calendar .today-label { font-size: var(--type-caption); }
+.clinic-calendar td a { line-height: 1.5; }
+html:lang(zh) :is(h1,h2,h3) { letter-spacing: 0; }
+html:lang(zh) em { font-style: normal; }
+html:lang(zh) .eyebrow, html:lang(zh) .coverage-eyebrow { letter-spacing: .04em; }
+html:lang(zh) .hero h1 em::before { content: none; }
+@media (max-width:760px) {
+  .coverage-inner { grid-template-columns: minmax(0,1fr); }
+  .clinic-calendar th:first-child { width: 5.333em; }
+  .clinic-calendar th, .clinic-calendar td { padding: 12px 4px; }
+  .clinic-calendar td { height: auto; }
+  .clinic-calendar td a { min-height: 5.5rem; }
+}

@@ -66,6 +66,13 @@ try {
 
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(`${origin}/zh/`, { waitUntil: 'networkidle' });
+  const loadedFonts = await page.evaluate(async () => {
+    await document.fonts.ready;
+    return [...document.fonts].filter(font => font.status === 'loaded').map(font => font.family.toLowerCase().replaceAll('"', '').replaceAll("'", ''));
+  });
+  for (const family of ['dm sans', 'cormorant garamond', 'noto sans sc', 'noto serif sc']) {
+    assert.ok(loadedFonts.includes(family), `${family} loads for mixed Chinese/English typography`);
+  }
   assert.ok(await page.locator('.language-switch').isVisible(), 'Language switch is visible on mobile');
   await page.locator('.menu-toggle').click();
   assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'), 'true');
